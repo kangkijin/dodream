@@ -1,0 +1,69 @@
+{
+	"header": {
+		"txt1": "유학 정보",
+		"txt2": "유학 매칭",
+		"txt3": "유형별 문제",
+		"txt4": "모의고사",
+		"txt5": "유학 후기"
+
+	},
+	"footer": {
+		"txt1": "&#40;주&#41;다인리더스"
+		,"txt2": "서비스 안내"
+		,"txt3": "이용약관"
+		,"txt4": "개인정보취급방침"
+		,"txt5": "이메일무단수집거부"
+		,"txt6": "유학플랫폼 DoDream 고객센터"
+		,"txt7": "한국어 : 070-7729-7328"
+		,"txt8": "베트남어 : 070-7729-8023"
+		,"txt9": "&#40;주&#41;다인리더스"
+		,"txt10": "한국본사 : 서울시 성동구 성수일로8길 5, 서울숲 SK VI TOWER A동 2006호 "
+		,"txt11": "베트남 법인 : 하노이시 탄수언군 주이떤 12, 젠타워 1107호"
+		,"txt12": "포인트 안내"
+		,"txt13": "고객센터 : (+82)1800-6337"
+	},
+	"signUp" : {
+		"headerTxt1" : "회원가입"
+		, "headerTxt2" : "두드림 회원으로 가입하시면 한국유학의 다양한 정보와 서비스를 이용할 수 있습니다."
+		, "headerTxt3" : "<span>01</span>약관 및 본인인증"
+		, "headerTxt4" : "<span>02</span>정보입력"
+		, "headerTxt5" : "<span>03</span>회원가입 완료"
+	},
+	"signUp_1" : {
+		"txt1" : "약관 및 개인정보 동의 안내"
+		, "txt2" : "<span class='font_red'>&#40;필수&#41;</span> 이용약관"
+		, "txt3" : "<span class='font_red'>&#40;필수&#41;</span> 개인정보 수집 및 이용 동의"
+		, "txt4" : "본인인증"
+		, "txt5" : "휴대폰 번호 인증"
+		, "txt6" : "국가번호"
+		, "txt7" : "인증코드 입력"
+		, "txt8" : "<button type='button' class='btn_round btn_md btn_default' onclick='goSignUpInfo();'>다음 단계로 이동</button>"
+		, "txt9" : "선택"
+	},
+	"signUp_2" : {
+		"txt1" : "회원정보 입력"
+		, "txt2" : "아이디<span class='font_red'>*</span>"
+		, "txt3" : "비밀번호<span class='font_red'>*</span>"
+		, "txt4" : "비밀번호 확인<span class='font_red'>*</span>"
+		, "txt5" : "닉네임<span class='font_red'>*</span>"
+		, "txt6" : "국가<span class='font_red'>*</span>"
+		, "txt7" : "추천인 이메일"
+		, "txt8" : "국가"
+		, "txt9" : "비밀번호 형식이 잘못되었습니다"
+		, "txt10" : "필수 정보입니다"
+		, "txt11" : "입력한 비밀번호와 일치하지 않습니다"
+		, "txt12" : "이메일<span class='font_red'>*</span>"
+	},
+	"signUp_3" : {
+		"txt1" : "두드림 회원이 되신 것을 환영합니다!"
+		, "txt2" : "로그인 후 모든 서비스를 이용할 수 있습니다."
+		, "txt3" : "메인으로 이동"
+	},
+	"signUp_4" : {
+		"txt1" : "휴대번호 인증"
+		, "txt2" : "본인 인증"
+		, "txt3" : "국가번호"
+		, "txt4" : "인증코드 입력"
+		, "txt5" : "<button type='button' class='btn_round btn_md btn_default' onclick='compltLogin();'>로그인 완료</button>"
+	}
+}

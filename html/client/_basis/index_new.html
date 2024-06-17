@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi, shrink-to-fit=no">
+	<meta name="format-detection" content="telephone=no, address=no">
+	<meta name="title" content="DoDream">
+	<meta name="keywords" content="Block Chain, Study Abroad, platform, Korea, vietnam">
+	<meta name="description" content="유학플랫폼 두드림(DoDream)외국인 유학생을 위한 한국 유학 매칭 플랫폼">
+	<meta name="author" content="DainLeaders">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="DoDream">
+	<meta property="og:description" content="유학플랫폼 두드림(DoDream)외국인 유학생을 위한 한국 유학 매칭 플랫폼">
+	<meta property="og:image" content="../../../images/common/img_metacover.jpg">
+	<meta property="og:url" content="http://www.dodream.io">
+	<meta name="naver-site-verification" content="dd744254d55fa0f146a5daeaf1e02ae2dd86c1f9" />
+	<meta name="google-site-verification" content="mive32tDbnLeee8bzzUfCA31XmDNgL4Lgj4dQoxn8DM" />
+	<title>DoDream</title>
+
+	<!-- [pp] 웹앱매니페스트 - chrome, opera -->
+	<link rel="manifest" href="../manifest.json">
+	<!-- [pp] //웹앱매니페스트 - chrome, opera -->
+
+	<!-- [pp] ios safari screen -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="white">
+	<meta name="apple-mobile-web-app-title" content="DoDream">
+	<!-- [pp] //ios safari screen -->
+
+	<!-- [pp] 파비콘 -->
+	<link rel="apple-touch-icon" sizes="64x64" href="../../../images/common/favicon.png">
+	<link rel="shortcut icon" type="image/x-icon" href="../../../images/common/favicon.ico">
+	<!-- [pp] //파비콘 -->
+
+	<!-- [pp] css -->
+	<link rel="stylesheet" href="../../../css/client/src/swiper.min.css">
+	<link rel="stylesheet" href="../../../css/client/src/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" href="../../../css/client/src/select2.css">
+	<link rel="stylesheet" href="../../../css/client/src/magnific-popup.css">
+	<link rel="stylesheet" href="../../../css/dl_global.css">
+	<link rel="stylesheet" href="../../../css/client/normalize.css">
+	<link rel="stylesheet" href="../../../css/client/grid.css">
+	<link rel="stylesheet" href="../../../css/client/table.css">
+	<link rel="stylesheet" href="../../../css/client/formstyle.css">
+	<link rel="stylesheet" href="../../../css/client/common.css">
+	<link rel="stylesheet" href="../../../css/client/ui.css">
+	<link rel="stylesheet" href="../../../css/client/popup.css">
+	<!-- [pp] //css -->
+
+	<!-- [pp] js -->
+	<script type="text/javascript" src="../../../js/client/src/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="../../../js/client/src/jquery.mCustomScrollbar.min.js"></script>
+	<script type="text/javascript" src="../../../js/client/src/select2.min.js"></script>
+	<script type="text/javascript" src="../../../js/client/src/jquery.magnific-popup.js"></script>
+	<script type="text/javascript" src="../../../js/client/src/swiper.min.js"></script>
+	<script type="text/javascript" src="../../../js/client/pp_common.js"></script>
+
+	<!-- [pp] 사용 금지 -->
+	<!--		<script type="text/javascript" src="../../../js/client/pp_include.js"></script>-->
+	<!-- [pp] //사용 금지 -->
+
+	<!-- [pp] //js -->
+
+	<!--[if lt IE 9]>
+		<script type="text/javascript" src="../../../js/client/src/jquery-1.12.3.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/html5shiv.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/IE9.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/respond.min.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+	<!--[pp] ie 하위버젼 접속시 알림 -->
+	<!--[if lt IE 10]>
+			<div id="browser">
+			This site is supported Explorer 10 or higher, Chrome, Firefox, Opera, Safari.<br/>If you are using it now, Please <a href="https://browsehappy.com/?locale=en" target="_blank">upgrade your browser</a> to improve your experience and security.
+			<button type="button" class="pp_upgradeinfo_close">close</button>
+			</div>
+		<![endif]-->
+	<!--[pp] // ie 하위버젼 접속시 알림 -->
+
+	<!-- [pp] 로딩중 화면 -->
+	<div id="loading" style="display:none;">
+		<p id="loading_image">
+			<img src="../../../images/pageloading.gif" alt="Loading..."><br>
+			<span>Loading</span>
+		</p>
+	</div>
+	<!-- [pp] //로딩중 화면 -->
+
+	<!-- [pp] 푸터를 제외한 전체페이지 -->
+	<div class="page_wrap">
+		<!-- [pp] nav -->
+		<div class="nav_wrap">
+			<!-- [pp] header -->
+			<header id="header" class="header_wrap">
+				<div class="header_grid">
+					<h1 class="header_logo">
+						<a href="javascript:void(0);">
+							<img src="../../../images/client/common/header_logo.svg" alt="유학플랫폼 두드림입니다">
+						</a>
+					</h1>
+					<nav id="gnb_skip" class="gnb_wrap" tabindex="0">
+						<ul class="gnb_1depth">
+							<li>
+								<a href="javascript:void(0);">Dream Guide</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">Do TOPIK</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">Do Play</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">Do Talking</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">Metarverse<span class="new_cnt">NEW</span></a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">Do Job<span class="new_cnt">NEW</span></a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">Notice</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="function_area">
+						<a href="javascript:void(0);" class="btn_log btn_login">LOGIN</a>
+						<!-- [pp] 로그인/로그아웃/마이페이지 :
+							<a href="javascript:void(0);" class="btn_log btn_login">LOGIN</a>
+							<a href="javascript:void(0);" class="btn_log btn_login">LOGOUT</a>
+							<a href="javascript:void(0);" class="btn_log btn_login">My Page</a>
+							-->
+						<div class="select_lang">
+							<p>KR</p>
+							<ul>
+								<li><span class="lang_kr"></span>KR</li>
+								<li><span class="lang_us"></span>EN</li>
+								<li><span class="lang_cn"></span>CN</li>
+								<li><span class="lang_vn"></span>VN</li>
+							</ul>
+						</div>
+					</div>
+					<button type="button" class="btn_menu">
+						메뉴보기
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+
+					<!-- [pp] 온도 표출 -->
+					<div class="weather_show">
+						<p class="region">Seoul</p>
+						<div class="temperature">
+							<strong>25.0<i>℃</i></strong>
+							<div>
+								<p class="precipitation">60</p>
+								<ul>
+									<li class="lowest">25.0</li>
+									<li class="highest">30.0</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- [pp] //온도 표출 -->
+				</div>
+				<div class="gnb_submenu">
+					<div class="grid_content">
+						<div class="gnb_list">
+							<a href="javascript:void(0);" class="gnb_tit">Dream Guide</a>
+							<ul class="gnb_2depth">
+								<li><a href="javascript:void(0);">대학 검색</a></li>
+								<li><a href="javascript:void(0);">유학 서비스</a></li>
+								<li><a href="javascript:void(0);">유학 정보</a></li>
+								<li><a href="javascript:void(0);">유학 후기</a></li>
+							</ul>
+						</div>
+						<div class="gnb_list">
+							<a href="javascript:void(0);" class="gnb_tit">Do TOPIK</a>
+							<ul class="gnb_2depth">
+								<li><a href="javascript:void(0);">What is TOPIK</a></li>
+								<li><a href="javascript:void(0);">유형별 문제</a></li>
+								<li><a href="javascript:void(0);">모의고사</a></li>
+							</ul>
+						</div>
+						<div class="gnb_list">
+							<a href="javascript:void(0);" class="gnb_tit">Do Play</a>
+							<ul class="gnb_2depth">
+								<li><a href="javascript:void(0);">K-Story</a></li>
+								<li><a href="javascript:void(0);">Magazine</a></li>
+							</ul>
+						</div>
+						<div class="gnb_list">
+							<a href="javascript:void(0);" class="gnb_tit">Do Talking</a>
+							<ul class="gnb_2depth">
+								<li><a href="javascript:void(0);">Community</a></li>
+								<li><a href="javascript:void(0);">정보마당</a></li>
+							</ul>
+						</div>
+						<div class="gnb_list">
+							<a href="javascript:void(0);" class="gnb_tit">Metarverse<span class="new_cnt">NEW</span></a>
+							<ul class="gnb_2depth">
+								<li><a href="javascript:void(0);">Metaverse<span class="new_cnt">NEW</span></a></li>
+							</ul>
+						</div>
+						<div class="gnb_list">
+							<a href="javascript:void(0);" class="gnb_tit">Do Job<span class="new_cnt">NEW</span></a>
+							<ul class="gnb_2depth">
+								<li><a href="javascript:void(0);">채용정보<span class="new_cnt">NEW</span></a></li>
+							</ul>
+						</div>
+						<div class="gnb_list">
+							<a href="javascript:void(0);" class="gnb_tit">Notice</a>
+							<ul class="gnb_2depth">
+								<li><a href="javascript:void(0);">Notice</a></li>
+								<li><a href="javascript:void(0);">EVENT</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</header>
+			<!-- [pp] //nav -->
+		</div>
+		<!-- [pp] //header -->
+
+		<!-- [pp] 챗봇 -->
+		<div class="chat_wrap">
+			<div class="chatbot">
+				<a href="javascript:void(0);"></a>
+			</div>
+			<!--[pp] 클릭시 나오는 박스-->
+			<div class="chat_area">
+				<div class="chat_header">
+					<a href="javascript:void(0);" class="chat_logo">챗봇</a>
+					<div class="chat_buttonarea">
+						<button type="button" class="chat_help">도움말</button>
+						<div class="select_lang">
+							<p><span class="lang_kr"></span></p>
+							<ul>
+								<li><span class="lang_kr"></span></li>
+								<li><span class="lang_us"></span></li>
+								<li><span class="lang_cn"></span></li>
+								<li><span class="lang_vn"></span></li>
+							</ul>
+						</div>
+						<button type="button" class="chat_close">닫기</button>
+					</div>
+				</div>
+				<div class="chat_cnt">
+					<strong class="date_label">2022년 7월 14일 목요일</strong>
+					<ul>
+						<li class="dudu">
+							<strong>두두</strong>
+							<div class="detail">
+								안녕하세요! <br />
+								유학 두드림에 대해 궁금한 사항을 <br />
+								바로 답변해드리는 챗봇 두두입니다! <br /><br />
+								아래 카테고리에 대해 24시간 답변 가능하니, <br />
+								궁금한 사항은 버튼을 눌러 확인해 보세요 :)
+								<ul class="category_1depth tab_switch_js">
+									<li>
+										<a href="javascript:void(0);" class="intro">두드림 소개</a>
+									</li>
+									<li>
+										<!-- [pp] 클릭시 상태 on 추가-->
+										<a href="javascript:void(0);" class="info on">대학 정보</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);" class="abroad">한국유학</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);" class="korean">한국어</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);" class="use">두드림 사이트 이용</a>
+									</li>
+								</ul>
+							</div>
+							<span class="time">오후 3:26</span>
+						</li>
+						<li class="mytalk">
+							<div class="detail">
+								대학 정보
+							</div>
+							<span class="time">오후 3:27</span>
+						</li>
+						<li class="dudu">
+							<strong>두두</strong>
+							<div class="detail">
+								대학 정보에 대해 궁금한 내용을 <br />
+								클릭하면 자세한 내용을 볼 수 있어요!
+							</div>
+							<ul class="category_2depth tab_switch_js">
+								<li>
+									<a href="javascript:void(0);">기숙사</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">대학 검색</a>
+								</li>
+								<li>
+									<!-- [pp] 클릭시 상태 on 추가-->
+									<a href="javascript:void(0);" class="on">어학연수</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">입학조건</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">장학금</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">지원자격</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">학과</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">학위</a>
+								</li>
+							</ul>
+							<span class="time">오후 3:28</span>
+						</li>
+						<li class="mytalk">
+							<div class="detail">
+								어학연수
+							</div>
+							<span class="time">오후 3:29</span>
+						</li>
+						<li class="dudu">
+							<strong>두두</strong>
+							<div class="detail">
+								어학연수에 대한 답변입니다!
+							</div>
+							<div class="swiper-container chat_slider">
+								<ul class="swiper-wrapper">
+									<li class="swiper-slide">
+										<a href="javascript:void(0);">어학연수 학습기간은 보통 얼마나 되나요?</a>
+									</li>
+									<li class="swiper-slide">
+										<a href="javascript:void(0);">어학연수과정은 1년에 모집 기간은 어떻게 되나요? 저는 내년 상반기에 입학하고 싶은데 언제
+											신청하면 될까요?</a>
+									</li>
+									<li class="swiper-slide">
+										<a href="javascript:void(0);">학위과정은 1년 보통 몇 번 모집합니까? 그라고 모집 기간은 어떻게 되나요?</a>
+									</li>
+									<li class="swiper-slide">
+										<a href="javascript:void(0);">요즘 코로나 때문에 학교에 어학연수 모집일정이 변동이 있으신가요?</a>
+									</li>
+									<li class="swiper-slide">
+										<a href="javascript:void(0);">요즘 코로나 때문에 학교에 학위과정 모집일정이 변동이 있으신가요?</a>
+									</li>
+								</ul>
+								<div class="swiper-pagination"></div>
+							</div>
+							<span class="time">오후 3:30</span>
+						</li>
+						<li class="mytalk">
+							<div class="detail">
+								어학연수 학습기간은 보통 얼마나 되나요??
+							</div>
+							<span class="time">오후 3:32</span>
+						</li>
+						<li class="dudu">
+							<strong>두두</strong>
+							<div class="detail">
+								어학연수 학습기간은 보통 얼마나 되나요??<br />
+								에 대한 답변입니다!
+								<br /><br />
+								6개월부터 2년까지입니다.
+								<div class="btn_area">
+									<button type="button" class="font_blue">다른 문의하기</button>
+									<button type="button" class="font_red">채팅 종료</button>
+								</div>
+							</div>
+							<span class="time">오후 3:33</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- [pp] 도움말 클릭시 나오는 영역 : help_chat 추가-->
+			<!--
+				<div class="chat_area help_chat">
+					<div class="chat_header">
+						<a href="javascript:void(0);" class="chat_logo">챗봇</a>
+						<p class="help_detail logo">처음 화면으로 돌아가기</p>
+						<div class="chat_buttonarea">
+							<button type="button" class="chat_help">도움말</button>
+							<p class="help_detail help">도움말</p>
+							<div class="select_lang">
+								<p><span class="lang_kr"></span></p>
+								<ul>
+									<li><span class="lang_kr"></span></li>
+									<li><span class="lang_us"></span></li>
+									<li><span class="lang_cn"></span></li>
+									<li><span class="lang_vn"></span></li>
+								</ul>
+							</div>
+							<p class="help_detail lang">언어선택</p>
+							<button type="button" class="chat_close">닫기</button>
+							<p class="help_detail close">닫기</p>
+						</div>
+					</div>
+					<div class="chat_cnt">
+						<strong class="date_label">2022년 7월 14일 목요일</strong>
+						<ul>
+							<li class="dudu">
+								<strong>두두</strong>
+								<div class="detail">
+									안녕하세요! <br/>
+									유학 두드림에 대해 궁금한 사항을 <br/>
+									바로 답변해드리는 챗봇 두두입니다! <br/><br/>
+									아래 카테고리에 대해 24시간 답변 가능하니, <br/>
+									궁금한 사항은 버튼을 눌러 확인해 보세요 :)
+									<ul class="category_1depth">
+										<li>
+											<a href="javascript:void(0);" class="intro on">두드림 소개</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" class="info">대학 정보</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" class="abroad">한국유학</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" class="korean">한국어</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" class="use">두드림 사이트 이용</a>
+										</li>
+										<li class="static">
+											<p class="help_detail category">궁금한 내용 클릭 시 해당 내용을 자세히 볼 수 있습니다.</p>
+										</li>
+									</ul>
+								</div>
+								<span class="time">오후 3:26</span>
+							</li>
+							<li class="mytalk">
+								<div class="detail">
+									두드림 소개
+								</div>
+								<span class="time">오후 3:27</span>
+							</li>
+							<li class="dudu">
+								<strong>두두</strong>
+								<div class="detail">
+									두드림 소개에 대해 궁금한 내용을 <br/>
+									클릭하면 자세한 내용을 볼 수 있어요! 
+								</div>
+								<ul class="category_2depth tab_switch_js">
+									<li>
+										<a href="javascript:void(0);" class="on">두드림 소개</a>
+									</li>
+								</ul>
+								<span class="time">오후 3:28</span>
+							</li>
+							<li class="mytalk">
+								<div class="detail">
+									두드림 소개
+								</div>
+								<span class="time">오후 3:29</span>
+							</li>
+						</ul>
+					</div>
+					<button type="button" class="btn_round btn_lg help_close">닫기</button>
+				</div>
+				-->
+			<!-- [pp] //도움말 클릭시 나오는 영역-->
+		</div>
+		<!-- [pp] //챗봇 -->
+		<!-- [pp] //header -->
+		<!-- [pp] container -->
+		<div class="mainpage_wrap">
+			<!-- [pp] 메인 슬라이드 -->
+			<figure class="swiper-container swiper_mainimg">
+				<ul class="swiper-wrapper">
+					<li class="swiper-slide slide1">
+						<a href="javascript:void(0)">
+							<img src="../../../images/client/main/main_slide1_txt.png" alt="메인슬라이더 배너 1 한국어">
+							<!-- [pp] 국가별 배너 이미지 : 
+								<img src="../../../images/client/main/main_slide1_txt.png" alt="메인슬라이더 배너 1 한국어">
+								<img src="../../../images/client/main/main_slide1_txt_en.png" alt="main_slider01_en">
+								<img src="../../../images/client/main/main_slide1_txt_cn.png" alt="main_slider01_cn">
+								<img src="../../../images/client/main/main_slide1_txt_vn.png" alt="main_slider01_vn">
+								-->
+						</a>
+					</li>
+					<li class="swiper-slide slide2">
+						<a href="javascript:void(0)">
+							<img src="../../../images/client/main/main_slide2_txt.png" alt="메인슬라이더 배너 2 한국어">
+							<!-- [pp] 국가별 배너 이미지 : 
+								<img src="../../../images/client/main/main_slide2_txt.png" alt="메인슬라이더 배너 2 한국어">
+								<img src="../../../images/client/main/main_slide2_txt_en.png" alt="main_slider02_en">
+								<img src="../../../images/client/main/main_slide2_txt_cn.png" alt="main_slider02_cn">
+								<img src="../../../images/client/main/main_slide2_txt_vn.png" alt="main_slider02_vn">
+								-->
+						</a>
+					</li>
+					<li class="swiper-slide slide3">
+						<a href="javascript:void(0)">
+							<img src="../../../images/client/main/main_slide2_txt.png" alt="메인슬라이더 배너 3 한국어">
+							<!-- [pp] 국가별 배너 이미지 : 
+								<img src="../../../images/client/main/main_slide2_txt.png" alt="메인슬라이더 배너 3 한국어">
+								<img src="../../../images/client/main/main_slide3_txt_en.png" alt="main_slider03_en">
+								<img src="../../../images/client/main/main_slide3_txt_cn.png" alt="main_slider03_cn">
+								<img src="../../../images/client/main/main_slide3_txt_vn.png" alt="main_slider03_vn">
+								-->
+						</a>
+					</li>
+					<li class="swiper-slide slide4">
+						<a href="javascript:void(0)">
+							<img src="../../../images/client/main/main_slide4_txt.png" alt="메인슬라이더 배너 4 한국어">
+							<!-- [pp] 국가별 배너 이미지 : 
+								<img src="../../../images/client/main/main_slide4_txt.png" alt="메인슬라이더 배너 4 한국어">
+								<img src="../../../images/client/main/main_slide4_txt_en.png" alt="main_slider04_en">
+								<img src="../../../images/client/main/main_slide4_txt_cn.png" alt="main_slider04_cn">
+								<img src="../../../images/client/main/main_slide4_txt_vn.png" alt="main_slider04_vn">
+								-->
+						</a>
+					</li>
+					<li class="swiper-slide slide5">
+						<a href="javascript:void(0)">
+							<img src="../../../images/client/main/main_slide5_txt.png" alt="메인슬라이더 배너 5 한국어">
+							<!-- [pp] 국가별 배너 이미지 : 
+								<img src="../../../images/client/main/main_slide5_txt.png" alt="메인슬라이더 배너 5 한국어">
+								<img src="../../../images/client/main/main_slide5_txt_en.png" alt="main_slider05_en">
+								<img src="../../../images/client/main/main_slide5_txt_cn.png" alt="main_slider05_cn">
+								<img src="../../../images/client/main/main_slide5_txt_vn.png" alt="main_slider05_vn">
+								-->
+						</a>
+					</li>
+					<li class="swiper-slide slide6">
+						<a href="javascript:void(0)">
+							<img src="../../../images/client/main/main_slide6_txt.png" alt="메인슬라이더 배너 6 한국어">
+							<!-- [pp] 국가별 배너 이미지 : 
+								<img src="../../../images/client/main/main_slide6_txt.png" alt="메인슬라이더 배너 6 한국어">
+								<img src="../../../images/client/main/main_slide6_txt_en.png" alt="main_slider06_en">
+								<img src="../../../images/client/main/main_slide6_txt_cn.png" alt="main_slider06_cn">
+								<img src="../../../images/client/main/main_slide6_txt_vn.png" alt="main_slider06_vn">
+								-->
+						</a>
+					</li>
+				</ul>
+				<!-- [pp]pagination  -->
+				<div class="mainslide_control_wrap">
+					<div class="play_control">
+						<button type="button" class="slide_start on">시작</button>
+						<button type="button" class="slide_stop">정지</button>
+					</div>
+					<div class="swiper-pagination"></div>
+					<!--<div class="swiper-pagination2"></div>-->
+					<div class="navi_control">
+						<button type="button" class="mainslide_arrow swiper-button-prev">PREV</button>
+						<button type="button" class="mainslide_arrow swiper-button-next">NEXT</button>
+					</div>
+				</div>
+			</figure>
+			<!-- [pp] //메인 슬라이드 -->
+			<div class="grid_content">
+				<!-- [pp] 추천 대학 -->
+				<section class="main_section main_unirecommend">
+					<div class="maintit_area">
+						<h3 class="main_tit"><strong class="dodream">DoDream</strong>추천 대학</h3>
+						<a href="javascript:void(0);" class="main_more">more</a>
+					</div>
+					<div class="slide_wrapper">
+						<!-- [pp] 슬라이드 영역 -->
+						<div class="swiper-container">
+							<!-- [pp] 로딩박스 : 
+								<div class="boxloading">
+									<img src="../../../images/pageloading.gif" alt="로딩중입니다.">
+								</div>
+								-->
+							<ul class="swiper-wrapper">
+								<!-- [pp] 최대 슬라이드 갯수(li) : 9개 -->
+								<li class="swiper-slide">
+									<a href="javascript:void(0);">
+										<span class="newlist_label">NEW</span>
+										<div class="img_box">
+											<img src="../../../images/client/main/img_universitylogo1.jpg"
+												alt="경희대학교 대표이미지">
+										</div>
+										<p>경희대학교</p>
+									</a>
+								</li>
+								<li class="swiper-slide">
+									<a href="javascript:void(0);">
+										<div class="img_box">
+											<img src="../../../images/client/main/img_university2.jpg"
+												alt="동국대학교 대표이미지">
+										</div>
+										<p>동국대학교</p>
+									</a>
+								</li>
+								<li class="swiper-slide">
+									<a href="javascript:void(0);">
+										<div class="img_box">
+											<img src="../../../images/client/main/img_university3.jpg"
+												alt="한양대학교 대표이미지">
+										</div>
+										<p>한양대학교</p>
+									</a>
+								</li>
+								<li class="swiper-slide">
+									<a href="javascript:void(0);">
+										<div class="img_box">
+											<img src="../../../images/client/main/img_university1.jpg"
+												alt="경희대학교 대표이미지">
+										</div>
+										<p>경희대학교</p>
+									</a>
+								</li>
+								<li class="swiper-slide">
+									<a href="javascript:void(0);">
+										<div class="img_box">
+											<img src="../../../images/client/main/img_university1.jpg"
+												alt="경희대학교 대표이미지">
+										</div>
+										<p>경희대학교</p>
+									</a>
+								</li>
+								<li class="swiper-slide">
+									<a href="javascript:void(0);">
+										<div class="img_box">
+											<img src="../../../images/client/main/img_university1.jpg"
+												alt="경희대학교 대표이미지">
+										</div>
+										<p>경희대학교</p>
+									</a>
+								</li>
+								<li class="swiper-slide">
+									<a href="javascript:void(0);">
+										<div class="img_box">
+											<img src="../../../images/client/main/img_university2.jpg"
+												alt="동국대학교 대표이미지">
+										</div>
+										<p>동국대학교</p>
+									</a>
+								</li>
+								<li class="swiper-slide">
+									<a href="javascript:void(0);">
+										<div class="img_box">
+											<img src="../../../images/client/main/img_university2.jpg"
+												alt="동국대학교 대표이미지">
+										</div>
+										<p>동국대학교</p>
+									</a>
+								</li>
+								<li class="swiper-slide">
+									<a href="javascript:void(0);">
+										<div class="img_box">
+											<img src="../../../images/client/main/img_university2.jpg"
+												alt="동국대학교 대표이미지">
+										</div>
+										<p>동국대학교</p>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<!-- [pp] //슬라이드 영역 -->
+						<!-- [pp] pagination -->
+						<div class="swiper-pagination"></div>
+						<!-- [pp] //pagination -->
+					</div>
+				</section>
+				<!-- [pp] //추천 대학 -->
+				<!-- [pp] 지역별 대학 -->
+				<section class="main_section main_uniarea">
+					<div class="maintit_area">
+						<h3 class="main_tit">지역별 대학</h3>
+						<a href="javascript:void(0);" class="main_more">more</a>
+					</div>
+					<div class="mapsel_wrap">
+						<div class="mapsel_cnt">
+							<img src="../../../images/client/main/img_map_seoul.png" alt="서울" class="map_sel img_seoul">
+							<img src="../../../images/client/main/img_map_kyungki.png" alt="경기/인천"
+								class="map_sel img_kyungki">
+							<img src="../../../images/client/main/img_map_kangwon.png" alt="강원"
+								class="map_sel img_kangwon">
+							<img src="../../../images/client/main/img_map_busan.png" alt="부산/대구/울산/경상"
+								class="map_sel img_busan">
+							<img src="../../../images/client/main/img_map_gwangju.png" alt="광주/전라"
+								class="map_sel img_gwangju">
+							<img src="../../../images/client/main/img_map_daejeon.png" alt="대전/충청"
+								class="map_sel img_daejeon">
+							<img src="../../../images/client/main/img_map_jeju.png" alt="제주" class="map_sel img_jeju">
+						</div>
+						<div class="mapsel_cnt2">
+							<ul class="mapsel_list radiobtn_wrap">
+								<li class="radio_tab">
+									<input type="radio" name="location" id="seoul" data-img="img_seoul" class="hidden"
+										checked>
+									<label for="seoul">서울</label>
+								</li>
+								<li class="radio_tab">
+									<input type="radio" name="location" id="kyungki" data-img="img_kyungki"
+										class="hidden">
+									<label for="kyungki">경기/인천</label>
+								</li>
+								<li class="radio_tab">
+									<input type="radio" name="location" id="kangwon" data-img="img_kangwon"
+										class="hidden">
+									<label for="kangwon">강원</label>
+								</li>
+								<li class="radio_tab">
+									<input type="radio" name="location" id="daejeon" data-img="img_daejeon"
+										class="hidden">
+									<label for="daejeon">대전/충청</label>
+								</li>
+								<li class="radio_tab">
+									<input type="radio" name="location" id="busan" data-img="img_busan" class="hidden">
+									<label for="busan">부산/대구/울산/경상</label>
+								</li>
+								<li class="radio_tab">
+									<input type="radio" name="location" id="gwangju" data-img="img_gwangju"
+										class="hidden">
+									<label for="gwangju">광주/전라</label>
+								</li>
+								<li class="radio_tab">
+									<input type="radio" name="location" id="jeju" data-img="img_jeju" class="hidden">
+									<label for="jeju">제주</label>
+								</li>
+							</ul>
+							<div class="unislide_wrap">
+								<div class="uni_list">
+									<!-- [pp] 슬라이드 영역 -->
+									<div class="swiper-container">
+										<!-- [pp] 로딩박스 : 
+											<div class="boxloading">
+												<img src="../../../images/pageloading.gif" alt="로딩중입니다.">
+											</div>
+											-->
+										<ul class="swiper-wrapper">
+											<!-- [pp] 최대 슬라이드 갯수(li) : 8개 -->
+											<li class="swiper-slide">
+												<a href="javascript:void(0);">
+													<p class="uniemblem_card">
+														<span>
+															<img src="../../../images/client/sub/img_noemblem.png"
+																alt="엠블럼 예시">
+															<span>서울대학교</span>
+														</span>
+													</p>
+												</a>
+											</li>
+											<li class="swiper-slide">
+												<a href="javascript:void(0);">
+													<p class="uniemblem_card">
+														<span>
+															<img src="../../../images/client/sub/img_noemblem.png"
+																alt="대학 엠블럼">
+															<span>서울대학교</span>
+														</span>
+													</p>
+												</a>
+											</li>
+											<li class="swiper-slide">
+												<a href="javascript:void(0);">
+													<p class="uniemblem_card">
+														<span>
+															<img src="../../../images/client/sub/img_noemblem.png"
+																alt="대학 엠블럼">
+															<span>서울대학교</span>
+														</span>
+													</p>
+												</a>
+											</li>
+											<li class="swiper-slide">
+												<a href="javascript:void(0);">
+													<p class="uniemblem_card">
+														<span>
+															<img src="../../../images/client/sub/seoul_emblem.png"
+																alt="대학 엠블럼">
+															<span>서울대학교</span>
+														</span>
+													</p>
+												</a>
+											</li>
+											<li class="swiper-slide">
+												<a href="javascript:void(0);">
+													<p class="uniemblem_card">
+														<span>
+															<img src="../../../images/client/sub/seoul_emblem.png"
+																alt="대학 엠블럼">
+															<span>서울대학교</span>
+														</span>
+													</p>
+												</a>
+											</li>
+											<li class="swiper-slide">
+												<a href="javascript:void(0);">
+													<p class="uniemblem_card">
+														<span>
+															<img src="../../../images/client/sub/seoul_emblem.png"
+																alt="대학 엠블럼">
+															<span>서울대학교</span>
+														</span>
+													</p>
+												</a>
+											</li>
+											<li class="swiper-slide">
+												<a href="javascript:void(0);">
+													<p class="uniemblem_card">
+														<span>
+															<img src="../../../images/client/sub/seoul_emblem.png"
+																alt="대학 엠블럼">
+															<span>서울대학교</span>
+														</span>
+													</p>
+												</a>
+											</li>
+											<li class="swiper-slide">
+												<a href="javascript:void(0);">
+													<p class="uniemblem_card">
+														<span>
+															<img src="../../../images/client/sub/seoul_emblem.png"
+																alt="대학 엠블럼">
+															<span>서울대학교</span>
+														</span>
+													</p>
+												</a>
+											</li>
+											<li class="swiper-slide">
+												<a href="javascript:void(0);">
+													<p class="uniemblem_card">
+														<span>
+															<img src="../../../images/client/sub/seoul_emblem.png"
+																alt="대학 엠블럼">
+															<span>서울대학교</span>
+														</span>
+													</p>
+												</a>
+											</li>
+											<li class="swiper-slide">
+												<a href="javascript:void(0);">
+													<p class="uniemblem_card">
+														<span>
+															<img src="../../../images/client/sub/seoul_emblem.png"
+																alt="대학 엠블럼">
+															<span>서울대학교</span>
+														</span>
+													</p>
+												</a>
+											</li>
+											<li class="swiper-slide">
+												<a href="javascript:void(0);">
+													<p class="uniemblem_card">
+														<span>
+															<img src="../../../images/client/sub/seoul_emblem.png"
+																alt="대학 엠블럼">
+															<span>서울대학교</span>
+														</span>
+													</p>
+												</a>
+											</li>
+											<li class="swiper-slide">
+												<a href="javascript:void(0);">
+													<p class="uniemblem_card">
+														<span>
+															<img src="../../../images/client/sub/seoul_emblem.png"
+																alt="대학 엠블럼">
+															<span>서울대학교</span>
+														</span>
+													</p>
+												</a>
+											</li>
+										</ul>
+										<!-- [pp] pagination -->
+										<div class="swiper-pagination"></div>
+										<!-- [pp] //pagination -->
+									</div>
+									<!-- [pp] //슬라이드 영역 -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- [pp] //지역별 대학 -->
+				<!-- [pp] 유학후기, 유학정보 -->
+				<section class="main_section studyreview_card">
+					<div class="maintit_area">
+						<h3 class="main_tit">유학 후기</h3>
+						<a href="javascript:void(0);" class="main_more">more</a>
+					</div>
+					<div class="studyabroad_review swiper-container">
+						<ul class="swiper-wrapper">
+							<li class="swiper-slide">
+								<a href="javascript:void(0);">
+									<div class="img_box">
+										<span class="newlist_label">NEW</span>
+										<img src="../../../images/client/sub/img_review_noimg.png" alt="이미지 없을때 예시">
+									</div>
+									<div class="review_cnt">
+										<p class="count_area">
+											<span class="view_count">40</span>
+											<span class="like_count">486</span>
+											<span class="comment_count">1</span>
+										</p>
+										<strong class="name">Username</strong>
+										<p class="tit">유학정보 다모여있는 두드림 최고</p>
+										<ul class="hashtag_list">
+											<li>&#35;동국대라이프</li>
+											<li>&#35;유학의꿈</li>
+											<li>&#35;기숙사</li>
+											<li>&#35;동국대라이프</li>
+											<li>&#35;유학의꿈</li>
+											<li>&#35;기숙사</li>
+										</ul>
+									</div>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="javascript:void(0);">
+									<div class="img_box">
+										<img src="../../../images/client/sub/img_review_ex1.png" alt="이미지 예시">
+									</div>
+									<div class="review_cnt">
+										<p class="count_area">
+											<span class="view_count">11,781</span>
+											<span class="like_count">486</span>
+											<span class="comment_count">1</span>
+										</p>
+										<strong class="name">Username</strong>
+										<p class="tit">유학정보 다모여있는 두드림 최고</p>
+										<ul class="hashtag_list">
+											<li>&#35;동국대라이프</li>
+											<li>&#35;유학의꿈</li>
+											<li>&#35;기숙사</li>
+										</ul>
+									</div>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="javascript:void(0);">
+									<div class="img_box">
+										<img src="../../../images/client/sub/img_review_ex2.png" alt="이미지 예시">
+									</div>
+									<div class="review_cnt">
+										<p class="count_area">
+											<span class="view_count">11,781</span>
+											<span class="like_count">486</span>
+											<span class="comment_count">1</span>
+										</p>
+										<strong class="name">Username</strong>
+										<p class="tit">유학정보 다모여있는 두드림 최고</p>
+										<ul class="hashtag_list">
+											<li>&#35;동국대라이프</li>
+											<li>&#35;유학의꿈</li>
+											<li>&#35;기숙사</li>
+										</ul>
+									</div>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="javascript:void(0);">
+									<div class="img_box">
+										<img src="../../../images/client/sub/img_review_ex3.png" alt="이미지 예시">
+									</div>
+									<div class="review_cnt">
+										<p class="count_area">
+											<span class="view_count">11,781</span>
+											<span class="like_count">486</span>
+											<span class="comment_count">1</span>
+										</p>
+										<strong class="name">Username</strong>
+										<p class="tit">유학정보 다모여있는 두드림 최고</p>
+										<ul class="hashtag_list">
+											<li>&#35;동국대라이프</li>
+											<li>&#35;유학의꿈</li>
+											<li>&#35;기숙사</li>
+										</ul>
+									</div>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="javascript:void(0);">
+									<div class="img_box">
+										<img src="../../../images/client/sub/img_review_noimg.png" alt="이미지 예시">
+									</div>
+									<div class="review_cnt">
+										<p class="count_area">
+											<span class="view_count">11,781</span>
+											<span class="like_count">486</span>
+											<span class="comment_count">1</span>
+										</p>
+										<strong class="name">Username</strong>
+										<p class="tit">유학정보 다모여있는 두드림 최고</p>
+										<ul class="hashtag_list">
+											<li>&#35;동국대라이프</li>
+											<li>&#35;유학의꿈</li>
+											<li>&#35;기숙사</li>
+										</ul>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!-- [pp] pagination -->
+					<div class="swiper-pagination"></div>
+					<!-- [pp] //pagination -->
+				</section>
+				<!-- [pp] //유학후기, 유학정보 -->
+				<!-- [pp] 드림포인트 배너-->
+				<div class="main_section">
+					<a href="javascript:void(0);" class="banner_dreampoint">
+						<div>
+							<p>한국 유학 정보 공유하면 <strong>드림포인트</strong> 적립!</p>
+							드림포인트 혜택 한눈에 보기
+
+							<!-- [pp] 한국어 : 
+							<p>한국 유학 정보 공유하면 <strong>드림포인트</strong> 적립!</p>
+							드림포인트 혜택 한눈에 보기
+							-->
+
+							<!-- [pp] 영어 : 
+							<p>If you share your study abroad information in Korea,<br/> you can earn <strong>Dream Point</strong>!</p>
+							Dream Point Benefits
+							-->
+
+							<!-- [pp] 중국어 : 
+							<p>分享韩国留学信息，可以累积<strong>Dream Point</strong>！</p>
+							Dream Point优惠
+							-->
+
+							<!-- [pp] 베트남어 : 
+							<p>Kiếm <strong>Dream Point</strong> bằng cách <br/>chia sẻ thông tin về du học Hàn Quốc</p>
+							Những lợi ích của Dream Point
+							-->
+						</div>
+					</a>
+				</div>
+				<!-- [pp] //드림포인트 배너-->
+				<!-- [pp] 공지사항, 이벤트 -->
+				<section class="main_section main_info">
+					<div class="grid_row">
+						<!-- [pp] 공지사항 -->
+						<div class="grid_col col_xl_6 col_md_6">
+							<div class="maintit_area">
+								<h3 class="main_tit">공지사항</h3>
+								<a href="javascript:void(0);" class="main_more">more</a>
+							</div>
+							<ul class="main_notice">
+								<li>
+									<a href="javascript:void(0);">
+										<div class="date_txt">
+											<strong>22.05</strong>
+											02
+										</div>
+										<p>DRP - DRM 리워드 지급 기준</p>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">
+										<div class="date_txt">
+											<strong>22.05</strong>
+											22
+										</div>
+										<p>두드림 서포터즈 드림메이커 4기 발대식 개최</p>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">
+										<div class="date_txt">
+											<strong>22.05</strong>
+											02
+										</div>
+										<p>두드림 서포터즈 드림메이커 4기 발대식 개최</p>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<!-- [pp] //공지사항 -->
+						<!-- [pp] 이벤트 -->
+						<div class=" grid_col col_xl_6 col_md_6">
+							<div class="maintit_area">
+								<h3 class="main_tit">이벤트</h3>
+								<a href="javascript:void(0);" class="main_more">more</a>
+							</div>
+							<a href="javascript:void(0);" class="main_event">
+								<div class="img_box">
+									<img src="../../../images/client/sub/img_event_ex1.png" alt="이벤트 예제 이미지">
+								</div>
+								<div class="event_cnt">
+									<div class="tit">
+										<strong>상시</strong>
+										무료 유학상담 이벤트
+									</div>
+									<p>
+										*이벤트 신청 및 문의사항은 고객센터 혹은 문의하기를 이용해주세요. 두줄까지 처리합니다. 넘으면 말줄임표시 해주세요.
+									</p>
+									<span class="date">2022-05-25 ~</span>
+								</div>
+							</a>
+						</div>
+						<!-- [pp] //이벤트 -->
+					</div>
+				</section>
+				<!-- [pp] //공지사항, 이벤트 -->
+			</div>
+		</div>
+		<!-- [pp] //container -->
+	</div>
+	<!-- [pp] //푸터를 제외한 전체페이지 -->
+	<!-- [pp] footer -->
+	<footer class="footer_wrap">
+		<div class="grid_content">
+			<div class="footer_top">
+				<ul class="footer_infolink cf">
+					<li><a href="javascript:void(0);">개인정보취급방침</a></li>
+					<li><a href="javascript:void(0);">이용약관</a></li>
+					<li><a href="javascript:void(0);">FAQ</a></li>
+					<li><a href="javascript:void(0);">&#40;주&#41;다인리더스</a></li>
+				</ul>
+			</div>
+			<div class="footer_bottom">
+				<div>
+					<strong>&#40;주&#41;다인리더스</strong>
+					<ul>
+						<li>(한국본사) 서울시 성동구 성수일로8길 5, 서울숲 SK V1 TOWER A동 2006호</li>
+						<li>(베트남법인) 베트남 하노이시 탄수언군 주이떤12, 젠타워 1107호</li>
+					</ul>
+				</div>
+				<ul>
+					<li>대표자명 : 임무호</li>
+					<li>사업자등록번호 : 105-87-32905</li>
+					<li>고객센터 : <a href="tel:+82 02-514-3060">+82 02-514-3060</a></li>
+					<li>운영시간 : 09:00 ~ 18:00</li>
+					<li>이메일 : <a href="mailto:support@dodream.io">support@dodream.io</a></li>
+				</ul>
+				<ul class="footer_sns">
+					<li><a href="javascript:void(0);" class="sns_telegram">텔레그램</a></li>
+					<li><a href="javascript:void(0);" class="sns_telegram">텔레그램</a></li>
+					<li><a href="javascript:void(0);" class="sns_campusworld">캠퍼스월드</a></li>
+					<li><a href="javascript:void(0);" class="sns_facebook">페이스북</a></li>
+					<li><a href="javascript:void(0);" class="sns_insta">인스타</a></li>
+					<li><a href="javascript:void(0);" class="sns_twitter">트위터</a></li>
+					<li><a href="javascript:void(0);" class="sns_youtube">유튜브</a></li>
+					<li><a href="javascript:void(0);" class="sns_eroom">이룸라이브</a></li>
+				</ul>
+				<p class="copyright">&copy; DAIN LEADERS ALL RIGHTS RESERVED</p>
+			</div>
+		</div>
+	</footer>
+	<!-- [pp] //footer -->
+</body>
+
+</html>

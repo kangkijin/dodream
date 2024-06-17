@@ -1,0 +1,44 @@
+{
+	"header": {
+		"txt1": "Thông tin du học",
+		"txt2": "Kết nối du học",
+		"txt3": "Bài tập theo kỹ năng",
+		"txt4": "Thi thử",
+		"txt5": "Cảm nghĩ du học"
+	},
+	"footer": {
+		"txt1": "Dain Leaders"
+		,"txt2": "Hướng dẫn sử dụng dịch vụ"
+		,"txt3": "Điều khoản sử dụng"
+		,"txt4": "Chính sách xử lý thông tin cá nhân"
+		,"txt5": "Từ chối việc thu thập địa chỉ email khi không được cho phép"
+		,"txt6": "Trung tâm hỗ trợ khách hàng Nền tảng kết nối du học DoDream"
+		,"txt7": "Tiếng Hàn : 070-7729-7328"
+		,"txt8": "Tiếng Việt : 070-7729-8023"
+		,"txt9": "Dainleaders.Co.,Ltd"
+		,"txt10": "Trụ sở Hàn Quốc: 2006, 5 Seongsuil-ro 8-gil, Seongdong-gu, Seoul, Republic of Korea"
+		,"txt11": "Văn phòng Việt Nam : Tầng 11 - Phòng 1107, Tòa nhà Zen Tower, 12 Khuất Duy Tiến, quận Thanh Xuân, Tp. Hà Nội, Việt Nam"
+		,"txt12": "Hướng dẫn điểm tích"
+		,"txt13": "Trung tâm hỗ trợ khách hàng : (+82)1800-6337"
+	},
+	"magazine": {
+		"txt1": "Xu hướng nổi tiếng"
+		, "txt2": "Xu hướng tuần này"
+		, "txt3": "Nổi tiếng VS Trend"
+		, "commonTxt1": "số lượt truy cập"
+		, "commonTxt2": "Số bình luận"
+		, "commonTxt3": "Chia sẻ"
+		, "commonTxt4": "Twitter"
+		, "commonTxt5": "Facebook"
+		, "commonTxt6": "Sao chép địa chỉ liên kết"
+		, "commonTxt7": "Đăng kí"
+		, "commonTxt8": "Thích"
+		, "btnTxt": "Tìm kiếm"
+		, "searchTxt1" : "Gắn thẻ"
+		, "searchTxt2" : "Tiêu đề + Nội dung"
+		, "orderTxt1": "Bài đăng mới nhất"
+		, "orderTxt2": "theo thứ tự nhiều người xem"
+		, "orderTxt3": "Bài đăng nổi bật nhất"
+		, "noSearchTxt1" : "Không có kết quả tìm kiếm."
+	}
+}

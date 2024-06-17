@@ -1,0 +1,13 @@
+/* Create By Sinjiny 2012.11.22 */
+* { margin: 0; padding: 0; font-size: 12px; font-family: "Dotum","돋움"; }
+img { vertical-align: top; border: none; }
+h1, h2 ,h3, h4, h5, h6 { font-size: 100%; }
+ul, ol { list-style: none; }
+q:after,
+q:before { content: ""; content: none; }
+fieldset { border: none; }
+fieldset legend { width: 0; height: 0; text-indent: -10000px; }
+caption { visibility:hidden; overflow:hidden; width:0; height:0; font-size:0; line-height:0; }
+/*a { outline:none; select-dummy: expression(this.hideFocus=true); }*/
+table { border-collapse: collapse; }
+address { font-style: normal; }

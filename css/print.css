@@ -1,0 +1,141 @@
+* { margin: 0; padding: 0; font-family: "Dotum","돋움"; vertical-align: baseline; }
+h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: normal; }
+img { border: 0; }
+ul, ol { list-style: none; }
+table { border-collapse: collapse; }
+em { font-style: normal; }
+input[type="checkbox"],
+input[type="radio"] { width: 13px; height: 13px; }
+body { font-size: 12px; text-align: center; }
+
+.print_page { margin: 0 auto; width: 595px; text-align: left; overflow: hidden;  page-break-after: always; clear: both; }
+.print_page h1,
+.print_page .seal { margin: 50px 0 25px; font-size: 30px;  font-weight: bold; text-align: center; line-height: 130%; position: relative; }
+.print_page .seal { letter-spacing: 0.5em; }
+.print_page .seal span { font-size: 12px; position: absolute; top: 10px; right: 0; }
+
+.next { page-break-after: always; }
+
+.latter { letter-spacing: -0.5px; }
+
+/* 테이블 */
+.table_form { overflow: hidden; clear: both; }
+.table_form table { width: 100%; table-layout: fixed; clear: both; }
+.table_form table tr th,
+.table_form table tr td { border: 1px solid #000; line-height: 140%; vertical-align: middle; }
+
+.table_form table tr th { padding: 8px 5px; font-weight: bold; text-align: center; height: 30px; background: #ECEBEB; }
+.table_form table tr td { padding: 5px; height: 30px; }
+.table_form table tr .bg { background: #ECEBEB !important; }
+.table_form table tr th.bg_none { background: none; }
+.table_form table tr th.f_size_30 { padding:20px 0; }
+.table_form table tr td.va_top { vertical-align:top; }
+
+.table_form table tr td p span.span_width_130 { display: inline-block; min-width:130px; }
+.table_form table tr td p span.span_width_140 { display: inline-block; min-width:140px; }
+
+/* 테이블 */
+.table_form2 { overflow: hidden; clear: both; }
+.table_form2 table { width: 100%; table-layout: fixed; clear: both; }
+.table_form2 table tr th,
+.table_form2 table tr td { border: 1px solid #000; line-height: 100%; vertical-align: middle; }
+
+.table_form2 table tr th { padding: 8px 5px; font-weight: normal; text-align: center; height: 10px; background: #E8DAB3; }
+.table_form2 table tr td { padding: 5px; height: 10px; }
+.table_form2 table tr .bg { background: #ECEBEB !important; }
+.table_form2 table tr th.bg_none { background: none; }
+.table_form2 table tr th.f_size_30 { padding:20px 0; }
+.table_form2 table tr td.va_top { vertical-align:top; }
+
+.table_form table tr td p span.span_width_130 { display: inline-block; min-width:130px; }
+.table_form table tr td p span.span_width_140 { display: inline-block; min-width:140px; }
+
+/* 귀중, 귀하 */
+.date { font-size: 14px; margin:20px 0; } /* 하단 날짜 */
+.sign { font-size: 14px; } /* 하단 서명 */
+.app_nam { display: inline-block; margin-right:5px; min-width:100px; } /* 신청자 이름쓰는 란 */
+.big_txt { font-size: 20px; font-weight: bold; text-align:center; } /* 하단부분 큰 글자 */
+.blank { display: inline-block; min-width:30px; text-align:center; } /* 입력 공백 */
+.blank_01 { display: inline-block; min-width:60px; text-align:center; }
+.blank_02 { display: inline-block; min-width:80px; text-align:center; }
+.blank_03 { display: inline-block; min-width:150px; text-align:center; }
+.blank_date { display: inline-block; min-width:15px; text-align:left; } 
+
+
+/* 들여쓰기 */
+.txt_indent { text-indent: 10px; }
+
+
+/* 공통 */
+.print_page .height_100 { min-height: 100px; }
+.print_page .height_200 { min-height: 200px; }
+.print_page .height_250 { min-height: 250px; }
+.print_page .height_300 { min-height: 300px; }
+.print_page .height_400 { min-height: 400px; }
+.print_page .height_450 { min-height: 450px; }
+.print_page .height_500 { min-height: 500px; }
+.print_page .height_850 { min-height: 850px; }
+
+
+.mt_10 { margin-top:10px; }
+.mt_20 { margin-top:20px; }
+.mt_30 { margin-top:30px; }
+.mt_50 { margin-top:50px; }
+
+.mb_10 { margin-bottom:10px; }
+.mb_20 { margin-bottom:20px; }
+.mb_30 { margin-bottom:30px; }
+
+.ml_10 { margin-left:10px; }
+.mr_100 { margin-right:100px; }
+
+.f_size_11 { font-size:11px; }
+.f_size_16 { font-size:16px; }
+.f_size_18 { font-size:18px; }
+.f_size_30 { font-size:30px; }
+
+.center { text-align: center; }
+.right { text-align: right; }
+.left { text-align: left; }
+
+.border_b { border-bottom:1px solid #000; }
+
+
+/* 타이틀 박스 */
+.tit_box { padding: 10px 0; border: 1px solid #000; }
+
+/* 리스트 */
+.list_type01 { overflow: hidden; }
+.list_type01 li { float: left; }
+.list_type02 li { margin-left: 18px; }
+.list_type02 li .head { margin: 0 3px 0 -18px; }
+
+
+/* 이수 증명서 */
+.page_01 h1 { margin: 70px auto 50px; }
+.page_01 .txt_box { font-size: 18px; line-height: 180%; }
+
+
+/* 이력서 */
+.page_02 h1 { margin-top: 20px; }
+.page_02 .tbl_head { padding: 0 0 5px; font-weight: bold; }
+.page_02 .table_form { padding-bottom: 10px; /*border-bottom: 2px solid #000; */}
+.page_02 .table_form table tr th,
+.page_02 .table_form table tr td { height: 20px; }
+.page_02 .profile { overflow: hidden; }
+.page_02 .profile .photo_box { width: 25%; height: 153px; border: 1px solid #000; float: left; }
+.page_02 .profile .profile_txt { width: 74%; height: 184px; float: right; }
+
+
+/* 자기소개서 */
+.page_03 h1 { margin: 10px 0 30px; }
+.page_03 h2 { padding: 10px 0 8px; font-weight: bold; border-top: 2px solid #000; background: #e9e9e9; border-bottom: 2px solid #000; }
+.page_03 .txt_cont { margin-top: 10px; padding-bottom: 20px; min-height: 150px; line-height: 160% }
+.page_03 .bot_line { border-bottom: 2px solid #000; }
+
+
+.pos_re { display: inline-block; padding-right: 45px; min-height: 60px; position: relative; }
+.pos_ab { position: absolute; top: -20px; right: 0; }
+.pos_ab img { width: 60px; height: auto; }
+
+.btn_blue { display: inline-block; margin-right: 2px; padding-left: 2px; height: 26px; background: url("../images/btn/btn_blue.gif") no-repeat left  top; }

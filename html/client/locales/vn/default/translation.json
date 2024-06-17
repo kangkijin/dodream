@@ -1,0 +1,51 @@
+{
+	"header": {
+		"txt1": "Thông tin du học",
+		"txt2": "Kết nối du học",
+		"txt3": "Bài tập theo kỹ năng",
+		"txt4": "Thi thử",
+		"txt5": "Cảm nghĩ du học"
+	},
+	"footer": {
+		"txt1": "Dain Leaders"
+		,"txt2": "Hướng dẫn sử dụng dịch vụ"
+		,"txt3": "Điều khoản sử dụng"
+		,"txt4": "Chính sách xử lý thông tin cá nhân"
+		,"txt5": "Từ chối việc thu thập địa chỉ email khi không được cho phép"
+		,"txt6": "Trung tâm hỗ trợ khách hàng Nền tảng kết nối du học DoDream"
+		,"txt7": "Tiếng Hàn : 070-7729-7328"
+		,"txt8": "Tiếng Việt : 070-7729-8023"
+		,"txt9": "Dainleaders.Co.,Ltd"
+		,"txt10": "Trụ sở Hàn Quốc: 2006, 5 Seongsuil-ro 8-gil, Seongdong-gu, Seoul, Republic of Korea"
+		,"txt11": "Văn phòng Việt Nam : Tầng 11 - Phòng 1107, Tòa nhà Zen Tower, 12 Khuất Duy Tiến, quận Thanh Xuân, Tp. Hà Nội, Việt Nam"
+		,"txt12": "Hướng dẫn điểm tích"
+		,"txt13": "Trung tâm hỗ trợ khách hàng : (+82)1800-6337"
+	},
+	"dodreamMain": {
+		"txt1" : "Tất cả về các trường đại học Hàn Quốc"
+		, "txt2" : "Chuẩn bị du học an toàn và thuận tiện cùng DoDream."
+		, "txt3" : "Di chuyển đến"
+		, "txt4" : "Ôn luyện như tham gia kì thi thật"
+		, "txt5" : "Đề thi thử được các giáo sư hàng đầu trực tiếp đưa ra"
+		, "txt6" : "Bằng điểm tích của Dream"
+		, "txt7" : "Đừng bỏ lỡ những lợi ích bằng việc sử dụng điểm tích chỉ có trên DoDream!"
+		, "txt8" : "Danh sách trường gợi ý"
+		, "txt9" : "Đại học được chứng nhận"
+		, "txt10" : "Đại học hệ chuyên ngành"
+		, "txt11" : "Trường đại học theo khu vực"
+		, "txt12" : "Cảm nghĩ du học"
+		, "txt13" : "Thông tin du học"
+		, "txt14" : "Thông tin du học Hàn Quốc đơn giản và nhanh chóng"
+		, "txt15" : "&#35;Thủ tục du học"
+		, "txt16" : "&#35;Thông tin Visa"
+		, "txt17" : "&#35;Danh sách kiểm tra du học"
+		, "txt18" : "Thông báo"
+		, "city1" : "Seoul"
+		, "city2" : "KyeongGi/Incheon"
+		, "city3" : "Gangwon"
+		, "city4" : "Daejeon/Chungcheong"
+		, "city5" : "Busan/Daegu/Ulsan/KyeongSang"
+		, "city6" : "Kwangju/Jeolla"
+		, "city7" : "Jeju"
+	}
+}

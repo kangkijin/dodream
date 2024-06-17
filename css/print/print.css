@@ -1,0 +1,191 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+	font-family: "BareunBatangL";
+	font-weight: normal;
+	src: url("../../font/BareunBatangL.eot");
+	src: local(na), url("../../font/BareunBatangL.woff") format('woff');
+}
+@font-face {
+	font-family: "BareunBatangB";
+	font-weight: normal;
+	src: url("../../font/BareunBatangB.eot");
+	src: local(na), url("../../font/BareunBatangB.woff") format('woff');
+}
+
+@media print {
+	body[size="A4"] {
+		margin: 0;
+	}
+	.pp_print_box {
+		page-break-inside: avoid;
+	}
+}
+
+/* 초기화 */
+*{
+	margin: 0; padding: 0;
+    box-sizing: border-box;
+	font-family: 'BareunBatangL', '바탕', '바탕체', serif;
+}
+.pp_print_wrap{
+    width: 21cm; height: 29.7cm;
+    margin: 0 auto;
+	font-size: 18px;
+}
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 0;
+}
+table caption{
+    display: none;
+}
+table th, td{
+    text-align: center;
+	border: 1px solid #222222;
+}
+
+/* 비교과 이수 증명서 - 개별프로그램 */
+.pp_print_wrap{
+	border: 2px solid #222222;
+}
+.pp_print_tit{
+    padding: 0 20px;
+	position: relative;
+    background-image: url(../../images/client/print/print_logo.jpg);
+    background-repeat: no-repeat;
+    background-size: 120px;
+    background-position: 98% 10px;
+}
+.pp_print_tit p{
+    display: inline-block;
+	padding-top: 15px;
+}
+.pp_print_tit h1{
+	padding: 35px 0 15px 0;
+    text-align: center; font-size: 32px;
+}
+.pp_print_tit h1 span {
+	padding: 0 15px;
+}
+.pp_print_contents{
+    width: 100%;
+}
+
+table th,td{
+	padding: 20px 5px;
+}
+table th{
+    border-left: 0;
+}
+table td:last-child{
+    border-right: 0;
+}
+.pp_print_footer{
+    height: 400px;
+    text-align: center;
+    background-image: url(../../images/client/print/print_emblem.jpg);
+    background-size: 160px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.pp_print_txt{
+    margin-top: 40px;
+    font-size: 24px; font-weight: bold;
+}
+.pp_print_day{
+    margin-top: 370px;
+    font-size: 22px; font-weight: bold;
+}
+.pp_print_day span{
+    margin-right: 20px;
+}
+.pp_print_name{
+	margin-top: 50px;
+	position: relative;
+    font-size: 32px; font-weight: bold;
+    letter-spacing: 0.6em;
+    text-align: center;
+}
+.pp_print_name img {
+	position: absolute; top: -40px; right: 80px;
+	z-index: -1;
+}
+
+
+/* 비교과 이수 증명서 - 리스트 */
+.pp_printlist_wrap {
+	border: none;
+}
+.pp_list_profile {
+	margin-bottom: 30px;
+}
+.pp_list_profile table {
+	width: 100%;
+	margin-top: 20px;
+	font-size: 15px;
+	border-top: 2px solid #222;
+}
+.pp_list_profile table th,td {
+	padding: 10px;
+}
+
+.pp_print_list {
+	min-height: 620px;
+	padding-bottom: 180px;
+	background: url(../../images/client/print/print_emblem.jpg) center bottom no-repeat;
+	background-size: 160px;
+}
+.pp_print_list h2 {
+	margin-bottom: 5px;
+	font-size: 15px;
+}
+.pp_print_list h2 span {
+	display: inline-block;
+	width: 6px; height: 6px;
+	margin-right: 5px;
+	background-color: #8dc73f;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.pp_print_list div {
+	margin-bottom: 20px;
+}
+.pp_print_list table{
+	width: 100%;
+	font-size: 14px;
+	border: 1px solid #222;
+	border-top-width: 2px;
+}
+.pp_print_list table th,td {
+	padding: 8px 5px;
+}
+.pp_print_list table thead th {
+	background: #f1f1f1;
+}
+
+.pp_printlist_wrap .pp_print_footer{
+	height: auto;
+	background: none;
+}
+.pp_printlist_wrap .pp_print_txt {
+	margin-bottom: 30px;
+	font-size: 20px;
+}
+.pp_printlist_wrap .pp_print_day {
+	margin-top: 0;
+}
+
+.pp_printlist_wrap .ad_vlist_tbl td {
+	border-color: #ddd;
+}
+.pp_printlist_wrap .ad_list_table_wrap th {
+	border-color: #ddd;
+}
+.pp_printlist_wrap .ad_list_table_wrap td {
+	border-color: #ddd;
+}
+
+

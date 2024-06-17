@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi, shrink-to-fit=no">
+		<meta name="format-detection" content="telephone=no, address=no">
+		<meta name="title" content="DoDream">
+		<meta name="keywords" content="Block Chain, Study Abroad, platform, Korea, vietnam">
+		<meta name="description" content="유학플랫폼 두드림(DoDream)외국인 유학생을 위한 한국 유학 매칭 플랫폼">
+		<meta name="author" content="DainLeaders">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="DoDream">
+		<meta property="og:description" content="유학플랫폼 두드림(DoDream)외국인 유학생을 위한 한국 유학 매칭 플랫폼">
+		<meta property="og:image" content="../../../images/common/img_metacover.jpg">
+		<meta property="og:url" content="http://www.dodream.io">
+		<meta name="naver-site-verification" content="dd744254d55fa0f146a5daeaf1e02ae2dd86c1f9"/> 
+		<meta name="google-site-verification" content="mive32tDbnLeee8bzzUfCA31XmDNgL4Lgj4dQoxn8DM"/>
+		<title>DoDream</title>
+
+		<!-- [pp] 웹앱매니페스트 - chrome, opera -->
+		<link rel="manifest" href="../manifest.json">
+		<!-- [pp] //웹앱매니페스트 - chrome, opera -->
+
+		<!-- [pp] ios safari screen -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="white">
+		<meta name="apple-mobile-web-app-title" content="DoDream">
+		<!-- [pp] //ios safari screen -->
+
+		<!-- [pp] 파비콘 -->
+		<link rel="apple-touch-icon" sizes="64x64" href="../../../images/common/favicon.png">
+		<link rel="shortcut icon" type="image/x-icon" href="../../../images/common/favicon.ico">
+		<!-- [pp] //파비콘 -->
+
+		<!-- [pp] css -->
+		<link rel="stylesheet" href="../../../css/client/src/swiper.min.css">
+		<link rel="stylesheet" href="../../../css/client/src/jquery.mCustomScrollbar.css">
+		<link rel="stylesheet" href="../../../css/client/src/select2.css">
+		<link rel="stylesheet" href="../../../css/client/src/magnific-popup.css">
+		<link rel="stylesheet" href="../../../css/dl_global.css">
+		<link rel="stylesheet" href="../../../css/client/normalize.css">
+		<link rel="stylesheet" href="../../../css/client/grid.css">
+		<link rel="stylesheet" href="../../../css/client/table.css">
+		<link rel="stylesheet" href="../../../css/client/formstyle.css">
+		<link rel="stylesheet" href="../../../css/client/common.css">
+		<link rel="stylesheet" href="../../../css/client/ui.css">
+		<link rel="stylesheet" href="../../../css/client/popup.css">
+		<!-- [pp] //css -->
+
+		<!-- [pp] js -->
+		<script type="text/javascript" src="../../../js/client/src/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/swiper.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/jquery.mCustomScrollbar.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/select2.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/jquery.magnific-popup.js"></script>
+		<script type="text/javascript" src="../../../js/client/pp_common.js"></script>
+
+		<!-- [pp] 사용 금지 -->
+<!--		<script type="text/javascript" src="../../../js/client/src/jquery-1.12.3.min.js"></script>-->
+		<script type="text/javascript" src="../../../js/client/pp_include.js"></script>
+		<!-- [pp] //사용 금지 -->
+
+		<!-- [pp] //js -->
+
+		<!--[if lt IE 9]>
+		<script type="text/javascript" src="../../../js/client/src/jquery-1.12.3.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/html5shiv.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/IE9.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/respond.min.js"></script>
+		<![endif]-->
+
+	</head>
+	<body>
+		<!--[pp] ie 하위버젼 접속시 알림 -->
+		<!--[if lt IE 10]>
+		<div id="browser">
+		This site is supported Explorer 10 or higher, Chrome, Firefox, Opera, Safari.<br/>If you are using it now, Please <a href="https://browsehappy.com/?locale=en" target="_blank">upgrade your browser</a> to improve your experience and security.
+		<button type="button" class="pp_upgradeinfo_close">close</button>
+		</div>
+		<![endif]-->
+		<!--[pp] // ie 하위버젼 접속시 알림 -->
+
+		<!-- [pp] 로딩중 화면 -->
+		<div id="loading" style="display:none;">
+			<p id="loading_image">
+				<img src="../../../images/pageloading.gif" alt="Loading..."><br>
+				<span>Loading</span>
+			</p>
+		</div>
+		<!-- [pp] //로딩중 화면 -->
+
+		<!-- [pp] 푸터를 제외한 전체페이지 -->
+		<div class="page_wrap">
+			<!-- [pp] header -->
+			<div data-include="../include/header.html">header 영역</div>
+			<!-- [pp] //header -->
+			<!-- [pp] visual -->
+			<figure class="sub_visual visual1">
+				<div class="grid_content">
+					<div class="visual_txt">
+						<h2>Dream Guide</h2>
+						<p>입학지원서 작성 &#40;학위과정&#41;</p>
+					</div>
+					<nav class="page_navi">
+						<ul>
+							<li><a href="javascript:void(0);">Home</a></li>
+							<li><a href="javascript:void(0);">Dream Guide</a></li>
+							<li><a href="javascript:void(0);">유학 매칭</a></li>
+							<li><a href="javascript:void(0);">입학지원서 작성 &#40;학위과정&#41;</a></li>
+						</ul>
+					</nav>
+				</div>
+			</figure>
+			<!-- [pp] //visual -->
+			<!-- [pp] container -->
+			<div class="subpage_wrap grid_content">
+				<div class="tab_js">
+                    <ul class="tab_list tab_list_js wide5">
+                        <li><a href="#tab1" class="on">지원사항</a></li>
+                        <li><a href="#tab2">인적사항</a></li>
+                        <li><a href="#tab3">학력</a></li>
+                        <li><a href="#tab4">언어구사능력</a></li>
+                        <li><a href="#tab5">서류제출</a></li>
+                    </ul>
+                    <div class="grid_content tab_cnt_js">
+                        <div id="tab1">
+                            <section class="section_area">
+                                <div class="extrainfo_cnt left2">
+                                    <h3 class="section_tit_lg">사진 &#40;Photo&#41;</h3>
+                                    <div class="cf">
+                                        <div class="extrainfo_left left2">
+                                            <div class="img_box">
+                                                <!-- [pp] 증명사진 -->
+                                                <img src="../../../images/client/sub/img_profile.jpg" alt="증명사진">
+                                            </div>
+                                            <div class="btn_attachment">
+                                                <input type="file" class="hidden" id="attachment">	
+                                                <label for="attachment" class="btn_round btn_lg btn_default">등록&#40;Upload&#41;</label>
+                                            </div>
+                                        <!--[pp] 사진 업로드시 수정으로 버튼 변경 
+                                            <div title="사진 업로드시 수정으로 변경" class="ta_c">
+                                                <button class="btn btn_round btn_lg btn_default">수정</button>
+                                            </div>-->
+                                        </div>
+                                        <div>
+                                            <ul class="list_wrap2">
+                                                <li>
+                                                    <p class="font_gray mg_b10">1. 응시원서 접수 전 3개월 이내에 촬영된 탈모 상반신 사진이어야 합니다.<br/>&#40;A bust shot, which was photographed within the three months prior to the application&#41;</p>
+                                                </li>
+                                                <li>
+                                                    <p class="font_gray mg_b10">2. 사진 파일은 해상도 200dpi, 140X180 pixel이나 3.5X4.5cm의 jpg 또는 gif 규격 이어야 합니다.<br/>&#40;high resolution image 200dpi, 140 x 180 pixel or 3.5×4.5cm jpg or gif images&#41;</p>
+                                                </li>
+                                                <li>
+                                                    <p class="font_gray">3. 다른 이미지&#40;배경사진, 옆모습 등&#41;를 업로드하여 발생하는 불이익은 본인이 책임져야 합니다.<br/>&#40;You are responsible for any disadvantages caused by uploading other images &#40;background photo, profile, etc.&#41;&#41;</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="extrainfo_cnt2">
+                                    <div>                 
+                                        <ul class="list_wrap2">
+                                            <h3 class="section_tit_lg">대학/학과 &#40;College/Department&#41;</h3>
+                                            <li>
+                                                <h5 class="list_tit">지원 구분<span class="font_red mg_r5">&#42;</span><br>&#40;Type of Application&#41;</h5>
+                                                <div class="list_cnt">
+                                                    <p class="radio_row">
+                                                        <input type="radio" name="application" id="application1" class="hidden">
+                                                        <label for="application1">학사</label>
+                                                    </p>
+                                                    <p class="radio_row">
+                                                        <input type="radio" name="application" id="application2" class="hidden">
+                                                        <label for="application2">석사</label>
+                                                    </p>
+                                                    <p class="radio_row">
+                                                        <input type="radio" name="application" id="application3" class="hidden">
+                                                        <label for="application3">박사</label>
+                                                    </p>
+                                                    <p class="radio_row">
+                                                        <input type="radio" name="application" id="application4" class="hidden">
+                                                        <label for="application4">석/박사 통합</label>
+                                                    </p>
+                                                    <!-- [pp] 어학연수일 시 나올 항목-->
+                                                    <!--<p class="radio_row">
+                                                        <input type="radio" name="abroadstudy" id="abroadstudy" class="hidden" checked>
+                                                        <label for="abroadstudy">어학연수</label>
+                                                    </p>-->
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="list_wrap2">
+                                            <li>
+                                                <h5 class="list_tit">전형 구분<span class="font_red mg_r5">&#42;</span><br>&#40;Type of Admission&#41;</h5>
+                                                <div class="list_cnt">
+                                                    <p class="radio_row">
+                                                        <input type="radio" name="addmission" id="addmission1" class="hidden">
+                                                        <label for="addmission1">외국인특별입학전형 1</label>
+                                                    </p>
+                                                    <p class="radio_row">
+                                                        <input type="radio" name="addmission" id="addmission2" class="hidden">
+                                                        <label for="addmission2">외국인특별 입학전형 2</label>
+                                                    </p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="list_wrap2">
+                                            <li>
+                                                <h5 class="list_tit">지원 학과<span class="font_red mg_r5">&#42;</span><br>&#40;Proposed Division/Dept.&#41;</h5>
+                                                <div class="list_cnt">
+                                                    <div class="select_search ">
+                                                        <select placeholder="전공">
+                                                            <option value=""></option>
+                                                            <option value="">물리학</option>
+                                                            <option value="">화학</option>
+                                                            <option value="">Major1</option>
+                                                            <option value="">Major2</option>
+                                                            <option value="">THREE</option>
+                                                            <option value="">FOUR</option>
+                                                            <option value="">방송/미디어</option>
+                                                            <option value="">컴퓨터공학</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="list_wrap2">
+                                            <li>
+                                                <h5 class="list_tit">등록 유학원<span class="font_red mg_r5">&#42;</span><br />&#40;Registered agent&#41;</h5>
+                                                <div class="list_cnt">
+                                                    <div class="select_form dp_inline wd_180">
+                                                        <label for="agent1">Select</label>
+                                                        <select id="agent1">
+                                                            <option>Etc.</option>
+                                                            <option>???</option>
+                                                            <option>???</option>
+                                                            <option>???</option>
+                                                        </select>
+                                                    </div> 
+                                                    <input type="text" class="form_style wd_210 va_t">
+                                                    <p class="check_row">
+                                                        <input type="checkbox" name="not" id="not_1" class="hidden">
+                                                        <label for="not_1">NONE</label>
+                                                    </p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="extrainfo_cnt2">
+                                    <div>                 
+                                        <ul class="list_wrap2">
+                                            <h3 class="section_tit_lg">장학금 &#40;Scholarship&#41;</h3>
+                                            <li>
+                                                <h5 class="list_tit">장학금 희망 여부<span class="font_red mg_r5">&#42;</span><br>&#40;I want to apply for a scholar ship&#41;</h5>
+                                                <div class="list_cnt">
+                                                    <p class="radio_row">
+                                                        <input type="radio" name="question" id="question1" class="hidden">
+                                                        <label for="question1">YES</label>
+                                                    </p>
+                                                    <p class="radio_row">
+                                                        <input type="radio" name="question" id="question2" class="hidden">
+                                                        <label for="question2">NO</label>
+                                                    </p>
+                                                    <ul class="list_no font_red">
+                                                        <li>
+                                                            <span>&#42;</span>장학금 희망 여부는 평가 또는 합격자 결정과 무관하며, 교외 장학금 수령 사항이 있는 등의 이유로<br>
+                                                            교내 장학금을 희망하지 않는 경우 'NO' 를 골라 주시기 바랍니다.<br>&#40;Applying for a scholarship will not affect admission decision.<br> Applying for a scholarship does not guarantee the award of a scholarship. &#41;
+                                                        </li>
+                                                        <li>
+                                                            <span>&#42;</span>장학금은 합격발표 시 선정여부가 함께 통지됩니다.<br>
+                                                            &#40;Scholarship beneficiaries will be notified with the final admission result.&#41;
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="ta_c">
+                                <button type="button" class="btn_round btn_lg btn_default">저장</button>
+                            </div>
+                        </div>
+                        <div id="tab2">
+                           <section class="section_area">
+                                <div class="extrainfo_cnt2">
+                                    <div class="cf">
+                                        <div class="extrainfo_right">
+                                            <ul class="list_wrap3">
+                                               <h3 class="section_tit_lg">개인정보 &#40;Personal Information&#41;</h3>
+                                                <li>
+                                                    <h5 class="list_tit">영어 이름<span class="font_red mg_r5">&#42;</span><br>&#40;English Name&#41;</h5>
+                                                    <div class="list_cnt">
+                                                        <input class="form_style wd_p30" placeholder="성 &#40;Famliy/Last&#41;">
+                                                        <input class="form_style wd_p30" placeholder="명 &#40;First&#41;">
+                                                        <input class="form_style wd_p30" placeholder="Middle &#40;if any&#41;">
+                                                        <p class="font_red">※ The name must match exactly as it appears on your passport or other forms of ID.</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <h5 class="list_tit">한국 이름<br>&#40;if any&#41;</h5>
+                                                    <div class="list_cnt">
+                                                        <input class="form_style wd_300" placeholder="한국이름을 입력해주세요.">
+                                                        <p class="font_red">※ Please enter your Korean name &#40;up to 15 word&#41;. If you don’t have one, you may leave it blank.</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <h5 class="list_tit">국적<span class="font_red mg_r5">&#42;</span><br>&#40;Nationality&#41;</h5>
+                                                    <div class="list_cnt">
+                                                        <div class="select_search">
+                                                            <select placeholder="국적">
+                                                                <option value=""></option>
+                                                                <option value="" >대한민국</option>
+                                                                <option value="">영국</option>
+                                                                <option value="">미국</option>
+                                                                <option value="">일본</option>
+                                                                <option value="">중국</option>
+                                                                <option value="">캐나다</option>
+                                                                <option value="">이탈리아</option>
+                                                                <option value="">몽골</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <h5 class="list_tit">여권번호<span class="font_red mg_r5">&#42;</span><br>&#40;Passport Number&#41;</h5>
+                                                    <div class="list_cnt">
+                                                        <input class="form_style wd_300" placeholder="여권번호를 입력해주세요.">
+                                                        <p class="check_row">
+                                                            <input type="checkbox" name="no1" id="no1_1" class="hidden">
+                                                            <label for="no1_1">NONE</label>
+                                                        </p>
+                                                        <p class="font_red">※ Please check "None" if you don't have a passport.</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <h5 class="list_tit">성별<span class="font_red mg_r5">&#42;</span><br>&#40;Gender&#41;</h5>
+                                                    <div class="list_cnt">
+                                                       <p class="radio_row">
+                                                            <input type="radio" name="gender" id="male" class="hidden" checked>
+                                                            <label for="male">Male</label>
+                                                        </p>
+                                                        <p class="radio_row">
+                                                            <input type="radio" name="gender" id="female" class="hidden">
+                                                            <label for="female">Female</label>
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <h5 class="list_tit">생년월일<span class="font_red mg_r5">&#42;</span><br>&#40;Date of Birth&#41;</h5>
+                                                    <div class="list_cnt">
+                                                        <div class="naming_input dp_inline wd_300">
+															<input type="text" placeholder="생년월일">
+															<button type="button" class="btn_cal">달력보기</button>
+														</div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="list_wrap5">
+                                                <li>
+                                                    <h5 class="list_tit">한국 포함 복수 국적자<span class="font_red mg_r5">&#42;</span><br>&#40;Dual nationality of Korean and other foreign citizenship&#41;</h5>
+                                                    <div class="list_cnt">
+                                                       <p class="radio_row">
+                                                            <input type="radio" name="question2" id="question3" class="hidden">
+                                                            <label for="question3">YES</label>
+                                                        </p>
+                                                        <p class="radio_row">
+                                                            <input type="radio" name="question2" id="question4" class="hidden">
+                                                            <label for="question4">NO</label>
+                                                        </p> 
+                                                        <div class="tbl tbl_row">
+                                                            <table>
+                                                               <colgroup>
+                                                                   <col style="width:30%;">
+                                                                   <col style="width:35%;">
+                                                                   <col style="width:35%;">
+                                                               </colgroup>
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>Foreigners</th>
+                                                                        <th>Born before 2000</th>
+                                                                        <th>Born after 2000</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class="ta_c">Male</td>
+                                                                        <td class="ta_c">YYMMDD-5000000</td>
+                                                                        <td class="ta_c">YYMMDD-7000000</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="ta_c">Female</td>
+                                                                        <td class="ta_c">YYMMDD-6000000</td>
+                                                                        <td class="ta_c">YYMMDD-8000000</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <div class="mg_t10">
+                                                            <input class="form_style wd_p30">
+                                                            <span> - </span>
+                                                            <input class="form_style wd_p30">
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="list_wrap2 mg_t20">
+                                                <li>
+                                                    <h5 class="list_tit">영주권 번호<span class="font_red mg_r5">&#42;</span><br>&#40;Alien Registration Number&#41;</h5>
+                                                    <div class="list_cnt">
+                                                        <input class="form_style wd_p30">
+                                                        <span> - </span>
+                                                        <input class="form_style wd_p30">
+                                                        <p class="font_red">※ Please skip if you don`t have a Certificate of Alien Registration issued by the Korean government.</p>
+                                                        <p class="font_red">※ If applicable, Please input correct alien registration number on your alien card.</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <h5 class="list_tit">주소<span class="font_red mg_r5">&#42;</span><br>&#40;Mailing Address&#41;</h5>
+                                                    <div class="list_cnt">
+                                                        <div class="span_wd75">
+                                                           <span class="mg_r10">Zip Code</span>
+                                                            <input class="form_style wd_180">
+                                                        </div>
+                                                        <div class="span_wd75">
+                                                           <span class="mg_r10">Address</span>
+                                                            <input class="form_style wd_370">
+                                                        </div>
+                                                        <p class="font_red">※ Please type in the Mailing Address at which we can reach you after the admission decision.</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <h5 class="list_tit">전화번호<span class="font_red mg_r5">&#42;</span><br>&#40;Telephone&#41;</h5>
+                                                    <div class="list_cnt">
+                                                        <input class="form_style wd_300"
+                                                        placeholder="전화번호를 입력해주세요.">
+                                                        <p class="font_red">※ Please include the Country and City Codes.  ex&#41; 82-2-1234-5678
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <h5 class="list_tit">휴대폰번호<span class="font_red mg_r5">&#42;</span><br>&#40;Cell Phone&#41;</h5>
+                                                    <div class="list_cnt">
+                                                        <input class="form_style wd_300"
+                                                        placeholder="휴대폰번호를 입력해주세요.">
+                                                        <p class="font_red">※ Please include the Country and City Codes.  ex&#41; 82-2-1234-5678
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <h5 class="list_tit">이메일<span class="font_red mg_r5">&#42;</span><br>&#40;E-Mail&#41;</h5>
+                                                    <div class="list_cnt">
+                                                        <input class="form_style wd_300"
+                                                        placeholder="두드림 가입 메일 자동 기입" disabled>
+                                                        <!-- <input class="form_style wd_300"
+                                                        placeholder="두드림 가입 메일 자동 기입"> -->
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="list_wrap2 mg_t20">
+                                               <h3 class="section_tit_lg emphasis">가족관계 &#40;Family Information&#41;</h3>
+                                                <li>
+                                                  <h5 class="list_tit">
+                                                   <div class="select_form wd_150">
+                                                        <label for="agent1">아버지 &#40;Father&#41;</label>
+                                                        <select id="agent1">
+                                                            <option>아버지 &#40;Father&#41;</option>
+                                                            <option>어머니 &#40;Mother&#41;</option>
+                                                            <option>형제 &#40;Brother&#41;</option>
+                                                            <option>자매 &#40;Sisters&#41;</option>
+                                                            <option>남매 &#40;Siblings&#41;</option>
+                                                        </select>
+                                                    </div> 
+                                                    <span class="font_red mg_r5">&#42;</span>
+                                                    </h5>
+                                                    <div class="list_cnt">
+                                                        <!-- [pp]Deceased 라디오 체크시 hidden -->
+                                                        <div class="span_wd150">
+                                                            <span class="mg_r10">Full Name</span><input class="form_style wd_300"
+                                                            placeholder="Full Name">
+                                                        </div>
+                                                        <div class="mg_t10 span_wd150">
+                                                            <span class="mg_r10">Nationality</span>
+                                                            <div class="select_search">
+                                                            <select placeholder="국적">
+                                                                <option value=""></option>
+                                                                <option value="" >대한민국</option>
+                                                                <option value="">영국</option>
+                                                                <option value="">미국</option>
+                                                                <option value="">일본</option>
+                                                                <option value="">중국</option>
+                                                                <option value="">캐나다</option>
+                                                                <option value="">이탈리아</option>
+                                                                <option value="">몽골</option>
+                                                            </select>
+                                                        </div>
+                                                        </div>
+                                                        <div class="mg_t10 span_wd150">
+                                                           <span class="mg_r10">Passport Number</span>
+                                                            <input class="form_style wd_300" placeholder="Passport Number">
+                                                            <p class="check_row">
+                                                                <input type="checkbox" name="no2" id="no2_1" class="hidden">
+                                                                <label for="no2_1">NONE</label>
+                                                            </p>
+                                                            <p class="font_red">※ Please check "None" if you don't have a passport.</p>
+                                                        </div>
+                                                        <div class="list_cnt span_wd150">
+                                                        	<span class="mg_r10">Date of Birth</span>
+                                                        	<div class="naming_input dp_inline wd_300">
+																<input type="text" placeholder="생년월일">
+																<button type="button" class="btn_cal">달력보기</button>
+															</div>
+                                                            <div class="mg_t5">
+                                                                <p class="radio_row">
+                                                                    <input type="radio" name="alive" id="deceased" class="hidden">
+                                                                    <label for="deceased">Deceased</label>
+                                                                </p>
+                                                            </div>
+                                                            <div class="btn_wrap2">
+                                                                <button class="btn_round btn_md btn_navy">Add</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="mg_t40">
+                                                    <h5 class="list_tit">어머니 &#40;Mother&#41;</h5>
+                                                    <div class="list_cnt">
+                                                        <!-- [pp]Deceased 라디오 체크시 hidden -->
+                                                        <div class="span_wd150">
+                                                            <span class="mg_r10">Full Name</span><span>Ed Sheeran</span>
+                                                        </div>
+                                                        <div class="mg_t10 span_wd150">
+                                                            <span class="mg_r10">Nationality</span>
+                                                            <div class="dsm_text">
+                                                                <p>
+                                                                    United Kingdom
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mg_t10 span_wd150">
+                                                           <span class="mg_r10">Passport Number</span>
+                                                            <span>1265454651</span>
+                                                        </div>
+                                                        <div class="list_cnt span_wd150 mg_t10">
+                                                           <span class="mg_r10">Date of Birth</span>
+                                                            <span class="va_t"><i>1972</i> - <i>03</i> - <i>21</i></span>
+                                                        </div>
+                                                        <div class="btn_wrap2">
+                                                            <button class="btn_round btn_md btn_brown">Del</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="ta_c">
+                                <button type="button" class="btn_round btn_lg btn_default">저장</button>
+                            </div>
+                        </div>
+                        <div id="tab3">
+                            <section class="section_area">
+                                <div class="extrainfo_cnt2">
+                                    <div class="cf">
+                                        <div class="extrainfo_right">
+                                            <ul class="list_wrap5">
+                                               <h3 class="section_tit_lg">학력 증명을 위한 동의 &#40;Agreement for Verification of Academic Records&#41;</h3>
+                                                <li>
+                                                    <h5 class="list_tit">학력 증명 정보<span class="font_red mg_r5">&#42;</span><br>&#40;Agreement for Verification of Academic Records&#41;</h5>
+                                                    <div class="list_cnt">
+                                                       <p class="font_red">
+                                                           ※ 출신학교 측에 학력조회 요청을 위한 정보를 입력해 주세요.<br> This is for Office of Admissions to contact your high school for verification of academic records
+                                                       </p>
+                                                       <div class="span_wd280">
+                                                           <span class="mg_r10">Name of Institute&#40;high school&#41;</span>
+                                                           <input class="form_style wd_250">
+                                                       </div> 
+                                                       <div class="span_wd280 mg_t5">
+                                                           <span class="mg_r10">&#40;Expected&#41; Date of Graduation</span>
+                                                           <div class="naming_input dp_inline wd_250">
+																<input type="text" placeholder="졸업일">
+																<button type="button" class="btn_cal">달력보기</button>
+															</div>
+                                                            <div class="span_wd280 mg_t5">
+                                                               <span class="mg_r10">Name of Office in Charge<br>&#40;If not applicable, leave it blank&#41;</span>
+                                                               <input class="form_style wd_250">
+                                                            </div>
+                                                            <div class="span_wd280 mg_t5">
+                                                               <span class="mg_r10">e-mail Address of Staff<br>&#40;Teacher, Counselor&#41; in Charge</span>
+                                                               <input class="form_style wd_250">
+                                                            </div>
+                                                       </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <div class="list_wrap3 mg_t20">
+                                               <h3 class="section_tit_lg emphasis">고등학교 활동 및 수상내역 &#40;High School Activities / Awards&#41;</h3>
+                                               <div class="btn_fr">
+                                                    <button class="btn_md btn_round btn_navy mg_b10 btn_checkedit ">Add</button>
+                                                    <button class="btn_md btn_round btn_brown btn_checkdelete">Del</button>
+                                               </div>
+                                               <div class="tbl tbl_row scrollx_tbl_xl box_checkdelete">
+                                                    <table>
+                                                       <colgroup>
+                                                           <col style="width:6%;">
+                                                           <col style="width:15%;">
+                                                           <col style="width:15%;">
+                                                           <col style="width:22%;">
+                                                           <col style="width:22%;">
+                                                           <col style="width:15%;">
+                                                           <col style="width:5%;">
+                                                       </colgroup>
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col">Category</th>
+                                                                <th scope="col">High School<br>Activity/Awards</th>
+                                                                <th scope="col">Description</th>
+                                                                <th scope="col">Start Date</th>
+                                                                <th scope="col">End Date</th>
+                                                                <th scope="col">Name of<br>Organization</th>
+                                                                <th scope="col" rowspan="2"></th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="ta_c" scope="col">
+                                                                  <div class="select_form dp_inline wd_120">
+                                                                        <label for="select2">Select</label>
+                                                                        <select id="select2">
+                                                                            <option>
+                                                                                Select
+                                                                            </option>
+                                                                            <option>
+                                                                                ???
+                                                                            </option>
+                                                                            <option>
+                                                                                ???
+                                                                            </option>
+                                                                            <option>
+                                                                                ???
+                                                                            </option>
+                                                                        </select>
+                                                                    </div>  
+                                                                </td>
+                                                                <td class="ta_c" scope="col"><input type="text" class="form_style wd_150"></td>
+                                                                <td class="ta_c" scope="col"><textarea name="description" id="dep1" cols="20" rows="3" class="form_style"></textarea></td>
+                                                                <td class="ta_c" scope="col">
+																	<div class="naming_input dp_inline wd_p100">
+																		<input type="text" placeholder="시작 날짜">
+																		<button type="button" class="btn_cal">달력보기</button>
+																	</div>
+                                                                </td>
+                                                                <td class="ta_c" scope="col">
+                                                                    <div class="naming_input dp_inline wd_p100">
+																		<input type="text" placeholder="끝 날짜">
+																		<button type="button" class="btn_cal">달력보기</button>
+																	</div>
+                                                                </td>
+                                                                <td class="ta_c" scope="col">
+                                                                    <input type="text" class="form_style wd_150">
+                                                                </td>
+                                                                <td class="ta_c">
+                                                                   <p class="check_only">
+                                                                        <input type="checkbox" name="awards" id="awards1" class="hidden">
+                                                                        <label for="awards1">선택</label>
+                                                                    </p> 
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="tbl tbl_row scrollx_tbl_xl box_checkdelete">
+                                                    <table>
+                                                       <colgroup>
+                                                           <col style="width:6%;">
+                                                           <col style="width:15%;">
+                                                           <col style="width:15%;">
+                                                           <col style="width:22%;">
+                                                           <col style="width:22%;">
+                                                           <col style="width:15%;">
+                                                           <col style="width:5%;">
+                                                       </colgroup>
+                                                        <thead>
+                                                            <tr >
+                                                                <th scope="col">Category</th>
+                                                                <th scope="col">High School<br>Activity/Awards</th>
+                                                                <th scope="col">Description</th>
+                                                                <th scope="col">Start Date</th>
+                                                                <th scope="col">End Date</th>
+                                                                <th scope="col">Name of<br>Organization</th>
+                                                                <th scope="col" rowspan="2"></th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="ta_c" scope="col">
+                                                                  <div class="select_form dp_inline wd_120">
+                                                                        <label for="select2">Select</label>
+                                                                        <select id="select2">               
+                                                                            <option>Select</option>
+                                                                            <option>???</option>
+                                                                            <option>???</option>
+                                                                            <option>???</option>
+                                                                        </select>
+                                                                    </div>  
+                                                                </td>
+                                                                <td class="ta_c" scope="col"><input type="text" class="form_style wd_150"></td>
+                                                                <td class="ta_c" scope="col"><textarea name="description" id="dep1" cols="20" rows="3" class="form_style"></textarea></td>
+                                                                <td class="ta_c" scope="col">
+                                                                    <div class="naming_input dp_inline wd_p100">
+																		<input type="text" placeholder="시작 날짜">
+																		<button type="button" class="btn_cal">달력보기</button>
+																	</div>
+                                                                </td>
+                                                                <td class="ta_c" scope="col">
+                                                                    <div class="naming_input dp_inline wd_p100">
+																		<input type="text" placeholder="끝 날짜">
+																		<button type="button" class="btn_cal">달력보기</button>
+																	</div>
+                                                                </td>
+                                                                <td class="ta_c" scope="col">
+                                                                    <input type="text" class="form_style wd_150">
+                                                                </td>
+                                                                <td class="ta_c">
+                                                                   <p class="check_only">
+                                                                        <input type="checkbox" name="awards" id="awards2" class="hidden">
+                                                                        <label for="awards2">선택</label>
+                                                                    </p> 
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="ta_c">
+                                <button type="button" class="btn_round btn_lg btn_default">저장</button>
+                            </div>
+                        </div>
+                        <div id="tab4">
+                            <section class="section_area">
+                                <div class="extrainfo_cnt2">
+                                    <div class="cf">
+                                        <div class="extrainfo_right">
+                                            <ul class="list_wrap3">
+                                               <h3 class="section_tit_lg">영어 / 한국어 능력 &#40;Language Proficiency English / Korean&#41;</h3>
+                                                <li>
+                                                    <h5 class="list_tit">시험 종류<span class="font_red mg_r5">&#42;</span><br>&#40;Type of Exam&#41;</h5>
+                                                    <div class="list_cnt">
+                                                       <button class="btn_md btn_round btn_default">
+                                                           TOPIK
+                                                       </button>
+                                                       <button class="btn_md btn_round btn_default">
+                                                           IELTS
+                                                       </button>
+                                                       <button class="btn_md btn_round btn_default">
+                                                           TEPS
+                                                       </button>
+                                                       <button class="btn_md btn_round btn_default">
+                                                           TOEFL
+                                                       </button>
+                                                       <button class="btn_md btn_round btn_default">
+                                                           Etc.
+                                                       </button>
+                                                       <!-- [pp] Etc 버튼 클릭시 노출되는 table -->
+                                                       <!-- <div class="tbl tbl_row mg_t20 mg_b20">
+                                                           <table>
+                                                              <colgroup>
+                                                                  <col style="width:15%">
+                                                                  <col style="width:85%">
+                                                              </colgroup>
+                                                               <tbody>
+                                                                    <tr>
+                                                                       <th>Etc</th>
+                                                                       <td class="pd_10">
+                                                                           <p class="check_row">
+                                                                                <input type="radio" name="etc" id="etc_1" class="hidden">
+                                                                                <label for="etc_1">AP &#58; English Language and Composition</label>
+                                                                            </p>
+                                                                            <p class="check_row">
+                                                                                <input type="radio" name="etc" id="etc_2" class="hidden">
+                                                                                <label for="etc_2">AP &#58; English Literature and Composition</label>
+                                                                            </p>
+                                                                            <p class="check_row">
+                                                                                <input type="radio" name="etc" id="etc_3" class="hidden">
+                                                                                <label for="etc_3">SAT &#58; Reading/Writing and Language</label>
+                                                                            </p>
+                                                                            <p class="check_row">
+                                                                                <input type="radio" name="etc" id="etc_4" class="hidden">
+                                                                                <label for="etc_4">SAT subject test &#58; English</label>
+                                                                            </p>
+                                                                            <p class="check_row">
+                                                                                <input type="radio" name="etc" id="etc_5" class="hidden">
+                                                                                <label for="etc_5">SAT subject test &#58; Korean</label>
+                                                                            </p>
+                                                                            <p class="check_row">
+                                                                                <input type="radio" name="etc" id="etc_6" class="hidden">
+                                                                                <label for="etc_6">Etc.</label>
+                                                                            </p>
+                                                                       </td>
+                                                                   </tr>
+                                                               </tbody>
+                                                           </table>
+                                                       </div>--> 
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <p>※  After the Announcement of admissions decision, ONLY admitted applicants are subjected to submit the original document of your official English or Korean score via score reporting services after uploading the scanned or screen captured files. Please upload official documents indicating your ability in other languages such as HSK, JLPT in the section of "Supplementary Material &#40;Awards, Volunteer Activites, Explanatory Statement if any, etc.&#41;"</p>
+                                            <p class="mg_t10">※ TOPIK &#58; 문서확인번호 appears on the right upper corner of the official TOPIK score report. Please do not input the Registration Number.</p>
+                                            <p class="mg_t10">※ 토플의 경우 Registration No. 가 없다면 Appointment No. 로 기입하기 바랍니다.<br> For TOEFL score,  please enter the Appointment NO. if there's no Registration No. on the score report.</p>
+                                            <div class="tbl tbl_row scrollx_tbl_lg mg_t20">
+                                                <table>
+                                                   <colgroup>
+                                                       <col style="width:10%;">
+                                                       <col style="width:30%;">
+                                                       <col style="width:25%;">
+                                                       <col style="width:20%;">
+                                                       <col style="width:15%;">
+                                                   </colgroup>
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">Name</th>
+                                                            <th scope="col">Registration No.</th>
+                                                            <th scope="col">Test Date</th>
+                                                            <th scope="col">Final Score</th>
+                                                            <th scope="col">Level</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="ta_c" scope="col">
+                                                                 <p>TOPIK</p>  
+                                                            </td>
+                                                            <td class="ta_c" scope="col">
+                                                                <input type="text" class="form_style" placeholder="문서확인번호 &#58; 16 Digits">
+                                                            </td>
+                                                            <td class="ta_c" scope="col">
+                                                                <div class="naming_input dp_inline wd_p100">
+																	<input type="text" placeholder="시험날짜">
+																	<button type="button" class="btn_cal">달력보기</button>
+																</div>
+                                                            </td>
+                                                            <td class="ta_c" scope="col">       
+                                                                <input type="text" class="form_style">
+                                                            </td>
+                                                            <td class="ta_c" scope="col">
+                                                                <div class="select_form dp_inline wd_120">
+                                                                    <label for="select2">Select</label>
+                                                                    <select id="select2">
+                                                                        <option>Select</option>
+                                                                        <option>???</option>
+                                                                        <option>???option>
+                                                                        <option>???</option>
+                                                                    </select>
+                                                                </div> 
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="ta_c" scope="col">
+                                                                 <p>IELTS</p>  
+                                                            </td>
+                                                            <td class="ta_c" scope="col">
+                                                                <input type="text" class="form_style" placeholder="Test Report Form No. &#58; above 13 Digits">
+                                                            </td>
+                                                            <td class="ta_c" scope="col">
+                                                                <div class="naming_input dp_inline wd_p100">
+																	<input type="text" placeholder="시험날짜">
+																	<button type="button" class="btn_cal">달력보기</button>
+																</div>
+                                                            </td>
+                                                            <td class="ta_c" scope="col">       
+                                                                <input type="text" class="form_style wd_p46">
+                                                                <span> - </span>
+                                                                <input type="text" class="form_style wd_p46">
+                                                            </td>
+                                                            <td class="ta_c" scope="col">
+                                                                <p>-</p> 
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="ta_c" scope="col">
+                                                                 <p>TEPS</p>  
+                                                            </td>
+                                                            <td class="ta_c" scope="col">
+                                                                <input type="text" class="form_style" placeholder="Registration No. &#58; 7 Digits">
+                                                            </td>
+                                                            <td class="ta_c" scope="col">
+                                                                <div class="naming_input dp_inline wd_p100">
+																	<input type="text" placeholder="시험날짜">
+																	<button type="button" class="btn_cal">달력보기</button>
+																</div>
+                                                            </td>
+                                                            <td class="ta_c" scope="col">       
+                                                                <input type="text" class="form_style">
+                                                            </td>
+                                                            <td class="ta_c" scope="col">
+                                                                <p>-</p> 
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="ta_c" scope="col">
+                                                                 <p>TOEFL</p>  
+                                                            </td>
+                                                            <td class="ta_c" scope="col">
+                                                                <input type="text" class="form_style" placeholder="Registration No. &#58; 16 Digits">
+                                                            </td>
+                                                            <td class="ta_c" scope="col">
+                                                                <div class="naming_input dp_inline wd_p100">
+																	<input type="text" placeholder="시험날짜">
+																	<button type="button" class="btn_cal">달력보기</button>
+																</div>
+                                                            </td>
+                                                            <td class="ta_c" scope="col">       
+                                                                <input type="text" class="form_style">
+                                                            </td>
+                                                            <td class="ta_c" scope="col">
+                                                                <p>-</p> 
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="ta_c" scope="col">
+                                                                 <p>Etc select</p>  
+                                                            </td>
+                                                            <td class="ta_c" scope="col">
+                                                                <input type="text" class="form_style" placeholder="Registration No. &#58; 16 Digits">
+                                                            </td>
+                                                            <td class="ta_c" scope="col">
+                                                                <div class="naming_input dp_inline wd_p100">
+																	<input type="text" placeholder="시험날짜">
+																	<button type="button" class="btn_cal">달력보기</button>
+																</div>
+                                                            </td>
+                                                            <td class="ta_c" scope="col">       
+                                                                <input type="text" class="form_style">
+                                                            </td>
+                                                            <td class="ta_c" scope="col">
+                                                                <p>-</p> 
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td scope="col" class="ta_c">
+                                                                <p>Etc</p>
+                                                            </td>
+                                                            <td colspan="4">
+                                                                <input type="text" class="form_style">
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="ta_c">
+                                <button type="button" class="btn_round btn_lg btn_default">저장</button>
+                            </div>
+                        </div>
+                        <div id="tab5">
+                            <section class="section_area">
+                                <div class="extrainfo_cnt2">
+                                   <h3 class="section_tit_lg">서류 등록 주의사항 &#40;Upload Documents Notes&#41;</h3>
+                                   <p class="font_red bold">※ 지원접수 시 원본서류 제출이 생략됨에 따라, 아래 업로드된 지원서류가 글로벌인재특별전형 평가 및 심사에 반영됩니다. 방문/우편제출한 원본서류는 평가 및 심사에 사용되지 않습니다.</p>
+                                   <p class="font_red bold mg_t20">※ As submitting original documents in papers  are prohibited&#40;during documents submission period by visit or post&#41; due to Novel Coronavirus, ONLY documents uploaded on the application website are subjected to be used for evaluation. Documents that are NOT uploaded below but submitted only in papers are not to be used for evaluation.</p>
+                                   <ul class="list_no mg_t20">
+                                       <li><span class="va_t">1&#41;</span><b class="va_t font_red">업로드 파일 형식은 JPG, PNG, PDF 형태만 가능합니다.</b><br>한 항목에 여러 자료를 넣고자 할 경우 여러 장으로 구성된 하나의 파일로 만들어 업로드하시기 바랍니다.  
+                                       각 파일별 용량제한은 최대 8MB입니다. 식별 불가한 제출서류&#40;암호화 된 파일, 열리지 않는 파일 등&#41;은 미제출로 간주하므로 업로드 후 반드시 확인바랍니다.<br>
+                                       <b class="va_t font_red">Only files in JPG, PNG or PDF are acceptable.</b><br>If you wish to upload more than one document in one item, create ONE file with multiple pages and upload the file. You can upload a file up to 8MB. Since any unrecognizable files &#40;encrypted, unopenable files, etc&#41; are regarded as omission, Please check your files after uploading.</li>
+                                       <li class="mg_t10"><span class="va_t">2&#41;</span>업로드할 모든 서류에 성명, 생년월일, 졸업&#40;예정&#41;일자와 같은 주요 사항을 형광펜이나 색이 있는 볼펜으로 표시 후 스캔하여 업로드 바랍니다.<br>Please highlight/mark essential information such as name, date of birth, and &#40;expected&#41; graduation date, etc. in all of the documents with a colored pen before uploading.</li>
+                                       <li class="mg_t10"><span class="va_t">3&#41;</span>지원자 여권사본,  부모 여권사본 제출이 어려운 경우 지원자 국적증명, 부모 국적증명 서류로 대체하여 업로드 하시기 바랍니다.<br> If copies of the applicant and parent's passport are unavailable for any reason, the applicant's and parent's certificate of nationality must be submitted instead.</li>
+                                       <li class="mg_t10"><span class="va_t">4&#41;</span>파일업로드 방법 &#58; 제출서류별 파일을 &#91;Search file&#93;  버튼을 눌러 선택하고, 화면 하단의 &#91;Upload file&#93; 버튼을 눌러야 파일 업로드가 완료됩니다.<br>How to Upload Documents &#58; Click &#91;Search file&#93; to choose a document to upload and then click &#91;Upload file&#93; at the bottom of the page to complete the file upload.</li>
+                                       <li class="mg_t10"><span class="va_t">5&#41;</span>
+                                       업로드 파일명내 특수문자&#40;&#38;, &#64;..&#41;가 포함되지 않도록 저장한 다음 업로드 하시기 바랍니다.<br>Special characters &#40;such as &#38;, &#64;..&#41; are not allowed in file names. Please make sure to remove all special characters before uploading a file.</li>
+                                       <li class="mg_t10"><span class="va_t">6&#41;</span><b class="va_t font_red">'온라인접수사이트에 업로드된 지원서류'와 '합격 후 제출하는 원본 서류'는 반드시 동일하여야 합니다.</b><br><b class="va_t font_red">All the uploaded documents on the application website must be the same as the ones to be submitted after the announcement of admissions decision.</b></li>
+                                       <li class="mg_t10"><span class="va_t">7&#41;</span><i class="va_t font_red">&#42;</i> 표시된 서류는 필수 제출 서류입니다.<br><i class="va_t font_red">&#42;</i> Required documents.</li>
+                                       <li class="mg_t10"><span class="va_t">8&#41;</span><i class="va_t font_red">&#42;&#42;</i> 표시된 서류는 선택 제출 가능한 서류입니다.<br><i class="va_t font_red">&#42;&#42;</i> Optional documents</li>
+                                       <li class="mg_t10"><span class="va_t">9&#41;</span><b class="va_t font_red">기타전형참고자료&#40;Supplementary Material&#41;에 업로드하는 모든 활동 내용은 진위여부 확인을 위해 발급기관/고등학교에 연락을 취할 수 있으며 추가 증빙서류를 요청할 수  있습니다.</b><br><b class="va_t font_red"> I acknowledge that SNU may contact the document-issuing organization/the applicant’s high school for additional verification of any of the documents uploaded in the "Supplementary Material" section.</b><br></li>
+                                   </ul>
+                                   <div class="ta_c mg_t20 mg_b20">
+                                        <p class="check_col">
+                                            <input type="checkbox" name="check" id="check" class="hidden">
+                                            <label for="check" class="agree_label"><span >Agree</span></label>
+                                        </p>
+                                    </div>
+                                    <!-- [pp] Agree 버튼 클릭시 노출되는 항목 -->
+                                    <!--<h3 class="section_tit_lg">서류등록 &#40;Upload Documents&#41;</h3>
+                                    <div class="tbl tbl_row scrollx_tbl_sm mg_t20 mg_b20 upload_box">
+                                        <table>
+                                            <colgroup>
+                                                <col style="width:60%;">
+                                                <col style="width:40%;">
+                                            </colgroup>
+                                            <tbody>
+                                               <tr>
+                                                    <th>Official &#40;Expected&#41; High School Graduation Certificate <span class="va_t font_red">&#42;</span></th>
+                                                    <td class="ta_c">
+                                                        <i>No file uploaded</i>
+                                                        <button class="btn_md btn_navy btn_round">
+                                                          <input type="file" id="attach_file" class="hidden">
+                                                          <label for="attach_file" class="attach_file">Upload</label>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Official High School Transcript <span class="va_t font_red">&#42;</span></th>
+                                                    <td class="ta_c">
+                                                        <i>No file uploaded</i>
+                                                        <button class="btn_md btn_navy btn_round">
+                                                          <input type="file" id="attach_file" class="hidden">
+                                                          <label for="attach_file" class="attach_file">Upload</label>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>A Copy of the Applicant's Passport<br>&#40;or Other Official Documents indicating the Applicant's Nationality&#41;
+                                                     <span class="va_t font_red">&#42;</span></th>
+                                                    <td class="ta_c">
+                                                        <i>No file uploaded</i>
+                                                        <button class="btn_md btn_navy btn_round">
+                                                          <input type="file" id="attach_file" class="hidden">
+                                                          <label for="attach_file" class="attach_file">Upload</label>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Copies of Both Parents' Passport  <br>&#40;or Other Official Document indicating Both Parents' Nationality&#41; <span class="va_t font_red">&#42;</span></th>
+                                                    <td class="ta_c">
+                                                        <i>No file uploaded</i>
+                                                        <button class="btn_md btn_navy btn_round">
+                                                          <input type="file" id="attach_file" class="hidden">
+                                                          <label for="attach_file" class="attach_file">Upload</label>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Official Document Indicating Parent-child Relationship<br>between the Applicant and His/her Parents<span class="va_t font_red">&#42;</span></th>
+                                                    <td class="ta_c">
+                                                        <i>No file uploaded</i>
+                                                        <button class="btn_md btn_navy btn_round">
+                                                          <input type="file" id="attach_file" class="hidden">
+                                                          <label for="attach_file" class="attach_file">Upload</label>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Proof of Language Proficiency &#40;Korean or English&#41; <span class="va_t font_red">&#42;</span></th>
+                                                    <td class="ta_c">
+                                                        <i>No file uploaded</i>
+                                                        <button class="btn_md btn_navy btn_round">
+                                                          <input type="file" id="attach_file" class="hidden">
+                                                          <label for="attach_file" class="attach_file">Upload</label>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Supplementary Material <br>&#40;Proof of language proficiency except Korean and English&#41; <span class="va_t font_red">&#42;</span></th>
+                                                    <td class="ta_c">
+                                                        <i>No file uploaded</i>
+                                                        <button class="btn_md btn_navy btn_round">
+                                                          <input type="file" id="attach_file" class="hidden">
+                                                          <label for="attach_file" class="attach_file">Upload</label>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>School Profile <span class="va_t font_red">&#42;</span></th>
+                                                    <td class="ta_c">
+                                                        <i>No file uploaded</i>
+                                                        <button class="btn_md btn_navy btn_round">
+                                                          <input type="file" id="attach_file" class="hidden">
+                                                          <label for="attach_file" class="attach_file">Upload</label>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Standardized Tests and Other Indicators of Academic Achievement <span class="va_t font_red">&#42;</span></th>
+                                                    <td class="ta_c">
+                                                        <i>No file uploaded</i>
+                                                        <button class="btn_md btn_navy btn_round">
+                                                          <input type="file" id="attach_file" class="hidden">
+                                                          <label for="attach_file" class="attach_file">Upload</label>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Supplementary Material<br>  &#40;Awards, Volunteer Activites, if any, etc&#41; <span class="va_t font_red">&#42;</span></th>
+                                                    <td class="ta_c">
+                                                        <i>No file uploaded</i>
+                                                        <button class="btn_md btn_navy btn_round">
+                                                          <input type="file" id="attach_file" class="hidden">
+                                                          <label for="attach_file" class="attach_file">Upload</label>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Explanatory Statement <span class="va_t font_red">&#42;</span></th>
+                                                    <td class="ta_c">
+                                                        <i>No file uploaded</i>
+                                                        <button class="btn_md btn_navy btn_round">
+                                                          <input type="file" id="attach_file" class="hidden">
+                                                          <label for="attach_file" class="attach_file">Upload</label>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>-->
+                                </div>
+                            </section>
+                             <div class="ta_c mg_t">
+                                <button type="button" class="btn_round btn_lg btn_default">제출</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			<!-- [pp] //container -->
+		</div>
+		<!-- [pp] //푸터를 제외한 전체페이지 -->
+		<!-- [pp] footer -->
+		<div data-include="../include/footer.html">footer 영역</div>
+		<!-- [pp] //footer -->
+	</body>
+</html>

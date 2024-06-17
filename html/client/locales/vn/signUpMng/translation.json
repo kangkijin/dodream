@@ -1,0 +1,68 @@
+{
+	"header": {
+		"txt1": "Thông tin du học",
+		"txt2": "Kết nối du học",
+		"txt3": "Bài tập theo kỹ năng",
+		"txt4": "Thi thử",
+		"txt5": "Cảm nghĩ du học"
+	},
+	"footer": {
+		"txt1": "Dain Leaders"
+		,"txt2": "Hướng dẫn sử dụng dịch vụ"
+		,"txt3": "Điều khoản sử dụng"
+		,"txt4": "Chính sách xử lý thông tin cá nhân"
+		,"txt5": "Từ chối việc thu thập địa chỉ email khi không được cho phép"
+		,"txt6": "Trung tâm hỗ trợ khách hàng Nền tảng kết nối du học DoDream"
+		,"txt7": "Tiếng Hàn : 070-7729-7328"
+		,"txt8": "Tiếng Việt : 070-7729-8023"
+		,"txt9": "Dainleaders.Co.,Ltd"
+		,"txt10": "Trụ sở Hàn Quốc: 2006, 5 Seongsuil-ro 8-gil, Seongdong-gu, Seoul, Republic of Korea"
+		,"txt11": "Văn phòng Việt Nam : Tầng 11 - Phòng 1107, Tòa nhà Zen Tower, 12 Khuất Duy Tiến, quận Thanh Xuân, Tp. Hà Nội, Việt Nam"
+		,"txt12": "Hướng dẫn điểm tích"
+		,"txt13": "Trung tâm hỗ trợ khách hàng : (+82)1800-6337"
+	},
+	"signUp" : {
+		"headerTxt1" : "Đăng kí thành viên"
+		, "headerTxt2" : "Nếu đăng kí trở thành thành viên của DoDream, bạn có thể sử dụng các dịch vụ và thông tin đa dạng liên quan đến du học Hàn Quốc"
+		, "headerTxt3" : "<span>01</span>Điều khoản và xác thực danh tính"
+		, "headerTxt4" : "<span>02</span>Nhập thông tin"
+		, "headerTxt5" : "<span>03</span>Hoàn thành đăng kí thành viên"
+	},
+	"signUp_1" : {
+		"txt1" : "Điều khoản và thỏa thuận bảo mật"
+		, "txt2" : "<span class='font_red'>&#40;Bắt buộc&#41;</span> Điều khoản sử dụng"
+		, "txt3" : "<span class='font_red'>&#40;Bắt buộc&#41;</span> Đồng ý phép thu thập và sử dụng thông tin cá nhân"
+		, "txt4" : "Xác thực danh tính"
+		, "txt5" : "Xác thực số điện thoại di động"
+		, "txt6" : "Mã quốc gia"
+		, "txt7" : "Nhập mã xác thực"
+		, "txt8" : "<button type='button' class='btn_round btn_md btn_default' onclick='goSignUpInfo();'>Chuyển đến bước tiếp theo</button>"
+		, "txt9" : "Lựa chọn"
+	},
+	"signUp_2" : {
+		"txt1" : "Nhập thông tin hội viên"
+		, "txt2" : "ID<span class='font_red'>*</span>"
+		, "txt3" : "Mật khẩu<span class='font_red'>*</span>"
+		, "txt4" : "Xác nhận mật khẩu<span class='font_red'>*</span>"
+		, "txt5" : "Biệt danh<span class='font_red'>*</span>"
+		, "txt6" : "Quốc gia<span class='font_red'>*</span>"
+		, "txt7" : "Bạn đề xuất"
+		, "txt8" : "Quốc gia"
+		, "txt9" : "Định dạng mật khẩu không chính xác"
+		, "txt10" : "Thông tin cần thiết"
+		, "txt11" : "Mật khẩu bạn nhập không khớp"
+		, "txt12" : "E-MAIL<span class='font_red'>*</span>"
+	},
+	"signUp_3" : {
+		"txt1" : "Chào mừng bạn đã trở thành thành viên của DoDream"
+		, "txt2" : "Sau khi đăng nhập tất cả các dịch vụ đều có thể sử dụng."
+		, "txt3" : "Di chuyển đến trang chủ"
+	},
+	"signUp_4" : {
+		"txt1" : "Xác thực số điện thoại di động"
+		, "txt2" : "Xác thực danh tính"
+		, "txt3" : "Mã quốc gia"
+		, "txt4" : "Nhập mã xác thực"
+		, "txt5" : "<button type='button' class='btn_round btn_md btn_default' onclick='compltLogin();'>Hoàn thành việc đăng nhập</button>"
+	}
+}

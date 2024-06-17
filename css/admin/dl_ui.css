@@ -1,0 +1,367 @@
+@charset "utf-8";
+
+/* 로그인 */
+.login-page, .register-page {
+	background: url(../../images/admin/bg_login.jpg)center center no-repeat;
+	background-size: cover;
+}
+.loginbox_wrap {
+	position: absolute; top: 50%; 
+	width: 100%;
+	text-align: center;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.register-box {
+	overflow: hidden;
+	margin: 0;
+	position: absolute; top: 50%; left: 50%;
+	background-color: #fff;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.login-box {
+	display: inline-block;
+	margin: 10px;
+	text-align: left;
+	background-color: #fff;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	overflow: hidden;
+}
+.login-logo, .register-logo {
+	margin-bottom: 0; padding: 25px 0 0px;
+}
+.login-logo a {
+	display: inline-block;
+	width: 180px;
+}
+.login-logo a img {
+	width: 100%;
+}
+.login-box-body, .register-box-body {
+	padding: 30px;
+}
+.login-box-body .glyphicon-user {
+	display: block;
+	width: 34px; height: 34px;
+	position: absolute; top: 0; right: 0;
+	line-height: 34px; text-align: center; color: #777;
+	z-index: 2;
+	pointer-events: none;
+}
+.login-box-body .form-control-feedback, .register-box-body .glyphicon-user {
+	color: #777;
+}
+.pp_login_btn{
+	background-color: #00aeef !important; 
+	border-color: #039cd5 !important; 
+}
+.pp_login_btn:hover{
+	background-color: #027dcb !important; 
+	border-color: #039cd5 !important;
+}
+.form-control:focus {
+	border-color: #027dcb !important;
+}
+
+.login-box-body .icheckbox_flat-red, .iradio_flat-red {
+	margin-right: 5px;
+}
+.ad_login_txt {
+	margin-top: 30px;
+	font-size: 12px; color: #999; word-break: keep-all;
+}
+
+/* 에러페이지 */
+.error-page {
+	margin: 0 0;
+	position: absolute; top: 20%; left: 50%;
+	transform: translateX(-50%);
+}
+.error-page > .error-content {
+	margin-left: 0;
+}
+.error-page > .error-content > h3 {
+	margin-top: 0;
+}
+.error-page > .error-content p a {
+	display: inline-block;
+	margin-top: 10px;
+	font-size: 15px; font-family: NotokrBold, sans-serif; color: #3c8dbc;
+}
+
+
+/* 대시보드 */
+.ad_dash_graph {
+	overflow: hidden;
+	width: 100%; min-height: 250px;
+	position: relative;
+}
+
+/* 박스 */
+.ad_section {
+	margin-bottom: 30px;
+}
+.ad_section_s {
+	margin-bottom: 20px;
+}
+.box {
+	border-color: #ddd;
+}
+.box-header.with-border {
+	border-color: #e1e1e1;
+}
+.box-header > .fa, .box-header > .glyphicon, .box-header > .ion, .box-header .box-title {
+	font-size: 16px;
+}
+.nav-tabs-custom > .header {
+	margin: 0; padding: 10px;
+	font-size: 16px; line-height: 1;
+	font-family: NotokrBold, sans-serif; 
+}
+.nav-tabs-custom > .nav-tabs > li.active {
+	border-top-color: #ee2424;
+}
+.nav-tabs > li > a {
+	line-height: 1.25;
+}
+.tab-content {
+	position: relative;
+}
+.small-box h3 {
+	margin: 10px;
+	font-size: 28px;
+}
+.ad_dash_more {
+	position: absolute; right: 10px; top: 7px;
+	color: #999; font-size: 18px;
+	z-index: 5;
+}
+
+/* 권한설정 */
+.ad_manager_list {
+	overflow-y: auto;
+	height: 450px;
+	padding: 5px;
+	border: 1px solid #ddd;
+}
+.ad_manager_list_s {
+	min-height: 300px;
+} 
+.ad_manager_list_s1 {
+	min-height: 340px;
+} 
+.ad_btnlist_center {
+	padding-top: 120px;
+}
+.ad_btnlist_center a {
+	display: block;
+	width: 37px; height: 37px;
+	margin: 10px auto;
+	text-align: center;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.ad_btnlist_center a.add_list {
+	background-image: url(../../images/admin/btn_addname.png);
+}
+.ad_btnlist_center a.add_list:hover {
+	background-image: url(../../images/admin/btn_addname_on.png);
+}
+.ad_btnlist_center a.remove_list {
+	background-image: url(../../images/admin/btn_minusname.png);
+}
+.ad_btnlist_center a.remove_list:hover {
+	background-image: url(../../images/admin/btn_minusname_on.png);
+}
+
+
+/* 서브페이지 상단 네비게이션 */
+.content-header>h2 {
+	margin: 0;
+}
+
+/*main*/
+.small-box .icon{
+	font-size: 80px;
+}
+
+/* 메뉴체계도 */
+.ad_menutree_wrap {
+	overflow-y: auto;
+	height: 500px;
+	padding: 10px;
+	border: 1px solid #e1e1e1;
+}
+.ad_menuinfo_wrap {
+	overflow-y: auto;
+	height: 519px;
+}
+
+/* 지도교수 선택 */
+.ad_name_row {
+	display: inline-block;
+	margin-left: 5px;
+}
+
+/* 통계 */
+.invoice {
+	margin: 0;
+}
+.ad_box {
+	background: #fff;
+}
+
+/* 토글버튼 */
+.toggle_button {
+	position: relative;
+	display: inline-block;
+	width: 40px; height: 20px;
+	background: #e6e6e6;
+	border: 0;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+	box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+	outline: none; 
+}
+.toggle_button span {
+	position: absolute; top: 0; left: 0;
+	display: inline-block;
+	width: 25px; height: 20px;
+	background: #adadad;
+	border-radius: 10px;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+.toggle_button.on span {
+	left: 15px;
+	background: #3c8dbc;
+}
+.toggle_button.disabled {
+	cursor: default;
+}
+
+.toggle_button.green {
+    width: 60px; height: 25px;
+    -webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+    background: #a1a1a1;
+    -webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+.toggle_button.green::after {
+    content:"OFF";
+    position: absolute; right: 6px; top: 2px;
+    z-index: 1;
+}
+.toggle_button.green.on::after{
+   content:"ON";
+    left: -20px;
+    color:#fff;
+}
+.toggle_button.green span {
+	background: #fff;
+    top: 2px; left: 3px;
+    z-index: 2;
+    width: 20px;
+}
+.toggle_button.green.on {
+    background:#49d162;
+}
+.toggle_button.green.on span {
+	left: 38px;
+    background: #fff;
+}
+
+/* 대학교 상세 */
+.box-header .box_emblem {
+    width: 40px; height: 40px;
+    display: inline-block; margin-right: 5px;
+}
+@media all and (max-width:991px) {
+	.ad_btnlist_center1 {
+		padding-top: 0; margin-bottom: 20px;
+		text-align: center;
+	}
+	.ad_btnlist_center1 a {
+		display: inline-block;
+		width: 37px; height: 37px;
+		margin: 0px 10px;
+		transform: rotate(90deg)
+	}
+}
+
+@media all and (max-width:767px) {
+	
+	/* 에러페이지 */
+	.error-page {
+		margin: 20px auto 0 auto;
+	}
+	.error-page > .error-content > h3 {
+		font-size: 18px;
+	}
+	.error-page > .error-content p {
+		text-align: center;
+	}
+	
+	/* 권한설정 */
+	.ad_manager_list {
+		height: auto;
+	}
+	.ad_btnlist_center {
+		padding-top: 10px;
+		text-align: center;
+	}
+	.ad_btnlist_center a {
+		display: inline-block;
+		width: 37px; height: 37px;
+		margin: 0px 10px;
+		transform: rotate(90deg)
+	}
+	
+}
+
+
+@media all and (max-width:480px) {
+	
+	.fixed .content-wrapper, .fixed .right-side {
+		padding-top: 80px;
+	}
+	
+	.content-header>h2 {
+		font-size: 24px;
+	}
+	
+	/* 박스 */
+	.box-header > .fa, .box-header > .glyphicon, .box-header > .ion, .box-header .box-title {
+		font-size: 16px;
+	}
+	.nav-tabs-custom > .header {
+		font-size: 16px;
+	}
+	.nav-tabs > li > a {
+		padding : 10px 8px;
+	}
+	.small-box > .inner {
+		padding: 5px;
+	}
+	.small-box h3 {
+		margin: 5px;
+		font-size: 20px;
+	}
+	
+}
+

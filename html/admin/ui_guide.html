@@ -1,0 +1,1529 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes, height=device-height, viewport-fit=cover, shrink-to-fit=no">
+	<meta name="title" content="CareerPASS DEMO">
+	<meta name="description" content="welcome to CareerPASS DEMO">
+	<meta name="copyrigt" content="DainLeaders">
+	<meta name="keywords" content="dainleaders,Careerpass,Careerpass system, 경력개발통합관리시스템, 커리어패스, 역량관리, 대학, 대학생, 역량관리시스템, 경력관리">
+	<title>Do Dream Admin</title>
+	<link rel="apple-touch-icon" href="../../images/common/favicon.ico">
+	<link rel="shortcut icon" href="../../images/common/favicon.ico">
+	<!-- [pp] 아이콘글꼴/font-awesome -->
+	<link rel="stylesheet" href="../../fonts/font-awesome/css/font-awesome.min.css">
+	<!-- [pp] 아이콘글꼴/font-awesome/파이어폭스 미출력 에러 대응 -->
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+	<!-- css -->
+	<link rel="stylesheet" href="../../plugin/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="../../plugin/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+	<link rel="stylesheet" href="../../plugin/bootstrap-toggle/css/bootstrap-toggle.min.css">
+	<link rel="stylesheet" href="../../plugin/Ionicons/css/ionicons.min.css">
+	<link rel="stylesheet" href="../../css/admin/src/AdminLTE.css">
+	<link rel="stylesheet" href="../../css/admin/src/skins/_all-skins.css">
+	<link rel="stylesheet" href="../../css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" href="../../plugin/select2/css/select2.css">
+	<link rel="stylesheet" href="../../css/admin/dl_common.css">
+	<link rel="stylesheet" href="../../css/dl_global.css">
+	<link rel="stylesheet" href="../../css/admin/dl_custom.css">
+	<link rel="stylesheet" href="../../css/admin/dl_table.css">
+	<link rel="stylesheet" href="../../css/admin/dl_popup.css">
+	<link rel="stylesheet" href="../../css/admin/dl_ui.css">
+</head>
+
+	<body class="hold-transition skin-blue-light sidebar-mini fixed">
+	<!--[if lt IE 10]>
+	<div id="ad_iever_upgradeinfo" style="width:100%; padding:10px; text-align:center; background-color:#db4c3b;">
+		<div style="width:800px; margin: 0 auto; position:relative; color:#fff; z-index:2000;">
+			본 사이트는 익스플로러10 이상, 크롬, 오페라, 파이어폭스 브라우저등의 최신버전에 최적화 되어 있습니다.<br/>지금 사용하고 계시는 브라우저는 곧 지원이 중단되므로 <a href="http://windows.microsoft.com/ko-kr/internet-explorer/ie-11-worldwide-languages" target="_blank" style="color:#1cd9e0;">익스플로러 최신버젼</a>으로 업그레이드하시거나 <a href="https://www.google.com/intl/ko/chrome/browser/" target="_blank" style="color:#1cd9e0;">크롬</a>, <a href="http://www.opera.com/ko/computer" target="_blank" style="color:#1cd9e0;">오페라</a>, <a href="https://www.mozilla.org/en-US/firefox/new/?scene=2" target="_blank" style="color:#1cd9e0;">파이어폭스</a>등의 최신 브라우저를 이용해 주세요.
+		</div>
+	</div>
+	<![endif]-->
+	<!--[if lt IE 9]>
+		<script src="../../js/html5shiv.js"></script>
+		<script src="../../js/IE9.js"></script>
+		<script src="../../js/respond.min.js"></script>
+	<![endif]-->
+	<!-- [pp] 로딩중 -->
+	<div class="wrapper">
+		<!--[pp] header -->
+		<header class="main-header">
+			<!--[pp] logo -->
+			<h1>
+				<a href="javascript:void(0);" class="logo">
+					<!--[pp] 햄버거 버튼 클릭시 메뉴가 접힌 상태에서 보여줄 로고 -->
+					<span class="logo-mini">
+						<img src="../../images/admin/minilogo.png" alt="커리어패스 관리자페이지">
+					</span>
+					<!--[pp] //햄버거 버튼 클릭시 메뉴가 접힌 상태에서 보여줄 로고 -->
+					<span class="logo-lg">
+						<img src="../../images/admin/header_logo.png" alt="두드림 로고">
+						<span class="hide">Do Dream</span>
+					</span>
+				</a>
+			</h1>
+			<!--[pp] //logo -->
+			<nav class="navbar navbar-static-top">
+				<!--[pp] 햄버거버튼 -->
+				<a href="javascript:void(0);" class="sidebar-toggle" data-toggle="push-menu" role="button">
+					<span class="sr-only">주요메뉴 열고닫기</span>
+				</a>
+				<!--[pp] //햄버거버튼 -->
+				<!--[pp] tnb -->
+				<div class="navbar-custom-menu">
+					<ul class="nav navbar-nav">
+						<li class="hidden-xs pp_username">
+							<a href="javascript:void(0);">
+								<i class="fa fa-user"></i>
+								<span class="pp_user_txt">최고관리자님</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);" class="pp_client_link">
+								<i class="fa fa-television"></i>
+								<span class="hidden-xs pp_user_txt">학생화면 바로가기</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<i class="fa fa-unlock-alt"></i>
+								<span class="hidden-xs pp_user_txt">LOGOUT</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!--[pp] //tnb -->
+			</nav>
+		</header>
+		<!--[pp] //header -->
+		<!--[pp] gnb -->
+		<aside class="main-sidebar">
+			<section class="sidebar">
+				<div class="user-panel">
+					<div class="pull-left image">
+						<img src="../../images/admin/user_img.jpg" class="img-circle" alt="User Image">
+					</div>
+					<div class="pull-left info">
+						<p>최고 관리자님</p>
+						<span>
+							<i class="fa fa-calendar"></i>&nbsp;최종접속일: 19-01-01
+						</span>
+					</div>
+				</div>
+				<ul class="sidebar-menu" data-widget="tree">
+					<li class="treeview">
+						<a href="javascript:void(0);"><i class="fa fa-cogs"></i><span>포탈관리</span>
+							<span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+						</a>
+						<ul class="treeview-menu">
+							<li><a href="javascript:void(0);">메뉴 관리</a></li>
+							<li><a href="javascript:void(0);">콘텐츠 관리</a></li>
+							<li><a href="javascript:void(0);">권한 관리</a></li>
+							<li><a href="javascript:void(0);">사용자별 권한 관리</a></li>
+							<li><a href="javascript:void(0);">외부 관리자 등록</a></li>
+							<li><a href="javascript:void(0);">로그인 이력</a></li>
+						</ul>
+					</li>
+					<li class="treeview">
+						<a href="javascript:void(0);"><i class="fa fa-desktop"></i><span>시스템 관리</span>
+							<span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+						</a>
+						<ul class="treeview-menu">
+							<li class="treeview">
+								<a href="javascript:void(0);">배너 관리<span class="pull-right-container"></span></a>
+							</li>
+							<li class="treeview">
+								<a href="javascript:void(0);">팝업 관리<span class="pull-right-container"></span></a>
+							</li>
+						</ul>
+					</li>
+					<li class="treeview">
+						<a href="javascript:void(0);"><i class="fa fa-plane"></i><span>유학정보 관리</span>
+							<span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+						</a>
+						<ul class="treeview-menu">
+							<li class="treeview">
+								<a href="javascript:void(0);">대학 코드<span class="pull-right-container"></span></a>
+							</li>
+							<li class="treeview">
+								<a href="javascript:void(0);">유학정보<span class="pull-right-container"></span></a>
+							</li>
+						</ul>
+					</li>
+					<li class="treeview">
+						<a href="javascript:void(0);"><i class="fa fa-youtube-play"></i><span>Do Play 관리</span>
+							<span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+						</a>
+						<ul class="treeview-menu">
+							<li><a href="javascript:void(0);">Dream Story 관리</a></li>
+							<li><a href="javascript:void(0);">PicK-POP 관리</a></li>
+							<li><a href="javascript:void(0);">오늘의 한마디 관리</a></li>
+						</ul>
+					</li>
+					<li class="treeview">
+						<a href="javascript:void(0);"><i class="fa fa-book"></i><span>Do TOPIK 관리</span>
+							<span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+						</a>
+						<ul class="treeview-menu">
+							<li><a href="javascript:void(0);">읽기 문제 관리</a></li>
+						</ul>
+					</li>
+					<li class="treeview">
+						<a href="javascript:void(0);"><i class="fa fa-comments-o"></i><span>Do Talking 관리</span>
+							<span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+						</a>
+						<ul class="treeview-menu">
+							<li><a href="javascript:void(0);">Do Talking 관리</a></li>
+						</ul>
+					</li>
+					<li class="treeview">
+						<a href="javascript:void(0);"><i class="fa fa-question-circle"></i><span>문의하기 관리</span>
+							<span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+						</a>
+						<ul class="treeview-menu">
+							<li><a href="javascript:void(0);">FAQ 관리</a></li>
+							<li><a href="javascript:void(0);">1:1 문의 관리</a></li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+		</aside>
+		<!--[pp] //gnb -->
+
+		<!--[pp] 본문영역 -->
+		<div class="content-wrapper">
+			<!--[pp] 본문 타이틀 영역/페이지제목,페이지네비게이션 -->
+			<section class="content-header">
+				<h2><i class="fa fa-home"></i>&nbsp;UI 가이드</h2>
+				<ol class="breadcrumb">
+					<li><a href="javascript:void(0);"><i class="fa fa-home"></i>UI 가이드</a></li>
+				</ol>
+			</section>
+			<!--[pp] //본문 타이틀 영역/페이지제목,페이지네비게이션 -->
+			<!--[pp] 본문내용영역 -->
+			<section class="content container-fluid">
+				<!--[pp] 템플릿 url 및 아이콘 정보 -->
+				<div class="box box-solid">
+					<div class="box-header with-border">
+						<h3 class="box-title">템플릿데모, 아이콘</h3>
+						<div class="box-tools pull-right">
+							<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+							</button>
+						</div>
+					</div>
+					<div class="box-body">
+						템플릿 정보 및 아이콘 클래스는 <a href="https://adminlte.io/themes/AdminLTE/pages/UI/icons.html" target="_blank" class="text-red">여기서</a> 확인 할 수 있습니다.
+					</div>
+				</div>
+				<!--[pp] //템플릿 url 및 아이콘 정보 -->
+				<!--[pp] 예시파일 보기 -->
+				<div class="box box-solid">
+					<div class="box-header with-border">
+						<h3 class="box-title">예시화면 보기</h3>
+						<div class="box-tools pull-right">
+							<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+							</button>
+						</div>
+					</div>
+					<div class="box-body">
+						<div class="col-sm-6">
+							<p class="mg_b5">
+								<a href="index.html" target="_blank" class="link_view"><i class="fa fa-external-link"></i>로그인</a>
+							</p>
+							<p class="mg_b5">
+								<a href="main.html" target="_blank" class="link_view"><i class="fa fa-external-link"></i>대시보드</a>
+							</p>
+							<p class="mg_b5">
+								<a href="sub_000_etc/00010_err.html" target="_blank" class="link_view"><i class="fa fa-external-link"></i>에러화면</a>
+							</p>
+							<p>
+								<a href="sub_000_etc/00020_loading.html" target="_blank" class="link_view"><i class="fa fa-external-link"></i>로딩화면</a>
+							</p>
+						</div>
+						<div class="col-sm-6">
+							<p class="mg_b5">
+								<a href="sub_010_page_ex/00010_searchtable_list.html" target="_blank" class="link_view"><i class="fa fa-external-link"></i>기본 검색/검색결과 리스트 화면</a>
+							</p>
+							<p class="mg_b5">
+								<a href="sub_010_page_ex/00020_2column_menu_manage.html" target="_blank" class="link_view"><i class="fa fa-external-link"></i>메뉴관리 2단 레이아웃</a>
+							</p>
+							<p class="mg_b5">
+								<a href="sub_010_page_ex/00040_2column_add_remove.html" target="_blank" class="link_view"><i class="fa fa-external-link"></i>지도학생관리 2단 레이아웃</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<!--[pp] //예시파일 보기 -->
+				<!--[pp] 팝업 보기 -->
+				<div class="box box-solid">
+					<div class="box-header with-border">
+						<h3 class="box-title">팝업 보기</h3>
+						<div class="box-tools pull-right">
+							<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+							</button>
+						</div>
+					</div>
+					<div class="box-body">
+						<p class="mg_b5">
+							<a href="sub_020_popup_ex/00010_2column_list_pop.html" target="_blank" class="link_view"><i class="fa fa-external-link"></i>권한설정 2단 레이아웃 팝업 새창으로 열기</a>
+							<a href="sub_020_popup_ex/00010_2column_list_pop.html" class="btn btn-xs btn-default btn_modal" data-toggle="modal" data-target="#mymodal"><i class="fa fa-search-plus mg_r5"></i>보기</a>
+						</p>
+						<p class="mg_b5">
+							<a href="sub_020_popup_ex/00020_2column_searchlist_pop.html" target="_blank" class="link_view"><i class="fa fa-external-link"></i>권한설정+검색 2단 레이아웃 팝업 새창으로 열기</a>
+							<a href="sub_020_popup_ex/00020_2column_searchlist_pop.html" class="btn btn-xs btn-default btn_modal" data-toggle="modal" data-target="#mymodal"><i class="fa fa-search-plus mg_r5"></i>보기</a>
+						</p>
+						<p class="mg_b5">
+							<a href="sub_020_popup_ex/00030_searchlist_pageing_pop.html" target="_blank" class="link_view"><i class="fa fa-external-link"></i>검색/검색결과 리스트 팝업</a>
+							<a href="sub_020_popup_ex/00030_searchlist_pageing_pop.html" class="btn btn-xs btn-default btn_modal" data-toggle="modal" data-target="#mymodal"><i class="fa fa-search-plus mg_r5"></i>보기</a>
+						</p>
+					</div>
+				</div>
+				<!--[pp] //팝업 보기 -->
+				<!-- [pp] gird -->
+				<div class="box box-solid">
+					<div class="box-header with-border">
+						<h3 class="box-title">gird</h3>
+						<div class="box-tools pull-right">
+							<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+							</button>
+						</div>
+					</div>
+					<div class="box-body">
+						<div class="table-responsive tbl_scroll">
+							<table class="table tbl_col table-bordered">
+								<caption>grid 정보</caption>
+								<thead>
+									<tr>
+										<th scope="col"></th>
+										<th scope="col">Extra small</th>
+										<th scope="col">Small</th>
+										<th scope="col">Medium</th>
+										<th scope="col">Large</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">최대 container 넓이</th>
+										<td>0~767px</td>
+										<td>768px~991px</td>
+										<td>992px~1199px</td>
+										<td>1200px 이상</td>
+									</tr>
+									<tr>
+										<th scope="row">클래스 prefix</th>
+										<td>.col-xs-</td>
+										<td>.col-sm-</td>
+										<td>.col-md-</td>
+										<td>.col-lg-</td>
+									</tr>
+									<tr>
+										<th scope="row">컬럼수</th>
+										<td colspan="4">12</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<!-- [pp] //gird -->
+				<!--[pp] Layout -->
+				<div class="box box-solid">
+					<div class="box-header with-border">
+						<h3 class="box-title">Global Class Name</h3>
+						<div class="box-tools pull-right">
+							<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+							</button>
+						</div>
+					</div>
+					<div class="box-body no-padding">
+						<table class="table table-striped">
+							<caption>클래스 네임</caption>
+							<colgroup>
+								<col style="width: 15%">
+								<col style="width: auto">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row">background-color</th>
+									<td>
+										bg-red,bg-yellow,bg-aqua,bg-blue,bg-light-blue,bg-green,bg-navy,bg-teal,bg-olive,bg-lime,bg-orange,bg-fuchsia,bg-purple,bg-maroon,bg-black
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">border</th>
+									<td>
+										border_none(border:none), border_tn(border-top:none), border_bn(border-bottom:none), border_ln(border-left:none), border_rn(border-right:none), border-box(전방향 보더 적용), border_top(border-top: 1px solid #ddd, border_bottom, border_left, border_right)
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">display</th>
+									<td>
+										dp_block(display:block), dp_inline(display:inline-block), dp_none(display:none), dp_tablecell(display:table-cell)
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">float</th>
+									<td>
+										fr(float:right), fl(float:left), fn(float:none), of(overflow:hidden), ov(overflow:visible), cf(플롯해제)
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">font-color</th>
+									<td>
+										font_default, font_gray, font_red, font_deepblue, font_blue, font_green, font_yellow, font_white
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">font-size</th>
+									<td>
+										font_12, font_13, font_14, font_15.....font_20
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">font-weight</th>
+									<td>
+										bold(font-weight:600), normal(font-weight:400)
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">margin</th>
+									<td>
+										4방향 동시: mg_0 or no-margin(margin: 0), mg_5(margin: 5px), 5 단위로 20까지
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">margin-top</th>
+									<td>
+										mg_t0 (margin-top: 0px), mg_t5 (margin-top: 5px), mg_t10 (margin-top: 10px).......5단위로 mg_t100까지
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">margin-bottom</th>
+									<td>
+										mg_b0 (margin-bottom: 0px), mg_b5 (margin-bottom: 5px), mg_b10 (margin-bottom: 10px).......5단위로 mg_t100까지
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">margin-left</th>
+									<td>
+										mg_l0 (margin-left: 0px), mg_l5 (margin-left: 5px), mg_l10 (margin-left: 10px).......5단위로 mg_l100까지
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">margin-right</th>
+									<td>
+										mg_r0 (margin-right: 0px), mg_r5 (margin-right: 5px), mg_r10 (margin-right: 10px).......5단위로 mg_r100까지
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">padding</th>
+									<td>
+										4방향 동시: md_0 or no-padding(padding: 0), pd_5(padding: 5px), 5 단위로 20까지
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">padding-top</th>
+									<td>
+										pd_t0 (padding-top: 0px), pd_t5 (padding-top: 5px), pd_t10 (padding-top: 10px).......5단위로 pd_t100까지
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">padding-bottom</th>
+									<td>
+										pd_b0 (padding-bottom: 0px), pd_b5 (padding-bottom: 5px), pd_b10 (padding-bottom: 10px).......5단위로 pd_b100까지
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">padding-left</th>
+									<td>
+										pd_l0 (padding-left: 0px), pd_l5 (padding-left: 5px), pd_l10 (padding-left: 10px).......5단위로 pd_l100까지
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">padding-right</th>
+									<td>
+										pd_r0 (padding-right: 0px), pd_r5 (padding-right: 5px), pd_r10 (padding-right: 10px).......5단위로 pd_r100까지
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">text-align</th>
+									<td>
+										ta_c(text-align:center), ta_l(text-align:left), ta_r(text-align:right)
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">text-indent</th>
+									<td>
+										ta_i
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">vertical-align</th>
+									<td>
+										va_t(vertical-align:top), va_m(vertical-align:middle), va_b(vertical-align:bottom)
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<!--[pp] //Layout -->
+				<!--[pp] button -->
+				<div class="box box-solid">
+					<div class="box-header with-border">
+						<h3 class="box-title">button size</h3>
+						<div class="box-tools pull-right">
+							<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+							</button>
+						</div>
+					</div>
+					<div class="box-body">
+						<button type="button" class="btn btn-default btn-xs">btn-xs</button>
+						<button type="button" class="btn btn-default btn-sm">btn-sm</button>
+						<button type="button" class="btn btn-default">btn-default</button>
+						<button type="button" class="btn btn-default btn-lg">btn-lg</button>
+					</div>
+				</div>
+				<div class="box box-solid">
+					<div class="box-header with-border">
+						<h3 class="box-title">button color</h3>
+						<div class="box-tools pull-right">
+							<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+							</button>
+						</div>
+					</div>
+					<div class="box-body">
+						<button type="button" class="btn btn-sm btn-default">btn-default</button>
+						<button type="button" class="btn btn-sm btn-primary">btn-primary</button>
+						<button type="button" class="btn btn-sm btn-success">btn-success</button>
+						<button type="button" class="btn btn-sm btn-danger">btn-danger</button><br><br>
+						<button type="button" class="btn btn-sm btn-purple">btn-purple</button><br><br>
+						<button type="button" class="btn btn-sm btn-outline-dark">btn-outline-dark</button>
+						<button type="button" class="btn btn-sm btn-outline-success">btn-outline-success</button>
+						<button type="button" class="btn btn-sm btn-outline-danger">btn-outline-danger</button>
+						<button type="button" class="btn btn-sm btn-outline-gray">btn-outline-gray</button>
+					</div>
+				</div>
+				<div class="box box-solid">
+					<div class="box-header with-border">
+						<h3 class="box-title">버튼정의</h3>
+						<div class="box-tools pull-right">
+							<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+							</button>
+						</div>
+					</div>
+					<div class="box-body">
+						<div class="ad_section_s">
+							<h4 class="ad_stit"><span></span>긍정버튼: 화면의 변화를 주거나 정보를 추가</h4>
+							<p>
+								<button type="button" class="btn btn-sm btn-primary"><i class="fa fa-search mg_r5"></i>검색</button>
+								<button type="button" class="btn btn-sm btn-primary"><i class="fa fa-file-o mg_r5"></i>결과보고서</button>
+								<button type="button" class="btn btn-sm btn-primary"><i class="fa fa-cog mg_r5"></i>권한설정</button>
+								<button type="button" class="btn btn-sm btn-primary"><i class="fa  fa-envelope-o mg_r5"></i>발송</button>
+								<button type="button" class="btn btn-sm btn-primary"><i class="fa  fa-user mg_r5"></i>배정</button>
+								<button type="button" class="btn btn-sm btn-primary"><i class="fa  fa-user-times mg_r5"></i>불참</button>
+								<button type="button" class="btn btn-sm btn-primary"><i class="fa  fa-users mg_r5"></i>불참자 명단</button>
+								<button type="button" class="btn btn-sm btn-primary"><i class="fa fa-hand-pointer-o mg_r5"></i>상담의뢰</button>
+								<button type="button" class="btn btn-sm btn-primary"><i class="fa fa-file-o mg_r5"></i>상담일지</button>
+								<button type="button" class="btn btn-sm btn-primary"><i class="fa  fa-search-plus mg_r5"></i>상세보기</button>
+								<button type="button" class="btn btn-sm btn-primary"><i class="fa fa-edit mg_r5"></i>수정</button>
+								<button type="button" class="btn btn-sm btn-primary"><i class="fa fa-check mg_r5"></i>승인</button>
+								<button type="button" class="btn btn-sm btn-primary"><i class="fa fa-cog mg_r5"></i>역량단계별 추천 관리</button>
+								<button type="button" class="btn btn-sm btn-primary"><i class="fa fa-cog mg_r5"></i>일괄상태변경</button>
+								<button type="button" class="btn btn-sm btn-primary"><i class="fa fa-check mg_r5"></i>일괄승인</button>
+								<button type="button" class="btn btn-sm btn-primary"><i class="fa fa-check mg_r5"></i>저장</button>
+								<button type="button" class="btn btn-sm btn-primary"><i class="fa fa-plus mg_r5"></i>추가</button>
+								<button type="button" class="btn btn-sm btn-primary"><i class="fa fa-plus mg_r5"></i>추가상담일지</button>
+								<button type="button" class="btn btn-sm btn-primary"><i class="fa fa-folder-open-o mg_r5"></i>파일첨부</button>
+								<button type="button" class="btn btn-sm btn-primary"><i class="fa  fa-file-o mg_r5"></i>포트폴리오</button>
+								<button type="button" class="btn btn-sm btn-primary"><i class="fa fa-plus mg_r5"></i>행추가</button>
+							</p>
+						</div>
+						<div class="ad_section_s">
+							<h4 class="ad_stit"><span></span>중립버튼: 화면의 변화가 없는 버튼, 화면으로 되돌아가는 버튼</h4>
+							<p>
+								<button type="button" class="btn btn-sm btn-default"><i class="fa  fa-envelope-o mg_r5"></i>SMS</button>
+								<button type="button" class="btn btn-sm btn-default"><i class="fa fa-navicon mg_r5"></i>목록</button>
+								<button type="button" class="btn btn-sm btn-default"><i class="fa fa-copy mg_r5"></i>복사</button>
+								<button type="button" class="btn btn-sm btn-default"><i class="fa fa-print mg_r5"></i>출력</button>
+							</p>
+						</div>
+						<div class="ad_section_s">
+							<h4 class="ad_stit"><span></span>부정버튼: 추가정보를 차단하는 버튼</h4>
+							<p>
+								<button type="button" class="btn btn-sm btn-outline-danger"><i class="fa fa-close mg_r5"></i>닫기</button>
+								<button type="button" class="btn btn-sm btn-outline-danger"><i class="fa fa-ban mg_r5"></i>반려</button>
+								<button type="button" class="btn btn-sm btn-outline-danger"><i class="fa fa-trash-o mg_r5"></i>삭제</button>
+								<button type="button" class="btn btn-sm btn-outline-danger"><i class="fa fa-undo mg_r5"></i>상담취소</button>
+								<button type="button" class="btn btn-sm btn-outline-danger"><i class="fa fa-ban mg_r5"></i>일괄반려</button>
+								<button type="button" class="btn btn-sm btn-outline-danger"><i class="fa fa-refresh mg_r5"></i>초기화</button>
+								<button type="button" class="btn btn-sm btn-outline-danger"><i class="fa fa-undo mg_r5"></i>취소</button>
+							</p>
+						</div>
+						<div class="ad_section_s">
+							<h4 class="ad_stit"><span></span>예외: 엑셀관련 동작 버튼</h4>
+							<p>
+								<button type="button" class="btn btn-sm btn-outline-success"><i class="fa fa-download mg_r5"></i>엑셀다운로드</button>
+								<button type="button" class="btn btn-sm btn-outline-success"><i class="fa fa-download mg_r5"></i>엑셀양식다운로드</button>
+								<button type="button" class="btn btn-sm btn-outline-success"><i class="fa fa-upload mg_r5"></i>엑셀업로드</button>
+							</p>
+						</div>
+						<div class="ad_section_s">
+							<h4 class="ad_stit"><span></span>부정버튼예외: 긍정 버튼 없이 중립버튼하고만 쓰일경우 색을 채운 버튼 사용</h4>
+							<p>
+								<button type="button" class="btn btn-sm btn-danger"><i class="fa fa-close mg_r5"></i>닫기</button>
+								<button type="button" class="btn btn-sm btn-danger"><i class="fa fa-ban mg_r5"></i>반려</button>
+								<button type="button" class="btn btn-sm btn-danger"><i class="fa fa-trash-o mg_r5"></i>삭제</button>
+								<button type="button" class="btn btn-sm btn-danger"><i class="fa fa-undo mg_r5"></i>상담취소</button>
+								<button type="button" class="btn btn-sm btn-danger"><i class="fa fa-ban mg_r5"></i>일괄반려</button>
+								<button type="button" class="btn btn-sm btn-danger"><i class="fa fa-refresh mg_r5"></i>초기화</button>
+								<button type="button" class="btn btn-sm btn-danger"><i class="fa fa-undo mg_r5"></i>취소</button>
+							</p>
+						</div>
+						<div class="ad_section_s">
+                            <h4 class="ad_stit"><span></span>화살표 버튼</h4>
+						    <div class="arrow_button">
+                                <button class="arrow_down">아래</button>
+                                <button class="arrow_up">위</button>
+                            </div>
+						</div>
+						<div class="ad_section_s">
+							<h4 class="ad_stit"><span></span>토글 버튼 &#40;부트스트랩&#41;</h4>
+							<input type="checkbox" checked data-toggle="toggle">
+							<input type="checkbox" data-toggle="toggle" disabled>
+							<br>
+							<input type="checkbox" data-toggle="toggle" data-size="mini">
+							<input type="checkbox" data-toggle="toggle" data-size="small">
+							<input type="checkbox" data-toggle="toggle" data-size="normal">
+							<input type="checkbox" data-toggle="toggle" data-size="large">
+						</div>
+						<div class="ad_section_s">
+							<h4 class="ad_stit"><span></span>토글 버튼 &#40;일반&#41;</h4>
+							<button type="button" class="toggle_button">
+								<span></span>
+							</button>
+							<button type="button" class="toggle_button on">
+								<span></span>
+							</button>
+							<button type="button" class="toggle_button disabled">
+								<span></span>
+							</button>
+						</div>
+						<div class="ad_section_s">
+                            <h4 class="ad_stit"><span></span>토글 버튼 &#40;class에 green 추가&#41;</h4>
+						    <button type="button" class="toggle_button green">
+                                <span></span>
+                            </button>
+                        </div>
+                        <div class="ad_section_s">
+                             <h4 class="ad_stit"><span></span>DRP 지급하기</h4>
+                            <div class="count_wrap">
+                                <div class="count_inner">
+                                    <p class="input_cash wd_150">
+                                        <label>DRP</label>
+                                        <input type="text" class="form-control dp_inline"> 
+                                    </p>
+                                    <button type="button" class="btn btn-sm"><i class="fa fa-plus"></i></button>
+                                </div>
+                                <button type="button" class="btn btn-sm btn-primary"><i class="fa fa-plus mg_r5"></i>추가지급</button>
+                                <button type="button" class="btn btn-sm btn-outline-dark"><i class="fa fa-minus mg_r5"></i>회수</button>
+                            </div>
+                        </div>
+					</div>
+				</div>
+				<div class="box box-solid">
+					<div class="box-header with-border">
+						<h3 class="box-title">button disable</h3>
+						<div class="box-tools pull-right">
+							<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+							</button>
+						</div>
+					</div>
+					<div class="box-body">
+						<button type="button" class="btn btn-sm btn-default disabled">btn-default</button>
+						<button type="button" class="btn btn-sm btn-primary disabled">btn-primary</button>
+						<button type="button" class="btn btn-sm btn-danger disabled">btn-danger</button><br><br>
+						<button type="button" class="btn btn-sm btn-outline-dark" disabled>btn-outline-dark</button>
+						<button type="button" class="btn btn-sm btn-outline-success" disabled>btn-outline-success</button>
+						<button type="button" class="btn btn-sm btn-outline-danger" disabled>btn-outline-danger</button>
+					</div>
+				</div>
+				<div class="box box-solid">
+					<div class="box-header with-border">
+						<h3 class="box-title">button group</h3>
+						<div class="box-tools pull-right">
+							<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+							</button>
+						</div>
+					</div>
+					<div class="box-body">
+						<table class="table table-bordered tbl_col">
+							<caption>버튼 그룹 목록</caption>
+							<thead>
+								<tr>
+									<th>Button</th>
+									<th>Icons</th>
+									<th>Flat</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<div class="btn-group">
+											<button type="button" class="btn btn-default">Left</button>
+											<button type="button" class="btn btn-default">Middle</button>
+											<button type="button" class="btn btn-default">Right</button>
+										</div>
+									</td>
+									<td>
+										<div class="btn-group">
+											<button type="button" class="btn btn-default"><i class="fa fa-align-left"></i></button>
+											<button type="button" class="btn btn-default"><i class="fa fa-align-center"></i></button>
+											<button type="button" class="btn btn-default"><i class="fa fa-align-right"></i></button>
+										</div>
+									</td>
+									<td>
+										<div class="btn-group">
+											<button type="button" class="btn btn-default btn-flat"><i class="fa fa-align-left"></i></button>
+											<button type="button" class="btn btn-default btn-flat"><i class="fa fa-align-center"></i></button>
+											<button type="button" class="btn btn-default btn-flat"><i class="fa fa-align-right"></i></button>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="btn-group">
+											<button type="button" class="btn btn-info">승인</button>
+											<button type="button" class="btn btn-danger">반려</button>
+											<button type="button" class="btn btn-warning">대기</button>
+										</div>
+									</td>
+									<td>
+										<div class="btn-group">
+											<button type="button" class="btn btn-info"><i class="fa fa-battery-empty"></i></button>
+											<button type="button" class="btn btn-info"><i class="fa fa-battery-1"></i></button>
+											<button type="button" class="btn btn-info"><i class="fa fa-battery-2"></i></button>
+											<button type="button" class="btn btn-info"><i class="fa fa-battery-3"></i></button>
+										</div>
+									</td>
+									<td>
+										<div class="btn-group">
+											<button type="button" class="btn btn-success btn-flat"><i class="fa fa-check"></i></button>
+											<button type="button" class="btn btn-danger btn-danger"><i class="fa fa-times"></i></button>
+											<button type="button" class="btn btn-info btn-flat"><i class="fa fa-plus"></i></button>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<!--[pp] //button -->
+				<!--[pp] label -->
+				<div class="box box-solid">
+					<div class="box-header with-border">
+						<h3 class="box-title">label</h3>
+						<div class="box-tools pull-right">
+							<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+							</button>
+						</div>
+					</div>
+					<div class="box-body">
+						<p class="ad_tip_txt"><span class="label bg-red">Tip</span>꿀팁 정보가 한눈에! 꿀팁 정보가 한눈에!</p>
+						<label class="label bg-orange">label</label>
+						<label class="label bg-green">label</label>
+						<label class="label bg-red">label</label>
+						<label class="label bg-yellow">label</label>
+						<label class="label bg-blue">label</label>
+					</div>
+				</div>
+				<!--[pp] //label -->
+				<!--[pp] link -->
+				<div class="box box-solid">
+					<div class="box-header with-border">
+						<h3 class="box-title">link</h3>
+						<div class="box-tools pull-right">
+							<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+							</button>
+						</div>
+					</div>
+					<div class="box-body">
+						<p>
+							<!--[pp] a태그만 복사 -->
+							<a href="javascript:void(0);" class="link_view"><i class="fa fa-external-link"></i>링크연결</a>
+						</p>
+						<p>
+							<!--[pp] a태그만 복사 -->
+							<a href="javascript:void(0);" class="link_file"><i class="fa fa-cloud-download"></i>첨부파일 링크-파일 삭제기능 없음</a>
+						</p>
+						<!--[pp] p태그도 같이 복사 -->
+						<p class="link_file_del">
+							<a href="javascript:void(0);" class="link_file"><i class="fa fa-cloud-download"></i>첨부파일 링크-파일 삭제가능</a>
+							<button type="button" title="삭제" class="link_del"><i class="fa fa-close"></i></button>
+						</p>
+					</div>
+				</div>
+				<!--[pp] //link -->
+				<!--[pp] Tab -->
+				<h3 class="box-title">Tab</h3>
+				<div class="nav-tabs-custom">
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="#tab_1" data-toggle="tab">tab1</a></li>
+						<li><a href="#tab_2" data-toggle="tab">tab2</a></li>
+						<li><a href="#tab_3" data-toggle="tab">tab3</a></li>
+					</ul>
+					<div class="tab-content">
+						<div class="tab-pane" id="tab_1">
+							으아아아아아아아아아아아아아아아아아아아<br>
+							으아아아아아아아아아아아아아아아아아아아<br>
+							으아아아아아아아아아아아아아아아아아아아
+						</div>
+						<div class="tab-pane" id="tab_2">
+							hahahahahahahahahahahahahahahahahahaha<br>
+							hahahahahahahahahahahahahahahahahahaha<br>
+							hahahahahahahahahahahahahahahahahahaha
+						</div>
+						<div class="tab-pane active" id="tab_3">
+							오예르오예르오예르오예르오예르오예르오예르오예르<br>
+							오예르오예르오예르오예르오예르오예르오예르오예르<br>
+							오예르오예르오예르오예르오예르오예르오예르오예르
+						</div>
+					</div>
+				</div>
+				<h3 class="box-title">Tab - 모양만</h3>
+				<div class="nav-tabs-custom">
+					<ul class="ad_tablist">
+						<li class="active"><a href="javascript:void(0);">tab1</a></li>
+						<li><a href="javascript:void(0);">tab2</a></li>
+						<li><a href="javascript:void(0);">tab3</a></li>
+					</ul>
+				</div>
+				<!--[pp] Tab -->
+				<!-- [pp] accordion -->
+				<h3 class="box-title">Accordion</h3>
+				<div class="panel-group" id="accordion">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapse1">제목1</a>
+							</h4>
+						</div>
+						<div id="collapse1" class="panel-collapse collapse in">
+							<div class="panel-body">
+								내용입니다 내용입니다 내용입니다 내용입니다 내용입니다 내용입니다 내용입니다 내용입니다 내용입니다 내용입니다
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapse2">제목2</a>
+							</h4>
+						</div>
+						<div id="collapse2" class="panel-collapse collapse">
+							<div class="panel-body">
+								내용입니다 내용입니다 내용입니다 내용입니다 내용입니다 내용입니다 내용입니다 내용입니다 내용입니다 내용입니다
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapse3">제목3</a>
+							</h4>
+						</div>
+						<div id="collapse3" class="panel-collapse collapse">
+							<div class="panel-body">
+								내용입니다 내용입니다 내용입니다 내용입니다 내용입니다 내용입니다 내용입니다 내용입니다 내용입니다 내용입니다
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<h3 class="box-title">Accordion Table</h3>
+				<div class="panel-group" id="accordion">
+					<table class="table table-bordered table-hover tbl_col tbl_fixed">
+						<caption>세로리스트형 기본 테이블</caption>
+						<colgroup>
+							<col style="width: 20%">
+							<col style="width: auto">
+							<col style="width: 20%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">유학원 명</th>
+								<th scope="col">제목</th>
+								<th scope="col">일시</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr data-toggle="collapse" data-target="#tbl_accordion1" class="clickable">
+								<th scope="row">Megastudy</th>
+								<td>유학 과정 및 비용 문의</td>
+								<td>2020.03.07 12:15:23</td>
+							</tr>
+							<tr>
+								<td colspan="3" class="no-padding">
+									<div id="tbl_accordion1" class="collapse">숨겨진 내용입니다</div>
+								</td>
+							</tr>
+							<tr data-toggle="collapse" data-target="#tbl_accordion2" class="clickable">
+								<th scope="row">Megastudy</th>
+								<td>유학 과정 및 비용 문의</td>
+								<td>2020.03.07 12:15:23</td>
+							</tr>
+							<tr>
+								<td colspan="3" class="no-padding">
+									<div id="tbl_accordion2" class="collapse">숨겨진 내용입니다</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<!--<table class="table table-hover">
+						<thead>
+							<tr>
+								<th></th>
+								<th></th>
+								<th></th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr data-toggle="collapse" data-target="#tbl_accordion" class="clickable">
+								<td>Some Stuff</td>
+								<td>Some more stuff</td>
+								<td>And some more</td>
+							</tr>
+							<tr>
+								<td colspan="3">
+									<div id="tbl_accordion" class="collapse">Hidden by default</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>-->
+				</div>
+				<!-- [pp] //accordion -->
+				<!--[pp] form -->
+				<div class="box box-solid">
+					<div class="box-header with-border">
+						<h3 class="box-title">form - 기본</h3>
+						<div class="box-tools pull-right">
+							<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+							</button>
+						</div>
+					</div>
+					<div class="box-body">
+						<div class="form-group">
+							<h4 class="ad_stit"><span></span>checkbox</h4>
+							<p class="ad_input_row">
+								<input type="checkbox" class="check" id="check_default">
+								<label class="check_label" for="check_default">check_default</label>
+							</p>
+							<p class="ad_input_row">
+								<input type="checkbox" class="check" id="check_disabled" disabled="disabled">
+								<label class="check_label" for="check_disabled">check_disabled</label>
+							</p>
+							<p class="ad_input_row">
+								<input type="checkbox" class="check" id="check_disabled_on" disabled="disabled" checked>
+								<label class="check_label" for="check_disabled_on">check_disabled_checked</label>
+							</p>
+							<p class="ad_input_row">
+								<input type="checkbox" class="check_round" id="check_round">
+								<label class="check_label" for="check_round">check_round</label>
+							</p>
+						</div>
+						<div class="form-group">
+							<h4 class="ad_stit"><span></span>radio</h4>
+							<p class="ad_input_row">
+								<input type="radio" name="radio" class="radio" id="radio1">
+								<label class="radio_label" for="radio1">radio_default1</label>
+							</p>
+							<p class="ad_input_row">
+								<input type="radio" name="radio" class="radio" id="radio2">
+								<label class="radio_label" for="radio2">radio_default2</label>
+							</p>
+							<p class="ad_input_row">
+								<input type="radio" name="radio_dis" class="radio" id="radio_dis" disabled="disabled">
+								<label class="radio_label" for="radio_dis">radio_disabled</label>
+							</p>
+							<p class="ad_input_row">
+								<input type="radio" name="radio_dis" class="radio" id="radio_dis_on" disabled="disabled" checked>
+								<label class="radio_label" for="radio_dis_on">radio_disabled</label>
+							</p>
+							<p class="ad_input_row">
+								<input type="radio" name="radio" class="radio_round" id="radio_round">
+								<label class="radio_label" for="radio_round">radio_round1</label>
+							</p>
+						</div>
+						<div class="form-group">
+							<h4 class="ad_stit"><span></span>text/select</h4>
+							<form role="form">
+								<!-- text input -->
+								<div class="form-group">
+									<label class="bold">Text - btn default 사이즈와 함께 사용</label>
+									<input type="text" class="form-control" placeholder="입력하세요.">
+								</div>
+								<div class="form-group">
+									<label class="bold">Text - 작은사이즈 - btn-sm 사이즈와 함께 사용</label>
+									<input type="text" class="form-control input-sm" placeholder="입력하세요.">
+								</div>
+								<div class="form-group">
+									<label class="bold">Text Disabled</label>
+									<input type="text" class="form-control" placeholder="입력하세요." disabled="">
+								</div>
+								<div class="row form-group">
+									<label class="bold col-xs-12">Different Width</label>
+									<div class="col-xs-3">
+										<input type="text" class="form-control" placeholder=".col-xs-3">
+									</div>
+									<div class="col-xs-4">
+										<input type="text" class="form-control" placeholder=".col-xs-4">
+									</div>
+									<div class="col-xs-5">
+										<input type="text" class="form-control" placeholder=".col-xs-5">
+									</div>
+								</div>
+								<!-- textarea -->
+								<div class="form-group">
+									<label class="bold">Textarea</label>
+									<textarea class="form-control" rows="3" placeholder="입력하세요."></textarea>
+								</div>
+								<div class="form-group">
+									<label class="bold">Textarea Disabled</label>
+									<textarea class="form-control" rows="3" placeholder="입력하세요." disabled=""></textarea>
+								</div>
+
+								<!-- select -->
+								<div class="form-group">
+									<label class="bold">Select</label>
+									<select class="form-control">
+										<option>option 1</option>
+										<option>option 2</option>
+										<option>option 3</option>
+										<option>option 4</option>
+										<option>option 5</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<label class="bold">Select Disabled</label>
+									<select class="form-control" disabled="">
+										<option>option 1</option>
+										<option>option 2</option>
+										<option>option 3</option>
+										<option>option 4</option>
+										<option>option 5</option>
+									</select>
+								</div>
+								<!-- Select multiple-->
+								<div class="form-group">
+									<label class="bold">Select Multiple</label>
+									<select multiple="" class="form-control">
+										<option>option 1</option>
+										<option>option 2</option>
+										<option>option 3</option>
+										<option>option 4</option>
+										<option>option 5</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<label class="bold">Select Multiple Disabled</label>
+									<select multiple="" class="form-control" disabled="">
+										<option>option 1</option>
+										<option>option 2</option>
+										<option>option 3</option>
+										<option>option 4</option>
+										<option>option 5</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<label class="dp_block bold">Select Search</label>
+									<!-- [pp] 가로값은 클래스명으로 지정 -->
+									<select class="select_search wd_200">
+										<option>option 1</option>
+										<option>option 2</option>
+										<option>option 3</option>
+										<option>option 4</option>
+										<option>option 5</option>
+									</select>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="box box-solid">
+					<div class="box-header with-border">
+						<h3 class="box-title">form - 양식</h3>
+						<div class="box-tools pull-right">
+							<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+							</button>
+						</div>
+					</div>
+					<div class="box-body">
+						<div class="form-group">
+							<p class="ad_file_row">
+								<input type="text" class="form-control" value="img.jpg" readonly>
+								<label class="btn btn-primary btn_form btn_file"><i class="fa fa-folder-open-o"></i>파일첨부<input type="file" class="hidden"></label>
+							</p>
+						</div>
+						<div class="form-group">
+							<p class="ad_search_row search_group">
+								<select class="form-control">
+									<option>option 1</option>
+									<option>option 2</option>
+									<option>option 3</option>
+									<option>option 4</option>
+									<option>option 5</option>
+								</select>
+								<input type="text" class="form-control" placeholder="검색어를 입력하세요.">
+								<button type="button" class="btn btn-primary btn_form btn_search"><i class="fa fa-search"></i>검색</button>
+							</p>
+						</div>
+						<div class="form-group">
+							<p class="ad_search_row2 search_group">
+								<select class="form-control">
+									<option>option 1</option>
+									<option>option 2</option>
+									<option>option 3</option>
+									<option>option 4</option>
+									<option>option 5</option>
+								</select>
+								<input type="text" class="form-control" placeholder="검색어를 입력하세요.">
+								<button type="button" class="btn btn-primary btn_form btn_search"><i class="fa fa-search"></i>검색</button>
+							</p>
+						</div>
+						<div class="form-group">
+							<p class="ad_search_row2 search_group">
+								<select class="form-control input-sm">
+									<option>option 1</option>
+									<option>option 2</option>
+									<option>option 3</option>
+									<option>option 4</option>
+									<option>option 5</option>
+								</select>
+								<input type="text" class="form-control input-sm" placeholder="검색어를 입력하세요.">
+								<button type="button" class="btn btn-sm btn-primary btn_form btn_search"><i class="fa fa-search"></i>검색</button>
+							</p>
+						</div>
+						<div class="form-group">
+							<p class="ad_search_row">
+								<input type="text" class="form-control" placeholder="검색어를 입력하세요.">
+								<button type="button" class="btn btn-primary btn_form btn_search"><i class="fa fa-search"></i>검색</button>
+							</p>
+						</div>
+					</div>
+				</div>
+				<!--[pp] //form -->
+				<!--[pp] 달력 -->
+				<div class="box box-solid">
+					<div class="box-header with-border">
+						<h3 class="box-title">Date Picker</h3>
+						<div class="box-tools pull-right">
+							<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+							</button>
+						</div>
+					</div>
+					<div class="box-body">
+						<div class="form-group">
+							<label class="bold">Date:</label>
+							<div class="input-group date">
+								<div class="input-group-addon">
+									<i class="fa fa-calendar"></i>
+								</div>
+								<input type="text" name="datepicker" class="form-control pull-right">
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="dp_inline wd_125 va_m">
+								<div class="input-group date">
+									<div class="input-group-addon">
+										<i class="fa fa-calendar"></i>
+									</div>
+									<input type="text" name="datepicker" placeholder="시작일" class="form-control pull-right">
+								</div>
+							</div>
+							~
+							<div class="dp_inline wd_125 va_m">
+								<div class="input-group date">
+									<div class="input-group-addon">
+										<i class="fa fa-calendar"></i>
+									</div>
+									<input type="text" name="datepicker" placeholder="종료일" class="form-control pull-right">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--[pp] //달력 -->
+				<!-- [pp] 테이블 -->
+				<div class="box box-solid">
+					<div class="box-header with-border">
+						<h3 class="box-title">테이블 - 세로 리스트형</h3>
+						<div class="box-tools pull-right">
+							<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+							</button>
+						</div>
+					</div>
+					<div class="box-body">
+						<div class="ad_tbl_top">
+							<ul class="ad_tbl_count">
+								<li><span>Total:</span>515</li>
+								<li><span class="font_gray">대기:</span>105</li>
+								<li><span class="font_green">완료:</span>200</li>
+							</ul>
+							<div class="ad_tbl_toplist">
+								<input type="text" class="form-control input-sm wd_100 dp_inline va_t" placeholder="입력하세요.">
+								<select class="form-control input-sm wd_100 dp_inline va_t">
+									<option>option 1</option>
+									<option>option 2</option>
+									<option>option 3</option>
+									<option>option 4</option>
+									<option>option 5</option>
+								</select>
+								<button type="button" class="btn btn-outline-success btn-sm va_t"><i class="fa fa-download"></i>엑셀다운로드</button>
+								<button type="button" class="btn btn-outline-success btn-sm va_t"><i class="fa fa-upload"></i>엑셀업로드</button>
+							</div>
+						</div>
+						<table class="table table-bordered table-hover tbl_col tbl_fixed">
+							<caption>세로리스트형 기본 테이블</caption>
+							<colgroup>
+								<col style="width: 5%">
+								<col style="width: 15%">
+								<col style="width: auto">
+								<col style="width: 10%">
+								<col style="width: 15%">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">No <div class="sort_btn"><button type="button"><i class="glyphicon glyphicon-triangle-top"></i></button><button type="button"><i class="glyphicon glyphicon-triangle-bottom"></i></button></div></th>
+									<th scope="col">구분 <div class="sort_btn"><button type="button"><i class="glyphicon glyphicon-triangle-top"></i></button><button type="button"><i class="glyphicon glyphicon-triangle-bottom"></i></button></div></th>
+									<th scope="col">제목 <div class="sort_btn"><button type="button"><i class="glyphicon glyphicon-triangle-top"></i></button><button type="button"><i class="glyphicon glyphicon-triangle-bottom"></i></button></div></th>
+									<th scope="col">성명 <div class="sort_btn"><button type="button"><i class="glyphicon glyphicon-triangle-top"></i></button><button type="button"><i class="glyphicon glyphicon-triangle-bottom"></i></button></div></th>
+									<th scope="col">부서 <div class="sort_btn"><button type="button"><i class="glyphicon glyphicon-triangle-top"></i></button><button type="button"><i class="glyphicon glyphicon-triangle-bottom"></i></button></div></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">1</th>
+									<td>줄바꿈 비허용, 말줄임</td>
+									<td class="ta_l"><a href="javascript:void(0);" class="ellipsis">제목이 들어가는 곳입니다. 제목이 들어가는 곳입니다. 제목이 들어가는 곳입니다. 제목이 들어가는 곳입니다. 제목이 들어가는 곳입니다. 제목이 들어가는 곳입니다. 제목이 들어가는 곳입니다. 제목이 들어가는 곳입니다. 제목이 들어가는 곳입니다.</a></td>
+									<td>홍길동</td>
+									<td>활빈당</td>
+								</tr>
+								<tr>
+									<th scope="row">2</th>
+									<td>줄바꿈 허용, 말줄임 없음</td>
+									<td class="ta_l"><a href="javascript:void(0);">제목이 들어가는 곳입니다. 제목이 들어가는 곳입니다. 제목이 들어가는 곳입니다. 제목이 들어가는 곳입니다. 제목이 들어가는 곳입니다. 제목이 들어가는 곳입니다. 제목이 들어가는 곳입니다. 제목이 들어가는 곳입니다. 제목이 들어가는 곳입니다.</a></td>
+									<td>홍길동</td>
+									<td>활빈당</td>
+								</tr>
+								<tr>
+									<th scope="row">3</th>
+									<td>아무거나</td>
+									<td class="ta_l">
+										<p class="ad_input_row">
+											<input type="radio" name="radio" class="radio" id="radio100">
+											<label class="radio_label" for="radio100">radio_default1</label>
+										</p>
+										<p class="dp_inline ad_search_row search_sm ad_search_row wd_p40">
+											<input type="text" class="form-control input-sm" placeholder="검색어를 입력하세요.">
+											<button type="button" class="btn btn-sm btn-primary btn_form btn_search"><i class="fa fa-search"></i>검색</button>
+										</p>
+									</td>
+									<td>홍길동</td>
+									<td>활빈당</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="dataTables_paginate paging_simple_numbers ta_c">
+							<ul class="pagination">
+								<li class="paginate_button previous disabled"><a href="javascript:void(0);" title="첫페이지 목록"><i class="fa fa-angle-double-left"></i></a></li>
+								<li class="paginate_button previous disabled"><a href="javascript:void(0);" title="이전목록"><i class="fa fa-angle-left"></i></a></li>
+								<li class="paginate_button active"><a href="javascript:void(0);">1</a></li>
+								<li class="paginate_button"><a href="javascript:void(0);">2</a></li>
+								<li class="paginate_button"><a href="javascript:void(0);">3</a></li>
+								<li class="paginate_button"><a href="javascript:void(0);">4</a></li>
+								<li class="paginate_button"><a href="javascript:void(0);">5</a></li>
+								<li class="paginate_button next"><a href="javascript:void(0);" title="다음목록"><i class="fa fa-angle-right"></i></a></li>
+								<li class="paginate_button last"><a href="javascript:void(0);" title="마지막페이지 목록"><i class="fa fa-angle-double-right"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="box box-solid">
+					<div class="box-header with-border">
+						<h3 class="box-title">테이블 - 가로 컨텐츠형(thead가 없는 테이블):기본 왼쪽 정렬</h3>
+						<div class="box-tools pull-right">
+							<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+							</button>
+						</div>
+					</div>
+					<div class="box-body">
+						<div class="ad_tbl_top">
+							<ul class="ad_tbl_count">
+								<li><span>Total:</span>515</li>
+								<li><span class="font_gray">대기:</span>105</li>
+								<li><span class="font_green">완료:</span>200</li>
+							</ul>
+							<div class="ad_tbl_toplist">
+								<select class="form-control input-sm wd_100 dp_inline va_t">
+									<option>option 1</option>
+									<option>option 2</option>
+									<option>option 3</option>
+									<option>option 4</option>
+									<option>option 5</option>
+								</select>
+								<button type="button" class="btn btn-outline-success btn-sm va_t"><i class="fa fa-download"></i>엑셀다운로드</button>
+								<button type="button" class="btn btn-outline-success btn-sm va_t"><i class="fa fa-upload"></i>엑셀업로드</button>
+							</div>
+						</div>
+						<table class="table table-bordered tbl_row tbl_fixed">
+							<caption>세로리스트형 기본 테이블</caption>
+							<colgroup>
+								<col style="width: 5%">
+								<col style="width: 15%">
+								<col style="width: auto">
+								<col style="width: 10%">
+								<col style="width: 15%">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row">제목</th>
+									<td>줄바꿈 비허용, 말줄임</td>
+									<td><a href="javascript:void(0);" class="ellipsis">제목이 들어가는 곳입니다. 제목이 들어가는 곳입니다. 제목이 들어가는 곳입니다. 제목이 들어가는 곳입니다. 제목이 들어가는 곳입니다. 제목이 들어가는 곳입니다. 제목이 들어가는 곳입니다. 제목이 들어가는 곳입니다. 제목이 들어가는 곳입니다.</a></td>
+									<th class="row">단체명</th>
+									<td>활빈당</td>
+								</tr>
+								<tr>
+									<th scope="row">제목</th>
+									<td>줄바꿈 허용, 말줄임 없음</td>
+									<td><a href="javascript:void(0);">제목이 들어가는 곳입니다. 제목이 들어가는 곳입니다. 제목이 들어가는 곳입니다. 제목이 들어가는 곳입니다. 제목이 들어가는 곳입니다. 제목이 들어가는 곳입니다. 제목이 들어가는 곳입니다. 제목이 들어가는 곳입니다. 제목이 들어가는 곳입니다.</a></td>
+									<th class="row">단체명</th>
+									<td>활빈당</td>
+								</tr>
+								<tr>
+									<th scope="row">제목<span class="dot_rec"></span></th>
+									<td>필수표시는 이렇게</td>
+									<td><a href="javascript:void(0);" class="ellipsis">들어갑니다</a></td>
+									<th class="row">단체명</th>
+									<td>활빈당</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="dataTables_paginate paging_simple_numbers ta_c">
+							<ul class="pagination">
+								<li class="paginate_button previous disabled"><a href="javascript:void(0);" title="첫페이지 목록"><i class="fa fa-angle-double-left"></i></a></li>
+								<li class="paginate_button previous disabled"><a href="javascript:void(0);" title="이전목록"><i class="fa fa-angle-left"></i></a></li>
+								<li class="paginate_button active"><a href="javascript:void(0);">1</a></li>
+								<li class="paginate_button"><a href="javascript:void(0);">2</a></li>
+								<li class="paginate_button"><a href="javascript:void(0);">3</a></li>
+								<li class="paginate_button"><a href="javascript:void(0);">4</a></li>
+								<li class="paginate_button"><a href="javascript:void(0);">5</a></li>
+								<li class="paginate_button next"><a href="javascript:void(0);" title="다음목록"><i class="fa fa-angle-right"></i></a></li>
+								<li class="paginate_button last"><a href="javascript:void(0);" title="마지막페이지 목록"><i class="fa fa-angle-double-right"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="box box-solid">
+					<div class="box-header with-border">
+						<h3 class="box-title">테이블 - 가로 컨텐츠형(thead가 없는 테이블):기본 가운데 정렬</h3>
+						<div class="box-tools pull-right">
+							<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+							</button>
+						</div>
+					</div>
+					<div class="box-body">
+						<div class="ad_tbl_top">
+							<ul class="ad_tbl_count">
+								<li><span>Total:</span>515</li>
+								<li><span class="font_gray">대기:</span>105</li>
+								<li><span class="font_green">완료:</span>200</li>
+							</ul>
+							<div class="ad_tbl_toplist">
+								<select class="form-control input-sm wd_100 dp_inline va_t">
+									<option>option 1</option>
+									<option>option 2</option>
+									<option>option 3</option>
+									<option>option 4</option>
+									<option>option 5</option>
+								</select>
+								<button type="button" class="btn btn-outline-success btn-sm va_t"><i class="fa fa-download"></i>엑셀다운로드</button>
+								<button type="button" class="btn btn-outline-success btn-sm va_t"><i class="fa fa-upload"></i>엑셀업로드</button>
+							</div>
+						</div>
+						<table class="table table-bordered tbl_row tbl_row_c tbl_fixed">
+							<caption>세로리스트형 기본 테이블</caption>
+							<colgroup>
+								<col style="width: 5%">
+								<col style="width: 15%">
+								<col style="width: auto">
+								<col style="width: 10%">
+								<col style="width: 15%">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row">제목</th>
+									<td>줄바꿈 비허용, 말줄임</td>
+									<td><a href="javascript:void(0);" class="ellipsis">제목이 들어가는 곳입니다. 제목이 들어가는 곳입니다. 제목이 들어가는 곳입니다. 제목이 들어가는 곳입니다. 제목이 들어가는 곳입니다. 제목이 들어가는 곳입니다. 제목이 들어가는 곳입니다. 제목이 들어가는 곳입니다. 제목이 들어가는 곳입니다.</a></td>
+									<th class="row">단체명</th>
+									<td>활빈당</td>
+								</tr>
+								<tr>
+									<th scope="row">제목</th>
+									<td>줄바꿈 허용, 말줄임 없음</td>
+									<td><a href="javascript:void(0);">제목이 들어가는 곳입니다. 제목이 들어가는 곳입니다. 제목이 들어가는 곳입니다. 제목이 들어가는 곳입니다. 제목이 들어가는 곳입니다. 제목이 들어가는 곳입니다. 제목이 들어가는 곳입니다. 제목이 들어가는 곳입니다. 제목이 들어가는 곳입니다.</a></td>
+									<th class="row">단체명</th>
+									<td>활빈당</td>
+								</tr>
+								<tr>
+									<th scope="row">제목<span class="dot_rec"></span></th>
+									<td>필수표시는 이렇게</td>
+									<td><a href="javascript:void(0);" class="ellipsis">들어갑니다</a></td>
+									<th class="row">단체명</th>
+									<td>활빈당</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="box box-solid">
+					<div class="box-header with-border">
+						<h3 class="box-title">테이블 - 세로 리스트형(스크롤 생성)</h3>
+						<div class="box-tools pull-right">
+							<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+							</button>
+						</div>
+					</div>
+					<div class="box-body">
+						<p class="ad_tip_txt"><span class="label bg-red">Tip</span>tbl_scroll(width: 1000px), tbl_scroll_lg(width:1200px), tbl_scroll_md(width:800px), tbl_scroll_sm(width:600px)</p>
+						<div class="ad_tbl_top">
+							<ul class="ad_tbl_count">
+								<li><span>Total:</span>515</li>
+								<li><span class="font_gray">대기:</span>105</li>
+								<li><span class="font_green">완료:</span>200</li>
+							</ul>
+							<div class="ad_tbl_toplist">
+								<select class="form-control input-sm wd_100 dp_inline va_t">
+									<option>option 1</option>
+									<option>option 2</option>
+									<option>option 3</option>
+									<option>option 4</option>
+									<option>option 5</option>
+								</select>
+								<button type="button" class="btn btn-outline-success btn-sm va_t"><i class="fa fa-download"></i>엑셀다운로드</button>
+								<button type="button" class="btn btn-outline-success btn-sm va_t"><i class="fa fa-upload"></i>엑셀업로드</button>
+							</div>
+						</div>
+						<div class="table-responsive tbl_scroll">
+							<table class="table table-bordered table-hover tbl_col tbl_fixed">
+								<caption>세로리스트형 기본 테이블</caption>
+								<colgroup>
+									<col style="width: 5%">
+									<col style="width: 15%">
+									<col style="width: auto">
+									<col style="width: 10%">
+									<col style="width: 15%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">No <div class="sort_btn"><button type="button"><i class="glyphicon glyphicon-triangle-top"></i></button><button type="button"><i class="glyphicon glyphicon-triangle-bottom"></i></button></div></th>
+										<th scope="col">구분 <div class="sort_btn"><button type="button"><i class="glyphicon glyphicon-triangle-top"></i></button><button type="button"><i class="glyphicon glyphicon-triangle-bottom"></i></button></div></th>
+										<th scope="col">제목 <div class="sort_btn"><button type="button"><i class="glyphicon glyphicon-triangle-top"></i></button><button type="button"><i class="glyphicon glyphicon-triangle-bottom"></i></button></div></th>
+										<th scope="col">성명 <div class="sort_btn"><button type="button"><i class="glyphicon glyphicon-triangle-top"></i></button><button type="button"><i class="glyphicon glyphicon-triangle-bottom"></i></button></div></th>
+										<th scope="col">부서 <div class="sort_btn"><button type="button"><i class="glyphicon glyphicon-triangle-top"></i></button><button type="button"><i class="glyphicon glyphicon-triangle-bottom"></i></button></div></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">1</th>
+										<td>줄바꿈 비허용, 말줄임</td>
+										<td class="ta_l"><a href="javascript:void(0);" class="ellipsis">제목이 들어가는 곳입니다. 제목이 들어가는 곳입니다. 제목이 들어가는 곳입니다. 제목이 들어가는 곳입니다.</a></td>
+										<td>홍길동</td>
+										<td>활빈당</td>
+									</tr>
+									<tr>
+										<th scope="row">2</th>
+										<td>줄바꿈 허용, 말줄임 없음</td>
+										<td class="ta_l"><a href="javascript:void(0);">제목이 들어가는 곳입니다. 제목이 들어가는 곳입니다. 제목이 들어가는 곳입니다. 제목이 들어가는 곳입니다. 제목이 들어가는 곳입니다. 제목이 들어가는 곳입니다. 제목이 들어가는 곳입니다. 제목이 들어가는 곳입니다. 제목이 들어가는 곳입니다.</a></td>
+										<td>홍길동</td>
+										<td>활빈당</td>
+									</tr>
+									<tr>
+										<th scope="row">3</th>
+										<td>아무거나</td>
+										<td class="ta_l"><a href="javascript:void(0);" class="ellipsis">들어갑니다</a></td>
+										<td>홍길동</td>
+										<td>활빈당</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="dataTables_paginate paging_simple_numbers ta_c">
+							<ul class="pagination">
+								<li class="paginate_button previous disabled"><a href="javascript:void(0);" title="첫페이지 목록"><i class="fa fa-angle-double-left"></i></a></li>
+								<li class="paginate_button previous disabled"><a href="javascript:void(0);" title="이전목록"><i class="fa fa-angle-left"></i></a></li>
+								<li class="paginate_button active"><a href="javascript:void(0);">1</a></li>
+								<li class="paginate_button"><a href="javascript:void(0);">2</a></li>
+								<li class="paginate_button"><a href="javascript:void(0);">3</a></li>
+								<li class="paginate_button"><a href="javascript:void(0);">4</a></li>
+								<li class="paginate_button"><a href="javascript:void(0);">5</a></li>
+								<li class="paginate_button next"><a href="javascript:void(0);" title="다음목록"><i class="fa fa-angle-right"></i></a></li>
+								<li class="paginate_button last"><a href="javascript:void(0);" title="마지막페이지 목록"><i class="fa fa-angle-double-right"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- [pp] //테이블 -->
+			</section>
+			<!--[pp] //본문내용영역 -->
+		</div>
+		<!--[pp] //본문영역 -->
+		<!--[pp] footer -->
+		<footer class="main-footer">
+			<div class="pull-right hidden-xs ad_footer_logo">
+				<img src="../../images/admin/footer_logo.png" alt="두드림">
+			</div>
+			<strong>Copyright &copy; 2019 <a href="http://www.dainleaders.com" target="_blank">Dain Leaders</a>.</strong> All rights reserved.
+			<a id="back-to-top" href="javascript:void(0);" class="btn btn-default btn-sm back-to-top" role="button" title="페이지 상단으로 이동" data-toggle="tooltip" data-placement="left">
+				<span class="glyphicon glyphicon-chevron-up"></span>
+			</a>
+		</footer>
+		<!--[pp] //footer -->
+	</div>
+
+	<!--[pp] 모달기본 -->
+	<div id="mymodal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel"></h4>
+				</div>
+				<div class="modal-body">
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--[pp] 모달기본 -->
+	<!-- js -->
+	<script src="../../plugin/jquery/dist/jquery.min.js"></script>
+	<script src="../../plugin/jquery-ui/jquery-ui.min.js"></script>
+	<script src="../../plugin/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="../../plugin/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
+	<script src="../../plugin/bootstrap-toggle/js/bootstrap-toggle.min.js"></script>
+	<script src="../../plugin/fastclick/lib/fastclick.js"></script>
+	<script src="../../js/jquery.mCustomScrollbar.min.js"></script>
+	<script src="../../plugin/select2/js/select2.min.js"></script>
+	<script src="../../js/admin/src/adminlte.js"></script>
+	<script src="../../js/admin/src/demo.js"></script>
+	<script src="../../js/admin/pp_ui.js"></script>
+	<!-- //js -->
+
+</body>
+
+</html>

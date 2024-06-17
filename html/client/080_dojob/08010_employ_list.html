@@ -1,0 +1,1274 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi, shrink-to-fit=no">
+		<meta name="format-detection" content="telephone=no, address=no">
+		<meta name="title" content="DoDream">
+		<meta name="keywords" content="Block Chain, Study Abroad, platform, Korea, vietnam">
+		<meta name="description" content="유학플랫폼 두드림(DoDream)외국인 유학생을 위한 한국 유학 매칭 플랫폼">
+		<meta name="author" content="DainLeaders">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="DoDream">
+		<meta property="og:description" content="유학플랫폼 두드림(DoDream)외국인 유학생을 위한 한국 유학 매칭 플랫폼">
+		<meta property="og:image" content="../../../images/common/img_metacover.jpg">
+		<meta property="og:url" content="http://www.dodream.io">
+		<meta name="naver-site-verification" content="dd744254d55fa0f146a5daeaf1e02ae2dd86c1f9"/> 
+		<meta name="google-site-verification" content="mive32tDbnLeee8bzzUfCA31XmDNgL4Lgj4dQoxn8DM"/>
+		<title>DoDream</title>
+
+		<!-- [pp] 웹앱매니페스트 - chrome, opera -->
+		<link rel="manifest" href="../manifest.json">
+		<!-- [pp] //웹앱매니페스트 - chrome, opera -->
+
+		<!-- [pp] ios safari screen -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="white">
+		<meta name="apple-mobile-web-app-title" content="DoDream">
+		<!-- [pp] //ios safari screen -->
+
+		<!-- [pp] 파비콘 -->
+		<link rel="apple-touch-icon" sizes="64x64" href="../../../images/common/favicon.png">
+		<link rel="shortcut icon" type="image/x-icon" href="../../../images/common/favicon.ico">
+		<!-- [pp] //파비콘 -->
+
+		<!-- [pp] css -->
+		<link rel="stylesheet" href="../../../css/client/src/swiper.min.css">
+		<link rel="stylesheet" href="../../../css/client/src/jquery.mCustomScrollbar.css">
+		<link rel="stylesheet" href="../../../css/client/src/select2.css">
+		<link rel="stylesheet" href="../../../css/client/src/magnific-popup.css">
+		<link rel="stylesheet" href="../../../css/dl_global.css">
+		<link rel="stylesheet" href="../../../css/client/normalize.css">
+		<link rel="stylesheet" href="../../../css/client/grid.css">
+		<link rel="stylesheet" href="../../../css/client/table.css">
+		<link rel="stylesheet" href="../../../css/client/formstyle.css">
+		<link rel="stylesheet" href="../../../css/client/common.css">
+		<link rel="stylesheet" href="../../../css/client/ui.css">
+		<link rel="stylesheet" href="../../../css/client/popup.css">
+		<link rel="stylesheet" href="../../../css/client/ui_vn.css">
+		<!-- [pp] //css -->
+
+		<!-- [pp] js -->
+		<script type="text/javascript" src="../../../js/client/src/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/swiper.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/jquery.mCustomScrollbar.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/select2.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/jquery.magnific-popup.js"></script>
+		<script type="text/javascript" src="../../../js/client/pp_common.js"></script>
+
+		<!-- [pp] 사용 금지 -->
+		<script type="text/javascript" src="../../../js/client/src/jquery-1.12.3.min.js"></script>
+		<!--<script type="text/javascript" src="../../../js/client/pp_include.js"></script>-->
+		<!-- [pp] //사용 금지 -->
+
+		<!-- [pp] //js -->
+
+		<!--[if lt IE 9]>
+		<script type="text/javascript" src="../../../js/client/src/jquery-1.12.3.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/html5shiv.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/IE9.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/respond.min.js"></script>
+		<![endif]-->
+
+	</head>
+	<body>
+		<!--[pp] ie 하위버젼 접속시 알림 -->
+		<!--[if lt IE 10]>
+		<div id="browser">
+		This site is supported Explorer 10 or higher, Chrome, Firefox, Opera, Safari.<br/>If you are using it now, Please <a href="https://browsehappy.com/?locale=en" target="_blank">upgrade your browser</a> to improve your experience and security.
+		<button type="button" class="pp_upgradeinfo_close">close</button>
+		</div>
+		<![endif]-->
+		<!--[pp] // ie 하위버젼 접속시 알림 -->
+
+		<!-- [pp] 로딩중 화면 -->
+		<div id="loading" style="display:none;">
+			<p id="loading_image">
+				<img src="../../../images/pageloading.gif" alt="Loading..."><br>
+				<span>Loading</span>
+			</p>
+		</div>
+		<!-- [pp] //로딩중 화면 -->
+
+		<!-- [pp] 푸터를 제외한 전체페이지 -->
+		<div class="page_wrap style_vn">
+			<!-- [pp] nav -->
+			<div class="nav_wrap">
+				<!-- [pp] header -->
+				<header id="header" class="header_wrap">
+					<div class="header_grid">
+						<h1 class="header_logo">
+							<a href="javascript:void(0);">
+								<img src="../../../images/client/common/header_logo.svg" alt="유학플랫폼 두드림입니다">
+							</a>
+						</h1>
+						<nav id="gnb_skip" class="gnb_wrap" tabindex="0">
+							<ul class="gnb_1depth">
+								<li>
+									<a href="javascript:void(0);">Dream Guide</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">Do TOPIK</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">Do Play</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">Do Talking</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">Do Job</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">Notice</a>
+								</li>
+							</ul>
+						</nav>
+						<div class="function_area">
+							<a href="javascript:void(0);" class="btn_log btn_login">LOGIN</a>
+							<!-- [pp] 로그인/로그아웃/마이페이지 :
+							<a href="javascript:void(0);" class="btn_log btn_login">LOGIN</a>
+							<a href="javascript:void(0);" class="btn_log btn_login">LOGOUT</a>
+							<a href="javascript:void(0);" class="btn_log btn_login">My Page</a>
+							-->
+							<div class="select_lang">
+								<p>KR</p>
+								<ul>
+									<li><span class="lang_kr"></span>KR</li>
+									<li><span class="lang_us"></span>EN</li>
+									<li><span class="lang_cn"></span>CN</li>
+									<li><span class="lang_vn"></span>VN</li>
+								</ul>
+							</div>
+						</div>
+						<button type="button" class="btn_menu">
+							메뉴보기
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
+					</div>
+					<div class="gnb_submenu">
+						<div class="grid_content">
+							<div class="gnb_list">
+								<a href="javascript:void(0);" class="gnb_tit">Dream Guide</a>
+								<ul class="gnb_2depth">
+									<li><a href="javascript:void(0);">대학 검색</a></li>
+									<li><a href="javascript:void(0);">유학 서비스</a></li>
+									<li><a href="javascript:void(0);">유학 정보</a></li>
+									<li><a href="javascript:void(0);">유학 후기</a></li>
+								</ul>
+							</div>
+							<div class="gnb_list">
+								<a href="javascript:void(0);" class="gnb_tit">Do TOPIK</a>
+								<ul class="gnb_2depth">
+									<li><a href="javascript:void(0);">What is TOPIK</a></li>
+									<li><a href="javascript:void(0);">유형별 문제</a></li>
+									<li><a href="javascript:void(0);">모의고사</a></li>
+								</ul>
+							</div>
+							<div class="gnb_list">
+								<a href="javascript:void(0);" class="gnb_tit">Do Play</a>
+								<ul class="gnb_2depth">
+									<li><a href="javascript:void(0);">K-Story</a></li>
+									<li><a href="javascript:void(0);">Magazine</a></li>
+								</ul>
+							</div>
+							<div class="gnb_list">
+								<a href="javascript:void(0);" class="gnb_tit">Do Talking</a>
+								<ul class="gnb_2depth">
+									<li><a href="javascript:void(0);">Community</a></li>
+									<li><a href="javascript:void(0);">정보마당</a></li>
+								</ul>
+							</div>
+							<div class="gnb_list">
+								<a href="javascript:void(0);" class="gnb_tit">Do Job</a>
+								<ul class="gnb_2depth">
+									<li><a href="javascript:void(0);">채용정보</a></li>
+								</ul>
+							</div>
+							<div class="gnb_list">
+								<a href="javascript:void(0);" class="gnb_tit">Notice</a>
+								<ul class="gnb_2depth">
+									<li><a href="javascript:void(0);">Notice</a></li>
+									<li><a href="javascript:void(0);">EVENT</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</header>
+				<!-- [pp] //nav -->
+			</div>
+			<!-- [pp] //header -->
+
+			<!-- [pp] 챗봇 -->
+			<div class="chat_area">
+				<div class="chatbot">
+					<a href="javascript:void(0);"></a>
+				</div>
+				<!--[pp] 클릭시 나오는 박스-->
+				<div class="chat_content">
+					<div></div>
+				</div>
+			</div>
+			<!-- [pp] //header -->
+			<!-- [pp] visual -->
+			<figure class="sub_visual visual6">
+				<div class="grid_content">
+					<div class="visual_txt">
+						<h2>Do Job</h2>
+						<p>채용정보</p>
+					</div>
+					<nav class="page_navi">
+						<ul>
+							<li>Home</li>
+							<li>Do Job</li>
+							<li>채용정보</li>
+						</ul>
+					</nav>
+				</div>
+			</figure>
+			<!-- [pp] //visual -->
+			<!-- [pp] container -->
+			<div class="subpage_wrap grid_content">
+				<section class="section_area tab_js">
+					<h3 class="section_tit_lg">채용정보</h3>
+					<ul class="tab_list tab_list_js">
+						<li><a href="#dojob" class="on">Do Job</a></li>
+						<li><a href="#saramin">Saramin</a></li>
+						<li><a href="#jobkorea">Jobkorea</a></li>
+						<li><a href="#worknet">Worknet</a></li>
+						<li><a href="#albamon">Albamon</a></li>
+					</ul>
+					<div class="tab_cnt_js">
+						<div id="dojob">
+							<div class="search_box search_refresh">
+								<div class="wdfull_2_1">
+									<div class="select_form">
+										<label for="select1">키워드</label>
+										<select id="select1">
+											<option selected>키워드</option>
+											<option>제목</option>
+											<option>회사명</option>
+											<option>주소</option>
+										</select>
+									</div>
+									<input class="form_style wd_p100" placeholder="검색어를 입력해주세요">
+									<button type="button" class="btn btn_md btn_default btn_search">Search</button>
+									<button type="button" class="btn btn_md btn_blue btn_refresh">initialization</button>
+								</div>
+							</div>
+							<div class="search_tip">
+								<strong>검색 TIP</strong>
+								<p>키워드에 <span>'외국인'</span>을 검색해 보세요!</p>
+							</div>
+							<div class="search_toggle_row search_sm_row">
+								<div class="searchtoggle_left">
+									<p class="total_count">
+										<span>Total</span>20
+									</p>
+								</div>
+								<div class="searchtoggle_right">
+									<div class="select_form wd_120">
+										<label for="select1">전체</label>
+										<select id="select1">
+											<option selected>전체</option>
+											<option>접수중</option>
+											<option>접수마감</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<ul class="status_list">
+								<li>접수중</li>
+								<li>접수마감</li>
+							</ul>
+							<div class="grid_row">
+								<div class="grid_col col_xl_4 col_md_3 col_xs_2">
+									<a href="javascript:void(0);" class="employ_card">
+										<div class="tit">
+											<strong>
+												21년 High-End Filler 바이오사이언스
+											</strong>
+											<p>
+												<!-- [pp] 접수중, 마감 
+												<span class="status_label bg_orange">접수중</span>
+												<span class="status_label bg_gray">접수마감</span>
+												-->
+												<span class="status_label bg_orange">접수중</span>
+												2021.09.22 ~ 채용 시 마감 2021.09.22 ~ 채용 시 마감
+											</p>
+										</div>
+										<ul>
+											<li>
+												<strong>업체명</strong>바이오
+											</li>
+											<li>
+												<strong>소재지</strong>송파구
+											</li>
+											<li>
+												<strong>모집인원</strong>1명
+											</li>
+											<li>
+												<strong>업종</strong>웹 디자이너
+											</li>
+											<li>
+												<strong>관련전공</strong>유관업무 경험자 및 디자인 관련 전공자
+											</li>
+										</ul>
+									</a>
+								</div>
+								<div class="grid_col col_xl_4 col_md_3 col_xs_2">
+									<a href="javascript:void(0);" class="employ_card">
+										<div class="tit">
+											<strong>
+												21년 High-End Filler 바이오사이언스
+											</strong>
+											<p>
+												<!-- [pp] 접수중, 마감 
+												<span class="status_label bg_orange">접수중</span>
+												<span class="status_label bg_gray">접수마감</span>
+												-->
+												<span class="status_label bg_orange">접수중</span>
+												2021.09.22 ~ 채용 시 마감 2021.09.22 ~ 채용 시 마감
+											</p>
+										</div>
+										<ul>
+											<li>
+												<strong>업체명</strong>바이오
+											</li>
+											<li>
+												<strong>소재지</strong>송파구
+											</li>
+											<li>
+												<strong>모집인원</strong>1명
+											</li>
+											<li>
+												<strong>업종</strong>웹 디자이너
+											</li>
+											<li>
+												<strong>관련전공</strong>유관업무 경험자 및 디자인 관련 전공자
+											</li>
+										</ul>
+									</a>
+								</div>
+								<div class="grid_col col_xl_4 col_md_3 col_xs_2">
+									<a href="javascript:void(0);" class="employ_card">
+										<div class="tit">
+											<strong>
+												21년 High-End Filler 바이오사이언스
+											</strong>
+											<p>
+												<!-- [pp] 접수중, 마감 
+												<span class="status_label bg_orange">접수중</span>
+												<span class="status_label bg_gray">접수마감</span>
+												-->
+												<span class="status_label bg_gray">접수마감</span>
+												2021.09.22 ~ 채용 시 마감 2021.09.22 ~ 채용 시 마감
+											</p>
+										</div>
+										<ul>
+											<li>
+												<strong>업체명</strong>바이오
+											</li>
+											<li>
+												<strong>소재지</strong>송파구
+											</li>
+											<li>
+												<strong>모집인원</strong>1명
+											</li>
+											<li>
+												<strong>업종</strong>웹 디자이너
+											</li>
+											<li>
+												<strong>관련전공</strong>유관업무 경험자 및 디자인 관련 전공자
+											</li>
+										</ul>
+									</a>
+								</div>
+								<div class="grid_col col_xl_4 col_md_3 col_xs_2">
+									<a href="javascript:void(0);" class="employ_card">
+										<div class="tit">
+											<strong>
+												21년 High-End Filler 바이오사이언스
+											</strong>
+											<p>
+												<!-- [pp] 접수중, 마감 
+												<span class="status_label bg_orange">접수중</span>
+												<span class="status_label bg_gray">접수마감</span>
+												-->
+												<span class="status_label bg_orange">접수중</span>
+												2021.09.22 ~ 채용 시 마감 2021.09.22 ~ 채용 시 마감
+											</p>
+										</div>
+										<ul>
+											<li>
+												<strong>업체명</strong>바이오
+											</li>
+											<li>
+												<strong>소재지</strong>송파구
+											</li>
+											<li>
+												<strong>모집인원</strong>1명
+											</li>
+											<li>
+												<strong>업종</strong>웹 디자이너
+											</li>
+											<li>
+												<strong>관련전공</strong>유관업무 경험자 및 디자인 관련 전공자
+											</li>
+										</ul>
+									</a>
+								</div>
+							</div>
+							<!--[pp] paging -->
+							<div class="paging_wrap">
+								<a href="javascript:void(0);" title="처음페이지" class="page_con first_page">처음페이지</a>
+								<a href="javascript:void(0);" title="이전페이지" class="page_con pre_page">이전페이지</a>
+								<a href="javascript:void(0);" class="active">1</a>
+								<a href="javascript:void(0);">2</a>
+								<a href="javascript:void(0);">3</a>
+								<a href="javascript:void(0);">4</a>
+								<a href="javascript:void(0);">5</a>
+								<a href="javascript:void(0);" title="다음페이지" class="page_con next_page">다음페이지</a>
+								<a href="javascript:void(0);" title="마지막페이지" class="page_con last_page">마지막페이지</a>
+							</div>
+							<!--[pp] //paging -->
+						</div>
+						<div id="saramin">
+							<div class="search_box search_refresh">
+								<div class="grid_row">
+									<div class="grid_col col_xl_3 col_sm_1_1">
+										<div class="select_form wd_p100">
+											<label for="select1">근무지역</label>
+											<select id="select1">
+												<option selected>근무지역</option>
+												<option>서울</option>
+												<option>강원</option>
+												<option>대전</option>
+											</select>
+										</div>
+									</div>
+									<div class="grid_col col_xl_3 col_sm_1_1">
+										<div class="select_form wd_p100">
+											<label for="select1">고용형태</label>
+											<select id="select1">
+												<option selected>고용형태</option>
+												<option>계약직</option>
+												<option>정규직</option>
+											</select>
+										</div>
+									</div>
+									<div class="grid_col col_xl_3 col_sm_1_1">
+										<div class="select_form wd_p100">
+											<label for="select1">직종</label>
+											<select id="select1">
+												<option selected>직종</option>
+												<option>직종1</option>
+												<option>직종2</option>
+												<option>직종3</option>
+											</select>
+										</div>
+									</div>
+									<div class="grid_col col_xl_3 col_sm_1_1">
+										<div class="select_form wd_p100">
+											<label for="select1">순서구분</label>
+											<select id="select1">
+												<option selected>순서구분</option>
+												<option>순서1</option>
+												<option>순서2</option>
+											</select>
+										</div>
+									</div>
+									<div class="grid_col col_xl_12">
+										<div class="naming_input naming_sm_input">
+											<label>키워드</label>
+											<input type="text" placeholder="검색어를 입력해주세요">
+										</div>
+									</div>
+									<button type="button" class="btn btn_md btn_default btn_search">Search</button>
+									<button type="button" class="btn btn_md btn_blue btn_refresh">initialization</button>
+								</div>
+							</div>
+							<div class="search_tip">
+								<strong>검색 TIP</strong>
+								<p>키워드에 <span>'외국인'</span>을 검색해 보세요!</p>
+							</div>
+							<div class="search_toggle_row search_sm_row">
+								<div class="searchtoggle_left">
+									<p class="total_count">
+										<span>Total</span>20
+									</p>
+								</div>
+								<div class="searchtoggle_right">
+									<div class="pre_cal saramin">
+										<a href="javacript:void(0);" class="btn btn_lg">공채달력</a>
+									</div>
+								</div>
+							</div>
+							<ul class="status_list">
+								<li>접수중</li>
+								<li>접수마감</li>
+							</ul>
+							<div class="grid_row">
+								<div class="grid_col col_xl_4 col_md_3 col_xs_2">
+									<a href="javascript:void(0);" class="employ_card saramin">
+										<div class="tit">
+											<strong>
+												[네이버] 경력 OA 채용공고
+											</strong>
+											<p>
+												<!-- [pp] 접수중, 마감 
+												<span class="status_label bg_orange">접수중</span>
+												<span class="status_label bg_gray">접수마감</span>
+												-->
+												<span class="status_label bg_orange">접수중</span>
+												2021.09.22 ~ 채용 시 마감 2021.09.22 ~ 채용 시 마감
+											</p>
+										</div>
+										<ul>
+											<li>
+												<strong>회사명</strong>네이버
+											</li>
+											<li>
+												<strong>주소</strong>경기도 성남시 분당구
+											</li>
+											<li>
+												<strong>학력</strong>학력무관
+											</li>
+											<li>
+												<strong>경력</strong>경력무관
+											</li>
+											<li>
+												<strong>근무형태</strong>주 5일 근무
+											</li>
+											<li>
+												<strong>급여</strong>월 300만원
+											</li>
+										</ul>
+									</a>
+								</div>
+								<div class="grid_col col_xl_4 col_md_3 col_xs_2">
+									<a href="javascript:void(0);" class="employ_card saramin">
+										<div class="tit">
+											<strong>
+												[이우소프트] 모바일 & 웹 개발자 채용
+											</strong>
+											<p>
+												<!-- [pp] 접수중, 마감 
+												<span class="status_label bg_orange">접수중</span>
+												<span class="status_label bg_gray">접수마감</span>
+												-->
+												<span class="status_label bg_gray">접수마감</span>
+												2021.09.22 ~ 채용 시 마감 2021.09.22 ~ 채용 시 마감
+											</p>
+										</div>
+										<ul>
+											<li>
+												<strong>회사명</strong>이우소프트
+											</li>
+											<li>
+												<strong>주소</strong>경기도 성남시 분당구
+											</li>
+											<li>
+												<strong>학력</strong>학력무관
+											</li>
+											<li>
+												<strong>경력</strong>경력무관
+											</li>
+											<li>
+												<strong>근무형태</strong>주 5일 근무
+											</li>
+											<li>
+												<strong>급여</strong>월 300만원
+											</li>
+										</ul>
+									</a>
+								</div>
+								<div class="grid_col col_xl_4 col_md_3 col_xs_2">
+									<a href="javascript:void(0);" class="employ_card saramin">
+										<div class="tit">
+											<strong>
+												[카카오] 경력직 개발자 채용공고
+											</strong>
+											<p>
+												<!-- [pp] 접수중, 마감 
+												<span class="status_label bg_orange">접수중</span>
+												<span class="status_label bg_gray">접수마감</span>
+												-->
+												<span class="status_label bg_orange">접수중</span>
+												2021.09.22 ~ 채용 시 마감 2021.09.22 ~ 채용 시 마감
+											</p>
+										</div>
+										<ul>
+											<li>
+												<strong>회사명</strong>카카오
+											</li>
+											<li>
+												<strong>주소</strong>경기도 성남시 분당구
+											</li>
+											<li>
+												<strong>학력</strong>학력무관
+											</li>
+											<li>
+												<strong>경력</strong>경력무관
+											</li>
+											<li>
+												<strong>근무형태</strong>주 5일 근무
+											</li>
+											<li>
+												<strong>급여</strong>월 300만원
+											</li>
+										</ul>
+									</a>
+								</div>
+							</div>
+							<!--[pp] paging -->
+							<div class="paging_wrap">
+								<a href="javascript:void(0);" title="처음페이지" class="page_con first_page">처음페이지</a>
+								<a href="javascript:void(0);" title="이전페이지" class="page_con pre_page">이전페이지</a>
+								<a href="javascript:void(0);" class="active">1</a>
+								<a href="javascript:void(0);">2</a>
+								<a href="javascript:void(0);">3</a>
+								<a href="javascript:void(0);">4</a>
+								<a href="javascript:void(0);">5</a>
+								<a href="javascript:void(0);" title="다음페이지" class="page_con next_page">다음페이지</a>
+								<a href="javascript:void(0);" title="마지막페이지" class="page_con last_page">마지막페이지</a>
+							</div>
+							<!--[pp] //paging -->
+						</div>
+						<div id="jobkorea">
+							<div class="search_box search_refresh">
+								<div class="grid_row">
+									<div class="grid_col col_xl_3 col_sm_1_1">
+										<div class="select_form wd_p100">
+											<label for="select1">근무지역</label>
+											<select id="select1">
+												<option selected>근무지역</option>
+												<option>서울</option>
+												<option>강원</option>
+												<option>대전</option>
+											</select>
+										</div>
+									</div>
+									<div class="grid_col col_xl_3 col_sm_1_1">
+										<div class="select_form wd_p100">
+											<label for="select1">고용형태</label>
+											<select id="select1">
+												<option selected>고용형태</option>
+												<option>계약직</option>
+												<option>정규직</option>
+											</select>
+										</div>
+									</div>
+									<div class="grid_col col_xl_3 col_sm_1_1">
+										<div class="select_form wd_p100">
+											<label for="select1">직종</label>
+											<select id="select1">
+												<option selected>직종</option>
+												<option>직종1</option>
+												<option>직종2</option>
+												<option>직종3</option>
+											</select>
+										</div>
+									</div>
+									<div class="grid_col col_xl_3 col_sm_1_1">
+										<div class="select_form wd_p100">
+											<label for="select1">순서구분</label>
+											<select id="select1">
+												<option selected>순서구분</option>
+												<option>순서1</option>
+												<option>순서2</option>
+											</select>
+										</div>
+									</div>
+									<div class="grid_col col_xl_12">
+										<div class="naming_input naming_sm_input">
+											<label>키워드</label>
+											<input type="text" placeholder="검색어를 입력해주세요">
+										</div>
+									</div>
+									<button type="button" class="btn btn_md btn_default btn_search">Search</button>
+									<button type="button" class="btn btn_md btn_blue btn_refresh">initialization</button>
+								</div>
+							</div>
+							<div class="search_tip">
+								<strong>검색 TIP</strong>
+								<p>키워드에 <span>'외국인'</span>을 검색해 보세요!</p>
+							</div>
+							<div class="search_toggle_row search_sm_row">
+								<div class="searchtoggle_left">
+									<p class="total_count">
+										<span>Total</span>20
+									</p>
+								</div>
+								<div class="searchtoggle_right">
+									<div class="pre_cal jobkorea">
+										<a href="javacript:void(0);" class="btn btn_lg">공채달력</a>
+									</div>
+								</div>
+							</div>
+							<ul class="status_list">
+								<li>접수중</li>
+								<li>접수마감</li>
+							</ul>
+							<div class="grid_row">
+								<div class="grid_col col_xl_4 col_md_3 col_xs_2">
+									<a href="javascript:void(0);" class="employ_card jobkorea">
+										<div class="tit">
+											<strong>
+												[네이버] 경력 OA 채용공고
+											</strong>
+											<p>
+												<!-- [pp] 접수중, 마감 
+												<span class="status_label bg_orange">접수중</span>
+												<span class="status_label bg_gray">접수마감</span>
+												-->
+												<span class="status_label bg_orange">접수중</span>
+												2021.09.22 ~ 채용 시 마감 2021.09.22 ~ 채용 시 마감
+											</p>
+										</div>
+										<ul>
+											<li>
+												<strong>회사명</strong>네이버
+											</li>
+											<li>
+												<strong>주소</strong>경기도 성남시 분당구
+											</li>
+											<li>
+												<strong>학력</strong>학력무관
+											</li>
+											<li>
+												<strong>경력</strong>경력무관
+											</li>
+											<li>
+												<strong>근무형태</strong>주 5일 근무
+											</li>
+											<li>
+												<strong>급여</strong>월 300만원
+											</li>
+										</ul>
+									</a>
+								</div>
+								<div class="grid_col col_xl_4 col_md_3 col_xs_2">
+									<a href="javascript:void(0);" class="employ_card jobkorea">
+										<div class="tit">
+											<strong>
+												[이우소프트] 모바일 & 웹 개발자 채용
+											</strong>
+											<p>
+												<!-- [pp] 접수중, 마감 
+												<span class="status_label bg_orange">접수중</span>
+												<span class="status_label bg_gray">접수마감</span>
+												-->
+												<span class="status_label bg_gray">접수마감</span>
+												2021.09.22 ~ 채용 시 마감 2021.09.22 ~ 채용 시 마감
+											</p>
+										</div>
+										<ul>
+											<li>
+												<strong>회사명</strong>이우소프트
+											</li>
+											<li>
+												<strong>주소</strong>경기도 성남시 분당구
+											</li>
+											<li>
+												<strong>학력</strong>학력무관
+											</li>
+											<li>
+												<strong>경력</strong>경력무관
+											</li>
+											<li>
+												<strong>근무형태</strong>주 5일 근무
+											</li>
+											<li>
+												<strong>급여</strong>월 300만원
+											</li>
+										</ul>
+									</a>
+								</div>
+								<div class="grid_col col_xl_4 col_md_3 col_xs_2">
+									<a href="javascript:void(0);" class="employ_card jobkorea">
+										<div class="tit">
+											<strong>
+												[카카오] 경력직 개발자 채용공고
+											</strong>
+											<p>
+												<!-- [pp] 접수중, 마감 
+												<span class="status_label bg_orange">접수중</span>
+												<span class="status_label bg_gray">접수마감</span>
+												-->
+												<span class="status_label bg_orange">접수중</span>
+												2021.09.22 ~ 채용 시 마감 2021.09.22 ~ 채용 시 마감
+											</p>
+										</div>
+										<ul>
+											<li>
+												<strong>회사명</strong>카카오
+											</li>
+											<li>
+												<strong>주소</strong>경기도 성남시 분당구
+											</li>
+											<li>
+												<strong>학력</strong>학력무관
+											</li>
+											<li>
+												<strong>경력</strong>경력무관
+											</li>
+											<li>
+												<strong>근무형태</strong>주 5일 근무
+											</li>
+											<li>
+												<strong>급여</strong>월 300만원
+											</li>
+										</ul>
+									</a>
+								</div>
+							</div>
+							<!--[pp] paging -->
+							<div class="paging_wrap">
+								<a href="javascript:void(0);" title="처음페이지" class="page_con first_page">처음페이지</a>
+								<a href="javascript:void(0);" title="이전페이지" class="page_con pre_page">이전페이지</a>
+								<a href="javascript:void(0);" class="active">1</a>
+								<a href="javascript:void(0);">2</a>
+								<a href="javascript:void(0);">3</a>
+								<a href="javascript:void(0);">4</a>
+								<a href="javascript:void(0);">5</a>
+								<a href="javascript:void(0);" title="다음페이지" class="page_con next_page">다음페이지</a>
+								<a href="javascript:void(0);" title="마지막페이지" class="page_con last_page">마지막페이지</a>
+							</div>
+							<!--[pp] //paging -->
+						</div>
+						<div id="worknet">
+							<div class="search_box search_refresh">
+								<div class="grid_row">
+									<div class="grid_col col_xl_3 col_sm_1_1">
+										<div class="select_form wd_p100">
+											<label for="select1">근무지역</label>
+											<select id="select1">
+												<option selected>근무지역</option>
+												<option>서울</option>
+												<option>강원</option>
+												<option>대전</option>
+											</select>
+										</div>
+									</div>
+									<div class="grid_col col_xl_3 col_sm_1_1">
+										<div class="select_form wd_p100">
+											<label for="select1">고용형태</label>
+											<select id="select1">
+												<option selected>고용형태</option>
+												<option>계약직</option>
+												<option>정규직</option>
+											</select>
+										</div>
+									</div>
+									<div class="grid_col col_xl_3 col_sm_1_1">
+										<div class="select_form wd_p100">
+											<label for="select1">직종</label>
+											<select id="select1">
+												<option selected>직종</option>
+												<option>직종1</option>
+												<option>직종2</option>
+												<option>직종3</option>
+											</select>
+										</div>
+									</div>
+									<div class="grid_col col_xl_3 col_sm_1_1">
+										<div class="select_form wd_p100">
+											<label for="select1">순서구분</label>
+											<select id="select1">
+												<option selected>순서구분</option>
+												<option>순서1</option>
+												<option>순서2</option>
+											</select>
+										</div>
+									</div>
+									<div class="grid_col col_xl_12">
+										<div class="naming_input naming_sm_input">
+											<label>키워드</label>
+											<input type="text" placeholder="검색어를 입력해주세요">
+										</div>
+									</div>
+									<button type="button" class="btn btn_md btn_default btn_search">Search</button>
+									<button type="button" class="btn btn_md btn_blue btn_refresh">initialization</button>
+								</div>
+							</div>
+							<div class="search_tip">
+								<strong>검색 TIP</strong>
+								<p>키워드에 <span>'외국인'</span>을 검색해 보세요!</p>
+							</div>
+							<div class="search_toggle_row search_sm_row">
+								<div class="searchtoggle_left">
+									<p class="total_count">
+										<span>Total</span>20
+									</p>
+								</div>
+								<div class="searchtoggle_right">
+									<div class="pre_cal worknet">
+										<a href="javacript:void(0);" class="btn btn_lg">공채달력</a>
+									</div>
+								</div>
+							</div>
+							<div class="grid_row">
+								<div class="grid_col col_xl_4 col_md_3 col_xs_2">
+									<a href="javascript:void(0);" class="worknetspeed_card">
+										<p>
+											<img src="../../../images/client/sub/worknet_img1.png" alt="하림">
+										</p>
+										<dl>
+											<dt>
+												하림닭 유통부문 경력사원 채용
+											</dt>
+											<dd>
+												<span class="tit">채용기간</span>2022.05.15 ~ 2022.05.31
+											</dd>
+										</dl>
+									</a>
+								</div>
+								<div class="grid_col col_xl_4 col_md_3 col_xs_2">
+									<a href="javascript:void(0);" class="worknetspeed_card">
+										<p>
+											<img src="../../../images/client/sub/worknet_img2.png" alt="채널A">
+										</p>
+										<dl>
+											<dt>
+												채널A 인턴 채용
+											</dt>
+											<dd>
+												<span class="tit">채용기간</span>2022.05.15 ~ 2022.05.31
+											</dd>
+										</dl>
+									</a>
+								</div>
+								<div class="grid_col col_xl_4 col_md_3 col_xs_2">
+									<a href="javascript:void(0);" class="worknetspeed_card">
+										<p>
+											<img src="../../../images/client/sub/worknet_img3.png" alt="흥국생명">
+										</p>
+										<dl>
+											<dt>
+												흥국 생명 보험 신입사원 모집
+											</dt>
+											<dd>
+												<span class="tit">채용기간</span>2022.05.15 ~ 2022.05.31
+											</dd>
+										</dl>
+									</a>
+								</div>
+								<div class="grid_col col_xl_4 col_md_3 col_xs_2">
+									<a href="javascript:void(0);" class="worknetspeed_card">
+										<p>
+											<img src="../../../images/client/sub/img_nocompany.png" alt="이미지 없음">
+										</p>
+										<dl>
+											<dt>
+												기업 이미지 없음
+											</dt>
+											<dd>
+												<span class="tit">채용기간</span>2022.05.15 ~ 2022.05.31
+											</dd>
+										</dl>
+									</a>
+								</div>
+								<div class="grid_col col_xl_4 col_md_3 col_xs_2">
+									<a href="javascript:void(0);" class="worknetspeed_card">
+										<p>
+											<img src="../../../images/client/sub/img_nocompany.png" alt="이미지 없음">
+										</p>
+										<dl>
+											<dt>
+												기업 이미지 없음
+											</dt>
+											<dd>
+												<span class="tit">채용기간</span>2022.05.15 ~ 2022.05.31
+											</dd>
+										</dl>
+									</a>
+								</div>
+								<div class="grid_col col_xl_4 col_md_3 col_xs_2">
+									<a href="javascript:void(0);" class="worknetspeed_card">
+										<p>
+											<img src="../../../images/client/sub/img_nocompany.png" alt="이미지 없음">
+										</p>
+										<dl>
+											<dt>
+												기업 이미지 없음
+											</dt>
+											<dd>
+												<span class="tit">채용기간</span>2022.05.15 ~ 2022.05.31
+											</dd>
+										</dl>
+									</a>
+								</div>
+							</div>
+							<!--[pp] paging -->
+							<div class="paging_wrap">
+								<a href="javascript:void(0);" title="처음페이지" class="page_con first_page">처음페이지</a>
+								<a href="javascript:void(0);" title="이전페이지" class="page_con pre_page">이전페이지</a>
+								<a href="javascript:void(0);" class="active">1</a>
+								<a href="javascript:void(0);">2</a>
+								<a href="javascript:void(0);">3</a>
+								<a href="javascript:void(0);">4</a>
+								<a href="javascript:void(0);">5</a>
+								<a href="javascript:void(0);" title="다음페이지" class="page_con next_page">다음페이지</a>
+								<a href="javascript:void(0);" title="마지막페이지" class="page_con last_page">마지막페이지</a>
+							</div>
+							<!--[pp] //paging -->
+						</div>
+						<div id="albamon">
+							<div class="search_box search_refresh">
+								<div class="grid_row">
+									<div class="grid_col col_xl_3 col_sm_1_1">
+										<div class="select_form wd_p100">
+											<label for="select1">근무지역</label>
+											<select id="select1">
+												<option selected>근무지역</option>
+												<option>서울</option>
+												<option>강원</option>
+												<option>대전</option>
+											</select>
+										</div>
+									</div>
+									<div class="grid_col col_xl_3 col_sm_1_1">
+										<div class="select_form wd_p100">
+											<label for="select1">고용형태</label>
+											<select id="select1">
+												<option selected>고용형태</option>
+												<option>계약직</option>
+												<option>정규직</option>
+											</select>
+										</div>
+									</div>
+									<div class="grid_col col_xl_3 col_sm_1_1">
+										<div class="select_form wd_p100">
+											<label for="select1">직종</label>
+											<select id="select1">
+												<option selected>직종</option>
+												<option>직종1</option>
+												<option>직종2</option>
+												<option>직종3</option>
+											</select>
+										</div>
+									</div>
+									<div class="grid_col col_xl_3 col_sm_1_1">
+										<div class="select_form wd_p100">
+											<label for="select1">순서구분</label>
+											<select id="select1">
+												<option selected>순서구분</option>
+												<option>순서1</option>
+												<option>순서2</option>
+											</select>
+										</div>
+									</div>
+									<div class="grid_col col_xl_12">
+										<div class="naming_input naming_sm_input">
+											<label>키워드</label>
+											<input type="text" placeholder="검색어를 입력해주세요">
+										</div>
+									</div>
+									<button type="button" class="btn btn_md btn_default btn_search">Search</button>
+									<button type="button" class="btn btn_md btn_blue btn_refresh">initialization</button>
+								</div>
+							</div>
+							<div class="search_tip">
+								<strong>검색 TIP</strong>
+								<p>키워드에 <span>'외국인'</span>을 검색해 보세요!</p>
+							</div>
+							<div class="search_toggle_row search_sm_row">
+								<div class="searchtoggle_left">
+									<p class="total_count">
+										<span>Total</span>20
+									</p>
+								</div>
+								<div class="searchtoggle_right">
+									<!-- 
+									<div class="select_form wd_120">
+										<label for="select1">전체</label>
+										<select id="select1">
+											<option selected>전체</option>
+											<option>접수중</option>
+											<option>접수마감</option>
+										</select>
+									</div>
+									-->
+								</div>
+							</div>
+							<ul class="status_list">
+								<li>접수중</li>
+								<li>접수마감</li>
+							</ul>
+							<div class="grid_row">
+								<div class="grid_col col_xl_4 col_md_3 col_xs_2">
+									<a href="javascript:void(0);" class="employ_card albamon">
+										<div class="tit">
+											<strong>
+												[네이버] 경력 OA 채용공고
+											</strong>
+											<p>
+												<!-- [pp] 접수중, 마감 
+												<span class="status_label bg_orange">접수중</span>
+												<span class="status_label bg_gray">접수마감</span>
+												-->
+												<span class="status_label bg_orange">접수중</span>
+												2021.09.22 ~ 채용 시 마감 2021.09.22 ~ 채용 시 마감
+											</p>
+										</div>
+										<ul>
+											<li>
+												<strong>회사명</strong>네이버
+											</li>
+											<li>
+												<strong>주소</strong>경기도 성남시 분당구
+											</li>
+											<li>
+												<strong>학력</strong>학력무관
+											</li>
+											<li>
+												<strong>경력</strong>경력무관
+											</li>
+											<li>
+												<strong>근무형태</strong>주 5일 근무
+											</li>
+											<li>
+												<strong>급여</strong>월 300만원
+											</li>
+										</ul>
+									</a>
+								</div>
+								<div class="grid_col col_xl_4 col_md_3 col_xs_2">
+									<a href="javascript:void(0);" class="employ_card albamon">
+										<div class="tit">
+											<strong>
+												[이우소프트] 모바일 & 웹 개발자 채용
+											</strong>
+											<p>
+												<!-- [pp] 접수중, 마감 
+												<span class="status_label bg_orange">접수중</span>
+												<span class="status_label bg_gray">접수마감</span>
+												-->
+												<span class="status_label bg_gray">접수마감</span>
+												2021.09.22 ~ 채용 시 마감 2021.09.22 ~ 채용 시 마감
+											</p>
+										</div>
+										<ul>
+											<li>
+												<strong>회사명</strong>이우소프트
+											</li>
+											<li>
+												<strong>주소</strong>경기도 성남시 분당구
+											</li>
+											<li>
+												<strong>학력</strong>학력무관
+											</li>
+											<li>
+												<strong>경력</strong>경력무관
+											</li>
+											<li>
+												<strong>근무형태</strong>주 5일 근무
+											</li>
+											<li>
+												<strong>급여</strong>월 300만원
+											</li>
+										</ul>
+									</a>
+								</div>
+								<div class="grid_col col_xl_4 col_md_3 col_xs_2">
+									<a href="javascript:void(0);" class="employ_card albamon">
+										<div class="tit">
+											<strong>
+												[카카오] 경력직 개발자 채용공고
+											</strong>
+											<p>
+												<!-- [pp] 접수중, 마감 
+												<span class="status_label bg_orange">접수중</span>
+												<span class="status_label bg_gray">접수마감</span>
+												-->
+												<span class="status_label bg_orange">접수중</span>
+												2021.09.22 ~ 채용 시 마감 2021.09.22 ~ 채용 시 마감
+											</p>
+										</div>
+										<ul>
+											<li>
+												<strong>회사명</strong>카카오
+											</li>
+											<li>
+												<strong>주소</strong>경기도 성남시 분당구
+											</li>
+											<li>
+												<strong>학력</strong>학력무관
+											</li>
+											<li>
+												<strong>경력</strong>경력무관
+											</li>
+											<li>
+												<strong>근무형태</strong>주 5일 근무
+											</li>
+											<li>
+												<strong>급여</strong>월 300만원
+											</li>
+										</ul>
+									</a>
+								</div>
+							</div>
+							<!--[pp] paging -->
+							<div class="paging_wrap">
+								<a href="javascript:void(0);" title="처음페이지" class="page_con first_page">처음페이지</a>
+								<a href="javascript:void(0);" title="이전페이지" class="page_con pre_page">이전페이지</a>
+								<a href="javascript:void(0);" class="active">1</a>
+								<a href="javascript:void(0);">2</a>
+								<a href="javascript:void(0);">3</a>
+								<a href="javascript:void(0);">4</a>
+								<a href="javascript:void(0);">5</a>
+								<a href="javascript:void(0);" title="다음페이지" class="page_con next_page">다음페이지</a>
+								<a href="javascript:void(0);" title="마지막페이지" class="page_con last_page">마지막페이지</a>
+							</div>
+							<!--[pp] //paging -->
+						</div>
+					</div>
+				</section>
+			</div>
+			<!-- [pp] //container -->
+		</div>
+		<!-- [pp] //푸터를 제외한 전체페이지 -->
+		<!-- [pp] footer -->
+		<footer class="footer_wrap">
+			<div class="grid_content">
+				<div class="footer_top">
+					<ul class="footer_infolink cf">
+						<li><a href="javascript:void(0);">개인정보취급방침</a></li>
+						<li><a href="javascript:void(0);">이용약관</a></li>
+						<li><a href="javascript:void(0);">FAQ</a></li>
+						<li><a href="javascript:void(0);">&#40;주&#41;다인리더스</a></li>
+					</ul>
+				</div>
+				<div class="footer_bottom">
+					<div>
+						<strong>&#40;주&#41;다인리더스</strong>
+						<ul>
+							<li>(한국본사) 서울시 강남구 강남대로 126길 63, 302-303호</li>
+							<li>(베트남법인) 하노이시 탄수언군 주이떤 12, 젠타워 1107호</li>
+						</ul>
+					</div>
+					<ul>
+						<li>대표자명 : 임무호</li>
+						<li>사업자등록번호 : 105-87-32905</li>
+						<li>고객센터 : <a href="tel:+82 02-514-3060">+82 02-514-3060</a></li>
+						<li>운영시간 : 09:00 ~ 18:00</li>
+						<li>이메일 : <a href="mailto:support@dodream.io">support@dodream.io</a></li>
+					</ul>
+					<ul class="footer_sns">
+						<li><a href="javascript:void(0);" class="sns_facebook">페이스북</a></li>
+						<li><a href="javascript:void(0);" class="sns_insta">인스타</a></li>
+						<li><a href="javascript:void(0);" class="sns_twitter">트위터</a></li>
+						<li><a href="javascript:void(0);" class="sns_youtube">유튜브</a></li>
+						<li><a href="javascript:void(0);" class="sns_eroom">이룸라이브</a></li>
+					</ul>
+					<p class="copyright">&copy; DAIN LEADERS ALL RIGHTS RESERVED</p>
+				</div>
+			</div>
+		</footer>
+		<!-- [pp] //footer -->
+	</body>
+</html>

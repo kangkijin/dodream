@@ -1,0 +1,1221 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes, height=device-height, viewport-fit=cover, shrink-to-fit=no">
+	<meta name="title" content="CareerPASS DEMO">
+	<meta name="description" content="welcome to CareerPASS DEMO">
+	<meta name="copyrigt" content="DainLeaders">
+	<meta name="keywords" content="dainleaders,Careerpass,Careerpass system, 경력개발통합관리시스템, 커리어패스, 역량관리, 대학, 대학생, 역량관리시스템, 경력관리">
+	<title>Do Dream Admin</title>
+	<link rel="apple-touch-icon" href="../../../images/common/favicon.ico">
+	<link rel="shortcut icon" href="../../../images/common/favicon.ico">
+	<!-- [pp] 아이콘글꼴/font-awesome -->
+	<link rel="stylesheet" href="../../../fonts/font-awesome/css/font-awesome.min.css">
+	<!-- [pp] 아이콘글꼴/font-awesome/파이어폭스 미출력 에러 대응 -->
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+
+	<!-- css -->
+	<link rel="stylesheet" href="../../../plugin/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="../../../plugin/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+	<link rel="stylesheet" href="../../../css/client/src/swiper.min.css">
+	<link rel="stylesheet" href="../../../plugin/bootstrap-toggle/css/bootstrap-toggle.min.css">
+	<link rel="stylesheet" href="../../../plugin/Ionicons/css/ionicons.min.css">
+	<link rel="stylesheet" href="../../../css/admin/src/AdminLTE.css">
+	<link rel="stylesheet" href="../../../css/admin/src/skins/_all-skins.css">
+	<link rel="stylesheet" href="../../../css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" href="../../../plugin/select2/css/select2.css">
+	<link rel="stylesheet" href="../../../css/admin/dl_common.css">
+	<link rel="stylesheet" href="../../../css/dl_global.css">
+	<link rel="stylesheet" href="../../../css/admin/dl_custom.css">
+	<link rel="stylesheet" href="../../../css/admin/dl_table.css">
+	<link rel="stylesheet" href="../../../css/admin/dl_popup.css">
+	<link rel="stylesheet" href="../../../css/admin/dl_ui.css">
+	
+	<!-- js -->
+	<script src="../../../plugin/jquery/dist/jquery.min.js"></script>
+	<script src="../../../plugin/jquery-ui/jquery-ui.min.js"></script>
+	<script src="../../../plugin/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="../../../plugin/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
+	<script src="../../../plugin/bootstrap-toggle/js/bootstrap-toggle.min.js"></script>
+	<script src="../../../js/client/src/swiper.min.js"></script>
+	<script src="../../../plugin/fastclick/lib/fastclick.js"></script>
+	<script src="../../../js/jquery.mCustomScrollbar.min.js"></script>
+	<script src="../../../js/admin/src/adminlte.js"></script>
+	<script src="../../../js/admin/src/demo.js"></script>
+	<script src="../../../plugin/select2/js/select2.min.js"></script>
+	<script src="../../../js/admin/pp_ui.js"></script>
+	<!-- //js -->
+	
+	
+
+</head>
+
+<body class="hold-transition skin-red sidebar-mini">
+	<!--[pp] 모달기본 -->
+	<div class="modal-dialog modal-xlg cf">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title ta_c" id="myModalLabel">학사과정 / 석사과정 / 박사과정</h4>
+			</div>
+			<div class="modal-body">
+			    <div class="nav-tabs-custom">
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="#one" data-toggle="tab">과정정보</a></li>
+						<li><a href="#two" data-toggle="tab">모집정보</a></li>
+						<li><a href="#three" data-toggle="tab">입력항목</a></li>
+						<li><a href="#four" data-toggle="tab">제출서류관리</a></li>
+                        <li><a href="#five" data-toggle="tab">서류평가항목</a></li>
+					</ul>
+				    <div class="tab-content">
+                        <div class="tab-pane active" id="one">
+                            <div class="box box-solid">
+                                <div class="box-header">
+                                    <h3 class="box-title">입학처 정보</h3>
+                                </div>
+                                <div class="box-body cf">
+                                    <div class="content_box">
+                                        <div class="mg_b5">
+                                            <p class="dp_inline mg_r20"><span></span>홈페이지</p>
+                                            <div class="wd_300 dp_inline va_m">
+                                                <input type="text" class="form-control" placeholder="전형">
+                                            </div>
+                                            <p class="ad_input_row">
+                                                <input type="checkbox" class="check_round" id="check_homepage">
+                                                <label class="check_label" for="check_homepage">대학교 홈페이지와 동일</label>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box box-solid cf">
+                                <div class="box-header">
+                                    <h3 class="box-title">접수 일정</h3>
+                                </div>
+                                <div class="box-body cf">
+                                    <div class="content_box">
+                                        <div class="cf">
+                                            <div class="mg_t20 mg_b10">
+                                                <p class="dp_inline mg_r20 wd_70"><span></span>과정</p>
+                                                <div class="dp_inline va_m">
+                                                    <!-- [pp] 가로값은 클래스명으로 지정 -->
+                                                    <select class="select_search wd_220">
+                                                        <option>봄학기</option>
+                                                        <option>여름</option>
+                                                        <option>가을</option>
+                                                        <option>겨울</option>
+                                                        <option>option 5</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <p class="dp_inline mg_r20 wd_70"><span></span>접수일정</p>
+                                            <div class="dp_inline wd_125 va_m">
+                                                <div class="input-group date">
+                                                    <div class="input-group-addon">
+                                                        <i class="fa fa-calendar"></i>
+                                                    </div>
+                                                    <input type="text" name="datepicker" placeholder="시작일" class="form-control pull-right">
+                                                </div>
+                                            </div>
+                                            ~
+                                            <div class="dp_inline wd_125 va_m">
+                                                <div class="input-group date">
+                                                    <div class="input-group-addon">
+                                                        <i class="fa fa-calendar"></i>
+                                                    </div>
+                                                    <input type="text" name="datepicker" placeholder="종료일" class="form-control pull-right">
+                                                </div>
+                                            </div>
+                                            <p class="ad_input_row">
+                                                <input type="radio" name="radio" class="radio_round" id="radio1">
+                                                <label class="radio_label" for="radio1">상시</label>
+                                            </p>
+                                            <p class="ad_input_row">
+                                                <input type="radio" name="radio" class="radio_round" id="radio2">
+                                                <label class="radio_label" for="radio2">국가별 날짜 안내 멘트 출력</label>
+                                            </p>
+                                            <p class="ad_input_row mg_l20">
+                                                <button class="btn btn-primary">등록</button>
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <table class="table table-bordered tbl_col">
+                                                <caption>모집 학과</caption>
+                                                <colgroup>
+                                                    <col width="30%">
+                                                    <col width="60%">
+                                                    <col width="10%">
+                                                </colgroup>
+                                                <thead>
+                                                    <th scope="col">학기</th>
+                                                    <th scope="col">접수 일정</th>
+                                                    <th scope="col">&nbsp;</th>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <span>봄학기</span>
+                                                        </td>
+                                                        <td>
+                                                            <p class="dp_inline">2019-12-12</p>
+                                                            -
+                                                            <p class="dp_inline">2019-12-31</p>
+                                                            <span>&#40;국가별 상이&#41;</span>
+                                                        </td>
+                                                        <td>
+                                                            <button class="btn btn-danger">삭제</button>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+							<div class="ta_c mg_t20">
+                                <button class="btn-lg btn-primary"><i class="fa fa-check mg_r5"></i>저장</button>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="two">
+                            <div class="box box-solid">
+                                <div class="box-header">
+                                    <h3 class="box-title">항목 등록</h3>
+                                    <button type="button" class="btn btn-sm btn-outline-success mg_l10"><i class="fa fa-download mg_r5"></i>Excel 양식다운로드</button>
+                                    <div class="btn_position">
+                                    <button type="button" class="btn btn-sm btn-primary mg_r5"><i class="fa fa-plus mg_r5"></i>전형추가</button>
+                                </div>
+                                </div>
+                                <div class="box-body cf">
+                                    <div class="content_box">
+                                        <div class="mg_b5">
+                                            <p class="dp_inline mg_r20"><span></span> 전형 1</p>
+                                            <div class="wd_p23 dp_inline va_m">
+                                                <input type="text" class="form-control" placeholder="전형">
+                                            </div>
+                                            <div class="wd_p23 dp_inline va_m">
+                                                <input type="text" class="form-control" placeholder="영문">
+                                            </div>
+                                            <div class="fr">
+                                                <div class="dp_inline va_m">
+                                                    <button class="btn btn-primary wd_120 ellipsis">Major.xlsx</button>
+                                                </div>
+                                                <div class="dp_inline va_m">
+                                                    <button type="button" class="btn btn-md btn-outline-success"><i class="fa fa-upload mg_r5"></i>엑셀업로드</button>
+                                                </div>
+                                                <div class="dp_inline va_m">
+                                                    <button type="button" class="btn btn-md btn-outline-success"><i class="fa fa-download mg_r5"></i>다운로드</button>
+                                                </div>
+                                                <div class="dp_inline va_m wd_35"></div>
+                                            </div>
+                                        </div>
+                                        <div class="mg_b5">
+                                            <p class="dp_inline mg_r20"><span></span> 전형 2</p>
+                                            <div class="wd_p23 dp_inline va_m">
+                                                <input type="text" class="form-control" placeholder="전형">
+                                            </div>
+                                            <div class="wd_p23 dp_inline va_m">
+                                                <input type="text" class="form-control" placeholder="영문">
+                                            </div>
+                                            <div class="fr">
+                                                <div class="dp_inline va_m">
+                                                    <button class="btn btn-primary wd_120 ellipsis">Major.xlsx</button>
+                                                </div>
+                                                <div class="dp_inline va_m">
+                                                    <button type="button" class="btn btn-md btn-outline-success"><i class="fa fa-upload mg_r5"></i>엑셀업로드</button>
+                                                </div>
+                                                <div class="dp_inline va_m">
+                                                    <button type="button" class="btn btn-md btn-outline-success"><i class="fa fa-download mg_r5"></i>다운로드</button>
+                                                </div>
+                                                <button class="btn btn-primary va_t wd_35"><i class="fa fa-minus"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="mg_b5">
+                                            <p class="dp_inline mg_r20"><span></span> 전형 3</p>
+                                            <div class="wd_p23 dp_inline va_m">
+                                                <input type="text" class="form-control" placeholder="전형">
+                                            </div>
+                                            <div class="wd_p23 dp_inline va_m">
+                                                <input type="text" class="form-control" placeholder="영문">
+                                            </div>
+                                            <div class="fr">
+                                                <div class="dp_inline va_m">
+                                                    <button class="btn btn-primary wd_120 ellipsis">Major.xlsx</button>
+                                                </div>
+                                                <div class="dp_inline va_m">
+                                                    <button type="button" class="btn btn-md btn-outline-success"><i class="fa fa-upload mg_r5"></i>엑셀업로드</button>
+                                                </div>
+                                                <div class="dp_inline va_m">
+                                                    <button type="button" class="btn btn-md btn-outline-success"><i class="fa fa-download mg_r5"></i>다운로드</button>
+                                                </div>
+                                                <button class="btn btn-primary va_t wd_35"><i class="fa fa-minus"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box box-solid cf">
+                                <div class="box-header">
+                                    <h3 class="box-title">모집 학과</h3>
+                                </div>
+                                <div class="box-body cf">
+                                    <div class="content_box">
+                                        <div class="mg_b10">
+                                            <table class="table table-bordered tbl_col">
+                                                <caption>모집 학과</caption>
+                                                <colgroup>
+                                                    <col width="15%">
+                                                    <col width="55%">
+                                                    <col width="15%">
+                                                    <col width="15%">
+                                                </colgroup>
+                                                <thead>
+                                                    <th scope="col">학과명</th>
+                                                    <th scope="col">설명</th>
+                                                    <th scope="col">모집인원</th>
+                                                    <th scope="col">정원</th>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <input type="text" class="form-control mg_b5" placeholder="학과명 KR">
+                                                            <input type="text" class="form-control" placeholder="학과명 US">
+                                                        </td>
+                                                        <td>
+                                                            <textarea type="text" class="form-control mg_b5" placeholder="설명 KR"></textarea>
+                                                            <textarea type="text" class="form-control" placeholder="설명 US"></textarea>
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control" placeholder="모집인원">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control" placeholder="정원">
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ta_c mg_t20">
+                                <button class="btn-lg btn-primary"><i class="fa fa-check mg_r5"></i>저장</button>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="three">
+                            <div class="box box-solid">
+                                <div class="box-header">
+                                    <h3 class="box-title">대분류&#40;탭&#41; 관리</h3>
+                                </div>
+                                <div class="box-body cf">
+                                    <div class="ip_item item_shadow fl">
+                                        <p class="mg_b30">대분류 탭 제목</p>
+                                        <input type="text" class="form-control" placeholder="한글명">
+                                        <input type="text" class="form-control mg_t10" placeholder="영문명">
+                                        <div class="ta_c mg_t30">
+                                            <button class="btn btn-primary">분류 등록</button>
+                                        </div>
+                                    </div>
+                                    <div class="volunteer_box">
+                                        <div class="swiper-container volunteer_slide fl first_slide">
+                                            <ul class="swiper-wrapper">
+                                                <li class="swiper-slide slide1">
+                                                    <div class="ip_item">
+                                                        <div class="point_box">
+                                                            <strong>지원사항 <br/> <span >Support information</span></strong>
+                                                        </div>
+                                                        <div class="ta_c mg_t30">
+                                                            <span class="va_t mg_r10">활성화 여부</span>
+                                                            <button type="button" class="toggle_button green">
+                                                                <span></span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="ta_c mg_t20">
+                                                            <button class="btn btn-primary">수정</button>
+                                                            <button class="btn btn-danger">삭제</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="swiper-slide slide2">
+                                                    <div class="ip_item">
+                                                        <div class="point_box">
+                                                            <strong>지원사항 <br/> <span >Support information</span></strong>
+                                                        </div>
+                                                        <div class="ta_c mg_t30">
+                                                            <span class="va_t mg_r10">활성화 여부</span>
+                                                            <button type="button" class="toggle_button green">
+                                                                <span></span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="ta_c mg_t20">
+                                                            <button class="btn btn-primary">수정</button>
+                                                            <button class="btn btn-danger">삭제</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="swiper-slide slide3">
+                                                    <div class="ip_item">
+                                                        <div class="point_box">
+                                                            <strong>지원사항 <br/> <span >Support information</span></strong>
+                                                        </div>
+                                                        <div class="ta_c mg_t30">
+                                                            <span class="va_t mg_r10">활성화 여부</span>
+                                                            <button type="button" class="toggle_button green on">
+                                                                <span></span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="ta_c mg_t20">
+                                                            <button class="btn btn-primary">수정</button>
+                                                            <button class="btn btn-danger">삭제</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="swiper-slide slide4">
+                                                    <div class="ip_item">
+                                                        <div class="point_box">
+                                                            <strong>지원사항 <br/> <span >Support information</span></strong>
+                                                        </div>
+                                                        <div class="ta_c mg_t30">
+                                                            <span class="va_t mg_r10">활성화 여부</span>
+                                                            <button type="button" class="toggle_button green">
+                                                                <span></span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="ta_c mg_t20">
+                                                            <button class="btn btn-primary">수정</button>
+                                                            <button class="btn btn-danger">삭제</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="swiper-slide slide5">
+                                                    <div class="ip_item">
+                                                        <div class="point_box">
+                                                            <strong>지원사항 <br/> <span >Support information</span></strong>
+                                                        </div>
+                                                        <div class="ta_c mg_t30">
+                                                            <span class="va_t mg_r10">활성화 여부</span>
+                                                            <button type="button" class="toggle_button green">
+                                                                <span></span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="ta_c mg_t20">
+                                                            <button class="btn btn-primary">수정</button>
+                                                            <button class="btn btn-danger">삭제</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="swiper-slide slide6">
+                                                    <div class="ip_item">
+                                                        <div class="point_box">
+                                                            <strong>지원사항 <br/> <span >Support information</span></strong>
+                                                        </div>
+                                                        <div class="ta_c mg_t30">
+                                                            <span class="va_t mg_r10">활성화 여부</span>
+                                                            <button type="button" class="toggle_button green">
+                                                                <span></span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="ta_c mg_t20">
+                                                            <button class="btn btn-primary">수정</button>
+                                                            <button class="btn btn-danger">삭제</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!-- pagination -->
+                                        <div class="control_wrap">
+                                            <div class="play_control">
+                                                <button type="button" class="slide_prev first_prev">이전</button>
+                                                <button type="button" class="slide_next first_next">다음</button>
+                                            </div>
+                                        </div>
+                                        <!-- //pagination -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- [pp] 중분류 -->
+							<div class="box box-solid">
+                                <div class="box-header">
+                                    <h3 class="box-title">중분류&#40;탭&#41; 관리</h3>
+                                </div>
+                                <div class="box-body cf">
+                                    <div class="ip_item item_shadow fl">
+                                        <p class="mg_b30">중분류 탭 제목</p>
+                                        <input type="text" class="form-control" placeholder="한글명">
+                                        <input type="text" class="form-control mg_t10" placeholder="영문명">
+                                        <div class="ta_c mg_t30">
+                                            <button class="btn btn-primary">분류 등록</button>
+                                        </div>
+                                    </div>
+                                    <div class="volunteer_box">
+                                        <div class="swiper-container volunteer_slide fl second_slide">
+                                            <ul class="swiper-wrapper">
+                                                <li class="swiper-slide slide1">
+                                                    <div class="ip_item">
+                                                        <div class="point_box">
+                                                            <strong>지원사항 <br/> <span >Support information</span></strong>
+                                                        </div>
+                                                        <div class="ta_c mg_t30">
+                                                            <span class="va_t mg_r10">활성화 여부</span>
+                                                            <button type="button" class="toggle_button green">
+                                                                <span></span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="ta_c mg_t20">
+                                                            <button class="btn btn-primary">수정</button>
+                                                            <button class="btn btn-danger">삭제</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="swiper-slide slide2">
+                                                    <div class="ip_item">
+                                                        <div class="point_box">
+                                                            <strong>지원사항 <br/> <span >Support information</span></strong>
+                                                        </div>
+                                                        <div class="ta_c mg_t30">
+                                                            <span class="va_t mg_r10">활성화 여부</span>
+                                                            <button type="button" class="toggle_button green on">
+                                                                <span></span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="ta_c mg_t20">
+                                                            <button class="btn btn-primary">수정</button>
+                                                            <button class="btn btn-danger">삭제</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="swiper-slide slide3">
+                                                    <div class="ip_item">
+                                                        <div class="point_box">
+                                                            <strong>지원사항 <br/> <span >Support information</span></strong>
+                                                        </div>
+                                                        <div class="ta_c mg_t30">
+                                                            <span class="va_t mg_r10">활성화 여부</span>
+                                                            <button type="button" class="toggle_button green">
+                                                                <span></span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="ta_c mg_t20">
+                                                            <button class="btn btn-primary">수정</button>
+                                                            <button class="btn btn-danger">삭제</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="swiper-slide slide4">
+                                                    <div class="ip_item">
+                                                        <div class="point_box">
+                                                            <strong>지원사항 <br/> <span >Support information</span></strong>
+                                                        </div>
+                                                        <div class="ta_c mg_t30">
+                                                            <span class="va_t mg_r10">활성화 여부</span>
+                                                            <button type="button" class="toggle_button green">
+                                                                <span></span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="ta_c mg_t20">
+                                                            <button class="btn btn-primary">수정</button>
+                                                            <button class="btn btn-danger">삭제</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="swiper-slide slide5">
+                                                    <div class="ip_item">
+                                                        <div class="point_box">
+                                                            <strong>지원사항 <br/> <span >Support information</span></strong>
+                                                        </div>
+                                                        <div class="ta_c mg_t30">
+                                                            <span class="va_t mg_r10">활성화 여부</span>
+                                                            <button type="button" class="toggle_button green">
+                                                                <span></span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="ta_c mg_t20">
+                                                            <button class="btn btn-primary">수정</button>
+                                                            <button class="btn btn-danger">삭제</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="swiper-slide slide6">
+                                                    <div class="ip_item">
+                                                        <div class="point_box">
+                                                            <strong>지원사항 <br/> <span >Support information</span></strong>
+                                                        </div>
+                                                        <div class="ta_c mg_t30">
+                                                            <span class="va_t mg_r10">활성화 여부</span>
+                                                            <button type="button" class="toggle_button green">
+                                                                <span></span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="ta_c mg_t20">
+                                                            <button class="btn btn-primary">수정</button>
+                                                            <button class="btn btn-danger">삭제</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!-- pagination -->
+                                        <div class="control_wrap second">
+                                            <div class="play_control">
+                                                <button type="button" class="slide_prev second_prev">이전</button>
+                                                <button type="button" class="slide_next second_next">다음</button>
+                                            </div>
+                                        </div>
+                                        <!-- //pagination -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box box-solid">
+                                <div class="box-header">
+                                    <h3 class="box-title">항목 등록</h3>
+                                </div>
+                                <div class="box-body cf">
+                                    <div class="content_box">
+                                        <div>
+                                            <p class="dp_inline mg_r20"><span></span> 항목이름</p>
+                                            <div class="wd_220 dp_inline va_m">
+                                                <input type="text" class="form-control" placeholder="항목 이름 &#40;한글&#41;">
+                                            </div>
+                                            <div class="wd_220 dp_inline va_m">
+                                                <input type="text" class="form-control" placeholder="항목 이름 &#40;영어&#41;">
+                                            </div>
+                                        </div>
+                                        <div class="cf">
+                                            <div class="mg_t20 fl">
+                                                <p class="dp_inline mg_r20"><span></span> 입력방식</p>
+                                                <!-- [pp] select2 사용시 css, js 파일 필요 -->             <!-- [pp] <link rel="stylesheet" href="../../../plugin/select2/css/select2.css"> -->
+                                                <!-- [pp] <script src="../../../plugin/select2/js/select2.min.js"></script> -->
+                                                <div class="dp_inline va_m">
+                                                    <!-- [pp] 가로값은 클래스명으로 지정 -->
+                                                    <select class="select_search wd_220">
+                                                        <option>직접 입력</option>
+                                                        <option>선택 (단일)</option>
+                                                        <option>선택(중복)</option>
+                                                        <option>option 4</option>
+                                                        <option>option 5</option>
+                                                    </select>
+                                                </div>
+                                                <div class="dp_inline va_m">
+                                                    <!-- [pp] 가로값은 클래스명으로 지정 -->
+                                                    <select class="select_search wd_220">
+                                                        <option>1개</option>
+                                                        <option>2개</option>
+                                                        <option>3개</option>
+                                                        <option>option 4</option>
+                                                        <option>option 5</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="wd_365 fl mg_t20 mg_l10">
+                                                <div class="wd_180 dp_inline mg_b5 va_m">
+                                                    <input type="text" class="form-control" placeholder="항목 1">
+                                                </div>
+                                                <div class="wd_180 dp_inline  mg_b5 va_m">
+                                                    <input type="text" class="form-control" placeholder="항목 2">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ta_c mg_t30">
+                                            <button class="btn btn-primary">항목 등록</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box box-solid">
+                                <div class="box-header">
+                                    <h3 class="box-title">항목 목록</h3>
+                                </div>
+                                <div class="box-body cf">
+                                    <ul class="item_list mg_b10">
+                                        <li>
+                                            <div>
+                                                <p><span></span>이름 &#40;영문&#41;</p>
+                                            </div>
+                                            <div class="arrow_button ta_c">
+                                                <button class="arrow_down">아래</button>
+                                                <button class="arrow_up">위</button>
+                                            </div>
+                                            <div class="ta_c">
+                                                <button class="btn btn-primary">수정</button>
+                                                <button class="btn btn-danger">삭제</button>
+                                            </div>
+                                            <div class="ta_c">
+                                                <span class="mg_r5">활성화 여부</span>
+                                                <button type="button" class="toggle_button green">
+                                                    <span></span>
+                                                </button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="ta_c mg_t20">
+                                <button class="btn-lg btn-primary"><i class="fa fa-check mg_r5"></i>저장</button>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="four">
+                            <div class="box box-solid">
+                                <div class="box-header">
+                                    <h3 class="box-title">항목 등록</h3>
+                                </div>
+                                <div class="box-body cf">
+                                    <div class="content_box">
+                                        <div>
+                                            <p class="dp_inline mg_r20"><span></span> 항목이름</p>
+                                            <div class="wd_220 dp_inline va_m">
+                                                <input type="text" class="form-control" placeholder="항목 이름 &#40;한글&#41;">
+                                            </div>
+                                            <div class="wd_220 dp_inline va_m">
+                                                <input type="text" class="form-control" placeholder="항목 이름 &#40;영어&#41;">
+                                            </div>
+                                        </div>
+                                        <div class="cf">
+                                            <div class="mg_t20 fl">
+                                                <p class="dp_inline mg_r20"><span></span> 입력방식</p>
+                                                <div class="dp_inline va_m">
+                                                    <!-- [pp] 가로값은 클래스명으로 지정 -->
+                                                    <select class="select_search wd_220">
+                                                        <option>직접 입력</option>
+                                                        <option>선택 (단일)</option>
+                                                        <option>선택(중복)</option>
+                                                        <option>option 4</option>
+                                                        <option>option 5</option>
+                                                    </select>
+                                                </div>
+                                                <div class="dp_inline va_m">
+                                                    <!-- [pp] 가로값은 클래스명으로 지정 -->
+                                                    <select class="select_search wd_220">
+                                                        <option>1개</option>
+                                                        <option>2개</option>
+                                                        <option>3개</option>
+                                                        <option>option 4</option>
+                                                        <option>option 5</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="wd_365 fl mg_t20 mg_l10">
+                                                <div class="wd_180 dp_inline mg_b5 va_m">
+                                                    <input type="text" class="form-control" placeholder="항목 1">
+                                                </div>
+                                                <div class="wd_180 dp_inline  mg_b5 va_m">
+                                                    <input type="text" class="form-control" placeholder="항목 2">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ta_c mg_t30">
+                                            <button class="btn btn-primary">항목 등록</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box box-solid">
+                                <div class="box-header">
+                                    <h3 class="box-title">항목 목록</h3>
+                                </div>
+                                <div class="box-body cf">
+                                    <ul class="item_list mg_b10">
+                                        <li>
+                                            <div>
+                                                <p><span></span>이름 &#40;영문&#41;</p>
+                                            </div>
+                                            <div class="arrow_button ta_c">
+                                                <button class="arrow_down">아래</button>
+                                                <button class="arrow_up">위</button>
+                                            </div>
+                                            <div class="ta_c">
+                                                <button class="btn btn-primary">수정</button>
+                                                <button class="btn btn-danger">삭제</button>
+                                            </div>
+                                            <div class="ta_c">
+                                                <span class="mg_r5">활성화 여부</span>
+                                                <button type="button" class="toggle_button green">
+                                                    <span></span>
+                                                </button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ul class="item_list mg_b10">
+                                        <li>
+                                            <div>
+                                                <p><span></span>졸업증명서 &#40;영문&#41;</p>
+                                            </div>
+                                            <div class="arrow_button ta_c">
+                                                <button class="arrow_down">아래</button>
+                                                <button class="arrow_up">위</button>
+                                            </div>
+                                            <div class="ta_c">
+                                                <button class="btn btn-primary">수정</button>
+                                                <button class="btn btn-danger">삭제</button>
+                                            </div>
+                                            <div class="ta_c">
+                                                <span class="mg_r5">활성화 여부</span>
+                                                <button type="button" class="toggle_button green on">
+                                                    <span></span>
+                                                </button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ul class="item_list mg_b10">
+                                        <li>
+                                            <div>
+                                                <p><span></span>집문서 &#40;영문&#41;</p>
+                                            </div>
+                                            <div class="arrow_button ta_c">
+                                                <button class="arrow_down">아래</button>
+                                                <button class="arrow_up">위</button>
+                                            </div>
+                                            <div class="ta_c">
+                                                <button class="btn btn-primary">수정</button>
+                                                <button class="btn btn-danger">삭제</button>
+                                            </div>
+                                            <div class="ta_c">
+                                                <span class="mg_r5">활성화 여부</span>
+                                                <button type="button" class="toggle_button green">
+                                                    <span></span>
+                                                </button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <!-- 버튼 2개 일때 box -->
+                                    <ul class="item_list two mg_b10">
+                                        <li>
+                                            <div>
+                                                <p><span></span>버튼 1개 활성화 여부 1개</p>
+                                            </div>
+                                            <div class="ta_r">
+                                            	<button class="btn btn-primary">버튼</button>
+                                            </div>
+                                            <div class="ta_c">
+                                                <span class="mg_r5">활성화 여부</span>
+                                                <button type="button" class="toggle_button green">
+                                                    <span></span>
+                                                </button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ul class="item_list one mg_b10">
+                                        <li>
+                                            <div>
+                                                <p><span></span>버튼 1개 활성화 여부 1개</p>
+                                            </div>
+                                            <div class="ta_r">
+                                                <span class="mg_r5">활성화 여부</span>
+                                                <button type="button" class="toggle_button green">
+                                                    <span></span>
+                                                </button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- [pp] //제출서류관리 -->
+                            <div class="ta_c mg_t20">
+                                <button class="btn-lg btn-primary"><i class="fa fa-check mg_r5"></i>저장</button>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="five">
+                            <div class="box box-solid">
+                                <div class="box-header">
+                                    <h3 class="box-title">대분류&#40;탭&#41; 관리</h3>
+                                </div>
+                                <div class="box-body cf">
+                                    <div class="ip_item item_shadow fl">
+                                        <p class="mg_b40 mg_t20">대분류 탭 제목</p>
+                                        <input type="text" class="form-control" placeholder="항목 작성">
+                                        <div class="ta_c mg_t30">
+                                            <button class="btn btn-primary">항목 등록</button>
+                                        </div>
+                                    </div>
+                                    <div class="volunteer_box">
+                                        <div class="swiper-container third_slide volunteer_slide fl">
+                                            <ul class="swiper-wrapper">
+                                                <li class="swiper-slide slide1">
+                                                    <div class="ip_item">
+                                                        <div class="point_box">
+                                                            <strong>성적 <br/> <span >Grade</span></strong>
+                                                        </div>
+                                                        <div class="ta_c mg_t30">
+                                                            <span class="va_t mg_r10">활성화 여부</span>
+                                                            <button type="button" class="toggle_button green">
+                                                                <span></span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="ta_c mg_t20">
+                                                            <button class="btn btn-primary">수정</button>
+                                                            <button class="btn btn-danger">삭제</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="swiper-slide slide2">
+                                                    <div class="ip_item">
+                                                        <div class="point_box">
+                                                            <strong>재정 <br/> <span >Finance</span></strong>
+                                                        </div>
+                                                        <div class="ta_c mg_t30">
+                                                            <span class="va_t mg_r10">활성화 여부</span>
+                                                            <button type="button" class="toggle_button green">
+                                                                <span></span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="ta_c mg_t20">
+                                                            <button class="btn btn-primary">수정</button>
+                                                            <button class="btn btn-danger">삭제</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="swiper-slide slide3">
+                                                    <div class="ip_item">
+                                                        <div class="point_box">
+                                                            <strong>국가 <br/> <span >Nation</span></strong>
+                                                        </div>
+                                                        <div class="ta_c mg_t30">
+                                                            <span class="va_t mg_r10">활성화 여부</span>
+                                                            <button type="button" class="toggle_button green on">
+                                                                <span></span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="ta_c mg_t20">
+                                                            <button class="btn btn-primary">수정</button>
+                                                            <button class="btn btn-danger">삭제</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="swiper-slide slide4">
+                                                    <div class="ip_item">
+                                                        <div class="point_box">
+                                                            <strong>랜덤 <br/> <span >Random</span></strong>
+                                                        </div>
+                                                        <div class="ta_c mg_t30">
+                                                            <span class="va_t mg_r10">활성화 여부</span>
+                                                            <button type="button" class="toggle_button green">
+                                                                <span></span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="ta_c mg_t20">
+                                                            <button class="btn btn-primary">수정</button>
+                                                            <button class="btn btn-danger">삭제</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="swiper-slide slide5">
+                                                    <div class="ip_item">
+                                                        <div class="point_box">
+                                                            <strong>지원사항 <br/> <span >Support information</span></strong>
+                                                        </div>
+                                                        <div class="ta_c mg_t30">
+                                                            <span class="va_t mg_r10">활성화 여부</span>
+                                                            <button type="button" class="toggle_button green">
+                                                                <span></span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="ta_c mg_t20">
+                                                            <button class="btn btn-primary">수정</button>
+                                                            <button class="btn btn-danger">삭제</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="swiper-slide slide6">
+                                                    <div class="ip_item">
+                                                        <div class="point_box">
+                                                            <strong>지원사항 <br/> <span >Support information</span></strong>
+                                                        </div>
+                                                        <div class="ta_c mg_t30">
+                                                            <span class="va_t mg_r10">활성화 여부</span>
+                                                            <button type="button" class="toggle_button green">
+                                                                <span></span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="ta_c mg_t20">
+                                                            <button class="btn btn-primary">수정</button>
+                                                            <button class="btn btn-danger">삭제</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="swiper-slide slide7">
+                                                    <div class="ip_item">
+                                                        <div class="point_box">
+                                                            <strong>WHAT <br/> <span >Support information</span></strong>
+                                                        </div>
+                                                        <div class="ta_c mg_t30">
+                                                            <span class="va_t mg_r10">활성화 여부</span>
+                                                            <button type="button" class="toggle_button green">
+                                                                <span></span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="ta_c mg_t20">
+                                                            <button class="btn btn-primary">수정</button>
+                                                            <button class="btn btn-danger">삭제</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!-- pagination -->
+                                        <div class="control_wrap">
+                                            <div class="play_control">
+                                                <button type="button" class="slide_prev third_prev">이전</button>
+                                                <button type="button" class="slide_next third_next">다음</button>
+                                            </div>
+                                        </div>
+                                        <!-- //pagination -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- [pp] 중분류 -->
+							<div class="box box-solid">
+                                <div class="box-header">
+                                    <h3 class="box-title">중분류&#40;탭&#41; 관리</h3>
+                                </div>
+                                <div class="box-body cf">
+                                    <div class="ip_item item_shadow fl">
+                                        <p class="mg_b40 mg_t20">중분류 탭 제목</p>
+                                        <input type="text" class="form-control mg_t10" placeholder="항목 작성">
+                                        <div class="ta_c mg_t30">
+                                            <button class="btn btn-primary">항목 등록</button>
+                                        </div>
+                                    </div>
+                                    <div class="volunteer_box">
+                                        <div class="swiper-container volunteer_slide fl fourth_slide">
+                                            <ul class="swiper-wrapper">
+                                                <li class="swiper-slide slide1">
+                                                    <div class="ip_item">
+                                                        <div class="point_box">
+                                                            <strong>성적 <br/> <span>Grande</span></strong>
+                                                        </div>
+                                                        <div class="ta_c mg_t30">
+                                                            <span class="va_t mg_r10">활성화 여부</span>
+                                                            <button type="button" class="toggle_button green">
+                                                                <span></span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="ta_c mg_t20">
+                                                            <button class="btn btn-primary">수정</button>
+                                                            <button class="btn btn-danger">삭제</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="swiper-slide slide2">
+                                                    <div class="ip_item">
+                                                        <div class="point_box">
+                                                            <strong>국가 <br/> <span >Country</span></strong>
+                                                        </div>
+                                                        <div class="ta_c mg_t30">
+                                                            <span class="va_t mg_r10">활성화 여부</span>
+                                                            <button type="button" class="toggle_button green on">
+                                                                <span></span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="ta_c mg_t20">
+                                                            <button class="btn btn-primary">수정</button>
+                                                            <button class="btn btn-danger">삭제</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="swiper-slide slide3">
+                                                    <div class="ip_item">
+                                                        <div class="point_box">
+                                                            <strong>재정 <br/> <span >Finance</span></strong>
+                                                        </div>
+                                                        <div class="ta_c mg_t30">
+                                                            <span class="va_t mg_r10">활성화 여부</span>
+                                                            <button type="button" class="toggle_button green">
+                                                                <span></span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="ta_c mg_t20">
+                                                            <button class="btn btn-primary">수정</button>
+                                                            <button class="btn btn-danger">삭제</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="swiper-slide slide4">
+                                                    <div class="ip_item">
+                                                        <div class="point_box">
+                                                            <strong>지원사항 <br/> <span >Support information</span></strong>
+                                                        </div>
+                                                        <div class="ta_c mg_t30">
+                                                            <span class="va_t mg_r10">활성화 여부</span>
+                                                            <button type="button" class="toggle_button green">
+                                                                <span></span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="ta_c mg_t20">
+                                                            <button class="btn btn-primary">수정</button>
+                                                            <button class="btn btn-danger">삭제</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="swiper-slide slide5">
+                                                    <div class="ip_item">
+                                                        <div class="point_box">
+                                                            <strong>지원사항 <br/> <span >Support information</span></strong>
+                                                        </div>
+                                                        <div class="ta_c mg_t30">
+                                                            <span class="va_t mg_r10">활성화 여부</span>
+                                                            <button type="button" class="toggle_button green on">
+                                                                <span></span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="ta_c mg_t20">
+                                                            <button class="btn btn-primary">수정</button>
+                                                            <button class="btn btn-danger">삭제</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="swiper-slide slide6">
+                                                    <div class="ip_item">
+                                                        <div class="point_box">
+                                                            <strong>지원사항 <br/> <span >Support information</span></strong>
+                                                        </div>
+                                                        <div class="ta_c mg_t30">
+                                                            <span class="va_t mg_r10">활성화 여부</span>
+                                                            <button type="button" class="toggle_button green">
+                                                                <span></span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="ta_c mg_t20">
+                                                            <button class="btn btn-primary">수정</button>
+                                                            <button class="btn btn-danger">삭제</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!-- pagination -->
+                                        <div class="control_wrap second">
+                                            <div class="play_control">
+                                                <button type="button" class="slide_prev fourth_prev">이전</button>
+                                                <button type="button" class="slide_next fourth_next">다음</button>
+                                            </div>
+                                        </div>
+                                        <!-- //pagination -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box box-solid">
+                                <div class="box-header">
+                                    <h3 class="box-title">항목 등록</h3>
+                                </div>
+                                <div class="box-body cf">
+                                    <div class="content_box">
+                                        <div>
+                                            <p class="dp_inline mg_r20"><span></span> 항목이름</p>
+                                            <div class="wd_220 dp_inline va_m">
+                                                <input type="text" class="form-control" placeholder="항목 이름 &#40;한글&#41;">
+                                            </div>
+                                            <div class="wd_220 dp_inline va_m">
+                                                <input type="text" class="form-control" placeholder="항목 이름 &#40;영어&#41;">
+                                            </div>
+                                        </div>
+                                        <div class="cf">
+                                            <div class="mg_t20 fl">
+                                                <p class="dp_inline mg_r20"><span></span> 입력방식</p>
+                                                <div class="dp_inline va_m">
+                                                    <!-- [pp] 가로값은 클래스명으로 지정 -->
+                                                    <select class="select_search wd_220">
+                                                        <option>직접 입력</option>
+                                                        <option>선택 (단일)</option>
+                                                        <option>선택(중복)</option>
+                                                        <option>option 4</option>
+                                                        <option>option 5</option>
+                                                    </select>
+                                                </div>
+                                                <div class="dp_inline va_m">
+                                                    <!-- [pp] 가로값은 클래스명으로 지정 -->
+                                                    <select class="select_search wd_220">
+                                                        <option>1개</option>
+                                                        <option>2개</option>
+                                                        <option>3개</option>
+                                                        <option>option 4</option>
+                                                        <option>option 5</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="wd_365 fl mg_t20 mg_l10">
+                                                <div class="wd_180 dp_inline mg_b5 va_m">
+                                                    <input type="text" class="form-control" placeholder="항목 1">
+                                                </div>
+                                                <div class="wd_150 dp_inline  mg_b5 va_m">
+                                                    <input type="text" class="form-control" placeholder="배점 1">
+                                                </div>
+                                                <div class="wd_180 dp_inline mg_b5 va_m">
+                                                    <input type="text" class="form-control" placeholder="항목 2">
+                                                </div>
+                                                <div class="wd_150 dp_inline  mg_b5 va_m">
+                                                    <input type="text" class="form-control" placeholder="배점 2">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ta_c mg_t30">
+                                            <button class="btn btn-primary">항목 등록</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box box-solid">
+                                <div class="box-header">
+                                    <h3 class="box-title">항목 목록</h3>
+                                </div>
+                                <div class="box-body cf">
+                                    <ul class="item_list mg_b10">
+                                        <li>
+                                            <div>
+                                                <p><span></span>학력점수 &#40;영문&#41;</p>
+                                            </div>
+                                            <div class="arrow_button ta_c">
+                                                <button class="arrow_down">아래</button>
+                                                <button class="arrow_up">위</button>
+                                            </div>
+                                            <div class="ta_c">
+                                                <button class="btn btn-primary">수정</button>
+                                                <button class="btn btn-danger">삭제</button>
+                                            </div>
+                                            <div class="ta_c">
+                                                <span class="mg_r5">활성화 여부</span>
+                                                <button type="button" class="toggle_button green">
+                                                    <span></span>
+                                                </button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ul class="item_list mg_b10">
+                                        <li>
+                                            <div>
+                                                <p><span></span>어학점수 &#40;영문&#41;</p>
+                                            </div>
+                                            <div class="arrow_button ta_c">
+                                                <button class="arrow_down">아래</button>
+                                                <button class="arrow_up">위</button>
+                                            </div>
+                                            <div class="ta_c">
+                                                <button class="btn btn-primary">수정</button>
+                                                <button class="btn btn-danger">삭제</button>
+                                            </div>
+                                            <div class="ta_c">
+                                                <span class="mg_r5">활성화 여부</span>
+                                                <button type="button" class="toggle_button green">
+                                                    <span></span>
+                                                </button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- [pp] //서류평가항목 -->
+                            <div class="ta_c mg_t20">
+                                <button class="btn-lg btn-primary"><i class="fa fa-check mg_r5"></i>저장</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+			</div>
+		</div>
+	</div>
+	<!--[pp] 모달기본 -->
+</body>
+</html>

@@ -1,0 +1,7 @@
+/*!
+ * FullCalendar v2.6.0 Stylesheet
+ * Docs & License: http://fullcalendar.io/
+ * (c) 2015 Adam Shaw
+ */
+
+#popup_today{width:613px;display: block; position: fixed; opacity: 1; z-index: 11000; left: 50%; margin-left: -306px; top: 18px;}

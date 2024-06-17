@@ -1,0 +1,58 @@
+{
+	"header": {
+		"txt1": "Thông tin du học",
+		"txt2": "Kết nối du học",
+		"txt3": "Bài tập theo kỹ năng",
+		"txt4": "Thi thử",
+		"txt5": "Cảm nghĩ du học"
+	},
+	"footer": {
+		"txt1": "Dain Leaders"
+		,"txt2": "Hướng dẫn sử dụng dịch vụ"
+		,"txt3": "Điều khoản sử dụng"
+		,"txt4": "Chính sách xử lý thông tin cá nhân"
+		,"txt5": "Từ chối việc thu thập địa chỉ email khi không được cho phép"
+		,"txt6": "Trung tâm hỗ trợ khách hàng Nền tảng kết nối du học DoDream"
+		,"txt7": "Tiếng Hàn : 070-7729-7328"
+		,"txt8": "Tiếng Việt : 070-7729-8023"
+		,"txt9": "Dainleaders.Co.,Ltd"
+		,"txt10": "Trụ sở Hàn Quốc: 2006, 5 Seongsuil-ro 8-gil, Seongdong-gu, Seoul, Republic of Korea"
+		,"txt11": "Văn phòng Việt Nam : Tầng 11 - Phòng 1107, Tòa nhà Zen Tower, 12 Khuất Duy Tiến, quận Thanh Xuân, Tp. Hà Nội, Việt Nam"
+		,"txt12": "Hướng dẫn điểm tích"
+		,"txt13": "Trung tâm hỗ trợ khách hàng : (+82)1800-6337"
+	},
+	"passFind" : {
+		"headerTxt1" : "Tìm mật khẩu"
+	},
+	"passFind_1" : {
+		"txt1" : "ID"
+		, "txt2" : "Số điện thoại"
+		, "txt3" : "Gửi mã xác thực"
+		, "txt4" : "Xác thực thành công"
+		, "txt5" : "Mã quốc gia"
+		, "txt6" : "Nhập mã xác thực"
+	},
+	"passFind_2" : {
+		"txt1" : "Tạo mật khẩu mới"
+		, "txt2" : "Mật khẩu mới"
+		, "txt3" : "Xác nhận mật khẩu"
+		, "txt4" : "Thay đổi mật khẩu"
+	},
+	"findId" : {
+		"txt1" : "Tìm ID"
+		, "txt2" : "E-MAIL"
+		, "txt3" : "Đây không phải E-Mail bạn đã đăng kí."
+		, "txt4" : "Gửi"
+		, "txt5" : "Di chuyển đến trang chủ"
+		, "txt6" : "Tìm mật khẩu"
+
+	},
+	"passFind_V2" : {
+		"txt1" : "Tìm mật khẩu"
+		, "txt2" : "Đây không phải ID bạn đã đăng kí."
+		, "txt3" : "Đây không phải email bạn đã đăng kí."
+		, "txt4" : "Gửi"
+		, "txt5" : "Di chuyển đến trang chủ"
+		, "txt6" : "Login"
+	}
+}

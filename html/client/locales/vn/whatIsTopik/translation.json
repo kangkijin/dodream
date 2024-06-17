@@ -1,0 +1,56 @@
+{
+	"header": {
+		"txt1": "Thông tin du học",
+		"txt2": "Kết nối du học",
+		"txt3": "Bài tập theo kỹ năng",
+		"txt4": "Thi thử",
+		"txt5": "Cảm nghĩ du học"
+	},
+	"footer": {
+		"txt1": "Dain Leaders"
+		,"txt2": "Hướng dẫn sử dụng dịch vụ"
+		,"txt3": "Điều khoản sử dụng"
+		,"txt4": "Chính sách xử lý thông tin cá nhân"
+		,"txt5": "Từ chối việc thu thập địa chỉ email khi không được cho phép"
+		,"txt6": "Trung tâm hỗ trợ khách hàng Nền tảng kết nối du học DoDream"
+		,"txt7": "Tiếng Hàn : 070-7729-7328"
+		,"txt8": "Tiếng Việt : 070-7729-8023"
+		,"txt9": "Dainleaders.Co.,Ltd"
+		,"txt10": "Trụ sở Hàn Quốc: 2006, 5 Seongsuil-ro 8-gil, Seongdong-gu, Seoul, Republic of Korea"
+		,"txt11": "Văn phòng Việt Nam : Tầng 11 - Phòng 1107, Tòa nhà Zen Tower, 12 Khuất Duy Tiến, quận Thanh Xuân, Tp. Hà Nội, Việt Nam"
+		,"txt12": "Hướng dẫn điểm tích"
+		,"txt13": "Trung tâm hỗ trợ khách hàng : (+82)1800-6337"
+	},
+	"doTopik_1": {
+		"txt1": "Sự cần thiết của TOPIK"
+		,"txt2": "Giải quyết những khó khăn của du học sinh có năng lực tiếng Hàn còn hạn chế trong cuộc sống hàng ngày cũng như trong học tập."
+		,"txt3": "Để nâng cao chất lượng du học Hàn Quốc, chính phủ Hàn Quốc đề ra yêu cầu du học sinh phải đạt được năng lực tiếng Hàn ở một mức độ nhất định."
+		,"txt4": "Do đó, để có thể nhập học tại các trường đại học Hàn Quốc, thí sinh bắt buộc cần có chứng nhận năng lực tiếng Hàn (TOPIK) do Viện giáo dục quốc tế cấp."
+		,"txt5": "Giới thiệu về TOPIK"
+		,"txt6": "Mục đích của kì thi"
+		,"txt7": "Đẩy mạnh phổ cập và đưa ra phương hướng học tập tiếng Hàn cho những người người nước ngoài, kiều bào không sử dụng tiếng Hàn như tiếng mẹ đẻ"
+		,"txt8": "Đánh giá năng lực tiếng Hàn và thông qua kết quả đó có thể sử dụng để nhập học, xin việc,… tại Hàn Quốc."
+		,"txt9": "Đối tượng dự thi"
+		,"txt10": "Người nước ngoài, kiều bào không sử dụng tiếng Hàn như tiếng mẹ đẻ"
+		,"txt11": "Người đang học tiếng Hàn và người có nguyện vọng du học Hàn Quốc  "
+		,"txt12": "Kiều bào đang sinh sống và học tập tại nước ngoài "
+		,"txt13": "Thời hạn hiệu lực "
+		,"txt14": "2 năm kể từ ngày công bố kết quả"
+		,"txt15": "Đơn vị chủ quản"
+		,"txt16": "Viện giáo dục quốc tế trực thuộc bộ giáo dục "
+		,"txt17": "Những nơi có thể sử dụng kết quả thi"
+		,"txt18": "Tham gia học bổng chính phủ và công tác quản lý giáo dục"
+		,"txt19": "Người nước ngoài hoặc kiều bào sống tại nước ngoài đã hoàn thành chương trình giáo dục phổ thông 12 năm có nguyện vọng học tập tại các trường đại học, cao học tại Hàn Quốc"
+		,"txt20": "Những người có nguyện vọng làm việc tại Hàn Quốc theo diện visa lao động"
+		,"txt21": "Người nước ngoài có chứng chỉ bác sỹ có mong muốn được chứng nhận tại Hàn Quốc "
+		,"txt22": "Hồ sơ xin giấy chứng nhận giảng dạy tiếng Hàn với tư cách là người ngoại quốc ( Tại viện đào tạo ngôn ngữ quốc gia)  "
+		,"txt23": "'Đăng kí cấp phát visa kết hôn"
+		,"txt24": "Lịch trình"
+		,"txt25": "6 lần/ năm ( Tháng 1, 3, 4, 7, 10, 11)<br /><p class='font_gray'>Lịch thi cụ thể hàng năm, theo dõi trên trang chủ của Kì thi năng lực tiếng Hàn (TOPIK)</p>"
+		,"txt26": "Các cấp đánh giá"
+		,"txt27": "TOPIK 1~2 với đối tượng là những người mới học tiếng Hàn"
+		,"txt28": "TOPIK 3~6 với đối tượng là những người có trình độ tiếng Hàn trung cấp và cao cấp<br /><p class='font_gray'>(Cấp độ của năng lực tiếng Hàn sẽ được đánh giá dựa trên kết quả dự thi của thí sinh)</p>"
+		,"txt29": "Làm thử ví dụ"
+		,"txt30": "Chuyển đến bài thi thử"
+	}
+}

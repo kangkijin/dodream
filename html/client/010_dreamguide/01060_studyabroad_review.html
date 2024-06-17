@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi, shrink-to-fit=no">
+		<meta name="format-detection" content="telephone=no, address=no">
+		<meta name="title" content="DoDream">
+		<meta name="keywords" content="Block Chain, Study Abroad, platform, Korea, vietnam">
+		<meta name="description" content="유학플랫폼 두드림(DoDream)외국인 유학생을 위한 한국 유학 매칭 플랫폼">
+		<meta name="author" content="DainLeaders">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="DoDream">
+		<meta property="og:description" content="유학플랫폼 두드림(DoDream)외국인 유학생을 위한 한국 유학 매칭 플랫폼">
+		<meta property="og:image" content="../../../images/common/img_metacover.jpg">
+		<meta property="og:url" content="http://www.dodream.io">
+		<meta name="naver-site-verification" content="dd744254d55fa0f146a5daeaf1e02ae2dd86c1f9"/> 
+		<meta name="google-site-verification" content="mive32tDbnLeee8bzzUfCA31XmDNgL4Lgj4dQoxn8DM"/>
+		<title>DoDream</title>
+
+		<!-- [pp] 웹앱매니페스트 - chrome, opera -->
+		<link rel="manifest" href="../manifest.json">
+		<!-- [pp] //웹앱매니페스트 - chrome, opera -->
+
+		<!-- [pp] ios safari screen -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="white">
+		<meta name="apple-mobile-web-app-title" content="DoDream">
+		<!-- [pp] //ios safari screen -->
+
+		<!-- [pp] 파비콘 -->
+		<link rel="apple-touch-icon" sizes="64x64" href="../../../images/common/favicon.png">
+		<link rel="shortcut icon" type="image/x-icon" href="../../../images/common/favicon.ico">
+		<!-- [pp] //파비콘 -->
+
+		<!-- [pp] css -->
+		<link rel="stylesheet" href="../../../css/client/src/swiper.min.css">
+		<link rel="stylesheet" href="../../../css/client/src/jquery.mCustomScrollbar.css">
+		<link rel="stylesheet" href="../../../css/client/src/select2.css">
+		<link rel="stylesheet" href="../../../css/client/src/magnific-popup.css">
+		<link rel="stylesheet" href="../../../css/dl_global.css">
+		<link rel="stylesheet" href="../../../css/client/normalize.css">
+		<link rel="stylesheet" href="../../../css/client/grid.css">
+		<link rel="stylesheet" href="../../../css/client/table.css">
+		<link rel="stylesheet" href="../../../css/client/formstyle.css">
+		<link rel="stylesheet" href="../../../css/client/common.css">
+		<link rel="stylesheet" href="../../../css/client/ui.css">
+		<link rel="stylesheet" href="../../../css/client/popup.css">
+		<!-- [pp] //css -->
+
+		<!-- [pp] js -->
+		<script type="text/javascript" src="../../../js/client/src/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/swiper.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/jquery.mCustomScrollbar.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/select2.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/jquery.magnific-popup.js"></script>
+		<script type="text/javascript" src="../../../js/client/pp_common.js"></script>
+
+		<!-- [pp] 사용 금지 -->
+		<script type="text/javascript" src="../../../js/client/src/jquery-1.12.3.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/pp_include.js"></script>
+		<!-- [pp] //사용 금지 -->
+
+		<!-- [pp] //js -->
+
+		<!--[if lt IE 9]>
+		<script type="text/javascript" src="../../../js/client/src/jquery-1.12.3.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/html5shiv.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/IE9.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/respond.min.js"></script>
+		<![endif]-->
+
+	</head>
+	<body>
+		<!--[pp] ie 하위버젼 접속시 알림 -->
+		<!--[if lt IE 10]>
+		<div id="browser">
+		This site is supported Explorer 10 or higher, Chrome, Firefox, Opera, Safari.<br/>If you are using it now, Please <a href="https://browsehappy.com/?locale=en" target="_blank">upgrade your browser</a> to improve your experience and security.
+		<button type="button" class="pp_upgradeinfo_close">close</button>
+		</div>
+		<![endif]-->
+		<!--[pp] // ie 하위버젼 접속시 알림 -->
+
+		<!-- [pp] 로딩중 화면 -->
+		<div id="loading" style="display:none;">
+			<p id="loading_image">
+				<img src="../../../images/pageloading.gif" alt="Loading..."><br>
+				<span>Loading</span>
+			</p>
+		</div>
+		<!-- [pp] //로딩중 화면 -->
+
+		<!-- [pp] 푸터를 제외한 전체페이지 -->
+		<div class="page_wrap">
+			<!-- [pp] header -->
+			<div data-include="../include/header.html">header 영역</div>
+			<!-- [pp] //header -->
+			<!-- [pp] visual -->
+			<figure class="sub_visual visual1">
+				<div class="grid_content">
+					<div class="visual_txt">
+						<h2>Dream Guide</h2>
+						<p>유학 후기</p>
+					</div>
+					<nav class="page_navi">
+						<ul>
+							<li><a href="javascript:void(0);">Home</a></li>
+							<li><a href="javascript:void(0);">Dream Guide</a></li>
+							<li><a href="javascript:void(0);">유학 정보</a></li>
+							<li><a href="javascript:void(0);">유학 후기</a></li>
+						</ul>
+					</nav>
+				</div>
+			</figure>
+			<!-- [pp] //visual -->
+			<!-- [pp] container -->
+			<div class="subpage_wrap grid_content">
+				<div class="search_box">
+					<div class="wdfull_2_1">
+						<div class="select_form">
+							<label for="select1">대학교</label>
+							<select id="select1">
+								<option>대학교</option>
+								<option selected>태그</option>
+								<option>제목 + 내용</option>
+							</select>
+						</div>
+						<input class="form_style wd_p100" placeholder="검색어를 입력해주세요">
+						<button type="button" class="btn btn_md btn_default btn_search">검색</button>
+					</div>
+				</div>
+				<div class="section_area ta_c">
+					<p class="radio_tab">
+						<input type="radio" name="favorites" id="favorites1" class="hidden" checked>
+						<label for="favorites1">맛집</label>
+					</p>
+					<p class="radio_tab">
+						<input type="radio" name="favorites" id="favorites2" class="hidden">
+						<label for="favorites2">대학생활</label>
+					</p>
+					<p class="radio_tab">
+						<input type="radio" name="favorites" id="favorites3" class="hidden">
+						<label for="favorites3">한국문화</label>
+					</p>
+					<p class="radio_tab">
+						<input type="radio" name="favorites" id="favorites4" class="hidden">
+						<label for="favorites4">K-POP</label>
+					</p>
+					<p class="radio_tab">
+						<input type="radio" name="favorites" id="favorites5" class="hidden">
+						<label for="favorites5">등록금</label>
+					</p>
+					<p class="radio_tab">
+						<input type="radio" name="favorites" id="favorites6" class="hidden">
+						<label for="favorites6">유학생활</label>
+					</p>
+				</div>
+				<section class="section_area">
+					<ul class="tab_list2 tab_switch_js">
+						<li><a href="javascript:void(0);" class="on">최신순</a></li>
+						<li><a href="javascript:void(0);">인기순</a></li>
+					</ul>
+					<div class="studyreview_card">
+						<!-- [pp] 슬라이드 영역 -->
+						<div class="swiper-container">
+							<ul class="swiper-wrapper">
+								<li class="swiper-slide">
+									<p class="img_box">
+										<a href="javascript:void(0);">
+											<img src="../../../images/client/sub/img_nopreview.jpg" alt="예제 이미지">
+										</a>
+									</p>
+									<ul class="count_wrap">
+										<li>
+											<p class="view_count">1234</p>
+										</li>
+										<li class="ta_c">
+											<p class="comment_count">12</p>
+										</li>
+										<li class="ta_r">
+											<p class="like_count">123</p>
+										</li>
+									</ul>
+									<h4 class="ellipsis">제목입니다 제목입니다 제목입니다 제목입니다 제목입니다 제목입니다</h4>
+									<ul class="hashtag_list ellipsis">
+										<li>&#35;동국대라이프</li>
+										<li>&#35;유학의꿈</li>
+										<li>&#35;기숙사</li>
+										<li>&#35;동국대라이프</li>
+										<li>&#35;유학의꿈</li>
+										<li>&#35;기숙사</li>
+									</ul>
+								</li>
+								<li class="swiper-slide">
+									<p class="img_box">
+										<a href="javascript:void(0);">
+											<img src="../../../images/client/sub/img_studyabroad_review2.jpg" alt="유학후기 예제 이미지">
+										</a>
+									</p>
+									<ul class="count_wrap">
+										<li>
+											<p class="view_count">1234</p>
+										</li>
+										<li class="ta_c">
+											<p class="comment_count">12</p>
+										</li>
+										<li class="ta_r">
+											<p class="like_count">123</p>
+										</li>
+									</ul>
+									<h4 class="ellipsis">제목입니다</h4>
+									<ul class="hashtag_list ellipsis">
+										<li>&#35;동국대라이프</li>
+										<li>&#35;유학의꿈</li>
+										<li>&#35;기숙사</li>
+										<li>&#35;동국대라이프</li>
+										<li>&#35;유학의꿈</li>
+										<li>&#35;기숙사</li>
+									</ul>
+								</li>
+								<li class="swiper-slide">
+									<p class="img_box">
+										<a href="javascript:void(0);">
+											<img src="../../../images/client/sub/img_studyabroad_review3.jpg" alt="유학후기 예제 이미지">
+										</a>
+									</p>
+									<ul class="count_wrap">
+										<li>
+											<p class="view_count">1234</p>
+										</li>
+										<li class="ta_c">
+											<p class="comment_count">12</p>
+										</li>
+										<li class="ta_r">
+											<p class="like_count">123</p>
+										</li>
+									</ul>
+									<h4 class="ellipsis">제목입니다</h4>
+									<ul class="hashtag_list ellipsis">
+										<li>&#35;동국대라이프</li>
+										<li>&#35;유학의꿈</li>
+										<li>&#35;기숙사</li>
+										<li>&#35;동국대라이프</li>
+										<li>&#35;유학의꿈</li>
+										<li>&#35;기숙사</li>
+									</ul>
+								</li>
+								<li class="swiper-slide">
+									<p class="img_box">
+										<a href="javascript:void(0);">
+											<img src="../../../images/client/sub/img_studyabroad_review4.jpg" alt="유학후기 예제 이미지">
+										</a>
+									</p>
+									<ul class="count_wrap">
+										<li>
+											<p class="view_count">1234</p>
+										</li>
+										<li class="ta_c">
+											<p class="comment_count">12</p>
+										</li>
+										<li class="ta_r">
+											<p class="like_count">123</p>
+										</li>
+									</ul>
+									<h4 class="ellipsis">제목입니다</h4>
+									<ul class="hashtag_list ellipsis">
+										<li>&#35;동국대라이프</li>
+										<li>&#35;유학의꿈</li>
+										<li>&#35;기숙사</li>
+										<li>&#35;동국대라이프</li>
+										<li>&#35;유학의꿈</li>
+										<li>&#35;기숙사</li>
+									</ul>
+								</li>
+								<li class="swiper-slide">
+									<p class="img_box">
+										<a href="javascript:void(0);">
+											<img src="../../../images/client/sub/img_studyabroad_review4.jpg" alt="유학후기 예제 이미지">
+										</a>
+									</p>
+									<ul class="count_wrap">
+										<li>
+											<p class="view_count">1234</p>
+										</li>
+										<li class="ta_c">
+											<p class="comment_count">12</p>
+										</li>
+										<li class="ta_r">
+											<p class="like_count">123</p>
+										</li>
+									</ul>
+									<h4 class="ellipsis">제목입니다</h4>
+									<ul class="hashtag_list ellipsis">
+										<li>&#35;동국대라이프</li>
+										<li>&#35;유학의꿈</li>
+										<li>&#35;기숙사</li>
+										<li>&#35;동국대라이프</li>
+										<li>&#35;유학의꿈</li>
+										<li>&#35;기숙사</li>
+									</ul>
+								</li>
+								<li class="swiper-slide">
+									<p class="img_box">
+										<a href="javascript:void(0);">
+											<img src="../../../images/client/sub/img_studyabroad_review4.jpg" alt="유학후기 예제 이미지">
+										</a>
+									</p>
+									<ul class="count_wrap">
+										<li>
+											<p class="view_count">1234</p>
+										</li>
+										<li class="ta_c">
+											<p class="comment_count">12</p>
+										</li>
+										<li class="ta_r">
+											<p class="like_count">123</p>
+										</li>
+									</ul>
+									<h4 class="ellipsis">제목입니다</h4>
+									<ul class="hashtag_list ellipsis">
+										<li>&#35;동국대라이프</li>
+										<li>&#35;유학의꿈</li>
+										<li>&#35;기숙사</li>
+										<li>&#35;동국대라이프</li>
+										<li>&#35;유학의꿈</li>
+										<li>&#35;기숙사</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<!-- [pp] //슬라이드 영역 -->
+						<!-- [pp] pre, next button -->
+						<div class="swiper_control_wrap pc">
+							<button type="button" class="swiper_control swiperbtn_pre pc">이전목록</button>
+							<button type="button" class="swiper_control swiperbtn_next pc">다음목록</button>
+						</div>
+						<!-- [pp] //pre, next button -->
+					</div>
+				</section>
+				<section class="favoritereview_wrap">
+					<h3 class="section_tit_lg">전체 글 목록</h3>
+					<div class="section_fr">
+						<div class="select_form mg_r5 wd_105">
+							<label for="select2">대학교</label>
+							<select id="select2">
+								<option>대학교</option>
+								<option>태그</option>
+								<option>내용 + 제목</option>
+							</select>
+						</div>
+						<button type="button" class="btn_round btn_md btn_default">유학 후기 작성</button>
+					</div>
+					<ul class="studyreview_list two_list cf">
+						<!-- [pp] 유학후기 최대 3개 출력 -->
+						<li>
+							<!-- [pp] 23.08.30 신규 라벨 추가 -->
+							<span class="newlist_label">NEW</span>
+							<!-- [pp] //23.08.30 신규 라벨 추가 -->
+
+							<div class="img_box">
+								<img src="../../../images/client/sub/img_studyabroad_review1.jpg" alt="유학후기 대표이미지">
+							</div>
+							<h5><a href="javascript:void(0);" title="상세보기">동국대 기숙생활 후기 #1 동국대 기숙생활 후기 #1 동국대 기숙생활 후기 #1</a></h5>
+							<p>
+								안녕하세요~ 저는 2019년 8월부터 유학생을 시작한 000입니다 제가 소개할 학교는 동국대인데요. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다.
+							</p>
+							<ul class="hashtag_list">
+								<li>&#35;동국대라이프</li>
+								<li>&#35;유학의꿈</li>
+								<li>&#35;기숙사</li>
+							</ul>
+							<div class="count_wrap">
+								<p class="view_count"><span class="count_tit">조회수</span><span>120</span></p>
+								<p class="comment_count"><span class="count_tit">댓글수</span><span>120</span></p>
+								<p class="like_count"><span class="count_tit">좋아요</span><span>120</span></p>
+							</div>
+							<span class="date">2020.03.02 18:05:54</span>
+							<span class="id">myaa123</span>
+						</li>
+						<li>
+							<div class="img_box">
+								<img src="../../../images/client/sub/img_studyabroad_review2.jpg" alt="유학후기 대표이미지">
+							</div>
+							<h5><a href="javascript:void(0);" title="상세보기">동국대 기숙생활 후기 #1</a></h5>
+							<p>
+								안녕하세요~ 저는 2019년 8월부터 유학생을 시작한 000입니다 제가 소개할 학교는 동국대인데요. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다.
+							</p>
+							<ul class="hashtag_list">
+								<li>&#35;동국대라이프</li>
+								<li>&#35;유학의꿈</li>
+								<li>&#35;기숙사</li>
+								<li>&#35;동국대라이프</li>
+								<li>&#35;유학의꿈</li>
+								<li>&#35;기숙사</li>
+							</ul>
+							<div class="count_wrap">
+								<p class="view_count"><span class="count_tit">조회수</span><span>12</span></p>
+								<p class="comment_count"><span class="count_tit">댓글수</span><span>12</span></p>
+								<p class="like_count"><span class="count_tit">좋아요</span><span>12</span></p>
+							</div>
+							<span class="date">2020.03.02 18:05:54</span>
+							<span class="id">myaa123</span>
+						</li>
+						<li>
+							<div class="img_box">
+								<img src="../../../images/client/sub/img_studyabroad_review3.jpg" alt="유학후기 대표이미지">
+							</div>
+							<h5><a href="javascript:void(0);" title="상세보기">동국대 기숙생활 후기 #1</a></h5>
+							<p>
+								안녕하세요~ 저는 2019년 8월부터 유학생을 시작한 000입니다 제가 소개할 학교는 동국대인데요. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다.
+							</p>
+							<ul class="hashtag_list">
+								<li>&#35;동국대라이프</li>
+								<li>&#35;유학의꿈</li>
+								<li>&#35;기숙사</li>
+								<li>&#35;동국대라이프</li>
+								<li>&#35;유학의꿈</li>
+								<li>&#35;기숙사</li>
+							</ul>
+							<div class="count_wrap">
+								<p class="view_count"><span class="count_tit">조회수</span><span>12</span></p>
+								<p class="comment_count"><span class="count_tit">댓글수</span><span>12</span></p>
+								<p class="like_count"><span class="count_tit">좋아요</span><span>12</span></p>
+							</div>
+							<span class="date">2020.03.02 18:05:54</span>
+							<span class="id">myaa123</span>
+						</li>
+						
+						<li>
+							<div class="img_box">
+								<img src="../../../images/client/sub/img_studyabroad_review2.jpg" alt="유학후기 대표이미지">
+							</div>
+							<h5><a href="javascript:void(0);" title="상세보기">동국대 기숙생활 후기 #1</a></h5>
+							<p>
+								안녕하세요~ 저는 2019년 8월부터 유학생을 시작한 000입니다 제가 소개할 학교는 동국대인데요. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다.
+							</p>
+							<ul class="hashtag_list">
+								<li>&#35;동국대라이프</li>
+								<li>&#35;유학의꿈</li>
+								<li>&#35;기숙사</li>
+								<li>&#35;동국대라이프</li>
+								<li>&#35;유학의꿈</li>
+								<li>&#35;기숙사</li>
+							</ul>
+							<div class="count_wrap">
+								<p class="view_count"><span class="count_tit">조회수</span><span>12</span></p>
+								<p class="comment_count"><span class="count_tit">댓글수</span><span>12</span></p>
+								<p class="like_count"><span class="count_tit">좋아요</span><span>12</span></p>
+							</div>
+							<span class="date">2020.03.02 18:05:54</span>
+							<span class="id">myaa123</span>
+						</li>
+					</ul>
+					<!--[pp] paging -->
+					<div class="paging_wrap">
+						<a href="javascript:void(0);" title="처음페이지" class="page_con first_page">처음페이지</a>
+						<a href="javascript:void(0);" title="이전페이지" class="page_con pre_page">이전페이지</a>
+						<a href="javascript:void(0);" class="active">1</a>
+						<a href="javascript:void(0);">2</a>
+						<a href="javascript:void(0);">3</a>
+						<a href="javascript:void(0);">4</a>
+						<a href="javascript:void(0);">5</a>
+						<a href="javascript:void(0);" title="다음페이지" class="page_con next_page">다음페이지</a>
+						<a href="javascript:void(0);" title="마지막페이지" class="page_con last_page">마지막페이지</a>
+					</div>
+					<!--[pp] //paging -->
+				</section>	
+			</div>
+			<!-- [pp] //container -->
+		</div>
+		<!-- [pp] //푸터를 제외한 전체페이지 -->
+		<!-- [pp] footer -->
+		<div data-include="../include/footer.html">footer 영역</div>
+		<!-- [pp] //footer -->
+	</body>
+</html>

@@ -1,0 +1,118 @@
+@charset "utf-8";
+/*sub_layout*/
+#header_wrapper{width:100%;min-width:1100px;background:url(../images/common/bg01.gif) repeat-x;}
+.header{width:1100px;height:111px;}
+.top_ly{width:1100px;height:40px;overflow:hidden;padding:7px 0 7px 0;}
+.top_ly>h1{float:left;padding:0 0 0 8px;}
+.top_ly>.util{float:right;padding-top:5px;}
+.top_ly>.util li{float:left;padding-left:16px;}
+.top_ly>.util .stu{color:#6a6fb3;font-weight:600;}
+.top_ly>.util .line{background:url(../images/common/line01.gif) no-repeat 7px 2px;}
+.top_ly>.util .ico_stu{background:url(../images/common/ico01.png) no-repeat;width:14px;height:14px;display:inline-block;padding-left:5px;vertical-align:middle;}
+.sm_logo{background:url(../images/common/logo02.png) no-repeat;width:67px;height:19px;display:inline-block;text-indent:-9999em;}
+.gnb{width:1100px;height:56px;position:relative;z-index:1010;}
+.gnb .gnbT {position:absolute;top:20px;z-index:110;width:1100px;}
+.gnb .gnbT a{color:#515151;font-weight:600;font-size:14px;}
+.gnb .gnbT a:hover{color:#6a6fb3}
+.gnb .gnbT li{position:relative; float:left;width:137px;text-align:center;}
+.gnb .gnbT li.gnb1 .twoD a{padding:11px 1px 8px 4px}
+.gnb .gnbT li .twoD{position:absolute; top:37px;width:138px;left:0;}
+.gnb .gnbT li .twoD a {display:block; padding:7px 1px 6px 2px;color:#fff; font-size:12px;text-align:left;letter-spacing:-0.12em;text-align:center;}
+.gnb .gnbT li .twoD a.on,
+.gnb .gnbT li .twoD a:hover{background:#5b5f99;}
+.training_gnbBg {width:100%;min-width:1100px;height:0; position:absolute;top:111px;left:0;background:#6a6fb3 url(../images/common/trainingOpen_bg.gif) no-repeat;z-index:1000;}
+
+#footer{width:100%;min-width:1100px;height:150px;background:#fafafa;}
+#footer>.footer_box{width:1100px;margin:0px auto;color:#959595;overflow:hidden;padding:30px 0 0px 0;}
+.footer_box>.logo3{float:left;}
+.footer_box>p{padding:10px 0 10px 10px;line-height:17px;}
+.footer_box>p>a{color:#6a6fb3;font-weight:600;}
+
+#cBody{width:100%;background:url(../images/sub/bg04.gif) repeat-x;}
+.container{width:100%;}
+.container>.lnb{width:202px;float:left;border-left:1px solid #dcdddc;border-right:1px solid #dcdddc;}
+.lnb>.tit{font-size:18px;color:#515151;padding:70px 18px;text-align:center;font-weight:600;background:url(../images/sub/lnb_bg.gif) no-repeat;}
+.lnb>.tit>span{color:#b1addf;font-size:13px;}
+.lnb ul.menu{width:202px;}
+.lnb ul.menu li{border-bottom:1px solid #dcdddc;}
+.lnb ul.menu li a{display: block;padding:19px 8px 18px 15px;font-size:15px;font-weight:600;color:#6a6fb3;letter-spacing:-0.095em;}
+.lnb ul.menu li.on1 a{color:#ffffff;border-bottom:2px solid #6a6fb3;background:#6a6fb3 url(../images/sub/bullet11.gif) no-repeat 95% 50%;}
+.lnb ul.menu ul.children li{border-bottom:1px solid #dcdddc;background:#f1f1f1;}
+.lnb ul.menu ul.children li a{padding:13px 5px 13px 12px;color:#444;border-bottom:none;font-size:14px;font-weight:normal;}
+.lnb ul.menu ul.children li.on2{background:#d2d2dc}
+.lnb ul.menu ul.children li:last-child{border-bottom:0;}
+/*content*/
+.content{width:896px;float:left;padding-bottom:20px;}
+.training_top{background:url(../images/sub/training_topBg.png) no-repeat right top;width:896px;height:159px;}
+.training_top h2{font-size:30px;color:#6a6fb3;padding:62px 10px 6px 24px;font-weight:600;}
+.training_top span{font-size:14px;color:#959595;padding:0 10px 6px 28px;}
+.content_box{width:896px;padding:15px 0 0 45px;}
+.nav li.home{background:url(../images/sub/bullet02.gif) no-repeat 0 2px;padding-left:15px;}
+.nav li{float:left;padding-left:3px;}
+.nav li>span{font-weight:600}
+.content_box h2.tit{background:url(../images/sub/bullet03.gif) no-repeat 0 34px;padding-left:13px;clear:both;padding:31px 0 15px 20px;color:#666666;font-weight:600}
+.content_box p.text{padding-left:20px;padding-bottom:15px;color:#666666;line-height:16px;}
+.text_wrap{border:1px solid #dcdddc;border-radius:8px;padding:10px;color:#7a7a7a;line-height:16px;}
+.counsel_list{width:820px;overflow:hidden;margin:0 auto;}
+.counsel_list>.list{width:240px;height:275px;float:left;margin-left:28px;padding-top:25px;text-align:center;}
+.counsel_tit,.career_tit{font-size:16px;color:#6a6fb3;padding-left:5px;padding-bottom:5px;margin-top:20px;font-weight:600;}
+.tit_st{font-size:14px;padding:8px 0 5px 0;font-weight:600;}
+h3.tit_st{font-size:16px;font-weight:600;text-align:center;color:#6a6fb3;padding:5px 0 15px 0;}
+
+/*login*/
+.top_box{width:955px;margin:0 auto;height:32px;overflow:hidden;padding:7px 0 0 0;}
+.top_box>.util{float:right;padding-top:5px;}
+.top_box>.util li{float:left;padding-left:16px;}
+.top_box>.util .stu{color:#6a6fb3;font-weight:600;}
+.sm_logo{background:url(../images/common/logo02.png) no-repeat;width:67px;height:19px;display:inline-block;text-indent:-9999em;}
+
+.cBody{width:100%;min-width:955px;height:669px;background:url(../images/login/wrap_bg.gif) repeat-x;}
+
+.visual{width:955px;height:590px;margin:0 auto;background:url(../images/login/center_bg.jpg) no-repeat;}
+.visual>h1{margin:0 auto;width:203px;clear:both;}
+
+.login_box{width:407px;height:423px;background:url(../images/login/box_bg.png) no-repeat;position:relative;top:130px;left:310px;}
+.login_box .tit{text-align:center;padding-top:23px;color:#515151;font-size:16px;line-height:18px;}
+.login_box>h2{text-align:center;padding:10px 0 25px 0;font-size:25px;color:#6a6fb3;}
+.login_box input[type="text"]{width:310px;border:1px solid #e0e0e0;padding:10px 8px !important;height:auto;font-size:13px;vertical-align:middle;border-radius:3px;}
+.login_box input[type="password"]{width:310px;border:1px solid #e0e0e0;padding:10px 8px !important;height:auto;font-size:13px;vertical-align:middle;border-radius:3px;}
+.login_box input[type="checkbox"]{margin-right:5px;vertical-align:middle}
+
+.in_box{width:332px;margin:0 auto;}
+.in_box li{padding-bottom:12px;color:#515151;}
+
+.login_type {
+    position:relative;
+    width:400px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    margin-right: 0px;
+    margin-left: 20px;}
+
+.login_type::after {
+    content:'';
+    display:block;
+    clear:both;
+}
+
+.login_type .item {
+    display:block;
+    float:left;
+    height:26px;
+    line-height:26px;
+    font-size:14px;
+    font-weight:bold;
+    color:#555;
+    padding:0px 15px 0px 30px;
+    background:url(../images/new-2016/icon-type-check-n.png) 0px 50% no-repeat;
+}
+.login_type .item.selected {
+    color:#368de5; 
+    background:url(../images/new-2016/icon-type-check-s.png) 0px 50% no-repeat;
+}
+.login_type .item:hover {
+    color:#121212;
+}
+.login_type .item selected:hover {
+    color:#368de5;
+}

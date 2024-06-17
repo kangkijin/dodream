@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi, shrink-to-fit=no">
+		<meta name="format-detection" content="telephone=no, address=no">
+		<meta name="title" content="DoDream">
+		<meta name="keywords" content="Block Chain, Study Abroad, platform, Korea, vietnam">
+		<meta name="description" content="유학플랫폼 두드림(DoDream)외국인 유학생을 위한 한국 유학 매칭 플랫폼">
+		<meta name="author" content="DainLeaders">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="DoDream">
+		<meta property="og:description" content="유학플랫폼 두드림(DoDream)외국인 유학생을 위한 한국 유학 매칭 플랫폼">
+		<meta property="og:image" content="../../../images/common/img_metacover.jpg">
+		<meta property="og:url" content="http://www.dodream.io">
+		<meta name="naver-site-verification" content="dd744254d55fa0f146a5daeaf1e02ae2dd86c1f9"/> 
+		<meta name="google-site-verification" content="mive32tDbnLeee8bzzUfCA31XmDNgL4Lgj4dQoxn8DM"/>
+		<title>DoDream</title>
+
+		<!-- [pp] 웹앱매니페스트 - chrome, opera -->
+		<link rel="manifest" href="../manifest.json">
+		<!-- [pp] //웹앱매니페스트 - chrome, opera -->
+
+		<!-- [pp] ios safari screen -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="white">
+		<meta name="apple-mobile-web-app-title" content="DoDream">
+		<!-- [pp] //ios safari screen -->
+
+		<!-- [pp] 파비콘 -->
+		<link rel="apple-touch-icon" sizes="64x64" href="../../../images/common/favicon.png">
+		<link rel="shortcut icon" type="image/x-icon" href="../../../images/common/favicon.ico">
+		<!-- [pp] //파비콘 -->
+
+		<!-- [pp] css -->
+		<link rel="stylesheet" href="../../../css/client/src/swiper.min.css">
+		<link rel="stylesheet" href="../../../css/client/src/jquery.mCustomScrollbar.css">
+		<link rel="stylesheet" href="../../../css/client/src/select2.css">
+		<link rel="stylesheet" href="../../../css/client/src/magnific-popup.css">
+		<link rel="stylesheet" href="../../../css/dl_global.css">
+		<link rel="stylesheet" href="../../../css/client/normalize.css">
+		<link rel="stylesheet" href="../../../css/client/grid.css">
+		<link rel="stylesheet" href="../../../css/client/table.css">
+		<link rel="stylesheet" href="../../../css/client/formstyle.css">
+		<link rel="stylesheet" href="../../../css/client/common.css">
+		<link rel="stylesheet" href="../../../css/client/ui.css">
+		<link rel="stylesheet" href="../../../css/client/popup.css">
+		<!-- [pp] //css -->
+
+		<!-- [pp] js -->
+		<script type="text/javascript" src="../../../js/client/src/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/swiper.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/jquery.mCustomScrollbar.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/select2.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/jquery.magnific-popup.js"></script>
+		<script type="text/javascript" src="../../../js/client/pp_common.js"></script>
+
+		<!-- [pp] 사용 금지 -->
+		<script type="text/javascript" src="../../../js/client/src/jquery-1.12.3.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/pp_include.js"></script>
+		<!-- [pp] //사용 금지 -->
+
+		<!-- [pp] //js -->
+
+		<!--[if lt IE 9]>
+		<script type="text/javascript" src="../../../js/client/src/jquery-1.12.3.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/html5shiv.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/IE9.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/respond.min.js"></script>
+		<![endif]-->
+
+	</head>
+	<body>
+		<!--[pp] ie 하위버젼 접속시 알림 -->
+		<!--[if lt IE 10]>
+		<div id="browser">
+		This site is supported Explorer 10 or higher, Chrome, Firefox, Opera, Safari.<br/>If you are using it now, Please <a href="https://browsehappy.com/?locale=en" target="_blank">upgrade your browser</a> to improve your experience and security.
+		<button type="button" class="pp_upgradeinfo_close">close</button>
+		</div>
+		<![endif]-->
+		<!--[pp] // ie 하위버젼 접속시 알림 -->
+
+		<!-- [pp] 로딩중 화면 -->
+		<div id="loading" style="display:none;">
+			<p id="loading_image">
+				<img src="../../../images/pageloading.gif" alt="Loading..."><br>
+				<span>Loading</span>
+			</p>
+		</div>
+		<!-- [pp] //로딩중 화면 -->
+
+		<!-- [pp] 푸터를 제외한 전체페이지 -->
+		<div class="page_wrap">
+			<!-- [pp] header -->
+			<div data-include="../include/header.html">header 영역</div>
+			<!-- [pp] //header -->
+			<!-- [pp] visual -->
+			<figure class="sub_visual visual1">
+				<div class="grid_content">
+					<div class="visual_txt">
+						<h2>Dream Guide</h2>
+						<p>맞춤 유학 설계</p>
+					</div>
+					<nav class="page_navi">
+						<ul>
+							<li><a href="javascript:void(0);">Home</a></li>
+							<li><a href="javascript:void(0);">Dream Guide</a></li>
+							<li><a href="javascript:void(0);">유학 매칭</a></li>
+							<li><a href="javascript:void(0);">맞춤 유학 설계</a></li>
+						</ul>
+					</nav>
+				</div>
+			</figure>
+			<!-- [pp] //visual -->
+			<!-- [pp] container -->
+			<div class="subpage_wrap grid_content"> 
+				<ul class="designstep_list">
+					<li class="on">
+						<a href="#designstep1">
+							<p>
+								<span>과정 선택</span>
+								<span>어학연수 / 학사</span>
+							</p>
+						</a>
+					</li>
+					<li>
+						<a href="#designstep2">
+							<p>
+								<span>지역 선택</span>
+							</p>
+						</a>
+					</li>
+					<li>
+						<a href="#designstep3">
+							<p>
+								<span>교육역량화 인증대학</span>
+							</p>
+						</a>
+					</li>
+					<li>
+						<a href="#designstep4">
+							<p>
+								<span>예상 학비</span>
+							</p>
+						</a>
+					</li>
+					<li>
+						<a href="#designstep5">
+							<p>
+								<span>장학금 희망 범위</span>
+							</p>
+						</a>
+					</li>
+					<li>
+						<a href="#designstep6">
+							<p>
+								<span>기숙사 유무</span>
+							</p>
+						</a>
+					</li>
+					<!-- [pp] '.disabled' 추가시 텝 비활성화 -->
+					<li class="disabled">
+						<a href="#designstep7">
+							<p>
+								<span>관심 분야</span>
+							</p>
+						</a>
+					</li>
+				</ul>
+				<div class="designstep_cnt">
+					<div id="designstep1">
+						<h5 class="designstep_tit tit_no1">희망하는 학위 과정은 무엇입니까?</h5>
+						<div>
+							<p class="radio_box">
+								<input type="radio" name="degree" id="degree1" class="hidden" checked>
+								<label for="degree1">전문학사</label>
+							</p>
+							<p class="radio_box">
+								<input type="radio" name="degree" id="degree2" class="hidden">
+								<label for="degree2">학사</label>
+							</p>
+							<p class="radio_box">
+								<input type="radio" name="degree" id="degree3" class="hidden">
+								<label for="degree3">석사</label>
+							</p>
+							<p class="radio_box">
+								<input type="radio" name="degree" id="degree4" class="hidden">
+								<label for="degree4">박사</label>
+							</p>
+						</div>
+						<div class="btn_area_lg ta_c">
+							<button type="button" class="btn_round btn_md btn_default mg_r5" disabled>이전</button>
+							<button type="button" class="btn_round btn_md btn_default">다음</button>
+						</div>
+					</div>
+					<div id="designstep2">
+						<h5 class="designstep_tit tit_no2">관심있는 대학 지역은 어디입니까?</h5>
+						<div class="designstep_map">
+							<div class="mapsel_cnt designstep_left">
+								<img src="../../../images/client/main/img_map_seoul.png" alt="서울" class="map_sel img_seoul">
+								<img src="../../../images/client/main/img_map_kyungki.png" alt="경기/인천" class="map_sel img_kyungki">
+								<img src="../../../images/client/main/img_map_kangwon.png" alt="강원" class="map_sel img_kangwon">
+								<img src="../../../images/client/main/img_map_busan.png" alt="부산/대구/울산/경상" class="map_sel img_busan">
+								<img src="../../../images/client/main/img_map_gwangju.png" alt="광주/전라" class="map_sel img_gwangju">
+								<img src="../../../images/client/main/img_map_daejeon.png" alt="대전/충청" class="map_sel img_daejeon">
+								<img src="../../../images/client/main/img_map_jeju.png" alt="제주" class="map_sel img_jeju">
+								<img src="../../../images/client/main/img_map_wherever.png" alt="상관없음" class="map_sel img_wherever">
+							</div>
+							<div class="designstep_right">
+								<ul class="mapsel_list">
+									<li class="radio_box">
+										<input type="radio" name="location" id="seoul" data-img="img_seoul" class="hidden" checked>
+										<label for="seoul">서울</label>
+									</li>
+									<li class="radio_box">
+										<input type="radio" name="location" id="kyungki" data-img="img_kyungki" class="hidden">
+										<label for="kyungki">경기/인천</label>
+									</li>
+									<li class="radio_box">
+										<input type="radio" name="location" id="kangwon" data-img="img_kangwon" class="hidden">
+										<label for="kangwon">강원</label>
+									</li>
+									<li class="radio_box">
+										<input type="radio" name="location" id="daejeon" data-img="img_daejeon" class="hidden">
+										<label for="daejeon">대전/충청</label>
+									</li>
+									<li class="radio_box">
+										<input type="radio" name="location" id="busan" data-img="img_busan" class="hidden">
+										<label for="busan">부산/대구/울산/경상</label>
+									</li>
+									<li class="radio_box">
+										<input type="radio" name="location" id="gwangju" data-img="img_gwangju" class="hidden">
+										<label for="gwangju">광주/전라</label>
+									</li>
+									<li class="radio_box">
+										<input type="radio" name="location" id="jeju" data-img="img_jeju" class="hidden">
+										<label for="jeju">제주</label>
+									</li>
+									<li class="radio_box">
+										<input type="radio" name="location" id="wherever" data-img="img_wherever" class="hidden">
+										<label for="wherever">상관없음</label>
+									</li>
+								</ul>
+								<div class="btn_area_lg">
+									<button type="button" class="btn_round btn_md btn_default mg_r5">이전</button>
+									<button type="button" class="btn_round btn_md btn_default">다음</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="designstep3">
+						<h5 class="designstep_tit tit_no3">교육국제화 역량 인증 대학 여부</h5>
+						<div>
+							<p class="radio_box">
+								<input type="radio" name="university" id="university1" class="hidden" checked>
+								<label for="university1">인증 대학</label>
+							</p>
+							<p class="radio_box">
+								<input type="radio" name="university" id="university2" class="hidden">
+								<label for="university2">비인증 대학</label>
+							</p>
+							<p class="radio_box">
+								<input type="radio" name="university" id="university3" class="hidden">
+								<label for="university3">상관없음</label>
+							</p>
+						</div>
+						<div class="btn_area_lg ta_c">
+							<button type="button" class="btn_round btn_md btn_default mg_r5">이전</button>
+							<button type="button" class="btn_round btn_md btn_default">다음</button>
+						</div>
+					</div>
+					<div id="designstep4">
+						<h5 class="designstep_tit tit_no4">예상학비는 어떻게 됩니까?</h5>
+						<div>
+							<p class="radio_box">
+								<input type="radio" name="tuition" id="tuition1" class="hidden" checked>
+								<label for="tuition1">300만원 이하</label>
+							</p>
+							<p class="radio_box">
+								<input type="radio" name="tuition" id="tuition2" class="hidden">
+								<label for="tuition2">300만원 이상</label>
+							</p>
+							<p class="radio_box">
+								<input type="radio" name="tuition" id="tuition3" class="hidden">
+								<label for="tuition3">상관없음</label>
+							</p>
+						</div>
+						<div class="btn_area_lg ta_c">
+							<button type="button" class="btn_round btn_md btn_default mg_r5">이전</button>
+							<button type="button" class="btn_round btn_md btn_default">다음</button>
+						</div>
+					</div>
+					<div id="designstep5">
+						<h5 class="designstep_tit tit_no5">장학금 희망 범위는 어떻게 됩니까?</h5>
+						<div>
+							<p class="radio_box">
+								<input type="radio" name="scholarship" id="scholarship1" class="hidden" checked>
+								<label for="scholarship1">0% ~ 30%</label>
+							</p>
+							<p class="radio_box">
+								<input type="radio" name="scholarship" id="scholarship2" class="hidden">
+								<label for="scholarship2">31% ~ 50%</label>
+							</p>
+							<p class="radio_box">
+								<input type="radio" name="scholarship" id="scholarship3" class="hidden">
+								<label for="scholarship3">51% ~ 80%</label>
+							</p>
+							<p class="radio_box">
+								<input type="radio" name="scholarship" id="scholarship4" class="hidden">
+								<label for="scholarship4">상관없음</label>
+							</p>
+						</div>
+						<div class="btn_area_lg ta_c">
+							<button type="button" class="btn_round btn_md btn_default mg_r5">이전</button>
+							<button type="button" class="btn_round btn_md btn_default">다음</button>
+						</div>
+					</div>
+					<div id="designstep6">
+						<h5 class="designstep_tit tit_no6">기숙사 유무 희망은 어떻게 됩니까?</h5>
+						<div>
+							<p class="radio_box">
+								<input type="radio" name="dormitory" id="dormitory1" class="hidden" checked>
+								<label for="dormitory1">기숙사 있음</label>
+							</p>
+							<p class="radio_box">
+								<input type="radio" name="dormitory" id="dormitory2" class="hidden">
+								<label for="dormitory2">기숙사 없음</label>
+							</p>
+							<p class="radio_box">
+								<input type="radio" name="dormitory" id="dormitory3" class="hidden">
+								<label for="dormitory3">상관없음</label>
+							</p>
+						</div>
+						<div class="btn_area_lg ta_c">
+							<button type="button" class="btn_round btn_md btn_default mg_r5">이전</button>
+							<button type="button" class="btn_round btn_md btn_default">다음</button>
+						</div>
+					</div>
+					<div id="designstep7">
+						<h5 class="designstep_tit tit_no7">관심분야를 3개 선택해주세요</h5>
+						<div>
+							<p class="check_box">
+								<input type="checkbox" name="favorite" id="favorite1" class="hidden" checked>
+								<label for="favorite1">K-MEDIA</label>
+							</p>
+							<p class="check_box">
+								<input type="checkbox" name="favorite" id="favorite2" class="hidden">
+								<label for="favorite2">K-BEAUTY</label>
+							</p>
+							<p class="check_box">
+								<input type="checkbox" name="favorite" id="favorite3" class="hidden">
+								<label for="favorite3">K-FOOD</label>
+							</p>
+							<p class="check_box">
+								<input type="checkbox" name="favorite" id="favorite4" class="hidden">
+								<label for="favorite4">영어 강좌 트랙</label>
+							</p>
+							<p class="check_box">
+								<input type="checkbox" name="favorite" id="favorite5" class="hidden">
+								<label for="favorite5"><span>경영학 인증 대학<br>&#40;AASCB&#41;</span></label>
+							</p>
+							<p class="check_box">
+								<input type="checkbox" name="favorite" id="favorite6" class="hidden">
+								<label for="favorite6"><span>공학 인증 대학<br>&#40;ABEEK&#41;</span></label>
+							</p>
+						</div>
+						<div class="btn_area_lg ta_c">
+							<button type="button" class="btn_round btn_md btn_default mg_r5">이전</button>
+							<button type="button" class="btn_round btn_md btn_default">설계 완료</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- [pp] //container -->
+		</div>
+		<!-- [pp] //푸터를 제외한 전체페이지 -->
+		<!-- [pp] footer -->
+		<div data-include="../include/footer.html">footer 영역</div>
+		<!-- [pp] //footer -->
+	</body>
+</html>

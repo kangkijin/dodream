@@ -1,0 +1,397 @@
+@charset "utf-8";
+
+/* summernote 내용 설정*/ 
+.pp_insert_editor{ 
+	padding: 20px; 
+	width: 100%; 
+	min-height: 100px; 
+	word-break: keep-all; 
+	border: 1px solid #929292; 
+} 
+.pp_insert_editor *{ 
+	line-height: normal; 
+} 
+.pp_insert_editor img { 
+	display: inline-block;
+	width: 100%; 
+	height: auto; margin: 5px 0; 
+} 
+.pp_insert_editor strong { 
+	font-size: inherit; 
+} 
+.pp_insert_editor table { 
+	width: 100%; 
+	border-collapse: collapse; 
+} 
+.pp_insert_editor table th { 
+	font-weight: 700; 
+	font-size: 14px; 
+	vertical-align: middle; 
+	text-align: center; 
+	border-color: #ddd !important; 
+} 
+.pp_insert_editor table td, .pp_insert_editor table th { 
+	padding: 5px 3px; 
+	font-size: inherit; text-align: inherit; 
+	border: 1px solid #ececec; 
+} 
+.pp_insert_editor table th[valign="center"], .pp_insert_editor table th[align="center"], .pp_insert_editor table td[valign="center"], .pp_insert_editor table td[align="center"] {
+	text-align: center;
+}
+.pp_insert_editor table th[valign="left"], .pp_insert_editor table th[align="left"], .pp_insert_editor table td[valign="left"], .pp_insert_editor table td[align="left"] {
+	text-align: left;
+}
+.pp_insert_editor table th[valign="right"], .pp_insert_editor table th[align="right"], .pp_insert_editor table td[valign="right"], .pp_insert_editor table td[align="right"] {
+	text-align: right;
+}
+.pp_insert_editor table th p, .pp_insert_editor table td p {
+	line-height: inherit;
+}
+
+/* 테이블 기본 설정 */
+.tbl_fixed table { table-layout: fixed; }
+
+.tbl {
+	position: relative;
+}
+.tbl table{
+	width: 100%;
+	text-align: center; font-size: 1.7rem;
+	background-color: #fff;
+	border-bottom: 1px solid #c2cad2;
+}
+.tbl table thead th {
+	padding: 8px;
+	text-align: center; 
+	background-color: #f2f2f5;
+}
+.tbl table tbody th {
+	padding: 8px;
+	text-align: center;
+}
+.tbl table tbody td {
+	padding: 9px;
+	text-align: center;
+}
+
+/* 세로형 테이블 */
+.tbl_row thead th {
+	border: 1px solid #c2cad2;
+}
+.tbl_row tbody tr th{
+	background-color: #f2f2f5;
+	border: 1px solid #c2cad2;
+}
+.tbl_row tbody tr td {
+	text-align: left;
+	border: 1px solid #c2cad2;
+}
+
+/* 가로형 테이블 */
+.tbl_col table{
+	border-top: 2px solid #032c5c;
+	border-bottom: 0;
+}
+.tbl_col table thead th{
+	padding: 9px 0;
+	background: #f2f2f5;
+	border-bottom: 1px solid #c2cad2;
+}
+.tbl_col table th {
+	border-bottom: 1px solid #c2cad2;
+}
+.tbl_col table td {
+	border-bottom: 1px solid #c2cad2;
+}
+
+/* 가로형 테이블 + 테두리 */
+.tbl_rowcol table{
+	border-top: 2px solid #032c5c;
+	border-bottom: 0;
+}
+.tbl_rowcol table thead th{
+	padding: 9px 0;
+	background: #f2f2f5;
+	border-bottom: 1px solid #c2cad2;
+}
+.tbl_rowcol table th {
+	border: 1px solid #c2cad2;
+}
+.tbl_rowcol table td {
+	border: 1px solid #c2cad2;
+}
+
+/* 에디터 사용한 테이블 (기본 테이블) */
+.editor_input {
+	overflow: hidden; overflow-x: auto;
+}
+.editor_input table {
+	border-color: #ddd;
+	border-style: solid;
+}
+.editor_input table[align="center"] {
+	margin: 0 auto;
+}
+.editor_input table th{
+	vertical-align: middle; text-align: center;
+	border: 1px solid #ddd;
+}
+.editor_input table td{
+	vertical-align: middle;
+	border: 1px solid #ddd;
+}
+
+/* 가로 스크롤 테이블 */
+.mCSB_horizontal.mCSB_inside > .mCSB_container{
+	margin-bottom: 8px;
+}
+
+/* 모바일에서 세로방향 터치불가 fix */
+.mCustomScrollbar,
+.mCustomScrollbar.mCS_touch_action,
+.mCustomScrollbar.mCS_touch_action .mCS-aviva.mCSB_scrollTools {
+	-ms-touch-action: auto;
+	touch-action: auto;
+}
+.mCustomScrollBox {
+	-ms-touch-action: pan-x;
+	touch-action: pan-x;
+}
+.mCustomScrollBox.mCSB_vertical_horizontal {
+	-ms-touch-action: auto;
+	touch-action: auto;
+}
+.mCustomScrollBox.mCSB_horizontal {
+	-ms-touch-action: pan-y;
+	touch-action: pan-y;
+}
+/*.mCustomScrollBox.mCSB_horizontal { touch-action: pan-y pinch-zoom; }*/
+
+.mCSB_container {
+	width: 100% !important;
+}
+.scrollx_tbl_xxs {
+	width: 100%;
+	overflow-x: auto;
+}
+.scrollx_tbl_xxs .mCSB_container {
+	min-width: 400px !important;
+}
+.scrollx_tbl_xxs table{
+	min-width: 400px;
+}
+.scrollx_tbl_xs {
+	width: 100%;
+	overflow-x: auto;
+}
+.scrollx_tbl_xs .mCSB_container {
+	min-width: 500px !important;
+}
+.scrollx_tbl_xs table{
+	min-width: 500px;
+}
+.scrollx_tbl_sm {
+	width: 100%;
+	overflow-x: auto;
+}
+.scrollx_tbl_sm .mCSB_container {
+	min-width: 600px !important;
+}
+.scrollx_tbl_sm table{
+	width: 100%;
+	min-width: 600px;
+}
+.scrollx_tbl_md{
+	width: 100%;
+	overflow-x: auto;
+}
+.scrollx_tbl_md .mCSB_container {
+	min-width: 800px !important;
+}
+.scrollx_tbl_md table{
+	min-width: 800px;
+}
+.scrollx_tbl_lg{
+	width: 100%;
+	overflow-x: auto;
+}
+.scrollx_tbl_lg .mCSB_container {
+	min-width: 1000px !important;
+}
+.scrollx_tbl_lg table{
+	min-width: 1000px;
+}
+.scrollx_tbl_xl{
+	width: 100%;
+	overflow-x: auto;
+}
+.scrollx_tbl_xl .mCSB_container {
+	min-width: 1200px !important;
+}
+.scrollx_tbl_xl table{
+	min-width: 1200px;
+}
+.scrollx_tbl_xxl{
+	width: 100%;
+	overflow-x: auto;
+}
+.scrollx_tbl_xxl table{
+	min-width: 1600px;
+}
+
+/* 테이블 (모양만) */
+.tbl_col_shaped ol {
+	font-size: 0;
+}
+.tbl_col_shaped .tbl_col_thead, .tbl_col_shaped .tbl_col_tbody .tit {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+.tbl_col_shaped .tbl_col_thead > li, .tbl_col_tbody > div > li  {
+	display: inline-block;
+	padding: 8px 4px;
+	font-size: 1.7rem; text-align: center; 
+}
+.tbl_col_shaped .tbl_col_thead li {
+	background: #f2f2f5;
+	border-top: 2px solid #032c5c;
+	border-bottom: 1px solid #c2cad2;
+}
+.tbl_col_shaped .btn_accordion {
+	width: 24px; height: 24px;
+	background-image: url(../../images/client/formstyle/icon_arrowfull_down.png); 
+	border: 1px solid #e1e1e1;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+.tbl_col_tbody .td_input {
+	padding: 5px;
+}
+.tbl_col_shaped .btn_accordion.on {
+	background-image: url(../../images/client/formstyle/icon_arrowfull_up.png); 
+	border-color: #23316e;
+}
+.tbl_col_tbody .tit {
+	border-bottom: 1px solid #c2cad2;
+}
+.tbl_col_tbody .cnt {
+	padding: 8px;
+	border-bottom: 1px solid #c2cad2;
+}
+
+@media screen and (max-width:1279px){}
+@media screen and (max-width:1080px){}
+@media screen and (max-width:1024px){
+	
+	/* 반응형 테이블 1024 */
+	.tbl_lg_responsive table thead th {
+		display: none;
+	}
+	.tbl_lg_responsive table tbody tr {
+		border-top: 1px solid #032c5c;
+		border-bottom: 1px solid #032c5c;
+	}
+	.tbl_lg_responsive table tbody td {
+		position: relative;
+		display: block;
+		padding: 5px 5px 5px 7em; 
+		text-align: left;
+		border: none;
+	}
+	.tbl_lg_responsive table tbody td:last-child {
+		border-bottom: none;
+	}
+	.tbl_lg_responsive table td::before {
+		position: absolute; left: 0;
+		content: attr(data-th);
+		display: inline-block;
+		margin-right: 10px; padding-left: 6px;
+		width: 6.5em;
+		font-weight: 700;
+		border-right: 1px solid #c2cad2;
+	}
+	
+	
+}
+@media screen and (max-width:768px){
+	
+	/* 반응형 테이블 768 */
+	.tbl_md_responsive table thead th {
+		display: none;
+	}
+	.tbl_md_responsive table tbody tr {
+		border-top: 1px solid #032c5c;
+		border-bottom: 1px solid #032c5c;
+	}
+	.tbl_md_responsive table tbody td {
+		position: relative;
+		display: block;
+		padding: 5px 5px 5px 7em; 
+		text-align: left;
+		border: none;
+	}
+	.tbl_md_responsive table tbody td:last-child {
+		border-bottom: none;
+	}
+	.tbl_md_responsive table td::before {
+		position: absolute; left: 0;
+		content: attr(data-th);
+		display: inline-block;
+		margin-right: 10px; padding-left: 6px;
+		width: 6.5em;
+		font-weight: 700;
+		border-right: 1px solid #c2cad2;
+	}
+	
+	/* 테이블 (모양만) 768 */
+	.tbl_col_tbody .cnt {
+		padding: 8px 0;
+	}
+	
+}
+@media screen and (max-width:480px){
+	
+	/* 반응형 테이블 480 */
+	.tbl_sm_responsive table thead th {
+		display: none;
+	}
+	.tbl_sm_responsive table tbody tr {
+		border-top: 1px solid #032c5c;
+		border-bottom: 1px solid #032c5c;
+	}
+	.tbl_sm_responsive table tbody td {
+		position: relative;
+		display: block;
+		padding: 5px 5px 5px 7em; 
+		text-align: left;
+		border: none;
+	}
+	.tbl_sm_responsive table tbody td:last-child {
+		border-bottom: none;
+	}
+	.tbl_sm_responsive table td::before {
+		position: absolute; left: 0;
+		content: attr(data-th);
+		display: inline-block;
+		margin-right: 10px; padding-left: 6px;
+		width: 6.5em;
+		font-weight: 700;
+		border-right: 1px solid #c2cad2;
+	}
+	
+	
+	
+	
+}
+
+
+
+
+
+
+
+

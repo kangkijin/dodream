@@ -1,0 +1,47 @@
+{
+	"header": {
+		"txt1": "出国留学信息",
+		"txt2": "留学搭配",
+		"txt3": "根据技能进行锻炼",
+		"txt4": "试试题",
+		"txt5": "出国留学的感觉"
+	},
+	"footer": {
+		"txt1": "Dain Leaders"
+		,"txt2": "服务手册"
+		,"txt3": "使用条款"
+		,"txt4": "处理个人信息的政策"
+		,"txt5": "拒绝收集未经许可的电子邮件地址"
+		,"txt6": "客户支持中心DoDream海外留学联系平台"
+		,"txt7": "韩语：070-7729-7328"
+		,"txt8": "越南语：070-7729-8023"
+		,"txt9": "Dainleaders.Co.,Ltd"
+		,"txt10": "韩国总公司：2006, 5 Seongsuil-ro 8-gil, Seongdong-gu, Seoul, Republic of Korea"
+		,"txt11": "越南办公室：越南河内青春郡屈维现进路12号 Zen Tower大厦1107间11楼"
+		,"txt12": "积分介绍"
+		,"txt13": "客户支持中心 : (+82)1800-6337"
+	},
+	"askMe_1" : {
+		"txt1" : "许多人看到的Ask me文章"
+		, "txt2" : "所有"
+		, "txt3" : "等待答复的文章"
+		, "txt4" : "输入DRP"
+		, "txt5" : "取消"
+		, "txt6" : "注册ASK ME"
+		, "commonTxt1": "查询数"
+		, "commonTxt2": "评论数"
+		, "commonTxt3": "分享"
+		, "commonTxt4": "Twitter"
+		, "commonTxt5": "Facebook"
+		, "commonTxt6": "复制链接地址"
+		, "commonTxt7": "登录评论"
+		, "commonTxt8": "喜欢"
+		, "btnTxt": "搜索"
+		, "searchTxt1" : "标签"
+		, "searchTxt2" : "标题+内容"
+		, "orderTxt1": "最新的发布文章"
+		, "orderTxt2": "看多的顺序"
+		, "orderTxt3": "最优秀的发布文章"
+		, "noSearchTxt1" : "没有搜索结果。"
+	}
+}

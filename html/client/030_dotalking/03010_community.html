@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi, shrink-to-fit=no">
+		<meta name="format-detection" content="telephone=no, address=no">
+		<meta name="title" content="DoDream">
+		<meta name="keywords" content="Block Chain, Study Abroad, platform, Korea, vietnam">
+		<meta name="description" content="유학플랫폼 두드림(DoDream)외국인 유학생을 위한 한국 유학 매칭 플랫폼">
+		<meta name="author" content="DainLeaders">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="DoDream">
+		<meta property="og:description" content="유학플랫폼 두드림(DoDream)외국인 유학생을 위한 한국 유학 매칭 플랫폼">
+		<meta property="og:image" content="../../../images/common/img_metacover.jpg">
+		<meta property="og:url" content="http://www.dodream.io">
+		<meta name="naver-site-verification" content="dd744254d55fa0f146a5daeaf1e02ae2dd86c1f9"/> 
+		<meta name="google-site-verification" content="mive32tDbnLeee8bzzUfCA31XmDNgL4Lgj4dQoxn8DM"/>
+		<title>DoDream</title>
+
+		<!-- [pp] 웹앱매니페스트 - chrome, opera -->
+		<link rel="manifest" href="../manifest.json">
+		<!-- [pp] //웹앱매니페스트 - chrome, opera -->
+
+		<!-- [pp] ios safari screen -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="white">
+		<meta name="apple-mobile-web-app-title" content="DoDream">
+		<!-- [pp] //ios safari screen -->
+
+		<!-- [pp] 파비콘 -->
+		<link rel="apple-touch-icon" sizes="64x64" href="../../../images/common/favicon.png">
+		<link rel="shortcut icon" type="image/x-icon" href="../../../images/common/favicon.ico">
+		<!-- [pp] //파비콘 -->
+
+		<!-- [pp] css -->
+		<link rel="stylesheet" href="../../../css/client/src/swiper.min.css">
+		<link rel="stylesheet" href="../../../css/client/src/jquery.mCustomScrollbar.css">
+		<link rel="stylesheet" href="../../../css/client/src/select2.css">
+		<link rel="stylesheet" href="../../../css/client/src/magnific-popup.css">
+		<link rel="stylesheet" href="../../../css/dl_global.css">
+		<link rel="stylesheet" href="../../../css/client/normalize.css">
+		<link rel="stylesheet" href="../../../css/client/grid.css">
+		<link rel="stylesheet" href="../../../css/client/table.css">
+		<link rel="stylesheet" href="../../../css/client/formstyle.css">
+		<link rel="stylesheet" href="../../../css/client/common.css">
+		<link rel="stylesheet" href="../../../css/client/ui.css">
+		<link rel="stylesheet" href="../../../css/client/popup.css">
+		<!-- [pp] //css -->
+
+		<!-- [pp] js -->
+		<script type="text/javascript" src="../../../js/client/src/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/swiper.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/jquery.mCustomScrollbar.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/select2.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/jquery.magnific-popup.js"></script>
+		<script type="text/javascript" src="../../../js/client/pp_common.js"></script>
+
+		<!-- [pp] 사용 금지 -->
+		<!--<script type="text/javascript" src="../../../js/client/src/jquery-1.12.3.min.js"></script>-->
+		<script type="text/javascript" src="../../../js/client/pp_include.js"></script>
+		<!-- [pp] //사용 금지 -->
+
+		<!-- [pp] //js -->
+
+		<!--[if lt IE 9]>
+		<script type="text/javascript" src="../../../js/client/src/jquery-1.12.3.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/html5shiv.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/IE9.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/respond.min.js"></script>
+		<![endif]-->
+
+	</head>
+	<body>
+		<!--[pp] ie 하위버젼 접속시 알림 -->
+		<!--[if lt IE 10]>
+		<div id="browser">
+		This site is supported Explorer 10 or higher, Chrome, Firefox, Opera, Safari.<br/>If you are using it now, Please <a href="https://browsehappy.com/?locale=en" target="_blank">upgrade your browser</a> to improve your experience and security.
+		<button type="button" class="pp_upgradeinfo_close">close</button>
+		</div>
+		<![endif]-->
+		<!--[pp] // ie 하위버젼 접속시 알림 -->
+
+		<!-- [pp] 로딩중 화면 -->
+		<div id="loading" style="display:none;">
+			<p id="loading_image">
+				<img src="../../../images/pageloading.gif" alt="Loading..."><br>
+				<span>Loading</span>
+			</p>
+		</div>
+		<!-- [pp] //로딩중 화면 -->
+
+		<!-- [pp] 푸터를 제외한 전체페이지 -->
+		<div class="page_wrap">
+			<!-- [pp] header -->
+			<div data-include="../include/header.html">header 영역</div>
+			<!-- [pp] //header -->
+			<!-- [pp] visual -->
+			<figure class="sub_visual visual3">
+				<div class="grid_content">
+					<div class="visual_txt">
+						<h2>Do Talking</h2>
+						<p>Community</p>
+					</div>
+					<nav class="page_navi">
+						<ul>
+							<li><a href="javascript:void(0);">Home</a></li>
+							<li><a href="javascript:void(0);">Do Talking</a></li>
+							<li><a href="javascript:void(0);">Community</a></li>
+						</ul>
+					</nav>
+				</div>
+			</figure>
+			<!-- [pp] //visual -->
+			<!-- [pp] container -->
+			<div class="subpage_wrap community_wrapper">
+				<div class="btnfixed_wrapper">
+					<div class="grid_content">
+						<a href="javascript:void(0);" class="btn_post">글 작성하기</a>
+					</div>
+				</div>
+				<!--<div class="naming_input naming_sm_input">
+					<label>짧은 제목</label>
+					<input type="text" placeholder="제목 input">
+				</div>-->
+				<div class="toplevel_area">
+					<div class="searchround_wrap grid_content">
+						<div class="searchround_box wdfull_2_1">
+							<div class="select_form">
+								<label for="select1">태그</label>
+								<select id="select1">
+									<option>대학교</option>
+									<option selected>태그</option>
+									<option>제목 + 내용</option>
+								</select>
+							</div>
+							<input type="text" placeholder="검색어를 입력해주세요">
+							<button type="button" class="btn_search">검색</button>
+						</div>
+					</div>
+					<div class="tab_wide_wrap">
+						<ul class="grid_content tab_wide tab_switch_js">
+							<li><a href="javascript:void(0);" class="on"><span>최신순</span></a></li>
+							<li><a href="javascript:void(0);"><span>인기순</span></a></li>
+							<li><a href="javascript:void(0);"><span>댓글순</span></a></li>
+							<li><a href="javascript:void(0);"><span>내 글</span></a></li>
+						</ul>
+						<!-- [pp] 텝 3개 일땐 'div_3'클래스 추가 :
+						<ul class="grid_content tab_wide tab_switch_js">
+							<li class="div_3"><a href="javascript:void(0);" class="on"><span>최신순</span></a></li>
+							<li class="div_3"><a href="javascript:void(0);"><span>인기순</span></a></li>
+							<li class="div_3"><a href="javascript:void(0);"><span>댓글순</span></a></li>
+						</ul>
+						-->
+					</div>
+				</div>
+				<div class="post_wrap">
+					<article>
+						<div class="grid_content">
+							<strong class="user_id">juvely_23</strong>
+							<p class="date">2020.03.26 19:14</p>
+							<ul class="hashtag_list">
+								<li>&#35;동국대라이프</li>
+								<li>&#35;유학의꿈</li>
+								<li>&#35;기숙사</li>
+								<li>&#35;동국대라이프</li>
+								<li>&#35;유학의꿈</li>
+								<li>&#35;기숙사</li>
+							</ul>
+							<p class="post_cnt">맛있어보이죠? 엄청 맛있습니다 같이 나온는 반찬들과도 너무 잘 어울리고 값도 싸며 파는곳도 많아 즐기기 쉬운 음식입니다. 뇸뇸. 찹찹. 냠얌. 뢉뢉. 촵뢉. 걠 &#45560;</p>
+							<!-- [pp] 이미지 갯수 따른 클래스명 : 
+							.post_gallery : 1개 ~ 2개
+							.post_gallery.post_triple : 3개
+							.post_gallery.post_many : 4개 이상
+							-->
+							<div class="post_gallery">
+								<a href="../../../images/client/sub/img_post_gallery1.jpg">
+									<img src="../../../images/client/sub/img_post_gallery1.jpg" alt="두토킹 예제 이미지">
+								</a>
+								<a href="../../../images/client/sub/img_post_gallery1.jpg">
+									<img src="../../../images/client/sub/img_post_gallery1.jpg" alt="두토킹 예제 이미지">
+								</a>
+							</div>
+							<section class="reply_wrap tgbox_js">
+								<h3 class="hidden">댓글달기</h3>
+								<div>
+									<button type="button" class="comment_count btn_tg_js"><span class="count_tit">댓글보기</span><span>12</span></button>
+									<button type="button" class="like_count on_js"><span class="count_tit">좋아요</span><span>122</span></button>
+									<div class="speechbubble_wrap fr">
+										<button type="button" class="btn_moreservice">서비스 더보기</button>
+										<ul class="speech_bubble">
+											<li><a href="javascript:void(0);" class="btn_delcnt"><span class="icon"></span>삭제</a></li>
+											<li><a href="javascript:void(0);" class="btn_editcnt"><span class="icon"></span>수정</a></li>
+										</ul>
+									</div>
+									<button type="button" class="btn_share fr">공유</button>
+								</div>
+								<div class="reply_area tgcnt_js">
+									<div class="reply_box section_sarea">
+										<div>
+											<textarea id="letter_coount" rows="2" placeholder="※ 욕설, 과도한 비방 등의 악의적인 댓글은 삭제될 수 있습니다"></textarea>
+											<span id="letter_counter"></span>
+											<button type="submit" class="btn btn_md btn_default">댓글등록</button>
+										</div>
+									</div>
+									<ul class="comment_list">
+										<li>
+											<strong class="comment_id">kimyu***
+												<span class="date">2019.06.09 19:14</span>
+												<button type="button" class="btn_close">삭제</button>
+											</strong>
+											<p class="txt">내 댓글입니다</p>
+										</li>
+										<li>
+											<strong class="comment_id">uaaa***<span class="date">2019.06.09 19:14</span></strong>
+											<p class="txt">다른사람 댓글입니다</p>
+										</li>
+									</ul>
+									<div class="reply_more">
+										<button type="button">댓글 모두보기</button>
+									</div>
+								</div>
+							</section>
+						</div>
+					</article>
+					<article>
+						<div class="grid_content">
+							<strong class="user_id">juvely_23</strong>
+							<p class="date">2020.03.26 19:14</p>
+							<ul class="hashtag_list">
+								<li>&#35;동국대라이프</li>
+								<li>&#35;유학의꿈</li>
+								<li>&#35;기숙사</li>
+								<li>&#35;동국대라이프</li>
+								<li>&#35;유학의꿈</li>
+								<li>&#35;기숙사</li>
+							</ul>
+							<p class="post_cnt">맛있어보이죠? 엄청 맛있습니다 같이 나온는 반찬들과도 너무 잘 어울리고 값도 싸며 파는곳도 많아 즐기기 쉬운 음식입니다.</p>
+							<div class="post_gallery post_triple">
+								<a href="../../../images/client/sub/img_post_gallery1.jpg">
+									<img src="../../../images/client/sub/img_post_gallery1.jpg" alt="두토킹 예제 이미지">
+								</a>
+								<a href="../../../images/client/sub/img_post_gallery2.jpg">
+									<img src="../../../images/client/sub/img_post_gallery2.jpg" alt="두토킹 예제 이미지">
+								</a>
+								<a href="../../../images/client/sub/img_post_gallery3.jpg">
+									<img src="../../../images/client/sub/img_post_gallery3.jpg" alt="두토킹 예제 이미지">
+								</a>
+							</div>
+							<section class="reply_wrap tgbox_js">
+								<h3 class="hidden">댓글달기</h3>
+								<div>
+									<button type="button" class="comment_count btn_tg_js"><span class="count_tit">댓글보기</span><span>12</span></button>
+									<button type="button" class="like_count on_js"><span class="count_tit">좋아요</span><span>122</span></button>
+									<button type="button" class="btn_share fr">공유</button>
+								</div>
+								<div class="reply_area tgcnt_js">
+									<div class="reply_box section_sarea">
+										<div>
+											<textarea id="letter_coount" rows="2" placeholder="※ 욕설, 과도한 비방 등의 악의적인 댓글은 삭제될 수 있습니다"></textarea>
+											<span id="letter_counter"></span>
+											<button type="submit" class="btn btn_md btn_default">댓글등록</button>
+										</div>
+									</div>
+									<ul class="comment_list">
+										<li>
+											<strong class="comment_id">kimyu***
+												<span class="date">2019.06.09 19:14</span>
+												<button type="button" class="btn_close">삭제</button>
+											</strong>
+											<p class="txt">내 댓글입니다</p>
+										</li>
+										<li>
+											<strong class="comment_id">uaaa***<span class="date">2019.06.09 19:14</span></strong>
+											<p class="txt">다른사람 댓글입니다</p>
+										</li>
+									</ul>
+									<div class="reply_more">
+										<button type="button">댓글 모두보기</button>
+									</div>
+								</div>
+							</section>
+						</div>
+					</article>
+					<article>
+						<div class="grid_content">
+							<strong class="user_id">juvely_23</strong>
+							<p class="date">2020.03.26 19:14</p>
+							<ul class="hashtag_list">
+								<li>&#35;동국대라이프</li>
+								<li>&#35;유학의꿈</li>
+								<li>&#35;기숙사</li>
+								<li>&#35;동국대라이프</li>
+								<li>&#35;유학의꿈</li>
+								<li>&#35;기숙사</li>
+							</ul>
+							<p class="post_cnt">맛있어보이죠? 엄청 맛있습니다 같이 나온는 반찬들과도 너무 잘 어울리고 값도 싸며 파는곳도 많아 즐기기 쉬운 음식입니다.</p>
+							<div class="post_gallery post_many">
+								<a href="../../../images/client/sub/img_post_gallery1.jpg">
+									<img src="../../../images/client/sub/img_post_gallery1.jpg" alt="두토킹 예제 이미지">
+								</a>
+								<a href="../../../images/client/sub/img_post_gallery2.jpg">
+									<img src="../../../images/client/sub/img_post_gallery2.jpg" alt="두토킹 예제 이미지">
+								</a>
+								<a href="../../../images/client/sub/img_post_gallery3.jpg">
+									<img src="../../../images/client/sub/img_post_gallery3.jpg" alt="두토킹 예제 이미지">
+								</a>
+								<a href="../../../images/client/sub/img_post_gallery4.jpg">
+									<img  src="../../../images/client/sub/img_post_gallery4.jpg" alt="두토킹 예제 이미지">
+									<span class="more_gallery">+4</span>
+								</a>
+							</div>
+							<section class="reply_wrap tgbox_js">
+								<h3 class="hidden">댓글달기</h3>
+								<div>
+									<button type="button" class="comment_count btn_tg_js"><span class="count_tit">댓글보기</span><span>12</span></button>
+									<button type="button" class="like_count on_js"><span class="count_tit">좋아요</span><span>122</span></button>
+									<button type="button" class="btn_share fr">공유</button>
+								</div>
+								<div class="reply_area tgcnt_js">
+									<div class="reply_box section_sarea">
+										<div>
+											<textarea id="letter_coount" rows="2" placeholder="※ 욕설, 과도한 비방 등의 악의적인 댓글은 삭제될 수 있습니다"></textarea>
+											<span id="letter_counter"></span>
+											<button type="submit" class="btn btn_md btn_default">댓글등록</button>
+										</div>
+									</div>
+									<ul class="comment_list">
+										<li>
+											<strong class="comment_id">kimyu***
+												<span class="date">2019.06.09 19:14</span>
+												<button type="button" class="btn_close">삭제</button>
+											</strong>
+											<p class="txt">내 댓글입니다</p>
+										</li>
+										<li>
+											<strong class="comment_id">uaaa***<span class="date">2019.06.09 19:14</span></strong>
+											<p class="txt">다른사람 댓글입니다</p>
+										</li>
+									</ul>
+									<div class="reply_more">
+										<button type="button">댓글 모두보기</button>
+									</div>
+								</div>
+							</section>
+						</div>
+					</article>
+				</div>
+			</div>
+			<!-- [pp] //container -->
+		</div>
+		<!-- [pp] //푸터를 제외한 전체페이지 -->
+		<!-- [pp] footer -->
+		<div data-include="../include/footer.html">footer 영역</div>
+		<!-- [pp] //footer -->
+	</body>
+</html>

@@ -1,0 +1,108 @@
+{
+	"header": {
+		"txt1": "Study Abroad Information",
+		"txt2": "Studying Abroad Matching",
+		"txt3": "Type-specific issues",
+		"txt4": "Practice test",
+		"txt5": "Study abroad review"
+	},
+	"footer": {
+		"txt1": "Dainleaders.Co.,Ltd"
+		,"txt2": "Service Guide"
+		,"txt3": "Terms and Conditions"
+		,"txt4": "Privacy Policy"
+		,"txt5": "Email Unauthorized Collection Denied"
+		,"txt6": "Study Abroad Platform DoDream Customer Service Center"
+		,"txt7": "Korean : 070-7729-7328"
+		,"txt8": "Vietnamese : 070-7729-8023"
+		,"txt9": "Dainleaders.Co.,Ltd"
+		,"txt10": "Korea Headquarters : 2006, 5 Seongsuil-ro 8-gil, Seongdong-gu, Seoul, Republic of Korea"
+		,"txt11": "Vietnamese Corporation : R.1107, Floor 11, Zen Tower Building, 12 Khuat Duy Tien rd, Thanh Xuan district, Hanoi"
+		,"txt12": "Point Guide"
+		,"txt13": "Service center : (+82)1800-6337"
+	},
+	"dreamGuide_1": {
+		"txt1": "Study Abroad Information"
+		,"txt2": "Finding a university that fits me!"
+		,"txt3": "Finding a local university<br>you want to go to"
+		,"txt4": "Regional universities"
+		,"txt5": "Hot Korean Wave!<br>Finding a major-specific university you want to learn"
+		,"txt6": "K Specialized University"
+		,"txt7": "If you want to find<br>a university that fits my terms?"
+		,"txt8": "Customized Study Abroad Design"
+		,"txt9": "Study Abroad Information Collection"
+		,"txt10": "A variety of study abroad courses!<br>Checking the eligibility for each course"
+		,"txt11": "Eligibility For Application"
+		,"txt12": "Korean is a must!<br>TOPIK"
+		,"txt13": "What is TOPIK"
+		,"txt14": "Vivid university reviews<br>written by international students"
+		,"txt15": "A review of studying abroad"
+		,"txt16": "Application"
+		,"txt17": "From admission to entry!<br>If you want to know about the procedure?"
+		,"txt18": "Admission/Entry Procedures"
+		,"txt19": "Admission application<br>documents and expenses required for each course"
+		,"txt20": "Application Information"
+		,"txt21": "What if you want professional support<br>for a complicated procedure?"
+		,"txt22": "Search for an agent"
+		,"txt23": "Admission Preparation"
+		,"txt24": "The most important procedure<br>before studying abroad"
+		,"txt25": "Study abroad visa information"
+		,"txt26": "Tag"
+		,"txt27": "University"
+		,"txt28": "Title+Content"
+		,"txt29": "Search"
+		,"txt30": "Newest"
+		,"txt31": "Most popular"
+		,"txt32": "Number Of Hits"
+		,"txt33": "Comments"
+		,"txt34": "Like"
+		,"txt35": "Edit"
+		,"txt36": "Share"
+		,"txt37": "Twitter"
+		,"txt38": "Facebook"
+		,"txt39": "Copy the link"
+		,"txt40": "Register comment"
+		,"txt41": "Writing a review of studying abroad"
+		,"txt42": "related university"
+		,"txt43": "tag input"
+		,"txt44": "thumbnail registration"
+		,"txt45": "Title"
+		,"txt46": "Enroll"
+		,"txt47": "revocation"
+		,"txt48": "Study abroad review Edit"
+		,"txt49": "Modify"
+		,"txt50": "Attachments"
+		,"txt51": "Delete"
+	},
+	"step1_1":{
+		"txt1": "유학 매칭"
+		,"txt2": "지역별 대학"
+		,"txt3": "지역별 대학"
+		,"txt4": "서울"
+		,"txt5": "경기/인천"
+		,"txt6": "강원"
+		,"txt7": "대전/충청"
+		,"txt8": "부산/대구/울산/경상"
+		,"txt9": "광주/전라"
+		,"txt10": "제주"
+		,"txt11": "추천대학"
+	},
+	"step1_2":{
+		"txt1": "유학 매칭"
+		,"txt2": "K 특성화 대학"
+	},
+	"step1_3":{
+		"txt1": "유학 매칭"
+		,"txt2": "맞춤 유학 설계"
+		,"txt3": "희망하는 과정을 선택해주세요"
+		,"txt4": "학위과정"
+		,"txt5": "어학연수"
+	},
+	"step2_3":{
+		"txt1": "유학 매칭"
+		,"txt2": "맞춤 유학 설계"
+		,"txt3": "희망하는 과정을 선택해주세요"
+		,"txt4": "학위과정"
+		,"txt5": "어학연수"
+	}
+}

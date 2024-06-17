@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes, height=device-height, viewport-fit=cover, shrink-to-fit=no">
+	<meta name="title" content="CareerPASS DEMO">
+	<meta name="description" content="welcome to CareerPASS DEMO">
+	<meta name="copyrigt" content="DainLeaders">
+	<meta name="keywords" content="dainleaders,Careerpass,Careerpass system, 경력개발통합관리시스템, 커리어패스, 역량관리, 대학, 대학생, 역량관리시스템, 경력관리">
+	<title>Do Dream Admin</title>
+	<link rel="apple-touch-icon" href="../../../images/common/favicon.ico">
+	<link rel="shortcut icon" href="../../../images/common/favicon.ico">
+	<!-- [pp] 아이콘글꼴/font-awesome -->
+	<link rel="stylesheet" href="../../../fonts/font-awesome/css/font-awesome.min.css">
+	<!-- [pp] 아이콘글꼴/font-awesome/파이어폭스 미출력 에러 대응 -->
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+	<!-- css -->
+	<link rel="stylesheet" href="../../../plugin/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="../../../plugin/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+	<link rel="stylesheet" href="../../../plugin/bootstrap-toggle/css/bootstrap-toggle.min.css">
+	<link rel="stylesheet" href="../../../plugin/Ionicons/css/ionicons.min.css">
+	<link rel="stylesheet" href="../../../css/admin/src/AdminLTE.css">
+	<link rel="stylesheet" href="../../../css/admin/src/skins/_all-skins.css">
+	<link rel="stylesheet" href="../../../css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" href="../../../css/client/src/swiper.min.css">
+	<link rel="stylesheet" href="../../../plugin/select2/css/select2.css">
+	<link rel="stylesheet" href="../../../css/admin/dl_common.css">
+	<link rel="stylesheet" href="../../../css/dl_global.css">
+	<link rel="stylesheet" href="../../../css/admin/dl_custom.css">
+	<link rel="stylesheet" href="../../../css/admin/dl_table.css">
+	<link rel="stylesheet" href="../../../css/admin/dl_popup.css">
+	<link rel="stylesheet" href="../../../css/admin/dl_ui.css">
+</head>
+
+	<body class="hold-transition skin-blue-light sidebar-mini fixed">
+	<!--[if lt IE 10]>
+	<div id="ad_iever_upgradeinfo" style="width:100%; padding:10px; text-align:center; background-color:#db4c3b;">
+		<div style="width:800px; margin: 0 auto; position:relative; color:#fff; z-index:2000;">
+			본 사이트는 익스플로러10 이상, 크롬, 오페라, 파이어폭스 브라우저등의 최신버전에 최적화 되어 있습니다.<br/>지금 사용하고 계시는 브라우저는 곧 지원이 중단되므로 <a href="http://windows.microsoft.com/ko-kr/internet-explorer/ie-11-worldwide-languages" target="_blank" style="color:#1cd9e0;">익스플로러 최신버젼</a>으로 업그레이드하시거나 <a href="https://www.google.com/intl/ko/chrome/browser/" target="_blank" style="color:#1cd9e0;">크롬</a>, <a href="http://www.opera.com/ko/computer" target="_blank" style="color:#1cd9e0;">오페라</a>, <a href="https://www.mozilla.org/en-US/firefox/new/?scene=2" target="_blank" style="color:#1cd9e0;">파이어폭스</a>등의 최신 브라우저를 이용해 주세요.
+		</div>
+	</div>
+	<![endif]-->
+	<!--[if lt IE 9]>
+		<script src="../../js/html5shiv.js"></script>
+		<script src="../../js/IE9.js"></script>
+		<script src="../../js/respond.min.js"></script>
+	<![endif]-->
+	<!-- [pp] 로딩중 -->
+	<div class="wrapper">
+		<!--[pp] header -->
+		<header class="main-header">
+			<!--[pp] logo -->
+			<h1>
+				<a href="javascript:void(0);" class="logo">
+					<!--[pp] 햄버거 버튼 클릭시 메뉴가 접힌 상태에서 보여줄 로고 -->
+					<span class="logo-mini">
+						<img src="../../images/admin/minilogo.png" alt="커리어패스 관리자페이지">
+					</span>
+					<!--[pp] //햄버거 버튼 클릭시 메뉴가 접힌 상태에서 보여줄 로고 -->
+					<span class="logo-lg">
+						<img src="../../../images/admin/header_logo.png" alt="두드림 로고">
+						<span class="hide">Do Dream</span>
+					</span>
+				</a>
+			</h1>
+			<!--[pp] //logo -->
+			<nav class="navbar navbar-static-top">
+				<!--[pp] 햄버거버튼 -->
+				<a href="javascript:void(0);" class="sidebar-toggle" data-toggle="push-menu" role="button">
+					<span class="sr-only">주요메뉴 열고닫기</span>
+				</a>
+				<!--[pp] //햄버거버튼 -->
+				<!--[pp] tnb -->
+				<div class="navbar-custom-menu">
+					<ul class="nav navbar-nav">
+						<li class="hidden-xs pp_username">
+							<a href="javascript:void(0);">
+								<i class="fa fa-user"></i>
+								<span class="pp_user_txt">최고관리자님</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);" class="pp_client_link">
+								<i class="fa fa-television"></i>
+								<span class="hidden-xs pp_user_txt">학생화면 바로가기</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<i class="fa fa-unlock-alt"></i>
+								<span class="hidden-xs pp_user_txt">LOGOUT</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!--[pp] //tnb -->
+			</nav>
+		</header>
+		<!--[pp] //header -->
+		<!--[pp] gnb -->
+		<aside class="main-sidebar">
+			<section class="sidebar">
+				<div class="user-panel">
+					<div class="pull-left image">
+						<img src="../../../images/admin/user_img.jpg" class="img-circle" alt="User Image">
+					</div>
+					<div class="pull-left info">
+						<p>최고 관리자님</p>
+						<span>
+							<i class="fa fa-calendar"></i>&nbsp;최종접속일: 19-01-01
+						</span>
+					</div>
+				</div>
+				<ul class="sidebar-menu" data-widget="tree">
+					<li class="treeview">
+						<a href="javascript:void(0);"><i class="fa fa-cogs"></i><span>포탈관리</span>
+							<span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+						</a>
+						<ul class="treeview-menu">
+							<li><a href="javascript:void(0);">메뉴 관리</a></li>
+							<li><a href="javascript:void(0);">콘텐츠 관리</a></li>
+							<li><a href="javascript:void(0);">권한 관리</a></li>
+							<li><a href="javascript:void(0);">사용자별 권한 관리</a></li>
+							<li><a href="javascript:void(0);">외부 관리자 등록</a></li>
+							<li><a href="javascript:void(0);">로그인 이력</a></li>
+						</ul>
+					</li>
+					<li class="treeview">
+						<a href="javascript:void(0);"><i class="fa fa-desktop"></i><span>시스템 관리</span>
+							<span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+						</a>
+						<ul class="treeview-menu">
+							<li class="treeview">
+								<a href="javascript:void(0);">배너 관리<span class="pull-right-container"></span></a>
+							</li>
+							<li class="treeview">
+								<a href="javascript:void(0);">팝업 관리<span class="pull-right-container"></span></a>
+							</li>
+						</ul>
+					</li>
+					<li class="treeview">
+						<a href="javascript:void(0);"><i class="fa fa-plane"></i><span>유학정보 관리</span>
+							<span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+						</a>
+						<ul class="treeview-menu">
+							<li class="treeview">
+								<a href="javascript:void(0);">대학 코드<span class="pull-right-container"></span></a>
+							</li>
+							<li class="treeview">
+								<a href="javascript:void(0);">유학정보<span class="pull-right-container"></span></a>
+							</li>
+						</ul>
+					</li>
+					<li class="treeview">
+						<a href="javascript:void(0);"><i class="fa fa-youtube-play"></i><span>Do Play 관리</span>
+							<span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+						</a>
+						<ul class="treeview-menu">
+							<li><a href="javascript:void(0);">Dream Story 관리</a></li>
+							<li><a href="javascript:void(0);">PicK-POP 관리</a></li>
+							<li><a href="javascript:void(0);">오늘의 한마디 관리</a></li>
+						</ul>
+					</li>
+					<li class="treeview">
+						<a href="javascript:void(0);"><i class="fa fa-book"></i><span>Do TOPIK 관리</span>
+							<span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+						</a>
+						<ul class="treeview-menu">
+							<li><a href="javascript:void(0);">읽기 문제 관리</a></li>
+						</ul>
+					</li>
+					<li class="treeview">
+						<a href="javascript:void(0);"><i class="fa fa-comments-o"></i><span>Do Talking 관리</span>
+							<span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+						</a>
+						<ul class="treeview-menu">
+							<li><a href="javascript:void(0);">Do Talking 관리</a></li>
+						</ul>
+					</li>
+					<li class="treeview">
+						<a href="javascript:void(0);"><i class="fa fa-question-circle"></i><span>문의하기 관리</span>
+							<span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+						</a>
+						<ul class="treeview-menu">
+							<li><a href="javascript:void(0);">FAQ 관리</a></li>
+							<li><a href="javascript:void(0);">1:1 문의 관리</a></li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+		</aside>
+		<!--[pp] //gnb -->
+
+		<!--[pp] 본문영역 -->
+		<div class="content-wrapper">
+			<!--[pp] 본문 타이틀 영역/페이지제목,페이지네비게이션 -->
+			<section class="content-header">
+				<h1>대학교 상세</h1>
+				<ol class="breadcrumb">
+					<li><a href="javascript:void(0);"><i class="fa fa-home"></i>HOME</a></li>
+					<li><a href="javascript:void(0);">대학교 관리</a></li>
+					<li><a href="javascript:void(0);">대학교 목록</a></li>
+					<li><a href="javascript:void(0);">대학교 상세</a></li>
+				</ol>
+			</section>
+			<!--[pp] //본문 타이틀 영역/페이지제목,페이지네비게이션 -->
+			<!--[pp] 본문내용영역 -->
+			<section class="content container-fluid">
+                <div class="box box-solid">
+                    <div class="box-header with-border">
+                        <a href="javascript:void(0);" class="link_file" tit="dainleaders.png"><img src="../../../images/admin/dainleaders_emblem.png" alt="엠블렘" class="box_emblem"></a>
+                        <h3 class="box-title mg_r10">다인대학교</h3>
+                        <button class="btn btn-primary"><i class="fa fa-edit mg_r5"></i>수정</button>
+                        <div class="box-tools pull-right">
+                            <div class="ad_section_s mg_t10">
+                                <span class="label bg-red">공개여부</span>
+                                <button type="button" class="toggle_button va_m" name="useYn" id="useYn" value="Y"><span></span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-body">
+                        <table class="table table-bordered tbl_row tbl_fixed">
+                            <colgroup>
+                                <col width="150px;">
+                                <col width="auto;">
+                                <col width="auto;">
+                                <col width="auto;">
+                                <col width="auto;">
+                                <col width="auto;">
+                                <col width="auto;">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <td  colspan="2" rowspan="5" class="ta_c">
+                                       <a href="javascript:void(0);" class="link_file" title="univer.jpg">
+                                           <img src="../../../images/admin/univer.jpg" alt="대학교사진" style="width:100%;">
+                                       </a> 
+                                    </td>
+                                    <th>대학명</th>
+                                    <td><span>한글 &#58; 다인대학교</span><br /><span>영문 &#58; Dain UNIV.</span></td>
+                                    <th>대학형태</th>
+                                    <td>4년제 대학</td>
+                                    <th>지역</th>
+                                    <td>서울</td>
+                                </tr>
+                                <tr>
+                                    <th>위치</th>
+                                    <td colspan="5">
+                                        <span>한글 주소 &#58; 서울시 성동구 성수일로8길 5</span><br />
+                                        <span>영문 주소 &#58; 5 Seongsuil-ro 8-gil, Seongdong-gu, Seoul</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>홈페이지</th>
+                                    <td colspan="5"><a href="javascript:void(0);">http://www.dainleaders.com</a></td>
+                                </tr>
+                                <tr>
+                                    <th>특성화 항목</th>
+                                    <td colspan="5">
+                                        K-BEAUTY, 영어강좌트랙, 공학 인증 대학&#40;ABEEK&#41;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>관심대학 등록 수</th>
+                                    <td colspan="5">26</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="box box-solid">
+                    <div class="box-header with-border">
+                        <h3 class="box-title mg_r10">과정별 정보</h3>
+                        <div class="box-tools pull-right">
+                            <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                                <i class="fa fa-minus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="box-body">
+                        <div class="ta_c">
+                           <!-- [pp] 활성화시 class btn-purple, 비활성화시 class btn-outline-black-->
+                            <button type="button" class="btn-purple" style="width:100px; height:100px;">학사과정<br>모집 기간</button>
+                            <button type="button" class="btn-outline-gray" style="width:100px; height:100px;">석사과정<br>모집 마감</button>
+                            <button type="button" class="btn-outline-gray disabled" style="width:100px; height:100px;">박사과정<br>모집 마감</button>
+                            <button type="button" class="btn-purple" style="width:100px; height:100px;">어학연수<br>모집 기간</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="box box-solid">
+                    <div class="box-header with-border">
+                        <h3 class="box-title mg_r10">지원자 동의 관리</h3>
+                        <div class="box-tools pull-right">
+                            <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                                <i class="fa fa-minus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="box-body">
+                         <div class="content_box">
+                            <div class="mg_b5 cf">
+                                <p class="dp_inline mg_r20 bold"><span></span> 입학 지원 시 정보 이용</p>
+                                <button class="btn btn-primary fr wd_100"><i class="fa  fa-search-plus mg_r5"></i>보기</button>
+                            </div>
+                            <div class="mg_b5">
+                                <p class="dp_inline mg_r20 bold"><span></span> 이용약관 관리 &#40;개인정보처리방침 관리&#41;</p>
+                                <button class="btn btn-primary fr wd_100"><i class="fa  fa-search-plus mg_r5"></i>보기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+			</section>
+			<!--[pp] //본문내용영역 -->
+		</div>
+		<!--[pp] //본문영역 -->
+		<!--[pp] footer -->
+		<footer class="main-footer">
+			<div class="pull-right hidden-xs ad_footer_logo">
+				<img src="../../../images/admin/footer_logo.png" alt="두드림">
+			</div>
+			<strong>Copyright &copy; 2019 <a href="http://www.dainleaders.com" target="_blank">Dain Leaders</a>.</strong> All rights reserved.
+			<a id="back-to-top" href="javascript:void(0);" class="btn btn-default btn-sm back-to-top" role="button" title="페이지 상단으로 이동" data-toggle="tooltip" data-placement="left">
+				<span class="glyphicon glyphicon-chevron-up"></span>
+			</a>
+		</footer>
+		<!--[pp] //footer -->
+	</div>
+
+	<!--[pp] 모달기본 -->
+	<div id="mymodal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel"></h4>
+				</div>
+				<div class="modal-body">
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--[pp] 모달기본 -->
+	<!-- js -->
+	<script src="../../../plugin/jquery/dist/jquery.min.js"></script>
+	<script src="../../../plugin/jquery-ui/jquery-ui.min.js"></script>
+	<script src="../../../plugin/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="../../../plugin/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
+	<script src="../../../plugin/bootstrap-toggle/js/bootstrap-toggle.min.js"></script>
+	<script src="../../../js/client/src/swiper.min.js"></script>
+	<script src="../../../plugin/select2/js/select2.min.js"></script>
+	<script src="../../../plugin/fastclick/lib/fastclick.js"></script>
+	<script src="../../../js/jquery.mCustomScrollbar.min.js"></script>
+	<script src="../../../js/admin/src/adminlte.js"></script>
+	<script src="../../../js/admin/src/demo.js"></script>
+	<script src="../../../plugin/select2/js/select2.min.js"></script>
+	<script src="../../../js/admin/pp_ui.js"></script>
+
+	<!-- //js -->
+
+</body>
+
+</html>

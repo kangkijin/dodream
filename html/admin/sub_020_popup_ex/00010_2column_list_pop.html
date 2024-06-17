@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes, height=device-height, viewport-fit=cover, shrink-to-fit=no">
+	<meta name="title" content="CareerPASS DEMO">
+	<meta name="description" content="welcome to CareerPASS DEMO">
+	<meta name="copyrigt" content="DainLeaders">
+	<meta name="keywords" content="dainleaders,Careerpass,Careerpass system, 경력개발통합관리시스템, 커리어패스, 역량관리, 대학, 대학생, 역량관리시스템, 경력관리">
+	<title>CareerPASS DEMO Admin</title>
+	<link rel="apple-touch-icon" href="../../../images/dain_favicon_64.ico">
+	<link rel="shortcut icon" href="../../../images/dain_favicon_64.ico">
+	<!-- [pp] 아이콘글꼴/font-awesome -->
+	<link rel="stylesheet" href="../../../fonts/font-awesome/css/font-awesome.min.css">
+	<!-- [pp] 아이콘글꼴/font-awesome/파이어폭스 미출력 에러 대응 -->
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+
+	<!-- css -->
+	<link rel="stylesheet" href="../../../plugin/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="../../../plugin/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+	<link rel="stylesheet" href="../../../plugin/Ionicons/css/ionicons.min.css">
+	<link rel="stylesheet" href="../../../css/admin/src/AdminLTE.css">
+	<link rel="stylesheet" href="../../../css/admin/src/skins/_all-skins.css">
+	<link rel="stylesheet" href="../../../css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" href="../../../css/admin/dl_common.css">
+	<link rel="stylesheet" href="../../../css/dl_global.css">
+	<link rel="stylesheet" href="../../../css/admin/dl_custom.css">
+	<link rel="stylesheet" href="../../../css/admin/dl_table.css">
+	<link rel="stylesheet" href="../../../css/admin/dl_popup.css">
+	<link rel="stylesheet" href="../../../css/admin/dl_ui.css">
+</head>
+
+<body class="hold-transition skin-red sidebar-mini">
+	<!--[pp] 모달기본 -->
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel">권한설정</h4>
+			</div>
+			<div class="modal-body">
+				<div class="row">
+					<div class="col-sm-5">
+						<h4 class="ad_stit"><span></span>권한목록</h4>
+						<div class="ad_manager_list">
+							<table class="table tbl_col table-bordered table-hover">
+								<caption>권한목록 상세정보</caption>
+								<colgroup>
+									<col style="width: 20%">
+									<col style="width: 30%">
+									<col style="width: auto">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">선택</th>
+										<th scope="col">권한코드</th>
+										<th scope="col">권한 명</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td colspan="3">권한목록이 없습니다.</td>
+									</tr>
+									<tr>
+										<th scope="row" class="td_input">
+											<p class="ad_input_row">
+												<input type="checkbox" class="check" id="check1">
+												<label class="check_label ta_i" for="check1">선택</label>
+											</p>
+										</th>
+										<td>PCM</td>
+										<td>PCM</td>
+									</tr>
+									<tr>
+										<th scope="row" class="td_input">
+											<p class="ad_input_row">
+												<input type="checkbox" class="check" id="check2">
+												<label class="check_label ta_i" for="check2">선택</label>
+											</p>
+										</th>
+										<td>COUNSEL04</td>
+										<td>상담사(취업)</td>
+									</tr>
+									<tr>
+										<th scope="row" class="td_input">
+											<p class="ad_input_row">
+												<input type="checkbox" class="check" id="check3">
+												<label class="check_label ta_i" for="check3">선택</label>
+											</p>
+										</th>
+										<td>COUNSEL01</td>
+										<td>상담사(교수)</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="col-sm-1">
+						<div class="ad_btnlist_center">
+							<a href="javascript:void(0);" class="add_list"></a>
+							<a href="javascript:void(0);" class="remove_list"></a>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<h4 class="ad_stit"><span></span>메뉴 맵핑 목록</h4>
+						<div class="ad_manager_list">
+							<table class="table table-bordered table-hover tbl_col tbl_fixed">
+								<caption>메뉴 맵핑 목록</caption>
+								<colgroup>
+									<col style="width: 15%">
+									<col style="width: auto">
+									<col style="width: 15%">
+									<col style="width: 15%">
+									<col style="width: 15%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">선택</th>
+										<th scope="col">권한명</th>
+										<th scope="col">조회</th>
+										<th scope="col">등록</th>
+										<th scope="col">관리</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td colspan="5">메뉴 목록이 없습니다.</td>
+									</tr>
+									<tr>
+										<th scope="row" class="td_input">
+											<p class="ad_input_row">
+												<input type="checkbox" class="check" id="check4">
+												<label class="check_label ta_i" for="check4">선택</label>
+											</p>
+										</th>
+										<td>개발자용 관리자</td>
+										<td class="td_input">
+											<p class="ad_input_row">
+												<input type="radio" name="radio" class="radio" id="radio1">
+												<label class="radio_label ta_i" for="radio1">선택</label>
+											</p>
+										</td>
+										<td class="td_input">
+											<p class="ad_input_row">
+												<input type="radio" name="radio" class="radio" id="radio2">
+												<label class="radio_label ta_i" for="radio2">선택</label>
+											</p>
+										</td>
+										<td class="td_input">
+											<p class="ad_input_row">
+												<input type="radio" name="radio" class="radio" id="radio3" checked>
+												<label class="radio_label ta_i" for="radio3">선택</label>
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row" class="td_input">
+											<p class="ad_input_row">
+												<input type="checkbox" class="check" id="check5">
+												<label class="check_label ta_i" for="check5">선택</label>
+											</p>
+										</th>
+										<td>개발자용 관리자</td>
+										<td class="td_input">
+											<p class="ad_input_row">
+												<input type="radio" name="radio1" class="radio" id="radio4" checked>
+												<label class="radio_label ta_i" for="radio4">선택</label>
+											</p>
+										</td>
+										<td class="td_input">
+											<p class="ad_input_row">
+												<input type="radio" name="radio1" class="radio" id="radio5">
+												<label class="radio_label ta_i" for="radio5">선택</label>
+											</p>
+										</td>
+										<td class="td_input">
+											<p class="ad_input_row">
+												<input type="radio" name="radio1" class="radio" id="radio6">
+												<label class="radio_label ta_i" for="radio6">선택</label>
+											</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-sm btn-outline-danger" data-dismiss="modal"><i class="fa fa-undo mg_r5"></i>취소</button>
+				<button type="button" class="btn btn-sm btn-primary"><i class="fa fa-check mg_r5"></i>저장</button>
+			</div>
+		</div>
+	</div>
+	<!--[pp] 모달기본 -->
+	<!-- js -->
+	<script src="../../../plugin/jquery/dist/jquery.min.js"></script>
+	<script src="../../../plugin/jquery-ui/jquery-ui.min.js"></script>
+	<script src="../../../plugin/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="../../../plugin/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
+	<script src="../../../plugin/fastclick/lib/fastclick.js"></script>
+	<script src="../../../js/jquery.mCustomScrollbar.min.js"></script>
+	<script src="../../../js/admin/src/adminlte.js"></script>
+	<script src="../../../js/admin/src/demo.js"></script>
+	<script src="../../../js/admin/pp_ui.js"></script>
+	<!-- //js -->
+</body>
+</html>

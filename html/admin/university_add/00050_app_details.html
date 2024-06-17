@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes, height=device-height, viewport-fit=cover, shrink-to-fit=no">
+	<meta name="title" content="CareerPASS DEMO">
+	<meta name="description" content="welcome to CareerPASS DEMO">
+	<meta name="copyrigt" content="DainLeaders">
+	<meta name="keywords" content="dainleaders,Careerpass,Careerpass system, 경력개발통합관리시스템, 커리어패스, 역량관리, 대학, 대학생, 역량관리시스템, 경력관리">
+	<title>Do Dream Admin</title>
+	<link rel="apple-touch-icon" href="../../../images/common/favicon.ico">
+	<link rel="shortcut icon" href="../../../images/common/favicon.ico">
+	<!-- [pp] 아이콘글꼴/font-awesome -->
+	<link rel="stylesheet" href="../../../fonts/font-awesome/css/font-awesome.min.css">
+	<!-- [pp] 아이콘글꼴/font-awesome/파이어폭스 미출력 에러 대응 -->
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+	<!-- css -->
+	<link rel="stylesheet" href="../../../plugin/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="../../../plugin/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+	<link rel="stylesheet" href="../../../plugin/bootstrap-toggle/css/bootstrap-toggle.min.css">
+	<link rel="stylesheet" href="../../../plugin/Ionicons/css/ionicons.min.css">
+	<link rel="stylesheet" href="../../../css/admin/src/AdminLTE.css">
+	<link rel="stylesheet" href="../../../css/admin/src/skins/_all-skins.css">
+	<link rel="stylesheet" href="../../../css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" href="../../../css/client/src/swiper.min.css">
+	<link rel="stylesheet" href="../../../plugin/select2/css/select2.css">
+	<link rel="stylesheet" href="../../../css/admin/dl_common.css">
+	<link rel="stylesheet" href="../../../css/dl_global.css">
+	<link rel="stylesheet" href="../../../css/admin/dl_custom.css">
+	<link rel="stylesheet" href="../../../css/admin/dl_table.css">
+	<link rel="stylesheet" href="../../../css/admin/dl_popup.css">
+	<link rel="stylesheet" href="../../../css/admin/dl_ui.css">
+</head>
+
+	<body class="hold-transition skin-blue-light sidebar-mini fixed">
+	<!--[if lt IE 10]>
+	<div id="ad_iever_upgradeinfo" style="width:100%; padding:10px; text-align:center; background-color:#db4c3b;">
+		<div style="width:800px; margin: 0 auto; position:relative; color:#fff; z-index:2000;">
+			본 사이트는 익스플로러10 이상, 크롬, 오페라, 파이어폭스 브라우저등의 최신버전에 최적화 되어 있습니다.<br/>지금 사용하고 계시는 브라우저는 곧 지원이 중단되므로 <a href="http://windows.microsoft.com/ko-kr/internet-explorer/ie-11-worldwide-languages" target="_blank" style="color:#1cd9e0;">익스플로러 최신버젼</a>으로 업그레이드하시거나 <a href="https://www.google.com/intl/ko/chrome/browser/" target="_blank" style="color:#1cd9e0;">크롬</a>, <a href="http://www.opera.com/ko/computer" target="_blank" style="color:#1cd9e0;">오페라</a>, <a href="https://www.mozilla.org/en-US/firefox/new/?scene=2" target="_blank" style="color:#1cd9e0;">파이어폭스</a>등의 최신 브라우저를 이용해 주세요.
+		</div>
+	</div>
+	<![endif]-->
+	<!--[if lt IE 9]>
+		<script src="../../js/html5shiv.js"></script>
+		<script src="../../js/IE9.js"></script>
+		<script src="../../js/respond.min.js"></script>
+	<![endif]-->
+	<!-- [pp] 로딩중 -->
+	<div class="wrapper">
+		<!--[pp] header -->
+		<header class="main-header">
+			<!--[pp] logo -->
+			<h1>
+				<a href="javascript:void(0);" class="logo">
+					<!--[pp] 햄버거 버튼 클릭시 메뉴가 접힌 상태에서 보여줄 로고 -->
+					<span class="logo-mini">
+						<img src="../../images/admin/minilogo.png" alt="커리어패스 관리자페이지">
+					</span>
+					<!--[pp] //햄버거 버튼 클릭시 메뉴가 접힌 상태에서 보여줄 로고 -->
+					<span class="logo-lg">
+						<img src="../../../images/admin/header_logo.png" alt="두드림 로고">
+						<span class="hide">Do Dream</span>
+					</span>
+				</a>
+			</h1>
+			<!--[pp] //logo -->
+			<nav class="navbar navbar-static-top">
+				<!--[pp] 햄버거버튼 -->
+				<a href="javascript:void(0);" class="sidebar-toggle" data-toggle="push-menu" role="button">
+					<span class="sr-only">주요메뉴 열고닫기</span>
+				</a>
+				<!--[pp] //햄버거버튼 -->
+				<!--[pp] tnb -->
+				<div class="navbar-custom-menu">
+					<ul class="nav navbar-nav">
+						<li class="hidden-xs pp_username">
+							<a href="javascript:void(0);">
+								<i class="fa fa-user"></i>
+								<span class="pp_user_txt">최고관리자님</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);" class="pp_client_link">
+								<i class="fa fa-television"></i>
+								<span class="hidden-xs pp_user_txt">학생화면 바로가기</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<i class="fa fa-unlock-alt"></i>
+								<span class="hidden-xs pp_user_txt">LOGOUT</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!--[pp] //tnb -->
+			</nav>
+		</header>
+		<!--[pp] //header -->
+		<!--[pp] gnb -->
+		<aside class="main-sidebar">
+			<section class="sidebar">
+				<div class="user-panel">
+					<div class="pull-left image">
+						<img src="../../../images/admin/user_img.jpg" class="img-circle" alt="User Image">
+					</div>
+					<div class="pull-left info">
+						<p>최고 관리자님</p>
+						<span>
+							<i class="fa fa-calendar"></i>&nbsp;최종접속일: 19-01-01
+						</span>
+					</div>
+				</div>
+				<ul class="sidebar-menu" data-widget="tree">
+					<li class="treeview">
+						<a href="javascript:void(0);"><i class="fa fa-cogs"></i><span>포탈관리</span>
+							<span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+						</a>
+						<ul class="treeview-menu">
+							<li><a href="javascript:void(0);">메뉴 관리</a></li>
+							<li><a href="javascript:void(0);">콘텐츠 관리</a></li>
+							<li><a href="javascript:void(0);">권한 관리</a></li>
+							<li><a href="javascript:void(0);">사용자별 권한 관리</a></li>
+							<li><a href="javascript:void(0);">외부 관리자 등록</a></li>
+							<li><a href="javascript:void(0);">로그인 이력</a></li>
+						</ul>
+					</li>
+					<li class="treeview">
+						<a href="javascript:void(0);"><i class="fa fa-desktop"></i><span>시스템 관리</span>
+							<span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+						</a>
+						<ul class="treeview-menu">
+							<li class="treeview">
+								<a href="javascript:void(0);">배너 관리<span class="pull-right-container"></span></a>
+							</li>
+							<li class="treeview">
+								<a href="javascript:void(0);">팝업 관리<span class="pull-right-container"></span></a>
+							</li>
+						</ul>
+					</li>
+					<li class="treeview">
+						<a href="javascript:void(0);"><i class="fa fa-plane"></i><span>유학정보 관리</span>
+							<span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+						</a>
+						<ul class="treeview-menu">
+							<li class="treeview">
+								<a href="javascript:void(0);">대학 코드<span class="pull-right-container"></span></a>
+							</li>
+							<li class="treeview">
+								<a href="javascript:void(0);">유학정보<span class="pull-right-container"></span></a>
+							</li>
+						</ul>
+					</li>
+					<li class="treeview">
+						<a href="javascript:void(0);"><i class="fa fa-youtube-play"></i><span>Do Play 관리</span>
+							<span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+						</a>
+						<ul class="treeview-menu">
+							<li><a href="javascript:void(0);">Dream Story 관리</a></li>
+							<li><a href="javascript:void(0);">PicK-POP 관리</a></li>
+							<li><a href="javascript:void(0);">오늘의 한마디 관리</a></li>
+						</ul>
+					</li>
+					<li class="treeview">
+						<a href="javascript:void(0);"><i class="fa fa-book"></i><span>Do TOPIK 관리</span>
+							<span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+						</a>
+						<ul class="treeview-menu">
+							<li><a href="javascript:void(0);">읽기 문제 관리</a></li>
+						</ul>
+					</li>
+					<li class="treeview">
+						<a href="javascript:void(0);"><i class="fa fa-comments-o"></i><span>Do Talking 관리</span>
+							<span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+						</a>
+						<ul class="treeview-menu">
+							<li><a href="javascript:void(0);">Do Talking 관리</a></li>
+						</ul>
+					</li>
+					<li class="treeview">
+						<a href="javascript:void(0);"><i class="fa fa-question-circle"></i><span>문의하기 관리</span>
+							<span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+						</a>
+						<ul class="treeview-menu">
+							<li><a href="javascript:void(0);">FAQ 관리</a></li>
+							<li><a href="javascript:void(0);">1:1 문의 관리</a></li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+		</aside>
+		<!--[pp] //gnb -->
+
+		<!--[pp] 본문영역 -->
+		<div class="content-wrapper">
+			<!--[pp] 본문 타이틀 영역/페이지제목,페이지네비게이션 -->
+			<section class="content-header">
+				<h1>입학신청내역 상세</h1>
+				<ol class="breadcrumb">
+					<li><a href="javascript:void(0);"><i class="fa fa-home"></i>HOME</a></li>
+					<li><a href="javascript:void(0);">입학 신청 관리</a></li>
+					<li><a href="javascript:void(0);">입학 신청내역 상세</a></li>
+				</ol>
+			</section>
+			<!--[pp] //본문 타이틀 영역/페이지제목,페이지네비게이션 -->
+			<!--[pp] 본문내용영역 -->
+			<section class="content container-fluid">
+				<div class="nav-tabs-custom cf pd_t5">
+                    <div class="fr mg_r20">
+                        <button class="btn btn-primary">서류합격</button>
+                        <button class="btn btn-danger">서류불합격</button>
+                    </div>
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="#one" data-toggle="tab">지원자 정보</a></li>
+						<li><a href="#two" data-toggle="tab">지원 및 학력 정보</a></li>
+						<li><a href="#three" data-toggle="tab">활동 및 수상내역</a></li>
+						<li><a href="#four" data-toggle="tab">등록서류</a></li>
+                        <li><a href="#five" data-toggle="tab">서류 심사 입력</a></li>
+					</ul>
+				    <div class="tab-content">
+                        <div class="tab-pane active" id="one">
+                            <div class="box box-solid">
+                                <div class="box-header">
+                                    <h3 class="box-title">개인정보 &#40;Personal Infomation&#41;</h3>
+                                </div>
+                                <div class="box-body cf">
+                                    <div class="content_box">
+                                        <div>
+                                            <table class="table table-bordered tbl_row">
+                                                <colgroup>
+                                                    <col style="width:100px;">
+                                                    <col style="width:25%;">
+                                                    <col style="width:auto;">
+                                                </colgroup>
+                                                <tbody>
+                                                   <tr>
+                                                        <td rowspan="4" class="ta_c">
+                                                            <img src="../../../images/admin/img_profile.jpg" alt="증명사진">
+                                                        </td>
+                                                        <th >영어 이름 <span class="va_t">&#40;English Name&#41;</span></th>
+                                                        <td class="ta_c">
+                                                            <span>Steve Thomas</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>한국 이름 <span class="va_t">&#40;Korea Name&#41;</span></th>
+                                                        <td class="ta_c"  colspan="2">
+                                                            <span>없음</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>성별 <span class="va_t">&#40;Gender&#41;</span></th>
+                                                        <td class="ta_c"  colspan="2">
+                                                            <span>Female</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>생년월일 <span class="va_t">&#40;Date of Birth&#41;</span></th>
+                                                        <td class="ta_c"  colspan="2">
+                                                            <span>1998-06-12</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th colspan="2">국적 <span class="va_t">&#40;Nationality&#41;</span></th>
+                                                        <td class="ta_c" colspan="2">
+                                                            <span>United States America</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th colspan="2">여권번호 <span class="va_t">&#40;Passport Number&#41;</span></th>
+                                                        <td class="ta_c">
+                                                            <span>11231556</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th colspan="2">한국 포함 복수 국적자<span class="va_t break_all">&#40;Dual nationality of Korean and other foreign citizenship&#41;</span></th>
+                                                        <td class="ta_c">
+                                                            <span>No</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th colspan="2">영주권 번호 <span class="va_t">&#40;Alien Registraion Number&#41;</span></th>
+                                                        <td class="ta_c">
+                                                            <span>없음</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th rowspan="2">주소 <span class="va_t">&#40;Mailing Address&#41;</span></th>
+                                                        <th>Zip code</th>
+                                                        <td class="ta_c">
+                                                            <span>11234</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Address</th>
+                                                        <td class="ta_c">
+                                                            <span>서울시 노원구 상계동 202-12</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th colspan="2">전화번호 <span class="va_t">&#40;Telephone&#41;</span></th>
+                                                        <td class="ta_c">
+                                                            <span>02-1111-1111</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th colspan="2">휴대폰 <span class="va_t">&#40;Cell Phone&#41;</span></th>
+                                                        <td class="ta_c">
+                                                            <span>010-1111-1111</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th colspan="2">이메일 <span class="va_t">&#40;E-mail&#41;</span></th>
+                                                        <td class="ta_c">
+                                                            <span>Test_student@gmail.com</span>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box box-solid cf">
+                                <div class="box-header">
+                                    <h3 class="box-title">가족관계 &#40;Family Information&#41;</h3>
+                                </div>
+                                <div class="box-body cf">
+                                    <div class="content_box">
+                                        <div>
+                                            <table class="table table-bordered tbl_row">
+                                                <colgroup>
+                                                    <col style="width:25%;">
+                                                    <col style="width:25%;">
+                                                    <col style="width:auto;">
+                                                </colgroup>
+                                                <tbody>
+                                                   <tr>
+                                                        <th rowspan="4">아버지 <span class="va_t">&#40;Father&#41;</span></th>
+                                                        <th>Full Name</th>
+                                                        <td class="ta_c">
+                                                            <span>Steve Jerard</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Nationality</th>
+                                                        <td class="ta_c">
+                                                            <span>미국</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Passport Number</th>
+                                                        <td class="ta_c">
+                                                            <span>11231556</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Date of Birth</th>
+                                                        <td class="ta_c">
+                                                            <span>1972-03-21</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th rowspan="4">어머니 <span class="va_t">&#40;Mother&#41;</span></th>
+                                                        <th>Full Name</th>
+                                                        <td class="ta_c">
+                                                            <span>Steve Hallod</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Nationality</th>
+                                                        <td class="ta_c">
+                                                            <span>미국</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Passport Number</th>
+                                                        <td class="ta_c">
+                                                            <span>11231545</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Date of Birth</th>
+                                                        <td class="ta_c">
+                                                            <span>1972-09-10</span>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="two">
+                            <div class="box box-solid">
+                                <div class="box-header">
+                                    <h3 class="box-title">지원 정보 &#40;Support Infomation&#41;</h3>
+                                </div>
+                                <div class="box-body cf">
+                                    <div class="content_box">
+                                        <div>
+                                            <table class="table table-bordered tbl_row">
+                                                <colgroup>
+                                                    <col style="width:45%;">
+                                                    <col style="width:auto;">
+                                                </colgroup>
+                                                <tbody>
+                                                   <tr>
+                                                        <th>지원 구분 <span class="va_t">&#40;Type of Application&#41;</span></th>
+                                                        <td class="ta_c">
+                                                            <span>학사</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>지원 학과 <span class="va_t">&#40;Proposed Division/Dept.&#41;</span></th>
+                                                        <td class="ta_c">
+                                                            <span>미디어 학과</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>전형 구분 <span class="va_t">&#40;Type of Admission&#41;</span></th>
+                                                        <td class="ta_c">
+                                                            <span>외국인특별입학전형 1</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>장학금 희망 여부 <span class="va_t">&#40;I want to apply for a scholarship&#41;</span></th>
+                                                        <td class="ta_c">
+                                                            <span>YES</span>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box box-solid">
+                                <div class="box-header">
+                                    <h3 class="box-title">학력 증명 정보 &#40;Agreement for Verification of Academic Records&#41;</h3>
+                                </div>
+                                <div class="box-body cf">
+                                    <div class="content_box">
+                                        <div>
+                                            <table class="table table-bordered tbl_row">
+                                                <colgroup>
+                                                    <col style="width:45%;">
+                                                    <col style="width:auto;">
+                                                </colgroup>
+                                                <tbody>
+                                                   <tr>
+                                                        <th>Name of Institute <span class="va_t">&#40;High School&#41;</span></th>
+                                                        <td class="ta_c">
+                                                            <span>Phillips Academy</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>&#40;Expected&#41; <span class="va_t">Date of Graduation</span></th>
+                                                        <td class="ta_c">
+                                                            <span>2019-08-14</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Name of Office in Charge <span class="va_t">&#40;If not applicable, leave it blank&#41;</span></th>
+                                                        <td class="ta_c">
+                                                            <span>없음</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>e-mail Address of Staff <span class="va_t">&#40;Teacher, Counselor&#41;</span> in Charge</th>
+                                                        <td class="ta_c">
+                                                            <span>John</span>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="three">
+                            <div class="box box-solid">
+                                <div class="box-header">
+                                    <h3 class="box-title">고등학교 활동 및 수상내역 &#40;High School Activities / Awards&#41;</h3>
+                                </div>
+                                <div class="box-body cf">
+                                    <div class="content_box">
+                                        <div>
+                                            <table class="table table-bordered tbl_col">
+                                                <colgroup>
+                           <col style="width:10%;">
+                           <col style="width:16%;">
+                           <col style="width:14%;">
+                           <col style="width:20%;">
+                           <col style="width:20%;">
+                           <col style="width:15%;">
+                       </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">Category</th>
+                                <th scope="col">High School<br>Activity/Awards</th>
+                                <th scope="col">Description</th>
+                                <th scope="col">Start Date<br>&#40;YYYY/MM/DD&#41;</th>
+                                <th scope="col">End Date<br>&#40;YYYY/MM/DD&#41;</th>
+                                <th scope="col">Name of<br>Organization</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="ta_c" scope="col">없음</td>
+                                <td class="ta_c" scope="col">없음</td>
+                                <td class="ta_c" scope="col">없음</td>
+                                <td class="ta_c" scope="col">없음</td>
+                                <td class="ta_c" scope="col">없음</td>
+                                <td class="ta_c" scope="col">없음</td>
+                            </tr>
+                        </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box box-solid">
+                                <div class="box-header">
+                                    <h3 class="box-title"> 영어 / 한국어 능력 &#40;Language Proficiency English / Korean&#41;</h3>
+                                </div>
+                                <div class="box-body cf">
+                                    <div class="content_box">
+                                        <div>
+                                            <table class="table table-bordered tbl_col">
+                                                <colgroup>
+                                                   <col style="width:15%;">
+                                                   <col style="width:25%;">
+                                                   <col style="width:25%;">
+                                                   <col style="width:15%;">
+                                                   <col style="width:15%;">
+                                               </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">Name</th>
+                                                        <th scope="col">Registeration No.</th>
+                                                        <th scope="col">Test Date<br>&#40;YYYY/MM/DD&#41;</th>
+                                                        <th scope="col">Final Score</th>
+                                                        <th scope="col">Level</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="ta_c" scope="col">TOPIK</td>
+                                                        <td class="ta_c" scope="col">123124123</td>
+                                                        <td class="ta_c" scope="col">2020-07-20</td>
+                                                        <td class="ta_c" scope="col">255</td>
+                                                        <td class="ta_c" scope="col">6</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="four">
+                            <div class="box box-solid">
+                                <div class="mg_l10 mg_t10 mg_b10">
+                                    <button class="btn btn-primary"><i class="fa fa-check mg_r5"></i>일괄 다운로드</button>
+                                </div>
+                                <div class="box-body cf">
+                                    <div class="content_box">
+                                        <div>
+                                            <table class="table table-bordered tbl_row">
+                                                <colgroup>
+                                                    <col style="width:5%;">
+                                                    <col style="width:auto;">
+                                                    <col style="width:35%;">
+                                                    <col style="width:10%;">
+                                                </colgroup>
+                                                <tbody>
+                                                   <tr>
+                                                        <th>
+                                                            <input type="checkbox" class="check_round" id="check_1">
+                                                            <label class="check_label dp_inline" for="check_1"></label>
+                                                        </th>
+                                                        <th>Official &#40;Expected&#41; High School Graduation Certificate <span class="va_t font_red">&#42;</span></th>
+                                                        <td class="ta_c">
+                                                            <a href="javascript:void(0);" class="link"><span>aaaa.pdf</span></a>
+                                                        </td>
+                                                        <td class="ta_c">
+                                                            <button class="btn btn-primary">다운로드</button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>
+                                                            <input type="checkbox" class="check_round" id="check_2">
+                                                            <label class="check_label dp_inline" for="check_2"></label>
+                                                        </th>
+                                                        <th>Official High School Transcript <span class="va_t font_red">&#42;</span></th>
+                                                        <td class="ta_c">
+                                                            <a href="javascript:void(0);" class="link"><span>aaaa.pdf</span></a>
+                                                        </td>
+                                                        <td class="ta_c">
+                                                            <button class="btn btn-primary">다운로드</button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>
+                                                            <input type="checkbox" class="check_round" id="check_3">
+                                                            <label class="check_label dp_inline" for="check_3"></label>
+                                                        </th>
+                                                        <th>A Copy of the Applicant's Passport<br>&#40;or Other Official Documents indicating the Applicant's Nationality&#41;
+                                                         <span class="va_t font_red">&#42;</span></th>
+                                                        <td class="ta_c">
+                                                            <a href="javascript:void(0);" class="link"><span>aaaa.pdf</span></a>
+                                                        </td>
+                                                        <td class="ta_c">
+                                                            <button class="btn btn-primary">다운로드</button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>
+                                                            <input type="checkbox" class="check_round" id="check_4">
+                                                            <label class="check_label dp_inline" for="check_4"></label>
+                                                        </th>
+                                                        <th>Copies of Both Parents' Passport  <br>&#40;or Other Official Document indicating Both Parents' Nationality&#41; <span class="va_t font_red">&#42;</span></th>
+                                                        <td class="ta_c">
+                                                            <a href="javascript:void(0);" class="link"><span>aaaa.pdf</span></a>
+                                                        </td>
+                                                        <td class="ta_c">
+                                                            <button class="btn btn-primary">다운로드</button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>
+                                                            <input type="checkbox" class="check_round" id="check_5">
+                                                            <label class="check_label dp_inline" for="check_5"></label>
+                                                        </th>
+                                                        <th>Official Document Indicating Parent-child Relationship<br>between the Applicant and His/her Parents<span class="va_t font_red">&#42;</span></th>
+                                                        <td class="ta_c">
+                                                            <a href="javascript:void(0);" class="link"><span>aaaa.pdf</span></a>
+                                                        </td>
+                                                        <td class="ta_c">
+                                                            <button class="btn btn-primary">다운로드</button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>
+                                                            <input type="checkbox" class="check_round" id="check_6">
+                                                            <label class="check_label dp_inline" for="check_6"></label>
+                                                        </th>
+                                                        <th>Proof of Language Proficiency &#40;Korean or English&#41; <span class="va_t font_red">&#42;</span></th>
+                                                        <td class="ta_c">
+                                                            <a href="javascript:void(0);" class="link"><span>aaaa.pdf</span></a>
+                                                        </td>
+                                                        <td class="ta_c">
+                                                            <button class="btn btn-primary">다운로드</button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>
+                                                            <input type="checkbox" class="check_round" id="check_7">
+                                                            <label class="check_label dp_inline" for="check_7"></label>
+                                                        </th>
+                                                        <th>Supplementary Material <br>&#40;Proof of language proficiency except Korean and English&#41; <span class="va_t font_red">&#42;</span></th>
+                                                        <td class="ta_c">
+                                                            <a href="javascript:void(0);" class="link"><span>aaaa.pdf</span></a>
+                                                        </td>
+                                                        <td class="ta_c">
+                                                            <button class="btn btn-primary">다운로드</button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>
+                                                            <input type="checkbox" class="check_round" id="check_8">
+                                                            <label class="check_label dp_inline" for="check_8"></label>
+                                                        </th>
+                                                        <th>School Profile <span class="va_t font_red">&#42;</span></th>
+                                                        <td class="ta_c">
+                                                            <a href="javascript:void(0);" class="link"><span>aaaa.pdf</span></a>
+                                                        </td>
+                                                        <td class="ta_c">
+                                                            <button class="btn btn-primary">다운로드</button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>
+                                                            <input type="checkbox" class="check_round" id="check_9">
+                                                            <label class="check_label dp_inline" for="check_9"></label>
+                                                        </th>
+                                                        <th>Standardized Tests and Other Indicators of Academic Achievement <span class="va_t font_red">&#42;</span></th>
+                                                        <td class="ta_c">
+                                                            <a href="javascript:void(0);" class="link"><span>aaaa.pdf</span></a>
+                                                        </td>
+                                                        <td class="ta_c">
+                                                            <button class="btn btn-primary">다운로드</button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>
+                                                            <input type="checkbox" class="check_round" id="check_10">
+                                                            <label class="check_label dp_inline" for="check_10"></label>
+                                                        </th>
+                                                        <th>Supplementary Material<br>  &#40;Awards, Volunteer Activites, if any, etc&#41; <span class="va_t font_red">&#42;</span></th>
+                                                        <td class="ta_c">
+                                                            <a href="javascript:void(0);" class="link"><span>aaaa.pdf</span></a>
+                                                        </td>
+                                                        <td class="ta_c">
+                                                            <button class="btn btn-primary">다운로드</button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>
+                                                            <input type="checkbox" class="check_round" id="check_11">
+                                                            <label class="check_label dp_inline" for="check_11"></label>
+                                                        </th>
+                                                        <th>Explanatory Statement <span class="va_t font_red">&#42;</span></th>
+                                                        <td class="ta_c">
+                                                            <a href="javascript:void(0);" class="link"><span>aaaa.pdf</span></a>
+                                                        </td>
+                                                        <td class="ta_c">
+                                                            <button class="btn btn-primary">다운로드</button>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="five">
+                            <div class="box box-solid">
+                                <div class="box-body cf">
+                                    <div class="content_box">
+                                        <div>
+                                            <table class="table table-bordered tbl_row">
+                                                <colgroup>
+                                                    <col style="width:15%">
+                                                    <col style="width:auto;">
+                                                    <col style="width:auto;">
+                                                    <col style="width:180px;">
+                                                    <col style="width:180px;">
+                                                    <col style="width:180px;">
+                                                    <col style="width:180px;">
+                                                    <col style="width:180px;">
+                                                </colgroup>
+                                                <tbody>
+                                                   <tr>
+                                                        <th colspan="3">학력점수</th>
+                                                        <td class="ta_c">
+                                                            <input type="radio" name="study" class="radio_round" id="study1">
+                                                            <label class="radio_label dp_inline font_15" for="study1">A</label>
+                                                        </td>
+                                                        <td class="ta_c">
+                                                            <input type="radio" name="study" class="radio_round" id="study2">
+                                                            <label class="radio_label dp_inline font_15" for="study2">B</label>
+                                                        </td>
+                                                        <td class="ta_c">
+                                                            <input type="radio" name="study" class="radio_round" id="study3">
+                                                            <label class="radio_label dp_inline font_15" for="study3">C</label>
+                                                        </td>
+                                                        <td class="ta_c">
+                                                            <input type="radio" name="study" class="radio_round" id="study4">
+                                                            <label class="radio_label dp_inline font_15" for="study4">D</label>
+                                                        </td>
+                                                        <td class="ta_c">
+                                                            <input type="radio" name="study" class="radio_round" id="study5">
+                                                            <label class="radio_label dp_inline font_15" for="study5">E</label>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th rowspan="4">어학점수</th>
+                                                        <th>
+                                                            <div class="dp_inline">
+                                                                <select class="select_search wd_140">
+                                                                    <option>한국어</option>
+                                                                    <option>중국어</option>
+                                                                    <option>영어</option>
+                                                                    <option>일본어</option>
+                                                                    <option>독일어</option>
+                                                                </select>
+                                                            </div>
+                                                        </th>
+                                                        <th>
+                                                            <div class="dp_inline">
+                                                                <select class="select_search wd_140">
+                                                                    <option>TOPIK</option>
+                                                                    <option>TOEIC</option>
+                                                                    <option>TOEFL</option>
+                                                                    <option>JAPAN</option>
+                                                                    <option>GERMANY</option>
+                                                                </select>
+                                                            </div>
+                                                        </th>
+                                                        <th>
+                                                            <button class="btn btn-primary wd_80">등록</button>
+                                                        </th>
+                                                        <th colspan="4"></th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>한국어</th>
+                                                        <th>TOPIK</th>
+                                                        <td class="ta_c">
+                                                            <input type="radio" name="topik" class="radio_round" id="kr1">
+                                                            <label class="radio_label dp_inline font_15" for="kr1">A</label>
+                                                        </td>
+                                                        <td class="ta_c">
+                                                            <input type="radio" name="topik" class="radio_round" id="kr2">
+                                                            <label class="radio_label dp_inline font_15" for="kr2">B</label>
+                                                        </td>
+                                                        <td class="ta_c">
+                                                            <input type="radio" name="topik" class="radio_round" id="kr3">
+                                                            <label class="radio_label dp_inline font_15" for="kr3">C</label>
+                                                        </td>
+                                                        <td class="ta_c">
+                                                            <input type="radio" name="topik" class="radio_round" id="kr4">
+                                                            <label class="radio_label dp_inline font_15" for="kr4">D</label>
+                                                        </td>
+                                                        <td class="ta_c">
+                                                            <input type="radio" name="topik" class="radio_round" id="kr5">
+                                                            <label class="radio_label dp_inline font_15" for="kr5">E</label>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th rowspan="2">영어</th>
+                                                        <th>TOEIC</th>
+                                                        <td class="ta_c">
+                                                            <input type="radio" name="toeic" class="radio_round" id="us1">
+                                                            <label class="radio_label dp_inline font_15" for="us1">A</label>
+                                                        </td>
+                                                        <td class="ta_c">
+                                                            <input type="radio" name="toeic" class="radio_round" id="us2">
+                                                            <label class="radio_label dp_inline font_15" for="us2">B</label>
+                                                        </td>
+                                                        <td class="ta_c">
+                                                            <input type="radio" name="toeic" class="radio_round" id="us3">
+                                                            <label class="radio_label dp_inline font_15" for="us3">C</label>
+                                                        </td>
+                                                        <td class="ta_c">
+                                                            <input type="radio" name="toeic" class="radio_round" id="us4">
+                                                            <label class="radio_label dp_inline font_15" for="us4">D</label>
+                                                        </td>
+                                                        <td class="ta_c">
+                                                            <input type="radio" name="toeic" class="radio_round" id="us5">
+                                                            <label class="radio_label dp_inline font_15" for="us5">E</label>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>TOEFL</th>
+                                                        <td class="ta_c">
+                                                            <input type="radio" name="toefl" class="radio_round" id="usa1">
+                                                            <label class="radio_label dp_inline font_15" for="usa1">A</label>
+                                                        </td>
+                                                        <td class="ta_c">
+                                                            <input type="radio" name="toefl" class="radio_round" id="usa2">
+                                                            <label class="radio_label dp_inline font_15" for="usa2">B</label>
+                                                        </td>
+                                                        <td class="ta_c">
+                                                            <input type="radio" name="toefl" class="radio_round" id="usa3">
+                                                            <label class="radio_label dp_inline font_15" for="usa3">C</label>
+                                                        </td>
+                                                        <td class="ta_c">
+                                                            <input type="radio" name="toefl" class="radio_round" id="usa4">
+                                                            <label class="radio_label dp_inline font_15" for="usa4">D</label>
+                                                        </td>
+                                                        <td class="ta_c">
+                                                            <input type="radio" name="toefl" class="radio_round" id="usa5">
+                                                            <label class="radio_label dp_inline font_15" for="usa5">E</label>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th colspan="3">
+                                                            심사 결과 총평
+                                                        </th>
+                                                        <td colspan="5" class="ta_c">
+                                                            <textarea name="final_contact" class="wd_p100" id="final_contact" cols="30" rows="10"></textarea>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- [pp]  서류심사입력 결과 -->
+                            <div class="box box-solid">
+                                <div class="box-body cf">
+                                    <div class="content_box">
+                                        <div>
+                                            <table class="table table-bordered tbl_row">
+                                                <colgroup>
+                                                    <col style="width:15%">
+                                                    <col style="width:10%">
+                                                    <col style="width:10%;">
+                                                    <col style="width:10%;">
+                                                    <col style="width:auto;">
+                                                </colgroup>
+                                                <tbody>
+                                                   <tr>
+                                                        <th colspan="3">학력점수</th>
+                                                        <td class="ta_c font_15 bold">A</td>
+                                                        <th colspan="4"></th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th rowspan="3">어학점수</th>
+                                                        <th>한국어</th>
+                                                        <th>TOPIK</th>
+                                                        <td class="font_15 ta_c bold">B</td>
+                                                        <th colspan="5"></th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th rowspan="2">영어</th>
+                                                        <th>TOEIC</th>
+                                                        <td class="font_15 ta_c bold">C</td>
+                                                        <th colspan="5"></th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>TOEFL</th>
+                                                        <td class="ta_c font_15 bold">
+                                                            A
+                                                        </td>
+                                                        <th colspan="4"></th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th colspan="3">
+                                                            심사 결과 총평
+                                                        </th>
+                                                        <td colspan="5" class="font_15 bold">
+                                                            학생의 교과목 성적과 어학점수를 토대로 평가한 결과 해당 학생은 본교가 제시한 기준을 상회하는 점수를 보이지만, 국가 및 지역과 해당 학생의 은행잔고를 미루어보아 ...........본교에 적합한 인재입니다.
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- [pp] //서류심사입력 결과 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+			</section>
+			<!--[pp] //본문내용영역 -->
+		</div>
+		<!--[pp] //본문영역 -->
+		<!--[pp] footer -->
+		<footer class="main-footer">
+			<div class="pull-right hidden-xs ad_footer_logo">
+				<img src="../../../images/admin/footer_logo.png" alt="두드림">
+			</div>
+			<strong>Copyright &copy; 2019 <a href="http://www.dainleaders.com" target="_blank">Dain Leaders</a>.</strong> All rights reserved.
+			<a id="back-to-top" href="javascript:void(0);" class="btn btn-default btn-sm back-to-top" role="button" title="페이지 상단으로 이동" data-toggle="tooltip" data-placement="left">
+				<span class="glyphicon glyphicon-chevron-up"></span>
+			</a>
+		</footer>
+		<!--[pp] //footer -->
+	</div>
+
+	<!--[pp] 모달기본 -->
+	<div id="mymodal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel"></h4>
+				</div>
+				<div class="modal-body">
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--[pp] 모달기본 -->
+	<!-- js -->
+	<script src="../../../plugin/jquery/dist/jquery.min.js"></script>
+	<script src="../../../plugin/jquery-ui/jquery-ui.min.js"></script>
+	<script src="../../../plugin/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="../../../plugin/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
+	<script src="../../../plugin/bootstrap-toggle/js/bootstrap-toggle.min.js"></script>
+	<script src="../../../js/client/src/swiper.min.js"></script>
+	<script src="../../../plugin/select2/js/select2.min.js"></script>
+	<script src="../../../plugin/fastclick/lib/fastclick.js"></script>
+	<script src="../../../js/jquery.mCustomScrollbar.min.js"></script>
+	<script src="../../../js/admin/src/adminlte.js"></script>
+	<script src="../../../js/admin/src/demo.js"></script>
+	<script src="../../../plugin/select2/js/select2.min.js"></script>
+	<script src="../../../js/admin/pp_ui.js"></script>
+
+	<!-- //js -->
+
+</body>
+
+</html>

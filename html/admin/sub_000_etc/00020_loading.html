@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes, height=device-height, viewport-fit=cover, shrink-to-fit=no">
+	<meta name="title" content="CareerPASS DEMO">
+	<meta name="description" content="welcome to CareerPASS DEMO">
+	<meta name="copyrigt" content="DainLeaders">
+	<meta name="keywords" content="dainleaders,Careerpass,Careerpass system, 경력개발통합관리시스템, 커리어패스, 역량관리, 대학, 대학생, 역량관리시스템, 경력관리">
+	<title>CareerPASS DEMO Admin</title>
+	<link rel="apple-touch-icon" href="../../../images/dain_favicon_64.ico">
+	<link rel="shortcut icon" href="../../../images/dain_favicon_64.ico">
+	<!-- [pp] 아이콘글꼴/font-awesome -->
+	<link rel="stylesheet" href="../../../fonts/font-awesome/css/font-awesome.min.css">
+	<!-- [pp] 아이콘글꼴/font-awesome/파이어폭스 미출력 에러 대응 -->
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+
+	<!-- css -->
+	<link rel="stylesheet" href="../../../plugin/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="../../../plugin/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+	<link rel="stylesheet" href="../../../plugin/Ionicons/css/ionicons.min.css">
+	<link rel="stylesheet" href="../../../css/admin/src/AdminLTE.css">
+	<link rel="stylesheet" href="../../../css/admin/src/skins/_all-skins.css">
+	<link rel="stylesheet" href="../../../css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" href="../../../css/admin/dl_common.css">
+	<link rel="stylesheet" href="../../../css/dl_global.css">
+	<link rel="stylesheet" href="../../../css/admin/dl_custom.css">
+	<link rel="stylesheet" href="../../../css/admin/dl_table.css">
+	<link rel="stylesheet" href="../../../css/admin/dl_popup.css">
+	<link rel="stylesheet" href="../../../css/admin/dl_ui.css">
+</head>
+
+<body class="hold-transition skin-red sidebar-mini">
+	<!--[if lt IE 10]>
+	<div id="ad_iever_upgradeinfo" style="width:100%; padding:10px; text-align:center; background-color:#db4c3b;">
+		<div style="width:800px; margin: 0 auto; position:relative; color:#fff; z-index:2000;">
+			본 사이트는 익스플로러10 이상, 크롬, 오페라, 파이어폭스 브라우저등의 최신버전에 최적화 되어 있습니다.<br/>지금 사용하고 계시는 브라우저는 곧 지원이 중단되므로 <a href="http://windows.microsoft.com/ko-kr/internet-explorer/ie-11-worldwide-languages" target="_blank" style="color:#1cd9e0;">익스플로러 최신버젼</a>으로 업그레이드하시거나 <a href="https://www.google.com/intl/ko/chrome/browser/" target="_blank" style="color:#1cd9e0;">크롬</a>, <a href="http://www.opera.com/ko/computer" target="_blank" style="color:#1cd9e0;">오페라</a>, <a href="https://www.mozilla.org/en-US/firefox/new/?scene=2" target="_blank" style="color:#1cd9e0;">파이어폭스</a>등의 최신 브라우저를 이용해 주세요.
+		</div>
+	</div>
+	<![endif]-->
+	<!--[if lt IE 9]>
+		<script src="../../../js/html5shiv.js"></script>
+		<script src="../../../js/IE9.js"></script>
+		<script src="../../../js/respond.min.js"></script>
+	<![endif]-->
+	<!-- [pp] 로딩중 -->
+	<div id="loading" class="dp_block">
+		<p id="loading_image">
+			<img src="../../../images/loading.gif" alt="Loading..."/><br/>
+			<span>Loading</span>
+		</p>
+	</div>
+	<!-- [pp] //로딩중 -->
+	<div class="wrapper">
+		<!--[pp] header -->
+		<header class="main-header">
+			<!--[pp] logo -->
+			<a href="#" class="logo">
+				<!--[pp] 햄버거 버튼 클릭시 메뉴가 접힌 상태에서 보여줄 로고 -->
+				<span class="logo-mini">
+					<img src="../../../images/admin/minilogo.png" alt="커리어패스 관리자페이지">
+				</span>
+				<!--[pp] //햄버거 버튼 클릭시 메뉴가 접힌 상태에서 보여줄 로고 -->
+				<span class="logo-lg"><b>Career</b>&nbsp;PASS</span>
+			</a>
+			<!--[pp] //logo -->
+			<nav class="navbar navbar-static-top" role="navigation">
+				<!--[pp] 햄버거버튼 -->
+				<a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+					<span class="sr-only">주요메뉴 열고닫기</span>
+				</a>
+				<!--[pp] //햄버거버튼 -->
+				<!--[pp] tnb -->
+				<div class="navbar-custom-menu">
+					<ul class="nav navbar-nav">
+						<li class="hidden-xs pp_username">
+							<a href="javascript:void(0);">
+								<i class="fa fa-user"></i>
+								<span class="pp_user_txt">최고관리자님</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);" class="pp_client_link">
+								<i class="fa fa-television"></i>
+								<span class="hidden-xs pp_user_txt">학생화면 바로가기</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<i class="fa fa-unlock-alt"></i>
+								<span class="hidden-xs pp_user_txt">LOGOUT</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!--[pp] //tnb -->
+			</nav>
+		</header>
+		<!--[pp] //header -->
+		<!--[pp] gnb -->
+		<aside class="main-sidebar">
+			<section class="sidebar">
+				<div class="user-panel">
+					<div class="pull-left image">
+						<img src="../../images/admin/user_img.png" class="img-circle" alt="User Image">
+					</div>
+					<div class="pull-left info">
+						<p>최고 관리자님</p>
+						<span>
+							<i class="fa fa-calendar"></i>&nbsp;최종접속일: 19-01-01
+						</span>
+					</div>
+				</div>
+				<ul class="sidebar-menu" data-widget="tree">
+					<li class="treeview">
+						<a href="javascript:void(0);"><i class="fa fa-cogs"></i><span>포탈관리</span>
+							<span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+						</a>
+						<ul class="treeview-menu">
+							<li><a href="javascript:void(0);">메뉴 관리</a></li>
+							<li><a href="javascript:void(0);">콘텐츠 관리</a></li>
+							<li><a href="javascript:void(0);">권한 관리</a></li>
+							<li><a href="javascript:void(0);">사용자별 권한 관리</a></li>
+						</ul>
+					</li>
+					<li class="treeview">
+						<a href="javascript:void(0);"><i class="fa fa-check-square-o"></i><span>통합진단관리</span>
+							<span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+						</a>
+						<ul class="treeview-menu">
+							<li class="treeview">
+								<a href="javascript:void(0);">핵심역량진단<span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
+								<ul class="treeview-menu">
+									<li><a href="javascript:void(0);">진단등록</a></li>
+									<li><a href="javascript:void(0);">진단개설 관리</a></li>
+									<li><a href="javascript:void(0);">진단문항지 등록</a></li>
+									<li><a href="javascript:void(0);">진단문항지 관리</a></li>
+									<li><a href="javascript:void(0);">핵심역량진단 결과</a></li>
+								</ul>
+							</li>
+							<li class="treeview">
+								<a href="javascript:void(0);">학습유형진단<span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
+								<ul class="treeview-menu">
+									<li><a href="javascript:void(0);">진단등록</a></li>
+									<li><a href="javascript:void(0);">진단개설 관리</a></li>
+									<li><a href="javascript:void(0);">진단문항지 등록</a></li>
+									<li><a href="javascript:void(0);">진단문항지 관리</a></li>
+									<li><a href="javascript:void(0);">학습유형진단 결과</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="treeview">
+						<a href="javascript:void(0);"><i class="fa fa-diamond"></i><span>진로설계관리</span>
+							<span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+						</a>
+						<ul class="treeview-menu">
+							<li class="treeview">
+								<a href="javascript:void(0);">진로탐색 관리<span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
+								<ul class="treeview-menu">
+									<li><a href="javascript:void(0);">TOP10 기업관리</a></li>
+									<li><a href="javascript:void(0);">대상자 관리</a></li>
+								</ul>
+							</li>
+							<li class="treeview">
+								<a href="javascript:void(0);">진로설계 관리<span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
+								<ul class="treeview-menu">
+									<li><a href="javascript:void(0);">진로설계</a></li>
+									<li><a href="javascript:void(0);">내 로드맵 조회</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="treeview">
+						<a href="javascript:void(0);"><i class="fa fa-line-chart"></i><span>역량개발관리</span>
+							<span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+						</a>
+						<ul class="treeview-menu">
+							<li><a href="javascript:void(0);">교과정보 관리</a></li>
+							<li><a href="javascript:void(0);">비교과 프로그램 등록</a></li>
+							<li><a href="javascript:void(0);">비교과 프로그램 승인</a></li>
+							<li><a href="javascript:void(0);">비교과 프로그램 내역</a></li>
+							<li><a href="javascript:void(0);">비교과 프로그램 결과</a></li>
+							<li><a href="javascript:void(0);">비교과 프로그램 현황</a></li>
+							<li><a href="javascript:void(0);">교외활동 승인 관리</a></li>
+						</ul>
+					</li>
+					<li class="treeview">
+						<a href="javascript:void(0);"><i class="fa  fa-comments-o"></i><span>상담 관리</span>
+							<span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+						</a>
+						<ul class="treeview-menu">
+							<li class="treeview">
+								<a href="javascript:void(0);">지도교수 상담<span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
+								<ul class="treeview-menu">
+									<li><a href="javascript:void(0);">지도학생 매핑</a></li>
+									<li><a href="javascript:void(0);">지도학생 관리</a></li>
+									<li><a href="javascript:void(0);">상담현황</a></li>
+								</ul>
+							</li>
+							<li class="treeview">
+								<a href="javascript:void(0);">심리상담 상담<span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
+								<ul class="treeview-menu">
+									<li><a href="javascript:void(0);">상담 신청현황</a></li>
+									<li><a href="javascript:void(0);">상담 일지관리</a></li>
+									<li><a href="javascript:void(0);">상담현황</a></li>
+								</ul>
+							</li>
+							<li class="treeview">
+								<a href="javascript:void(0);">학습상담 상담<span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
+								<ul class="treeview-menu">
+									<li><a href="javascript:void(0);">상담일정 관리</a></li>
+									<li><a href="javascript:void(0);">상담 일지관리</a></li>
+									<li><a href="javascript:void(0);">상담현황</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a href="javascript:void(0);"><i class="fa fa-building"></i><span>취업지원 관리</span></a></li>
+					<li class="treeview">
+						<a href="javascript:void(0);"><i class="fa fa-pie-chart"></i><span>통계관리</span>
+							<span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+						</a>
+						<ul class="treeview-menu">
+							<li><a href="javascript:void(0);">핵심역량진단 통계</a></li>
+							<li><a href="javascript:void(0);">학습유형진단 통계</a></li>
+							<li><a href="javascript:void(0);">비교과 프로그램 통계</a></li>
+							<li><a href="javascript:void(0);">자격증/어학 승인 통계</a></li>
+							<li><a href="javascript:void(0);">마일리지 통계</a></li>
+							<li><a href="javascript:void(0);">로그인 접속 통계</a></li>
+							<li><a href="javascript:void(0);">메뉴 접속 통계</a></li>
+							<li><a href="javascript:void(0);">취업 현황</a></li>
+						</ul>
+					</li>
+					<li class="treeview">
+						<a href="javascript:void(0);"><i class="fa fa-cubes"></i><span>마일리지 관리</span>
+							<span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+						</a>
+						<ul class="treeview-menu">
+							<li><a href="javascript:void(0);">마일리지 현황</a></li>
+							<li><a href="javascript:void(0);">인증 현황</a></li>
+							<li><a href="javascript:void(0);">증명서 발급 현황</a></li>
+						</ul>
+					</li>
+					<li class="treeview">
+						<a href="javascript:void(0);"><i class="fa fa-users"></i><span>커뮤니티 관리</span>
+							<span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+						</a>
+						<ul class="treeview-menu">
+							<li><a href="javascript:void(0);">공지사항</a></li>
+							<li><a href="javascript:void(0);">자료실</a></li>
+							<li><a href="javascript:void(0);">FAQ</a></li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+		</aside>
+		<!--[pp] //gnb -->
+
+		<!--[pp] 본문영역 -->
+		<div class="content-wrapper">
+			<!--[pp] 본문 타이틀 영역/페이지제목,페이지네비게이션 -->
+			<section class="content-header">
+				<h1>Loading</h1>
+				<ol class="breadcrumb">
+					<li><a href="#"><i class="fa fa-home"></i>home</a></li>
+					<li class="active">Error</li>
+				</ol>
+			</section>
+			<!--[pp] //본문 타이틀 영역/페이지제목,페이지네비게이션 -->
+			<!--[pp] 본문내용영역 -->
+			<section class="content container-fluid">
+				
+			</section>
+			<!--[pp] //본문내용영역 -->
+		</div>
+		<!--[pp] //본문영역 -->
+		<!--[pp] footer -->
+		<footer class="main-footer">
+			<div class="pull-right hidden-xs ad_footer_logo">
+				<img src="../../../images/admin/footer_logo.jpg" alt="커리어패스 시스템">
+			</div>
+			<strong>Copyright &copy; 2019 <a href="http://www.dainleaders.com" target="_blank">Dain Leaders</a>.</strong> All rights reserved.
+			<a id="back-to-top" href="javascript:void(0);" class="btn btn-default btn-sm back-to-top" role="button" title="페이지 상단으로 이동" data-toggle="tooltip" data-placement="left">
+				<span class="glyphicon glyphicon-chevron-up"></span>
+			</a>
+		</footer>
+		<!--[pp] //footer -->
+	</div>
+	<!-- js -->
+	<script src="../../../plugin/jquery/dist/jquery.min.js"></script>
+	<script src="../../../plugin/jquery-ui/jquery-ui.min.js"></script>
+	<script src="../../../plugin/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="../../../plugin/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
+	<script src="../../../plugin/fastclick/lib/fastclick.js"></script>
+	<script src="../../../js/jquery.mCustomScrollbar.min.js"></script>
+	<script src="../../../js/admin/src/adminlte.js"></script>
+	<script src="../../../js/admin/src/demo.js"></script>
+	<script src="../../../js/admin/pp_ui.js"></script>
+	<!-- //js -->
+</body>
+
+</html>

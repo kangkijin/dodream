@@ -1,0 +1,72 @@
+{
+	"header": {
+		"txt1": "Thông tin du học",
+		"txt2": "Kết nối du học",
+		"txt3": "Bài tập theo kỹ năng",
+		"txt4": "Thi thử",
+		"txt5": "Cảm nghĩ du học"
+	},
+	"footer": {
+		"txt1": "Dain Leaders"
+		,"txt2": "Hướng dẫn sử dụng dịch vụ"
+		,"txt3": "Điều khoản sử dụng"
+		,"txt4": "Chính sách xử lý thông tin cá nhân"
+		,"txt5": "Từ chối việc thu thập địa chỉ email khi không được cho phép"
+		,"txt6": "Trung tâm hỗ trợ khách hàng Nền tảng kết nối du học DoDream"
+		,"txt7": "Tiếng Hàn : 070-7729-7328"
+		,"txt8": "Tiếng Việt : 070-7729-8023"
+		,"txt9": "Dainleaders.Co.,Ltd"
+		,"txt10": "Trụ sở Hàn Quốc: 2006, 5 Seongsuil-ro 8-gil, Seongdong-gu, Seoul, Republic of Korea"
+		,"txt11": "Văn phòng Việt Nam : Tầng 11 - Phòng 1107, Tòa nhà Zen Tower, 12 Khuất Duy Tiến, quận Thanh Xuân, Tp. Hà Nội, Việt Nam"
+		,"txt12": "Hướng dẫn điểm tích"
+		,"txt13": "Trung tâm hỗ trợ khách hàng : (+82)1800-6337"
+	},
+	"payment" : {
+		"txt1" : "Thanh toán"
+		, "txt2" : "Phân loại"
+		, "txt3" : "Dịch vụ"
+		, "txt4" : "Số lượng"
+		, "txt5" : "Tổng thanh toán"
+		, "txt6" : "Thông tin thanh toán"
+		, "txt7" : "Thông tin cơ bản"
+		, "txt8" : "Họ tên"
+		, "txt9" : "Số điện thoại"
+		, "txt10" : "<span>&#42;</span> Hãy nhập thông tin chính xác."
+		, "txt11" : "Điểm tích"
+		, "txt12" : "DRP của tôi"
+		, "txt13" : "Tra cứu"
+		, "txt14" : "DRP sử dụng"
+		, "txt15" : "Sử dụng số  dư"
+		, "txt16" : "<span>&#42;</span> Sử dụng theo đơn vị 100 DRP"
+		, "txt17" : "Phương thức thanh toán"
+		, "txt18" : "Thẻ tín dụng"
+		, "txt19" : "Tài khoản được chỉ định"
+		, "txt20" : "Chuyển tiền trực tuyến "
+		, "txt21" : "Thanh toán qua điện thoại"
+		, "txt22" : "Chuyển tiền vào tài khoản – Đối với người dùng đang ở Việt Nam"
+		, "txt23" : "Ngân hàng &#58; Ngân hàng TNHH MTV Shinhan Việt <br>Nam – Chi nhánh Trần Duy Hưng.<br/>Số tài khoản &#58; 700-004-612673<br/>Chủ tài khoản &#58; CÔNG TY TNHH DAIN LEADERS VIỆT NAM"
+		, "txt24" : "DRP sử dụng"
+		, "txt25" : "Tổng thanh toán"
+		, "txt26" : "Xác nhận dịch vụ và thông tin thanh toán"
+		, "txt27" : "Đồng ý thanh toán "
+		, "txt28" : "Thanh toán"
+		, "txt29" : "Hủy"
+		, "txt30" : "TOPIK Luyện và chữa đề"
+		, "txt31" : "Dịch vụ du học"
+		, "txt32" : "TOPIKⅡ Luyện và chữa đề"
+	},
+	"paymentComplete" : {
+		"txt1" : "Hoàn tất thanh toán"
+		, "txt2" : "<span></span>Đã hoàn tất thanh toán."
+		, "txt3" : "Để kiểm tra chi tiết thanh toán, vui lòng truy cập <span class='font_red va_t'>'My page > Dịch vụ sử dụng'</span><br/>DoDream sẽ trực tiếp liên lạc với khách hàng thông qua số điện thoại đăng kí khi thanh toán."
+		, "txt4" : "Xác nhận"
+		, "txt5" : "Đăng kí dịch vụ thành công."
+		, "txt6" : "Quý khách vui lòng thanh toán chi phí dịch vụ trước ngày"
+		, "txt7" : "<br>với thông tin tài khoản dưới đây."
+		, "txt8" : "&#91;Thông tin tài khoản&#93;"
+		, "txt9" : "Ngân hàng"
+		, "txt10" : "Số tài khoản"
+		, "txt11" : "Chủ tài khoản"
+		, "txt12" : "&#42; Để kiểm tra chi tiết chuyển khoản, vui lòng truy cập 'My page > Dịch vụ sử dụng'. <br> Trong trường hợp phát sinh các vấn đề khi sử dụng dịch vụ, vui lòng truy cập </br> My page > Hỏi đáp 1:1 hoặc gửi email cho chúng tôi."
+	}
+}

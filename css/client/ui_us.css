@@ -1,0 +1,801 @@
+@charset "utf-8";
+.style_us .tbl_row tbody tr td {
+    -ms-word-break: break-all;
+    word-break: break-all;
+}
+/* ================ 공통 ================ */
+
+/* 텍스트 */
+.style_us .txt {
+	line-height: 1.4em;
+}
+
+/* 검색창 */
+.style_us .wdfull_2_1 {
+	padding-left: 195px;
+}
+.style_us .wdfull_2_1 .select_form {
+	width: 185px;
+}
+
+.style_us .searchround_box.wdfull_2_1 {
+	padding: 0 0 0 170px;
+}
+
+.style_us .searchround_box.wdfull_2_1 .select_form {
+	width: 150px;
+}
+.style_us .searchround_box .btn_search {
+	padding: 0;
+	background-position: center;
+}
+
+.style_us .search_refresh .wdfull_2_1 {
+	padding-right: 305px;
+}
+.style_us .search_refresh .btn_search {
+	right: 165px;
+	padding-left: 50px; padding-right: 25px;
+}
+.style_us .search_box .grid_row .col_xl_12 {
+	padding-right: 305px;
+}
+.style_us .search_box .grid_row .btn_search {
+	right: 185px;
+}
+
+.style_us .wdfull_2 {
+	padding-left: 150px; padding-right: 132px;
+}
+.style_us .wdfull_2 .btn_round {
+	width: 123px;
+}
+
+.style_us .wdfull_1 {
+	padding-right: 155px;
+}
+.style_us .wdfull_1 .btn_round {
+	width: 148px;
+}
+.style_us .wdfull_1 .input_count {
+	right: 165px;
+}
+
+/* button */
+.style_us .btn_search {
+	padding-left: 40px; padding-right: 15px;
+	background-position: 15px center;
+}
+
+/* footer */
+.style_us .footer_sns {
+	bottom: 20px;
+}
+
+
+/* ================ //공통 ================ */
+/* ================ 팝업창 ================ */
+
+/* 로그인 */
+.style_us .login_inner {
+    padding: 60px 50px 40px;
+}
+
+
+
+/* ================ //팝업창 ================ */
+/* ================ 메인페이지 ================ */
+
+.style_us .banner_dreampoint {
+	font-family: 'Lexend', sans-serif;
+}
+.style_us .banner_dreampoint p {
+	font-family: 'Lexend', sans-serif;
+	font-weight: 550; line-height: 1em; font-size: 3rem;
+}
+
+.style_us .mapsel_list .radio_tab label {
+	padding: 0 10px;
+	font-size: 1.6rem;
+}
+
+/* ================ //메인페이지 ================ */
+/* ================ 서브페이지 ================ */
+
+
+/* 회원가입 */
+/*
+.style_us .join_wrap .list_wrap .list_tit {
+	width: 100%;
+}
+*/
+
+.style_us .list_wrap .list_tit {
+	display: block;
+	width: 100%;
+}
+.style_us .list_wrap .list_cnt {
+	display: block;
+	width: 100%;
+}
+
+.style_us .join_congrat h3 {
+	line-height: 1.3em;
+}
+
+/* Dream Guide - 유학정보 */
+.style_us .guide_list .btn_link {
+	padding: 10px 20px;
+	height: auto;
+	line-height: 1.3em;
+	background-image: none;
+	-webkit-border-radius: 40px;
+	-moz-border-radius: 40px;
+	border-radius: 40px;
+}
+
+/* Dream Guide - 유학정보 - 유학매칭 */
+.style_us .matching_link1 a {
+	background-image: url(../../images/client/sub/bg_matching_link1_us.png);
+}
+.style_us .matching_link2 a, .style_us .matching_link3 a, .style_us .matching_link4 a, .style_us .matching_link5 a {
+	padding: 20px;
+}
+.style_us .matching_link2 h3, .style_us .matching_link3 h3, .style_us .matching_link4 h3, .style_us .matching_link5 h3 {
+	font-size: 2.2rem;
+}
+/* Dream Guide - 유학서비스 */
+.style_us .abroad_ul li {
+    height: 345px;
+}
+.style_us .abroad_textbox {
+    padding: 25px 10px; 
+}
+.style_us .sv_content_ul li strong {
+    height: 70px;
+    display: inline-block;
+}
+/* Dream Guide - 유학서비스 banner */
+.style_us .abroad_service_box.blue {
+    background-image:url(../../images/sub/img_abroad_blue_us.jpg);
+}
+.style_us .abroad_service_box.pink {
+    background-image:url(../../images/sub/img_abroad_pink_us.jpg);
+}
+.style_us .abroad_service_box.green {
+    background-image:url(../../images/sub/img_abroad_green_us.jpg);
+}
+.style_us .abroad_service_box.purple {
+    background-image:url(../../images/sub/img_abroad_purple_us.jpg);
+}
+.style_us .abroad_service_box.grass {
+    background-image:url(../../images/sub/img_abroad_light_green_us.jpg);
+}
+.style_us .abroad_service_box.deepsky {
+    background-image:url(../../images/sub/img_abroad_deep_us.jpg);
+}
+.style_us .abroad_service_box.orange {
+    background-image:url(../../images/sub/img_abroad_orange_us.jpg);
+}
+/* Do TOPIK - What is TOPIK */
+.style_us .account_list .account_tit {
+	padding-left: 2%;
+	width: 25%;
+}
+.style_us .account_list .account_cnt {
+	width: 75%;
+}
+
+/* Do TOPIK - TOPIK 모의고사 소개 */
+.style_us .testinfo_box li:nth-child(2) span {
+	margin-left: 0; margin-right: 5px;
+}
+.style_us .testinfo_box li:nth-child(3) span {
+	margin-left: 0; margin-right: 5px;
+}
+/* Do Talking - 정보마당 */
+.style_us .info_yard_list .division{
+    width: 13%; 
+    margin-right: 1%;
+}
+.style_us .notice_list.info_yard_list h5{
+    width: 50%;
+}
+.style_us .notice_list.info_yard_list.change h5 {
+	width: 85%;
+}
+.style_us .info_yard_list_tit li:nth-child(2){
+    width: 13%; margin-right: 1%;
+}
+.style_us .info_yard_list_tit li:nth-child(3){
+    width: 50%;
+}
+/* 결제페이지 */
+.style_us .basic_input_box li span {
+    width: 123px;
+    padding: 0;
+    text-align: left;
+}
+.style_us .drp_text span {
+    display: block; width: auto;
+    padding: 0;
+    text-align: left;
+}
+.style_us .drp_text button {
+    position: static;
+    margin-left: 0;
+}
+.style_us .final_check_box {
+    width: 36%;
+}
+/* 마이페이지 */
+.style_us .mypage_wrap .tab_list li {
+  	min-width: 135px;
+	width: auto;
+}
+.style_us .mypage_wrap .tab_list li a {
+	padding: 0 10px;
+}
+.style_us .univer_inner_ul i {
+	width: auto;
+}
+.style_us .univercity_list .status_label {
+	min-width: 70px;
+}
+/* FAQ 페이지 */
+.style_us .naming_sm_input label {
+	width: 110px;
+}
+.style_us .naming_input input {
+	width: 90%;
+}
+.style_us .search_refresh .naming_sm_input label {
+	width: 80px;
+}
+.style_us .search_refresh .naming_input input {
+	width: 100%;
+}
+
+/* Do Job */
+.style_us .pre_cal.saramin, .style_us .pre_cal.worknet {
+	width: 295px;
+}
+.style_us .pre_cal.jobkorea {
+	width: 300px;
+}
+
+/* ================ //서브페이지 ================ */
+
+@media screen and (max-width:1279px){
+
+	/* ================ 공통 1279 ================ */
+	
+	/* footer 1279 */
+	.style_us .footer_sns {
+		bottom: 20px;
+	}
+	
+	
+	
+	/* ================ //공통 1279 ================ */
+	/* ================ 팝업창 1279 ================ */
+
+
+
+	/* ================ //팝업창 1279 ================ */
+	/* ================ 메인페이지 1279 ================ */
+	.style_us .swiper_mainimg .slide1 img, .style_us .swiper_mainimg .slide2 img, .style_us .swiper_mainimg .slide3 img {
+		height: 125px;
+	}
+
+
+	/* ================ //메인페이지 1279 ================ */
+	/* ================ 서브페이지 1279 ================ */
+
+	/* Do TOPIK - TOPIK 모의고사 소개  1279 */
+	.style_us .testinfo_box li span {
+		display: inline;
+	}
+    /* Do Talking - 정보마당 1279*/
+    .style_us .info_yard_list .division{
+        width: 16.5%; 
+    }
+    .style_us .notice_list.info_yard_list h5{
+        width: 46.5%;
+    }
+	.style_us .notice_list.info_yard_list.change h5{
+        width: 100%;
+    }
+    .style_us .info_yard_list_tit li:nth-child(2){
+        width: 16.5%;
+    }
+    .style_us .info_yard_list_tit li:nth-child(3){
+        width: 46.5%;
+    }
+    /* 결제페이지 1279 */
+    .style_us .final_check_box {
+        width: 47%;
+    }
+	/* ================ //서브페이지 1279 ================ */
+
+}
+@media screen and (max-width:1079px){
+
+	/* ================ 공통 1079 ================ */
+
+
+
+	/* ================ //공통 1079 ================ */
+	/* ================ 팝업창 1079 ================ */
+
+
+
+	/* ================ //팝업창 1079 ================ */
+	/* ================ 메인페이지 1079 ================ */
+
+
+
+	/* ================ //메인페이지 1079 ================ */
+	/* ================ 서브페이지 1079 ================ */
+	
+	/* Dream Guide - 유학정보 1079 */
+	.style_us .guide_list li {
+		vertical-align: top;
+	}
+	.style_us .guide_list .icon {
+		margin-right: 0; margin-bottom: 10px;
+	}
+	.style_us .guide_list .txt {
+		width: 100%; height: 66px;
+		text-align: center;
+	}
+
+
+	/* ================ //서브페이지 1079 ================ */
+
+}
+@media screen and (max-width:1024px){
+
+	/* ================ 공통 1024 ================ */
+	
+	/* section 1024 */
+	.style_us .section_tit_lg {
+		background-position: left 13px;
+	}
+	.style_us .section_tit_lg + .tit_txt {
+		display: block;
+		margin-top: -1em; margin-bottom: 15px; margin-left: 25px;
+	}
+	.style_us .search_refresh .wdfull_2_1 {
+		padding-right: 285px;
+	}
+	.style_us .search_refresh .btn_search {
+		padding-left: 40px; padding-right: 15px;
+	}
+	.style_us .search_box .grid_row .col_xl_12 {
+		padding-right: 285px;
+	}
+
+	/* ================ //공통 1024 ================ */
+	/* ================ 팝업창 1024 ================ */
+
+
+
+	/* ================ //팝업창 1024 ================ */
+	/* ================ 메인페이지 1024 ================ */
+
+	.style_us .swiper_mainimg .slide1 img, .style_us .swiper_mainimg .slide2 img, .style_us .swiper_mainimg .slide3 img {
+		height: 110px;
+	}
+
+	.style_us .banner_dreampoint p {
+		font-size: 2.4rem;
+	}
+
+	/* ================ //메인페이지 1024 ================ */
+	/* ================ 서브페이지 1024 ================ */
+
+	/* 회원가입 1024 */
+	.style_us .join_congrat h3 {
+		font-size: 3.6rem;
+	}
+	
+	/* Dream Guide - 유학정보 1024 */
+	.style_us .guide_list .btn_link {
+		padding: 6px 15px;
+		height: auto;
+		line-height: 1.3em;
+	}
+	
+	/* Dream Guide - 유학정보 - 유학매칭 1024 */
+	.style_us .matching_link2 h3, .style_us .matching_link3 h3, .style_us .matching_link4 h3, .style_us .matching_link5 h3 {
+		font-size: 2rem;
+	}
+	
+	/* Dream Guide - 유학매칭 - 맞춤유학설계 1024 */
+	.style_us .designstep_list li {
+		min-width: 180px;
+	}
+     /* Dream Guide - 유학서비스 1024 */
+    .style_us .abroad_textbox {
+        padding: 15px;
+    }
+    .style_us .abroad_ul li {
+        height: 345px;
+    }
+	/* 결제페이지 1024 */
+    .style_us .final_check_box {
+        width: 70%;
+    }
+    
+    /* 마이페이지  1024*/
+   .style_us .mypage_wrap .tab_list li {
+        width: auto;
+    }
+	.style_us .univer_btbox.complete {
+		left: 550px;
+	}
+	/* ================ //서브페이지 1024 ================ */
+
+}
+@media screen and (max-width:768px){
+
+	/* ================ 공통 768 ================ */
+
+	/* subpage visual 768 */
+	.style_us .sub_visual {
+		height: 130px;
+	}
+	
+	/* 검색창 768 */
+	.style_us .wdfull_2_1 {
+		padding-right: 0;
+	}
+	.style_us .wdfull_2_1 input.form_style {
+		padding-right: 45px;
+	}
+	.style_us .search_refresh .wdfull_2_1 {
+		padding-right: 90px; padding-left: 115px;
+	}
+	.style_us .search_refresh .btn_search {
+		right: 45px;
+		padding: 0;
+	}
+	.style_us .search_refresh .wdfull_2_1 .select_form {
+		width: 105px;
+	}
+	.style_us .search_box .grid_row .col_xl_12 {
+		padding-right: 0;
+	}
+	.style_us .search_box .grid_row .btn_search {
+		right: 50px;
+	}
+	
+	.style_us .searchround_box.wdfull_2_1 {
+		padding: 0 0 0 130px;
+	}
+	.style_us .searchround_box.wdfull_2_1 input {
+		padding-left: 10px;
+	}
+	
+	.style_us .wdfull_2 {
+		padding-left: 0; padding-right: 122px;
+	}
+	.style_us .wdfull_2 .select_form {
+		position: relative;
+		margin-bottom: 5px;
+	}
+	.style_us .wdfull_2 .btn_round {
+		top: 45px;
+		width: 116px;
+	}
+	
+	.style_us .wdfull_1 {
+		padding-right: 148px;
+	}
+	.style_us .wdfull_1 .btn_round {
+		width: 139px;
+	}
+	.style_us .wdfull_1 .input_count {
+		right: 157px;
+	}
+	
+	/* button 768 */
+	.style_us .btn_search {
+		padding: 0;
+		width: 40px; min-width: auto;
+		text-indent: -9999px;
+		background-position: center;
+	}
+	
+	
+	/* section 768 */
+	.style_us .section_tit_lg + .section_fr {
+		float: none;
+		margin-top: 0; margin-bottom: 0.5em;
+	}
+	.style_us .section_tit_lg + .section_fr div.select_form {
+		width: 40% !important;
+	}
+
+	/* ================ //공통 768 ================ */
+	/* ================ 팝업창 768 ================ */
+    /* 로그인 */
+    .style_us .login_inner {
+        padding: 30px 20px;
+    }
+	
+
+	/* ================ //팝업창 768 ================ */
+	/* ================ 메인페이지 768 ================ */
+	.style_us .swiper_mainimg .slide3 a {
+		background-size: auto 170px , auto 300px;
+	}
+	.style_us .swiper_mainimg .slide5 a {
+		background-size: auto 230px , auto 300px;
+	}
+
+	.style_us .banner_dreampoint {
+		padding: 0 15px;
+	}
+	.style_us .banner_dreampoint p {
+		margin-bottom: 10px;
+		line-height: 1.5em;
+		font-size: 2rem;
+	}
+	.style_us .banner_dreampoint br {
+		display: none;
+	}
+
+	/* ================ //메인페이지 768 ================ */
+	/* ================ 서브페이지 768 ================ */
+
+	/* 회원가입 768 */
+	.style_us .join_congrat h3 {
+		font-size: 3rem;
+	}
+	
+	/* Dream Guide - 유학정보 768 */
+	.style_us .guide_list li {
+		margin-bottom: 30px;
+		width: 100%;
+	}
+	.style_us .guide_list .txt {
+		height: auto;
+	}
+	
+	/* Dream Guide - 유학정보 - 유학매칭 768 */
+	.style_us .matching_link2 a, .style_us .matching_link3 a, .style_us .matching_link4 a, .style_us .matching_link5 a {
+		padding: 15px 20px;
+	}
+	.style_us .matching_link2 h3, .style_us .matching_link3 h3, .style_us .matching_link4 h3, .style_us .matching_link5 h3 {
+		font-size: 1.8rem;
+	}
+	
+	/* Dream Guide - 유학매칭 - 맞춤유학설계 768 */
+	.style_us .designstep_list li {
+		min-width: 160px;
+	}
+	/* Dream Guide - 유학서비스 768*/
+    .style_us .abroad_ul li {
+        height: 320px;
+    }
+    .style_us .sv_content_ul li strong {
+        height: auto;
+    }
+	/* Do TOPIK - What is TOPIK 768 */
+	.style_us .account_list .account_tit {
+		padding-left: 0;
+		width: 100%;
+	}
+	/* Do Talking - 정보마당 768*/
+    .style_us .info_yard_list .division{
+        width: 130px; 
+    }
+    .style_us .info_yard_list_tit{
+        display: none;
+    }
+    
+    /* 결제페이지 768 */
+    .style_us .drp_box .drp_text .drp_no {
+        width: 41%;
+    }
+    .style_us .drp_text button {
+        margin-left: 0px;
+    }
+    .style_us .final_check_box {
+        width: 70%;
+    }
+	/* 마이페이지 768 */
+	.style_us .univer_btbox.complete {
+		width: 100%;
+		position: static;
+		text-align: right;
+	}
+	/* FAQ 페이지 768 */
+	.style_us .naming_sm_input label {
+		width: 100px;
+	}
+	.style_us .naming_input input {
+		width: 87%;
+	}
+	/* ================ //서브페이지 768 ================ */
+
+}
+@media screen and (max-width:690px){
+
+	/* ================ 공통 690 ================ */
+
+
+
+	/* ================ //공통 690 ================ */
+	/* ================ 팝업창 690 ================ */
+
+
+
+	/* ================ //팝업창 690 ================ */
+	/* ================ 메인페이지 690 ================ */
+	.style_us .swiper_mainimg .slide1 img, .style_us .swiper_mainimg .slide2 img, .style_us .swiper_mainimg .slide3 img {
+		height: 80px;
+	}
+	.style_us .swiper_mainimg .slide3 a {
+		background-size: auto 110px, auto 250px;
+	}
+	.style_us .swiper_mainimg .slide5 a {
+		background-size: auto 180px, auto 250px;
+		background-position: left 3% bottom, center;
+	}
+
+
+	/* ================ //메인페이지 690 ================ */
+	/* ================ 서브페이지 690 ================ */
+
+	/* Dream Guide - 유학정보 690 */
+	.style_us .guide_list li:last-child {
+		margin-bottom: 20px;
+	}
+	.style_us .guide_list .btn_link {
+		margin-top: 10px;
+	}
+
+	/* Do TOPIK - TOPIK 모의고사 소개  690 */
+	.style_us .testinfo_box li span {
+		display: inline;
+	}
+
+	.style_us .pre_cal.saramin, .style_us .pre_cal.jobkorea, .style_us .pre_cal.worknet {
+		width: 275px;
+	}
+
+	/* ================ //서브페이지 690 ================ */
+
+}
+@media screen and (max-width:480px){
+
+	/* ================ 공통 480 ================ */
+	
+	/* Tab 480 */
+	.style_us .tab_wide li a span {
+		font-size: 1.5rem;
+	}
+	
+	/* 검색창 480 */
+	.style_us .wdfull_2_1 {
+		padding: 0;
+	}
+	.style_us .wdfull_2_1 .select_form {
+		width: 100%;
+	}
+	.style_us .wdfull_2_1 .btn_search {
+		top: 45px;
+	}
+	.style_us .search_refresh .wdfull_2_1 {
+		padding: 0;
+	}
+	.style_us .search_refresh .wdfull_2_1 .btn_search {
+		right: 40px;
+	}
+	.style_us .search_refresh .wdfull_2_1 .select_form {
+		width: 100%;
+	}
+	.style_us .wdfull_2_1 input.form_style {
+		padding-right: 90px;
+	}
+	
+	.style_us .searchround_box.wdfull_2_1 {
+		padding: 0 0 0 110px;
+	}
+	.style_us .searchround_box.wdfull_2_1 .select_form {
+		position: absolute;
+		width: 90px;
+	}
+	.style_us .searchround_box.wdfull_2_1 .btn_search {
+		position: absolute; top: 50%;
+		margin-top: -11px;
+		width: 22px;
+	}
+	
+	/* section 480 */
+	/*.style_us .section_tit_lg + .section_fr div.select_form {
+		width: 60% !important;
+	}*/
+
+	/* ================ //공통 480 ================ */
+	/* ================ 팝업창 480 ================ */
+    /* 로그인 */
+    .style_us .login_inner {
+        padding:30px 8px;
+    }
+
+
+	/* ================ //팝업창 480 ================ */
+	/* ================ 메인페이지 480 ================ */
+	.style_us .swiper_mainimg img {
+		left: 10px;
+	}
+	.style_us .swiper_mainimg .slide3 a {
+		background-size: auto 120px, auto 250px;
+	}
+	.style_us .swiper_mainimg .slide5 a {
+		background-size: auto 150px , auto 250px;
+		background-position: right bottom, left
+	}
+
+	.style_us .banner_dreampoint {
+		font-size: 1.5rem;
+	}
+	.style_us .banner_dreampoint p {
+		font-size: 1.8rem;
+	}
+
+	/* ================ //메인페이지 480 ================ */
+	/* ================ 서브페이지 480 ================ */
+
+	/* 회원가입 480 */
+	.style_us .join_congrat h3 {
+		font-size: 2.4rem;
+	}
+	
+	/* Dream Guide - 유학정보 - 유학매칭 480 */
+	.style_us .matching_link2 a, .style_us .matching_link3 a, .style_us .matching_link4 a, .style_us .matching_link5 a {
+		padding: 12px 15px;
+	}
+	.style_us .matching_link2 h3, .style_us .matching_link3 h3, .style_us .matching_link4 h3, .style_us .matching_link5 h3 {
+		width: 100%;
+	}
+    /* Dream Guide - 유학서비스 480 */
+    .style_us .abroad_ul li {
+        height: 280px;
+    }
+    /* 결제페이지 480 */
+    .style_us .final_check_box {
+        width: 100%;
+    }
+
+	/* Do Job 480 */
+	.style_us .search_toggle_row.search_sm_row .searchtoggle_left {
+		float: none;
+	}
+	/* ================ //서브페이지 480 ================ */
+
+}
+@media screen and (max-width:320px){
+
+	/* ================ 공통 320 ================ */
+
+	
+
+
+	/* ================ //공통 320 ================ */
+	/* ================ 메인페이지 320 ================ */
+
+
+
+	/* ================ //메인페이지 320 ================ */
+	/* ================ 서브페이지 320 ================ */
+
+
+
+	/* ================ //서브페이지 320 ================ */
+
+}

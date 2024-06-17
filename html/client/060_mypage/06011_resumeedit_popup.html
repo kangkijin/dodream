@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi, shrink-to-fit=no">
+		<meta name="format-detection" content="telephone=no, address=no">
+		<meta name="title" content="DoDream">
+		<meta name="keywords" content="Block Chain, Study Abroad, platform, Korea, vietnam">
+		<meta name="description" content="유학플랫폼 두드림(DoDream)외국인 유학생을 위한 한국 유학 매칭 플랫폼">
+		<meta name="author" content="DainLeaders">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="DoDream">
+		<meta property="og:description" content="유학플랫폼 두드림(DoDream)외국인 유학생을 위한 한국 유학 매칭 플랫폼">
+		<meta property="og:image" content="../../../images/common/img_metacover.jpg">
+		<meta property="og:url" content="http://www.dodream.io">
+		<meta name="naver-site-verification" content="dd744254d55fa0f146a5daeaf1e02ae2dd86c1f9"/> 
+		<meta name="google-site-verification" content="mive32tDbnLeee8bzzUfCA31XmDNgL4Lgj4dQoxn8DM"/>
+		<title>DoDream</title>
+
+		<!-- [pp] 웹앱매니페스트 - chrome, opera -->
+		<link rel="manifest" href="../manifest.json">
+		<!-- [pp] //웹앱매니페스트 - chrome, opera -->
+
+		<!-- [pp] ios safari screen -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="white">
+		<meta name="apple-mobile-web-app-title" content="DoDream">
+		<!-- [pp] //ios safari screen -->
+
+		<!-- [pp] 파비콘 -->
+		<link rel="apple-touch-icon" sizes="64x64" href="../../../images/common/favicon.png">
+		<link rel="shortcut icon" type="image/x-icon" href="../../../images/common/favicon.ico">
+		<!-- [pp] //파비콘 -->
+
+		<!-- [pp] css -->
+		<link rel="stylesheet" href="../../../css/client/src/swiper.min.css">
+		<link rel="stylesheet" href="../../../css/client/src/jquery.mCustomScrollbar.css">
+		<link rel="stylesheet" href="../../../css/client/src/select2.css">
+		<link rel="stylesheet" href="../../../css/client/src/magnific-popup.css">
+		<link rel="stylesheet" href="../../../css/dl_global.css">
+		<link rel="stylesheet" href="../../../css/client/normalize.css">
+		<link rel="stylesheet" href="../../../css/client/grid.css">
+		<link rel="stylesheet" href="../../../css/client/table.css">
+		<link rel="stylesheet" href="../../../css/client/formstyle.css">
+		<link rel="stylesheet" href="../../../css/client/common.css">
+		<link rel="stylesheet" href="../../../css/client/ui.css">
+		<link rel="stylesheet" href="../../../css/client/popup.css">
+		<!-- [pp] //css -->
+
+		<!-- [pp] js -->
+		<script type="text/javascript" src="../../../js/client/src/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/swiper.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/jquery.mCustomScrollbar.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/select2.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/jquery.magnific-popup.js"></script>
+		<script type="text/javascript" src="../../../js/client/pp_common.js"></script>
+
+		<!-- [pp] 사용 금지 -->
+		<script type="text/javascript" src="../../../js/client/src/jquery-1.12.3.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/pp_include.js"></script>
+		<!-- [pp] //사용 금지 -->
+
+		<!-- [pp] //js -->
+
+		<!--[if lt IE 9]>
+		<script type="text/javascript" src="../../../js/client/src/jquery-1.12.3.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/html5shiv.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/IE9.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/respond.min.js"></script>
+		<![endif]-->
+
+	</head>
+	<body>
+		<!--[pp] ie 하위버젼 접속시 알림 -->
+		<!--[if lt IE 10]>
+		<div id="browser">
+		This site is supported Explorer 10 or higher, Chrome, Firefox, Opera, Safari.<br/>If you are using it now, Please <a href="https://browsehappy.com/?locale=en" target="_blank">upgrade your browser</a> to improve your experience and security.
+		<button type="button" class="pp_upgradeinfo_close">close</button>
+		</div>
+		<![endif]-->
+		<!--[pp] // ie 하위버젼 접속시 알림 -->
+		
+		<!-- [pp] 로딩중 화면 -->
+		<div id="loading" style="display:none;">
+			<p id="loading_image">
+				<img src="../../images/pageloading.gif" alt="Loading..."><br>
+				<span>Loading</span>
+			</p>
+		</div>
+		<!-- [pp] //로딩중 화면 -->
+		<div class="pop_wrapper pop_lg_wrapper">
+			<div class="pop_header">
+				<h2>e-portfolio 등록</h2>
+				<a href="javascript:void(0);" class="pop_close" title="팝업창 닫기">팝업창 닫기</a>
+			</div>
+			<div class="pop_content pop_lg_content">
+				<section class="section_area pop_search_box search_row search_text">
+					<div class="naming_input naming_md_input">
+						<label class="ta_c">이력서 제목</label>
+						<input type="text">
+					</div>
+				</section>
+				<section class="resume_container">
+					<div class="studentinfo_editbox_wrap">
+						<h5 class="section_tit_md mg_b0">기본정보</h5>
+						<div class="studentinfo_box studentinfo_editbox section_sarea mg_t0">
+							<p class="resumeimg">
+								<img src="../../../images/client/sub/img_model_wide_light.png" alt="학생 증명사진">
+								<button type="button" class="btn btn_del">사진 삭제</button>
+								<input type="file" id="attach_img" class="hidden">
+								<label for="attach_img" class="btn_round btn_sm btn_default attach_file">찾아보기</label>
+							</p>
+							<dl>
+								<dt>
+									홍길동
+								</dt>
+								<dd>
+									<strong>영어 이름</strong>
+									<input type="text" class="form_style wd_p95">
+								</dd>
+								<dd>
+									<strong>소개 문구</strong>
+									<input type="text" class="form_style wd_p95">
+								</dd>
+								<dd>
+									<strong>연락처</strong>
+									<input type="text" class="form_style wd_55"> —
+									<input type="text" class="form_style wd_65"> —
+									<input type="text" class="form_style wd_65">
+								</dd>
+								<dd>
+									<strong>이메일</strong>
+									<input type="text" class="form_style wd_100"> @
+									<input type="text" class="form_style wd_130">
+								</dd>
+								<dd>
+									<strong>주소</strong>
+									<input type="text" class="form_style wd_p95">
+								</dd>
+							</dl>
+						</div>	
+					</div>
+					<section class="section_sarea">
+						<h5 class="section_tit_sm dp_inline">학력정보</h5>
+						<div class="resumeedit_btnrow">
+							<p class="check_row">
+								<input type="checkbox" name="publicly " id="publicly1" class="hidden">
+								<label for="publicly1">비공개</label>
+							</p>
+							<button type="button" class="btn_row btn_rowadd">추가</button>
+						</div>
+						<div class="tbl tbl_col scrollx_tbl_md">
+							<table>
+								<caption>학력정보 작성하기</caption>
+								<colgroup>
+									<col style="width: 120px">
+									<col style="width: 120px">
+									<col style="width: 120px">
+									<col style="width: auto">
+									<col style="width: auto">
+									<col style="width: 80px">
+									<col style="width: 10%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">입학일</th>
+										<th scope="col">졸업일</th>
+										<th scope="col">학적</th>
+										<th scope="col">학교명</th>
+										<th scope="col">전공명</th>
+										<th scope="col">학점</th>
+										<th scope="col">삭제</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>2019.07.01</td>
+										<td>2019.11.11</td>
+										<td>졸업</td>
+										<td>서울고등학교</td>
+										<td>인문</td>
+										<td>3.4</td>
+										<td>
+											<button type="button" class="btn_row btn_rowdel">삭제</button>
+										</td>
+									</tr>
+									<tr>
+										<td class="td_input">
+											<div class="naming_input">
+												<input type="text">
+												<button type="button" class="btn_cal">달력보기</button>
+											</div>
+										</td>
+										<td class="td_input">
+											<div class="naming_input">
+												<input type="text">
+												<button type="button" class="btn_cal">달력보기</button>
+											</div>
+										</td>
+										<td class="td_input">
+											<div class="select_form normal wd_p100 ta_l">
+												<label>선택</label>
+												<select class="select_custom">
+													<option value="" selected>선택</option>
+													<option value="">졸업</option>
+												</select>
+											</div>
+										</td>
+										<td class="td_input">
+											<input type="text" class="form_style wd_p100" placeholder="학교명" title="학교명 입력">
+										</td>
+										<td class="td_input">
+											<input type="text" class="form_style wd_p100" placeholder="전공명" title="전공명 입력">
+										</td>
+										<td class="td_input">
+											<input type="text" class="form_style wd_p100" placeholder="학점" title="학점 입력">
+										</td>
+										<td>
+											<button type="button" class="btn_row btn_rowdel">삭제</button>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+					<section class="section_sarea">
+						<h5 class="section_tit_sm">희망근무조건</h5>
+						<div class="tbl tbl_row scrollx_tbl_md">
+							<table>
+								<caption></caption>
+								<colgroup>
+									<col style="width:20%">
+									<col style="width:80%">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">고용형태</th>
+										<td class="td_input">
+											<p class="radio_row">
+												<input type="radio" name="employment" id="employment1" class="hidden">
+												<label for="employment1">정규직</label>
+											</p>
+											<p class="radio_row">
+												<input type="radio" name="employment" id="employment2" class="hidden">
+												<label for="employment2">계약직</label>
+											</p>
+											<p class="radio_row">
+												<input type="radio" name="employment" id="employment3" class="hidden">
+												<label for="employment3">인턴직</label>
+											</p>
+											<p class="radio_row">
+												<input type="radio" name="employment" id="employment4" class="hidden">
+												<label for="employment4">파견직</label>
+											</p>
+											<p class="radio_row">
+												<input type="radio" name="employment" id="employment5" class="hidden">
+												<label for="employment5">기타</label>
+												&#40; 
+												<input type="text" class="form_style wd_120">
+												&#41; 
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">희망 근무지</th>
+										<td class="td_input">
+											<input type="text" class="form_style">
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">희망 연봉</th>
+										<td class="td_input">
+											<div class="input_flex">
+												<input type="text" class="form_style">
+												<span>만 원</span>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">희망 직무</th>
+										<td class="td_input">
+											<input type="text" class="form_style">
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+					<section class="section_sarea">
+						<h5 class="section_tit_sm dp_inline">경력사항</h5>
+						<div class="resumeedit_btnrow">
+							<p class="check_row">
+								<input type="checkbox" name="publicly " id="publicly3" class="hidden">
+								<label for="publicly3">비공개</label>
+							</p>
+							<button type="button" class="btn_row btn_rowadd">추가</button>
+						</div>
+						<div class="tbl tbl_col scrollx_tbl_md">
+							<table>
+								<caption>경력사항 작성하기</caption>
+								<colgroup>
+									<col style="width: 120px">
+									<col style="width: 120px">
+									<col style="width: auto">
+									<col style="width: auto">
+									<col style="width: auto">
+									<col style="width: 10%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">시작일</th>
+										<th scope="col">종료일</th>
+										<th scope="col">직장명</th>
+										<th scope="col">직위</th>
+										<th scope="col">담당업무</th>
+										<th scope="col">삭제</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>2019.07.01</td>
+										<td>2019.11.11</td>
+										<td>문화재단</td>
+										<td>사원</td>
+										<td>민원처리</td>
+										<td>
+											<button type="button" class="btn_row btn_rowdel">삭제</button>
+										</td>
+									</tr>
+									<tr>
+										<td class="td_input">
+											<div class="naming_input">
+												<input type="text">
+												<button type="button" class="btn_cal">달력보기</button>
+											</div>
+										</td>
+										<td class="td_input">
+											<div class="naming_input">
+												<input type="text">
+												<button type="button" class="btn_cal">달력보기</button>
+											</div>
+										</td>
+										<td class="td_input">
+											<input type="text" class="form_style wd_p100" placeholder="직장명" title="직장명 입력">
+										</td>
+										<td class="td_input">
+											<input type="text" class="form_style wd_p100" placeholder="직위" title="직위 입력">
+										</td>
+										<td class="td_input">
+											<input type="text" class="form_style wd_p100" placeholder="담당업무" title="담당업무 입력">
+										</td>
+										<td>
+											<button type="button" class="btn_row btn_rowdel">삭제</button>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+					<section class="section_sarea">
+						<h5 class="section_tit_sm dp_inline">대외활동</h5>
+						<div class="resumeedit_btnrow">
+							<p class="check_row">
+								<input type="checkbox" name="publicly " id="publicly4" class="hidden">
+								<label for="publicly4">비공개</label>
+							</p>
+							<button type="button" class="btn_row btn_rowadd">추가</button>
+						</div>
+						<div class="tbl tbl_col scrollx_tbl_md">
+							<table>
+								<caption>대외활동 작성하기</caption>
+								<colgroup>
+									<col style="width: 120px">
+									<col style="width: 120px">
+									<col style="width: 20%">
+									<col style="width: auto">
+									<col style="width: 10%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">시작일</th>
+										<th scope="col">종료일</th>
+										<th scope="col">기관명</th>
+										<th scope="col">활동내용</th>
+										<th scope="col">삭제</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>2019.07.01</td>
+										<td>2019.11.11</td>
+										<td>전국대학생기자연합회</td>
+										<td>전대기련 수습기자</td>
+										<td>
+											<button type="button" class="btn_row btn_rowdel">삭제</button>
+										</td>
+									</tr>
+									<tr>
+										<td class="td_input">
+											<div class="naming_input">
+												<input type="text">
+												<button type="button" class="btn_cal">달력보기</button>
+											</div>
+										</td>
+										<td class="td_input">
+											<div class="naming_input">
+												<input type="text">
+												<button type="button" class="btn_cal">달력보기</button>
+											</div>
+										</td>
+										<td class="td_input">
+											<input type="text" class="form_style wd_p100" placeholder="기관명" title="기관명 입력">
+										</td>
+										<td class="td_input">
+											<input type="text" class="form_style wd_p100" placeholder="활동내용" title="활동내용 입력">
+										</td>
+										<td>
+											<button type="button" class="btn_row btn_rowdel">삭제</button>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+					<section class="section_sarea">
+						<h5 class="section_tit_sm dp_inline">봉사활동</h5>
+						<div class="resumeedit_btnrow">
+							<p class="check_row">
+								<input type="checkbox" name="publicly " id="publicly5" class="hidden">
+								<label for="publicly5">비공개</label>
+							</p>
+							<button type="button" class="btn_row btn_rowadd">추가</button>
+						</div>
+						<div class="tbl tbl_col scrollx_tbl_md">
+							<table>
+								<caption>봉사활동 작성하기</caption>
+								<colgroup>
+									<col style="width: 120px">
+									<col style="width: 120px">
+									<col style="width: 20%">
+									<col style="width: auto">
+									<col style="width: 10%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">시작일</th>
+										<th scope="col">종료일</th>
+										<th scope="col">기관명</th>
+										<th scope="col">활동내용</th>
+										<th scope="col">삭제</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>2019.07.01</td>
+										<td>2019.11.11</td>
+										<td>초록우산어린이재단</td>
+										<td>행복한 어린이 만들기</td>
+										<td>
+											<button type="button" class="btn_row btn_rowdel">삭제</button>
+										</td>
+									</tr>
+									<tr>
+										<td class="td_input">
+											<div class="naming_input">
+												<input type="text">
+												<button type="button" class="btn_cal">달력보기</button>
+											</div>
+										</td>
+										<td class="td_input">
+											<div class="naming_input">
+												<input type="text">
+												<button type="button" class="btn_cal">달력보기</button>
+											</div>
+										</td>
+										<td class="td_input">
+											<input type="text" class="form_style wd_p100" placeholder="기관명" title="기관명 입력">
+										</td>
+										<td class="td_input">
+											<input type="text" class="form_style wd_p100" placeholder="활동내용" title="활동내용 입력">
+										</td>
+										<td>
+											<button type="button" class="btn_row btn_rowdel">삭제</button>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+					<section class="section_sarea">
+						<h5 class="section_tit_sm dp_inline">자격정보</h5>
+						<div class="resumeedit_btnrow">
+							<p class="check_row">
+								<input type="checkbox" name="publicly " id="publicly6" class="hidden">
+								<label for="publicly6">비공개</label>
+							</p>
+							<button type="button" class="btn_row btn_rowadd">추가</button>
+						</div>
+						<div class="tbl tbl_col scrollx_tbl_md">
+							<table>
+								<caption>자격정보 작성하기</caption>
+								<colgroup>
+									<col style="width: 120px">
+									<col style="width: 30%">
+									<col style="width: auto">
+									<col style="width: 10%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">취득일</th>
+										<th scope="col">자격증명</th>
+										<th scope="col">발급기관</th>
+										<th scope="col">삭제</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>2019.07.01</td>
+										<td>GTQ</td>
+										<td>학국생산성본부</td>
+										<td>
+											<button type="button" class="btn_row btn_rowdel">삭제</button>
+										</td>
+									</tr>
+									<tr>
+										<td class="td_input">
+											<div class="naming_input">
+												<input type="text">
+												<button type="button" class="btn_cal">달력보기</button>
+											</div>
+										</td>
+										<td class="td_input">
+											<input type="text" class="form_style wd_p100" placeholder="자격증명" title="자격증명 입력">
+										</td>
+										<td class="td_input">
+											<input type="text" class="form_style wd_p100" placeholder="발급기관" title="발급기관 입력">
+										</td>
+										<td>
+											<button type="button" class="btn_row btn_rowdel">삭제</button>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+					<section class="section_sarea">
+						<h5 class="section_tit_sm dp_inline">어학정보</h5>
+						<div class="resumeedit_btnrow">
+							<p class="check_row">
+								<input type="checkbox" name="publicly " id="publicly7" class="hidden">
+								<label for="publicly7">비공개</label>
+							</p>
+							<button type="button" class="btn_row btn_rowadd">추가</button>
+						</div>
+						<div class="tbl tbl_col scrollx_tbl_md">
+							<table>
+								<caption>어학정보 작성하기</caption>
+								<colgroup>
+									<col style="width: 120px">
+									<col style="width: auto">
+									<col style="width: auto">
+									<col style="width: auto">
+									<col style="width: 10%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">취득일</th>
+										<th scope="col">어학 명</th>
+										<th scope="col">점수/등급</th>
+										<th scope="col">발급기관</th>
+										<th scope="col">삭제</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>2019.07.01</td>
+										<td>토익</td>
+										<td>805</td>
+										<td>cam</td>
+										<td>
+											<button type="button" class="btn_row btn_rowdel">삭제</button>
+										</td>
+									</tr>
+									<tr>
+										<td class="td_input">
+											<div class="naming_input">
+												<input type="text">
+												<button type="button" class="btn_cal">달력보기</button>
+											</div>
+										</td>
+										<td class="td_input">
+											<input type="text" class="form_style wd_p100" placeholder="어학시험명" title="어학시험명 입력">
+										</td>
+										<td class="td_input">
+											<input type="text" class="form_style wd_p100" placeholder="점수/등급" title="점수/등급 입력">
+										</td>
+										<td class="td_input">
+											<input type="text" class="form_style wd_p100" placeholder="발급기관" title="발급기관 입력">
+										</td>
+										<td>
+											<button type="button" class="btn_row btn_rowdel">삭제</button>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+					<section class="section_sarea">
+						<h5 class="section_tit_sm dp_inline">병역사항</h5>
+						<div class="resumeedit_btnrow">
+							<p class="check_row">
+								<input type="checkbox" name="publicly " id="publicly8" class="hidden">
+								<label for="publicly8">비공개</label>
+							</p>
+							<button type="button" class="btn_row btn_rowadd">추가</button>
+						</div>
+						<div class="tbl tbl_col scrollx_tbl_md">
+							<table>
+								<caption>병역사항 목록</caption>
+								<colgroup>
+									<col style="width: 120px">
+									<col style="width: 120px">
+									<col style="width: 20%">
+									<col style="width: auto">
+									<col style="width: 10%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">입대일</th>
+										<th scope="col">전역일</th>
+										<th scope="col">병역구분</th>
+										<th scope="col">역종</th>
+										<th scope="col">삭제</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>2019.07.01</td>
+										<td>2019.11.11</td>
+										<td>-</td>
+										<td>-</td>
+										<td>
+											<button type="button" class="btn_row btn_rowdel">삭제</button>
+										</td>
+									</tr>
+									<tr>
+										<td class="td_input">
+											<div class="naming_input">
+												<input type="text">
+												<button type="button" class="btn_cal">달력보기</button>
+											</div>
+										</td>
+										<td class="td_input">
+											<div class="naming_input">
+												<input type="text">
+												<button type="button" class="btn_cal">달력보기</button>
+											</div>
+										</td>
+										<td class="td_input">
+											<input type="text" class="form_style wd_p100" placeholder="병역구분" title="병역구분 입력">
+										</td>
+										<td class="td_input">
+											<input type="text" class="form_style wd_p100" placeholder="역종" title="역종 입력">
+										</td>
+										<td>
+											<button type="button" class="btn_row btn_rowdel">삭제</button>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+					<section class="section_sarea">
+						<h5 class="section_tit_sm dp_inline">해외경험</h5>
+						<div class="resumeedit_btnrow">
+							<p class="check_row">
+								<input type="checkbox" name="publicly " id="publicly9" class="hidden">
+								<label for="publicly9">비공개</label>
+							</p>
+							<button type="button" class="btn_row btn_rowadd">추가</button>
+						</div>
+						<div class="tbl tbl_col scrollx_tbl_md">
+							<table>
+								<caption>해외경험 목록</caption>
+								<colgroup>
+									<col style="width: 120px">
+									<col style="width: 120px">
+									<col style="width: 25%">
+									<col style="width: 25%">
+									<col style="width: 10%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">시작일</th>
+										<th scope="col">종료일</th>
+										<th scope="col">국가명</th>
+										<th scope="col">활동내용</th>
+										<th scope="col">삭제</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>2019.07.01</td>
+										<td>2019.11.11</td>
+										<td>캐국</td>
+										<td>메이플 스토리</td>
+										<td>
+											<button type="button" class="btn_row btn_rowdel">삭제</button>
+										</td>
+									</tr>
+									<tr>
+										<td class="td_input">
+											<div class="naming_input">
+												<input type="text">
+												<button type="button" class="btn_cal">달력보기</button>
+											</div>
+										</td>
+										<td class="td_input">
+											<div class="naming_input">
+												<input type="text">
+												<button type="button" class="btn_cal">달력보기</button>
+											</div>
+										</td>
+										<td class="td_input">
+											<input type="text" class="form_style wd_p100" placeholder="국가명" title="국가명 입력">
+										</td>
+										<td class="td_input">
+											<input type="text" class="form_style wd_p100" placeholder="활동내용" title="활동내용 입력">
+										</td>
+										<td>
+											<button type="button" class="btn_row btn_rowdel">삭제</button>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+					<section class="section_sarea">
+						<h5 class="section_tit_sm dp_inline">대학생활설계</h5>
+						<div class="resumeedit_btnrow">
+							<p class="check_row">
+								<input type="checkbox" name="publicly " id="publicly10" class="hidden">
+								<label for="publicly10">비공개</label>
+							</p>
+							<button type="button" class="btn_row btn_rowadd">추가</button>
+						</div>
+						<div class="tbl tbl_col scrollx_tbl_md">
+							<table>
+								<caption>대학생활설계 상세</caption>
+								<colgroup>
+									<col style="width: 25%">
+									<col style="width: 25%">
+									<col style="width: 25%">
+									<col style="width: 15%">
+									<col style="width: 10%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">학년</th>
+										<th scope="col">학기</th>
+										<th scope="col">목표</th>
+										<th scope="col">달성여부</th>
+										<th scope="col">삭제</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1학년</td>
+										<td>1학기</td>
+										<td>토일 500점 달성</td>
+										<td class="td_input">
+											<span class="icon_achieve">달성</span>
+											<!-- [pp] 달성시 미달성시 
+											<span class="icon_achieve">달성</span>
+											<span class="icon_achieve fail">미달성</span>-->
+										</td>
+										<td>
+											<button type="button" class="btn_row btn_rowdel">삭제</button>
+										</td>
+									</tr>
+									<tr>
+										<td class="td_input">
+											<input type="text" class="form_style wd_p100" placeholder="학년" title="학년 입력">
+										</td>
+										<td class="td_input">
+											<input type="text" class="form_style wd_p100" placeholder="학기" title="학기 입력">
+										</td>
+										<td class="td_input">
+											<input type="text" class="form_style wd_p100" placeholder="목표" title="목표 입력">
+										</td>
+										<td class="td_input">
+											<span class="icon_achieve fail">미달성</span>
+											<!-- [pp] 달성시 미달성시 
+												<span class="icon_achieve">달성</span>
+												<span class="icon_achieve fail">미달성</span>-->
+										</td>
+										<td>
+											<button type="button" class="btn_row btn_rowdel">삭제</button>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+					<section class="section_sarea">
+						<h5 class="section_tit_sm dp_inline">포트폴리오</h5>
+						<div class="thumbnail_wrap">
+							<div class="btn_addfile">
+								<input type="file" id="attach_file" class="hidden">
+								<label for="attach_file" class="attach_file">파일첨부</label>
+							</div>
+							<div class="thumbnail">
+								<div class="thumbnail_img">
+									<img src="../../../images/client/sub/img_studyabroad_review2.jpg" alt="첨부파일 미리보기 이미지"/>
+								</div>
+								<span class="thumbnail_tit">업로드한 파일 제목 업로드한 파일 제목</span>
+								<button type="button" class="btn_del">삭제</button>
+							</div>
+							<div class="thumbnail">
+								<div class="thumbnail_img">
+									<img src="../../../images/client/formstyle/img_thumbnail_img.jpg" alt="이미지가 존재하지 않는 파일"/>
+								</div>
+								<span class="thumbnail_tit">이미지 없는 파일</span>
+								<button type="button" class="btn_del">삭제</button>
+							</div>
+							<div class="thumbnail">
+								<div class="thumbnail_img">
+									<img src="../../../images/client/formstyle/img_thumbnail_file.jpg" alt="다른 유형의 파일"/>
+								</div>
+								<span class="thumbnail_tit">문서 / 비디오</span>
+								<button type="button" class="btn_del">삭제</button>
+							</div>
+						</div>
+					</section>
+				</section>
+			</div>
+			<div class="pop_footer">
+				<button type="button" class="btn_round btn_lg btn_default">저장</button>
+			</div>
+		</div>
+	</body>
+</html>

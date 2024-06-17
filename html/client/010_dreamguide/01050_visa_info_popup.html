@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi, shrink-to-fit=no">
+		<meta name="format-detection" content="telephone=no, address=no">
+		<meta name="title" content="DoDream">
+		<meta name="keywords" content="Block Chain, Study Abroad, platform, Korea, vietnam">
+		<meta name="description" content="유학플랫폼 두드림(DoDream)외국인 유학생을 위한 한국 유학 매칭 플랫폼">
+		<meta name="author" content="DainLeaders">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="DoDream">
+		<meta property="og:description" content="유학플랫폼 두드림(DoDream)외국인 유학생을 위한 한국 유학 매칭 플랫폼">
+		<meta property="og:image" content="../../../images/common/img_metacover.jpg">
+		<meta property="og:url" content="http://www.dodream.io">
+		<meta name="naver-site-verification" content="dd744254d55fa0f146a5daeaf1e02ae2dd86c1f9"/> 
+		<meta name="google-site-verification" content="mive32tDbnLeee8bzzUfCA31XmDNgL4Lgj4dQoxn8DM"/>
+		<title>DoDream</title>
+
+		<!-- [pp] 웹앱매니페스트 - chrome, opera -->
+		<link rel="manifest" href="../manifest.json">
+		<!-- [pp] //웹앱매니페스트 - chrome, opera -->
+
+		<!-- [pp] ios safari screen -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="white">
+		<meta name="apple-mobile-web-app-title" content="DoDream">
+		<!-- [pp] //ios safari screen -->
+
+		<!-- [pp] 파비콘 -->
+		<link rel="apple-touch-icon" sizes="64x64" href="../../../images/common/favicon.png">
+		<link rel="shortcut icon" type="image/x-icon" href="../../../images/common/favicon.ico">
+		<!-- [pp] //파비콘 -->
+
+		<!-- [pp] css -->
+		<link rel="stylesheet" href="../../../css/client/src/swiper.min.css">
+		<link rel="stylesheet" href="../../../css/client/src/jquery.mCustomScrollbar.css">
+		<link rel="stylesheet" href="../../../css/client/src/select2.css">
+		<link rel="stylesheet" href="../../../css/client/src/magnific-popup.css">
+		<link rel="stylesheet" href="../../../css/dl_global.css">
+		<link rel="stylesheet" href="../../../css/client/normalize.css">
+		<link rel="stylesheet" href="../../../css/client/grid.css">
+		<link rel="stylesheet" href="../../../css/client/table.css">
+		<link rel="stylesheet" href="../../../css/client/formstyle.css">
+		<link rel="stylesheet" href="../../../css/client/common.css">
+		<link rel="stylesheet" href="../../../css/client/ui.css">
+		<link rel="stylesheet" href="../../../css/client/popup.css">
+		<!-- [pp] //css -->
+
+		<!-- [pp] js -->
+		<script type="text/javascript" src="../../../js/client/src/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/swiper.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/jquery.mCustomScrollbar.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/select2.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/jquery.magnific-popup.js"></script>
+		<script type="text/javascript" src="../../../js/client/pp_common.js"></script>
+
+		<!-- [pp] 사용 금지 -->
+		<script type="text/javascript" src="../../../js/client/src/jquery-1.12.3.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/pp_include.js"></script>
+		<!-- [pp] //사용 금지 -->
+
+		<!-- [pp] //js -->
+
+		<!--[if lt IE 9]>
+		<script type="text/javascript" src="../../../js/client/src/jquery-1.12.3.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/html5shiv.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/IE9.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/respond.min.js"></script>
+		<![endif]-->
+
+	</head>
+	<body>
+		<!--[pp] ie 하위버젼 접속시 알림 -->
+		<!--[if lt IE 10]>
+		<div id="browser">
+		This site is supported Explorer 10 or higher, Chrome, Firefox, Opera, Safari.<br/>If you are using it now, Please <a href="https://browsehappy.com/?locale=en" target="_blank">upgrade your browser</a> to improve your experience and security.
+		<button type="button" class="pp_upgradeinfo_close">close</button>
+		</div>
+		<![endif]-->
+		<!--[pp] // ie 하위버젼 접속시 알림 -->
+
+		<!-- [pp] 로딩중 화면 -->
+		<div id="loading" style="display:none;">
+			<p id="loading_image">
+				<img src="../../images/pageloading.gif" alt="Loading..."><br>
+				<span>Loading</span>
+			</p>
+		</div>
+		<!-- [pp] //로딩중 화면 -->
+		<div class="pop_wrapper pop_lg_wrapper">
+			<div class="pop_header">
+				<h2>유학 비자 정보</h2>
+				<a href="javascript:void(0);" class="pop_close" title="팝업창 닫기">팝업창 닫기</a>
+			</div>
+			<div class="pop_visainfo pop_content pop_lg_content multiacd_js">
+				<div>
+					<!-- [pp] '.acd_list_js' 에 클래스'on' 추가시 페이지 진입시 자동으로 펼쳐짐 -->
+					<div class="acd_list acd_list_js">
+						<h4 class="section_tit_md">비자 신청 절차</h4>
+						<span class="btn_accordion">내용보기</span>
+					</div>
+					<div class="acd_cnt acd_cnt_js">
+						<ul class="procedure_list">
+							<li>
+								<p>
+									대학 입학 허가서 취득
+								</p>
+							</li>
+							<li>
+								<p>
+									사증발급인증서 취득<br>
+									&#40;하단 &#39;사증발급인증서&#39; 참고&#41;
+								</p>
+							</li>
+							<li>
+								<p>
+									비자신청
+								</p>
+							</li>
+							<li>
+								<p>
+									과정별 비자 서류 준비<br>
+									&#40;하단 &#39;과정별 비자-관련 서류&#39; 참고&#41;
+								</p>
+							</li>
+							<li>
+								<p>
+									비자 취득
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div>
+					<div class="acd_list acd_list_js">
+						<h4 class="section_tit_md">사증발급인정서</h4>
+						<span class="btn_accordion">내용보기</span>
+					</div>
+					<div class="acd_cnt acd_cnt_js">
+						<div class="accordion_js">
+							<div class="acd_list2_wrap">
+								<div class="acd_list2 acd_list_js">
+									<h5>사증발급인정서 &#40;비자발급인정서&#41; 란?</h5>
+									<span class="btn_accordion">내용보기</span>
+								</div>
+								<div class="acd_cnt2 acd_cnt_js">
+									<ul class="list_dot_sm">
+										<li>
+											한국 정부에서는 비자 발급절차를 신속히 하기 위해서 특별한 경우를 제외하고는 비자를 신청하는 모든 외국인들에게 &#39;사증발급인정서&#40;비자발급인정서&#41;&#39;를 먼저 발급받아 비자를 신청하게 한다.
+										</li>
+										<li>
+											입국하고자 하는 외국인 또는 국내에 있는 초청인의 신청에 따라 사증발급인정서&#40;비자발급인정서&#41;를 발급하도록 하고 
+											있다.
+
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="acd_list2_wrap">
+								<div class="acd_list2 acd_list_js">
+									<h5>사증발급인정서&#40;비자발급인정서&#41; 발급 절차</h5>
+									<span class="btn_accordion">내용보기</span>
+								</div>
+								<div class="acd_cnt2 acd_cnt_js">
+									<div class="img_wrap">
+										<img src="../../../images/client/popup/img_visa_precedure1_kr.jpg" alt="사증발급인정서 대한민국 내 절차 이미지">
+										<!-- [pp] 언어별 이미지 : 
+										<img src="../../../images/client/popup/img_visa_precedure1_us.jpg" alt="Visa issuance certificate in Korea">
+										<img src="../../../images/client/popup/img_visa_precedure1_vn.jpg" alt="Thủ tục cấp giấy xác nhận cấp phát thị  thực ở Hàn Quốc">
+										<img src="../../../images/client/popup/img_visa_precedure1_cn.jpg" alt="签证申请及签发程序大韩民国">
+										-->
+										<img src="../../../images/client/popup/img_visa_precedure2_kr.jpg" alt="사증발급인정서 재외공관 절차 이미지">
+										<!-- [pp] 언어별 이미지 : 
+										<img src="../../../images/client/popup/img_visa_precedure2_us.jpg" alt="Procedure for overseas diplomatic missions for visa issuance">
+										<img src="../../../images/client/popup/img_visa_precedure2_vn.jpg" alt="Thủ tục cấp giấy xác nhận cấp phát thị  thực tại cơ quan ở nước ngoài">
+										<img src="../../../images/client/popup/img_visa_precedure2_cn.jpg" alt="签发证的签发证明书在外公馆程序">
+										-->
+									</div>
+								</div>
+							</div>
+							<div class="acd_list2_wrap">
+								<div class="acd_list2 acd_list_js">
+									<h5>사증발급인정서&#40;비자발급인정서&#41; 발급/제외 대상 및 허가 통지</h5>
+									<span class="btn_accordion">내용보기</span>
+								</div>
+								<div class="acd_cnt2 acd_cnt_js">
+									<h5 class="section_tit_sm">사증발급인정서 발급대상</h5>
+									<ul class="section_sarea list_dot_sm">
+										<li>
+											미수교국가 또는 특정국가의 국민 &#40;쿠바, 시리아, 코소보, 마케도니아&#41;<br> 
+											단 90일 이하의 단기 사증&#40;단수&#41;은 재외공관장이 발급.
+										</li>
+										<li>
+											문화예술&#40;D-1&#41;, 유학&#40;D-2&#41;, 기술연수&#40;D-3&#41;, 일반연수&#40;D-4&#41;, 취재&#40;D-5&#41;, 종교&#40;D-6&#41;, 주재&#40;D-7&#41;, 기업투자&#40;D-8&#41;, 무역경영&#40;D-9&#41;, 교수&#40;E-1&#41;, 회화 지도&#40;E-2&#41;, 연구&#40;E-3&#41;, 기술지도&#40;E-4&#41;, 전문직업&#40;E-5&#41;, 예술흥행&#40;E-6&#41;, 특정활동&#40;E-7&#41;, 비전문취업&#40;E-9&#41;, 선원취업&#40;E-10&#41;, 방문동거&#40;F-1&#41;, 동반 &#40;F-3&#41;, 기타&#40;G-1&#41; 및 방문취업&#40;H-2&#41; 자격에 해당하는 자
+										</li>
+										<li>
+											기타 법무부장관이 특히 필요하다고 인정하는 자
+										</li>
+									</ul>
+									<h5 class="section_tit_sm">사증발급인정서 발급 제외 대상</h5>
+									<ul class="section_sarea list_dot_sm">
+										<li>
+											외교&#40;A-1&#41;, 공무&#40;A-2&#41;, 협정&#40;A-3&#41; 자격에 해당하는 자
+										</li>
+										<li>
+											사증면제&#40;B-1&#41;, 관광통과&#40;B-2&#41; 자격에 해당하는 자
+										</li>
+										<li>
+											구직&#40;D-10&#41;, 거주&#40;F-2&#41;, 재외동포&#40;F-4&#41;, 영주&#40;F-5&#41;, 결혼이민&#40;F-6&#41;, 관광취업&#40;H-1&#41; 자격에 해당하는 자
+										</li>
+									</ul>
+									<h5 class="section_tit_sm">사증발급인정서 발급 허가 통지</h5>
+									<ul class="list_dot_sm">
+										<li>
+											원칙적으로 이메일로 사증발급인정번호를 통지하고 있으며, 예외적으로 사증발급인정번호를 통지할 수 없는 부득이한 사유가 있는 경우에는 직접 사증발급인정서를 교부하고 있다.
+											<p class="font_gray">
+												<span class="font_red">※</span> 사증발급인정서 발급신청 시 정확한 이메일주소를 기재하여야 정확한 통보를 받을 수 있음
+											</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div>
+					<div class="acd_list acd_list_js">
+						<h4 class="section_tit_md">과정별 비자</h4>
+						<span class="btn_accordion">내용보기</span>
+					</div>
+					<div class="acd_cnt acd_cnt_js">
+						<div class="section_area">
+							<h5 class="section_tit_sm">유학 &#40;D-2&#41;</h5>
+							<div class="tbl tbl_row">
+								<table>
+									<caption>유학 과정별 비자 정보 목록</caption>
+									<tbody>
+										<tr>
+											<th scope="col" colspan="2">비자범위 및 해당자</th>
+										</tr>
+										<tr>
+											<td colspan="2">
+												<ul class="list_dot_sm">
+													<li>
+														전문대학 이상의 교육&middot;학술연구 기관에서의 유학 또는 연구활동
+														<ul class="list_line">
+															<li>고등교육법의 규정에 의하여 설립된 전문대학, 대학, 대학원 또는 특별법의 규정에 의하여 설립된 전문대학 이상의 학술기관에서 정규과정 &#40;학사&middot;석사&middot;박사&#41;의 교육을 받거나 특정의 연구를 하고자 하는 자</li>
+														</ul>	
+													</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="col">비자범위 및 해당자</th>
+											<th scope="col">신청 장소</th>
+										</tr>
+										<tr>
+											<td class="ta_c">2년</td>
+											<td class="ta_c">
+												청인의 거주국 또는 최종학교 소재지 관할 공관에서 신청
+											</td>
+										</tr>
+										<tr>
+											<th scope="col" colspan="2">공통 제출 서류</th>
+										</tr>
+										<tr>
+											<td colspan="2">
+												<ul class="list_dot_sm">
+													<li>
+														신청서&#40;별지 제34호 서식&#41;, 여권사본, 사진 1매, 수수료
+													</li>
+													<li>
+														교육기관 사업자등록증 &#40;또는 고유번호증&#41; 사본
+													</li>
+													<li>
+														표준입학허가서 &#40;대학 총&middot;학장 발행&#41;
+														<p class="font_gray">
+															<span class="font_red">※</span> 국립국제교육원 및 국방부초청 정부 장학생은 교육원장 및 국방부장관이 발급한 초청장&#40;정부초청 외국인 장학증명서 등&#41;으로 대체
+														</p>
+													</li>
+													<li>
+														가족관계 입증서류 &#40;부모의 잔고증명 등을 제출한 경우에 한함&#41;
+														<p class="font_gray">
+															<span class="font_red">※</span> 16.7.1.신청 건부터 결핵고위험국가 국민은 「외국인 결핵 환자에 대한 사증발급 및 체류관리 지침」에 따라 &#39;흉부X선 검사 결과가 포함된 지정병원 결핵진단서&#39; 제출
+														</p>
+													</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="col" colspan="2">21개 국가</th>
+										</tr>
+										<tr>
+											<td colspan="2">
+												<ul class="list_dot_sm">
+													<li>
+														중국, 필리핀, 인도네시아, 방글라데시, 베트남, 몽골, 태국, 파키스탄, 스리랑카, 인도, 미얀마, 네팔, 이란, 우즈베키스탄, 카자흐스탄, 키르기즈스탄, 우크라이나, 나이지리아, 가나, 이집트, 페루 &#40;총 21개국&#41;
+														<p class="font_gray">
+															<span class="font_red">※</span> 한글 번역본에 영문성명 기재, 여권사본 첨부 등
+														</p>
+													</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="col" colspan="2">가족관계 입증서류 예시</th>
+										</tr>
+										<tr>
+											<td colspan="2">
+												<ul class="list_dot_sm">
+													<li>중국 : 호구부 또는 친족관계공증</li>
+													<li>필리핀 : Family Census</li>
+													<li>인도네시아 : 가족관계증명서&#40;KARTU KELUARGA&#41;</li>
+													<li>방글라데시 : 점머 까꺼즈 또는 점마 싸이드티켓</li>
+													<li>베트남 : 호적부&#40;So Ho Khau&#41; 또는 출생증명서&#40;Giay khai sinh&#41;</li>
+													<li>몽골 : 친족관계증명서</li>
+													<li>파키스탄 : Family Certificate</li>
+													<li>스리랑카 : 빠울러 서티피 케이트</li>
+													<li>미얀마 : 가족관계증명서&#40;잉타웅수사옌&#41;</li>
+													<li>네팔 : 전마달다</li>
+													<li>키르기즈스탄&middot;카자흐스탄&middot;우즈벡&middot;우크라이나&middot;태국 : 출생증명서</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="col" colspan="2">과정별 추가 제출 서류</th>
+										</tr>
+										<tr>
+											<th scope="col">전문학사&middot;학사&middot;석사&middot;박사과정</th>
+											<td>
+												<ul class="list_dot_sm">
+													<li>
+														최종학력 입증서류
+													</li>
+													<li>
+														재정능력 입증서류 &#40;1년간 등록금 및 체재비 상당하는 금액&#41;
+													</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="col">특정 연구과정</th>
+											<td>
+												<ul class="list_dot_sm">
+													<li>
+														최종학력 입증서류 &340;석사학위이상 소지자를 원칙으로 함&#41;
+													</li>
+													<li>
+														재정능력 입증서류 &#40;잔고증명, 연구수당 지급 확인서 등&#41;
+													</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="col">교환학생</th>
+											<td>
+												<ul class="list_dot_sm">
+													<li>
+														체재비 입증서류 &#40;등록금은 본국에서 납부하는 점을 감안&#41;
+													</li>
+													<li>
+														소속&#40;본국&#41;대학의 장이 발급한 추천서
+													</li>
+													<li>
+														교환학생임을 입증하는 서류 &#40;초청 대학의 공문, 대학간 체결한 학생 교류 협정서 등&#41;
+													</li>
+													<li>
+														1학기 이상을 수학하였음을 입증하는 서류 &#40;본국 대학의 재학증명서 등&#41;
+													</li>
+												</ul>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<p class="mg_t5 font_gray">
+								<span class="font_red">※</span> 재외공간의 장은 입국목적, 초청의 진정성, 초청자 및 피초청자의 자격 확인 등을 심사하기 위해 필요한 경우 첨부서류를 일부 가감할 수 있음
+							</p>
+						</div>
+						<div class="section_sarea">
+							<h5 class="section_tit_sm">일반연수 &#40;D-4&#41;</h5>
+							<div class="tbl tbl_row">
+								<table>
+									<caption>일반연수 과정별 비자 정보 목록</caption>
+									<tbody>
+										<tr>
+											<th scope="col" colspan="2">비자범위 및 해당자</th>
+										</tr>
+										<tr>
+											<td colspan="2">
+												<ul class="list_dot_sm">
+													<li>
+														유학&#40;D-2&#41; 자격에 해당하는 교육기관 또는 학술연구기관 외에 교육기관이나 기업체&middot;단체등에서 교육 또는 연수를 받거나 연구하는 활동
+														<ul class="list_line">
+															<li>
+																대학부설 어학원에서 한국어를 연수하는 자&#40;D-4-1&#41;
+															</li>
+															<li>
+																유학&#40;D-2&#41; 자격에 해당하는 기관 또는 학술연구기간 이외의 교육기관에서 교육을 받는 자
+															</li>
+															<li>
+																국&middot;공립 연구기관이나 연수원 등에서 기술,기능 등을 연수하는 자
+															</li>
+															<li>
+																외국인투자기업 또는 외국에 투자한 기업체 등에서 인턴&#40;실습사원&#41;으로 교육 또는 연수를 받거나 연구활동에 종사하는 자
+															</li>
+														</ul>
+													</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="col">비자 1회 체류 상한기간</th>
+											<th scope="col">신청 장소</th>
+										</tr>
+										<tr>
+											<td class="ta_c">2년</td>
+											<td>
+												<ul class="list_line">
+													<li>
+														입학예정대학 소재지 관할 사무소&#40;출장소&#41;
+													</li>
+													<li>
+														대한민국비자포털&#40;<a href="https://www.visa.go.kr" class=" font_nightblue">https://www.visa.go.kr</a>&#41; 온라인 신청&#40;유학생담당자에 한함&#41;
+													</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="col" colspan="2">제출 서류</th>
+										</tr>
+										<tr>
+											<td colspan="2">
+												<ul class="list_line">
+													<li>
+														사증발급인정신청서, 여권, 표준규격사진 1매, 수수료
+													</li>
+													<li>
+														교육기관 사업자등록증 사본 또는 고유번호증 사본
+													</li>
+													<li>
+														표준입학허가서 &#40;대학 총&middot;학장 발행&#41;
+													</li>
+													<li>
+														재학증명서 또는 최종학력 입증서류 v원본 심사를 원칙으로 하고 필요시 사본에 담당자의 원본 대조필 확인 후 첨부&#41;
+													</li>
+													<li>
+														재정 입증서류 &#40;원본심사를 원칙으로 하고 필요시 사본에 담당자의 원본 대조필 확인 후 첨부&#41;
+														<p class="font_gray">
+															<span class="font_red">※</span> 잔고증명서, 통장, 장학금증명서, 입출금내역서 등 &#40;30일 이내 발급만 유효&#41;
+														</p>
+														<p class="font_gray">
+															<span class="font_red">※</span> 부&middot;모 잔고증명서 제출 시 가족관계증명서 추가 제출 필요
+														</p>
+													</li>
+													<li>
+														연수계획서&#40;강의시간표, 강사구성표, 연수시설 등의 내용을 포함&#41;
+													</li>
+												</ul>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<p class="mg_t5 font_gray">
+								<span class="font_red">※</span> 재외공관의 장은 입국목적, 초청의 진정성, 초청자 및 피초청자의 자격 확인 등을 심사하기 위해 필요한 경우 첨부서류를 일부 가감할 수 
+								있음
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="pop_footer">
+				<button type="button" class="btn_round btn_md btn_blue">닫기</button>
+			</div>
+		</div>
+	</body>
+</html>

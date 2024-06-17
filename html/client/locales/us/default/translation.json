@@ -1,0 +1,51 @@
+{
+	"header": {
+		"txt1": "Study Abroad Information",
+		"txt2": "Studying Abroad Matching",
+		"txt3": "Type-specific issues",
+		"txt4": "Practice test",
+		"txt5": "Study abroad review"
+	},
+	"footer": {
+		"txt1": "Dainleaders.Co.,Ltd"
+		,"txt2": "Service Guide"
+		,"txt3": "Terms and Conditions"
+		,"txt4": "Privacy Policy"
+		,"txt5": "Email Unauthorized Collection Denied"
+		,"txt6": "Study Abroad Platform DoDream Customer Service Center"
+		,"txt7": "Korean : 070-7729-7328"
+		,"txt8": "Vietnamese : 070-7729-8023"
+		,"txt9": "Dainleaders.Co.,Ltd"
+		,"txt10": "Korea Headquarters : #2006, 5 Seongsuil-ro 8-gil, Seongdong-gu, Seoul, Republic of Korea"
+		,"txt11": "Vietnamese Corporation : R.1107, Floor 11, Zen Tower Building, 12 Khuat Duy Tien rd, Thanh Xuan district, Hanoi"
+		,"txt12": "Point Guide"
+		,"txt13": "Service center : (+82)1800-6337"
+	},
+	"dodreamMain": {
+		"txt1" : "Everything in Korean Universities"
+		, "txt2" : "You can prepare for studying in Korea safely and conveniently with DoDream."
+		, "txt3" : "Shortcut"
+		, "txt4" : "Let's study like a practical test!"
+		, "txt5" : "TOPIK mock test set by top faculty"
+		, "txt6" : "Dream Point"
+		, "txt7" : "Never miss the various benefits you can enjoy with DoDream's membership!"
+		, "txt8" : "List of recommended universities"
+		, "txt9" : "Accredited university"
+		, "txt10" : "Specialized University"
+		, "txt11" : "Regional universities"
+		, "txt12" : "A review of studying abroad"
+		, "txt13" : "Study Abroad Information"
+		, "txt14" : "Information on Studying in Korea Easily and Quickly"
+		, "txt15" : "&#35;Process of Studying Abroad"
+		, "txt16" : "&#35;Visa Information"
+		, "txt17" : "&#35;Studying Abroad Checklist"
+		, "txt18" : "Notice"
+		, "city1" : "Seoul"
+		, "city2" : "KyeongGi/Incheon"
+		, "city3" : "Gangwon"
+		, "city4" : "Daejeon/Chungcheong"
+		, "city5" : "Busan/Daegu/Ulsan/KyeongSang"
+		, "city6" : "Kwangju/Jeolla"
+		, "city7" : "Jeju"
+	}
+}

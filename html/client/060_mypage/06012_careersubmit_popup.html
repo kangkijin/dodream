@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi, shrink-to-fit=no">
+		<meta name="format-detection" content="telephone=no, address=no">
+		<meta name="title" content="DoDream">
+		<meta name="keywords" content="Block Chain, Study Abroad, platform, Korea, vietnam">
+		<meta name="description" content="유학플랫폼 두드림(DoDream)외국인 유학생을 위한 한국 유학 매칭 플랫폼">
+		<meta name="author" content="DainLeaders">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="DoDream">
+		<meta property="og:description" content="유학플랫폼 두드림(DoDream)외국인 유학생을 위한 한국 유학 매칭 플랫폼">
+		<meta property="og:image" content="../../../images/common/img_metacover.jpg">
+		<meta property="og:url" content="http://www.dodream.io">
+		<meta name="naver-site-verification" content="dd744254d55fa0f146a5daeaf1e02ae2dd86c1f9"/> 
+		<meta name="google-site-verification" content="mive32tDbnLeee8bzzUfCA31XmDNgL4Lgj4dQoxn8DM"/>
+		<title>DoDream</title>
+
+		<!-- [pp] 웹앱매니페스트 - chrome, opera -->
+		<link rel="manifest" href="../manifest.json">
+		<!-- [pp] //웹앱매니페스트 - chrome, opera -->
+
+		<!-- [pp] ios safari screen -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="white">
+		<meta name="apple-mobile-web-app-title" content="DoDream">
+		<!-- [pp] //ios safari screen -->
+
+		<!-- [pp] 파비콘 -->
+		<link rel="apple-touch-icon" sizes="64x64" href="../../../images/common/favicon.png">
+		<link rel="shortcut icon" type="image/x-icon" href="../../../images/common/favicon.ico">
+		<!-- [pp] //파비콘 -->
+
+		<!-- [pp] css -->
+		<link rel="stylesheet" href="../../../css/client/src/swiper.min.css">
+		<link rel="stylesheet" href="../../../css/client/src/jquery.mCustomScrollbar.css">
+		<link rel="stylesheet" href="../../../css/client/src/select2.css">
+		<link rel="stylesheet" href="../../../css/client/src/magnific-popup.css">
+		<link rel="stylesheet" href="../../../css/dl_global.css">
+		<link rel="stylesheet" href="../../../css/client/normalize.css">
+		<link rel="stylesheet" href="../../../css/client/grid.css">
+		<link rel="stylesheet" href="../../../css/client/table.css">
+		<link rel="stylesheet" href="../../../css/client/formstyle.css">
+		<link rel="stylesheet" href="../../../css/client/common.css">
+		<link rel="stylesheet" href="../../../css/client/ui.css">
+		<link rel="stylesheet" href="../../../css/client/popup.css">
+		<!-- [pp] //css -->
+
+		<!-- [pp] js -->
+		<script type="text/javascript" src="../../../js/client/src/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/swiper.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/jquery.mCustomScrollbar.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/select2.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/jquery.magnific-popup.js"></script>
+		<script type="text/javascript" src="../../../js/client/pp_common.js"></script>
+
+		<!-- [pp] 사용 금지 -->
+		<script type="text/javascript" src="../../../js/client/src/jquery-1.12.3.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/pp_include.js"></script>
+		<!-- [pp] //사용 금지 -->
+
+		<!-- [pp] //js -->
+
+		<!--[if lt IE 9]>
+		<script type="text/javascript" src="../../../js/client/src/jquery-1.12.3.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/html5shiv.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/IE9.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/respond.min.js"></script>
+		<![endif]-->
+
+	</head>
+	<body>
+		<!--[pp] ie 하위버젼 접속시 알림 -->
+		<!--[if lt IE 10]>
+		<div id="browser">
+		This site is supported Explorer 10 or higher, Chrome, Firefox, Opera, Safari.<br/>If you are using it now, Please <a href="https://browsehappy.com/?locale=en" target="_blank">upgrade your browser</a> to improve your experience and security.
+		<button type="button" class="pp_upgradeinfo_close">close</button>
+		</div>
+		<![endif]-->
+		<!--[pp] // ie 하위버젼 접속시 알림 -->
+		
+		<!-- [pp] 로딩중 화면 -->
+		<div id="loading" style="display:none;">
+			<p id="loading_image">
+				<img src="../../images/pageloading.gif" alt="Loading..."><br>
+				<span>Loading</span>
+			</p>
+		</div>
+		<!-- [pp] //로딩중 화면 -->
+		<div class="pop_wrapper pop_md_wrapper">
+			<div class="pop_header">
+				<h2>JOB 매칭 정보입력</h2>
+				<a href="javascript:void(0);" class="pop_close" title="팝업창 닫기">팝업창 닫기</a>
+			</div>
+			<div class="pop_content pop_md_content tab_js">
+				<ul class="tab_button tab_list_js mg_b10">
+					<li>
+						<a href="#tab1" class="on">경력/외국인 근로자</a>
+					</li>
+					<li>
+						<a href="#tab2">신입/외국인 유학생</a>
+					</li>
+				</ul>
+				<div class="tab_cnt_js">
+					<div id="tab1">
+						<div class="section_area">
+							<h3 class="section_tit_lg mg_b0">희망직무</h3>
+							<div class="mg_b10">
+								<p class="check_tab">
+									<input type="checkbox" name="check_tab" id="check_tab1_1" class="hidden">
+									<label for="check_tab1_1">서비스</label>
+								</p>
+								<p class="check_tab">
+									<input type="checkbox" name="check_tab" id="check_tab1_2" class="hidden">
+									<label for="check_tab1_2">의료,제약,복지</label>
+								</p>
+								<p class="check_tab">
+									<input type="checkbox" name="check_tab" id="check_tab1_3" class="hidden">
+									<label for="check_tab1_3">제조,화학</label>
+								</p>
+								<p class="check_tab">
+									<input type="checkbox" name="check_tab" id="check_tab1_4" class="hidden">
+									<label for="check_tab1_4">판매,유통</label>
+								</p>
+								<p class="check_tab">
+									<input type="checkbox" name="check_tab" id="check_tab1_5" class="hidden">
+									<label for="check_tab1_5">IT,웹,통신</label>
+								</p>
+								<p class="check_tab">
+									<input type="checkbox" name="check_tab" id="check_tab1_6" class="hidden">
+									<label for="check_tab1_6">건설</label>
+								</p>
+								<p class="check_tab">
+									<input type="checkbox" name="check_tab" id="check_tab1_7" class="hidden">
+									<label for="check_tab1_7">교육</label>
+								</p>
+								<p class="check_tab">
+									<input type="checkbox" name="check_tab" id="check_tab1_8" class="hidden">
+									<label for="check_tab1_8">미디어,디자인</label>
+								</p>
+								<p class="check_tab">
+									<input type="checkbox" name="check_tab" id="check_tab1_9" class="hidden">
+									<label for="check_tab1_9">은행,금융</label>
+								</p>
+								<p class="check_tab">
+									<input type="checkbox" name="check_tab" id="check_tab1_10" class="hidden">
+									<label for="check_tab1_10">기관,협회</label>
+								</p>
+							</div>
+							<ul class="list_wrap">
+								<li>
+									<h5 class="list_tit required">회사명</h5>
+									<div class="list_cnt flex">
+										<input class="form_style wd_p100" placeholder="회사명을 입력해주세요">
+									</div>
+								</li>
+								<li>
+									<h5 class="list_tit required">재직기간</h5>
+									<div class="list_cnt flex">
+										<div class="naming_input dp_inline wd_140">
+											<input type="text" placeholder="시작일">
+											<button type="button" class="btn_cal">달력보기</button>
+										</div>
+										<span class="wave">~</span>
+										<div class="naming_input dp_inline wd_140 mg_r5">
+											<input type="text" placeholder="종료일">
+											<button type="button" class="btn_cal">달력보기</button>
+										</div>
+										<div class="select_form wd_90">
+											<label for="choice">선택</label>
+											<select id="choice">
+												<option>선택</option>
+												<option>퇴사</option>
+												<option>재직중</option>
+											</select>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5 class="list_tit">퇴사사유</h5>
+									<div class="list_cnt flex">
+										<div class="select_form wd_p100">
+											<label for="choice">선택</label>
+											<select id="choice">
+												<option>선택</option>
+												<option>퇴사</option>
+												<option>재직중</option>
+											</select>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5 class="list_tit">직급/직책</h5>
+									<div class="list_cnt flex">
+										<input class="form_style wd_p100 mg_r5" placeholder="직급/직책">
+										<input class="form_style wd_100" placeholder="년차 입력">
+									</div>
+								</li>
+								<li>
+									<h5 class="list_tit">근무부서</h5>
+									<div class="list_cnt">
+										<input class="form_style wd_p100" placeholder="근무부서 입력">
+										<p class="font_red font_13">인사담당자가 중요하게 검토하는 항목입니다.</p>
+									</div>
+								</li>
+								<li>
+									<h5 class="list_tit">근무지역</h5>
+									<div class="list_cnt flex">
+										<div class="select_form wd_p100">
+											<label for="choice">근무지역 선택</label>
+											<select id="choice">
+												<option>근무지역 선택</option>
+												<option>서울</option>
+												<option>강원도</option>
+											</select>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5 class="list_tit">연봉</h5>
+									<div class="list_cnt flex">
+										<input class="form_style wd_p100 mg_r5" placeholder="연봉 입력">
+										<div class="select_form wd_150">
+											<label for="choice">만원</label>
+											<select id="choice">
+												<option>만원</option>
+												<option>천만원</option>
+												<option>억</option>
+												<option>조</option>
+												<option>해</option>
+											</select>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5 class="list_tit">담당업무</h5>
+									<div class="list_cnt flex">
+										<input class="form_style wd_p100" placeholder="담당업무 입력">
+									</div>
+								</li>
+								<li>
+									<h5 class="list_tit">포트폴리오</h5>
+									<div class="list_cnt flex">
+										<div class="thumbnail_wrap">
+											<div class="btn_addfile">
+												<input type="file" id="attach_file" class="hidden">
+												<label for="attach_file" class="attach_file">파일첨부</label>
+											</div>
+											<div class="thumbnail">
+												<div class="thumbnail_img">
+													<img src="../../../images/client/sub/img_studyabroad_review2.jpg" alt="첨부파일 미리보기 이미지"/>
+												</div>
+												<span class="thumbnail_tit">업로드한 파일 제목 업로드한 파일 제목</span>
+												<button type="button" class="btn_del">삭제</button>
+											</div>
+											<div class="thumbnail">
+												<div class="thumbnail_img">
+													<img src="../../../images/client/formstyle/img_thumbnail_img.jpg" alt="이미지가 존재하지 않는 파일"/>
+												</div>
+												<span class="thumbnail_tit">이미지 없는 파일</span>
+												<button type="button" class="btn_del">삭제</button>
+											</div>
+											<div class="thumbnail">
+												<div class="thumbnail_img">
+													<img src="../../../images/client/formstyle/img_thumbnail_file.jpg" alt="다른 유형의 파일"/>
+												</div>
+												<span class="thumbnail_tit">문서 / 비디오</span>
+												<button type="button" class="btn_del">삭제</button>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<div class="ta_r mg_t15">
+								<button type="button" class="btn_round btn_sm btn_blue">경력추가 +</button>
+							</div>
+						</div>
+						<div class="ta_c">
+							<p class="bg_deepgray pd_20 mg_b10">
+								※ JOB 매칭 정보 저장 시 ‘Do Job > 인재채용’ 메뉴에서<br/>
+								My e-portfolio와 JOB 매칭 정보가 노출되며 채용 기업이 조회할 수 있습니다.
+							</p>
+							<p class="check_row">
+								<input type="checkbox" name="check1" id="check1_1" class="hidden">
+								<label for="check1_1">동의합니다.</label>
+							</p>
+						</div>
+					</div>
+					<div id="tab2">
+						<div class="section_area">
+							<h3 class="section_tit_lg mg_b0">희망직무</h3>
+							<div class="mg_b10">
+								<p class="check_tab">
+									<input type="checkbox" name="check_tab2" id="check_tab2_1" class="hidden">
+									<label for="check_tab2_1">서비스</label>
+								</p>
+								<p class="check_tab">
+									<input type="checkbox" name="check_tab2" id="check_tab2_2" class="hidden">
+									<label for="check_tab2_2">의료,제약,복지</label>
+								</p>
+								<p class="check_tab">
+									<input type="checkbox" name="check_tab2" id="check_tab2_3" class="hidden">
+									<label for="check_tab2_3">제조,화학</label>
+								</p>
+								<p class="check_tab">
+									<input type="checkbox" name="check_tab2" id="check_tab2_4" class="hidden">
+									<label for="check_tab2_4">판매,유통</label>
+								</p>
+								<p class="check_tab">
+									<input type="checkbox" name="check_tab2" id="check_tab2_5" class="hidden">
+									<label for="check_tab2_5">IT,웹,통신</label>
+								</p>
+								<p class="check_tab">
+									<input type="checkbox" name="check_tab2" id="check_tab2_6" class="hidden">
+									<label for="check_tab2_6">건설</label>
+								</p>
+								<p class="check_tab">
+									<input type="checkbox" name="check_tab2" id="check_tab2_7" class="hidden">
+									<label for="check_tab2_7">교육</label>
+								</p>
+								<p class="check_tab">
+									<input type="checkbox" name="check_tab2" id="check_tab2_8" class="hidden">
+									<label for="check_tab2_8">미디어,디자인</label>
+								</p>
+								<p class="check_tab">
+									<input type="checkbox" name="check_tab2" id="check_tab2_9" class="hidden">
+									<label for="check_tab2_9">은행,금융</label>
+								</p>
+								<p class="check_tab">
+									<input type="checkbox" name="check_tab2" id="check_tab2_10" class="hidden">
+									<label for="check_tab2_10">기관,협회</label>
+								</p>
+							</div>
+							<div class="selfintroedit_wrap">
+								<div class="naming_input naming_lg_input mg_b10">
+									<label class="ta_c">자기소개서 제목</label>
+									<input type="text">
+								</div>
+								<div class="mg_b10 ta_r">
+									<button type="button" class="btn_row btn_rowadd">항목 추가</button>
+								</div>
+								<!-- [pp] 고정항목 -->
+								<article class="selfintroedit_box section_sarea">
+									<div class="selfintroedit_btnrow">
+										<p class="check_row">
+											<input type="checkbox" name="publicly" id="publicly1" class="hidden">
+											<label for="publicly1">비공개</label>
+										</p>
+										<button type="button" class="btn_row btn_rowdel">삭제</button>
+										<button type="button" class="btn_refresh2">초기화</button>
+									</div>
+									<div class="selfintroedit_tit">
+										<strong>고정제목</strong>
+										<p>
+											고정항목 설명 내용입니다 고정항목 설명 내용입니다 고정항목 설명 내용입니다 고정항목 설명 내용입니다 고정항목 설명 내용입니다 고정항목 설명 내용입니다 
+										</p>
+									</div>
+									<div class="selfintroedit_content">
+										<textarea rows="5" class="form_style" placeholder="내용을 입력하세요."></textarea>
+									</div>
+								</article>
+								<!-- [pp] //고정항목 -->
+								<!--[pp] 자유항목 -->
+								<article class="selfintroedit_box selfintroedit_addbox section_sarea">
+									<div class="selfintroedit_btnrow">
+										<p class="check_row">
+											<input type="checkbox" name="publicly " id="publicly1" class="hidden">
+											<label for="publicly1">비공개</label>
+										</p>
+										<button type="button" class="btn_row btn_rowdel">삭제</button>
+										<button type="button" class="btn_refresh2">초기화</button>
+									</div>
+									<div class="selfintroedit_content">
+										<input type="text" class="form_style wd_p100" placeholder="주제를 입력하세요.">
+										<textarea rows="5" class="form_style" placeholder="내용을 입력하세요."></textarea>
+									</div>
+								</article>
+								<!--[pp] //자유항목 -->
+							</div>
+						</div>
+						<div class="ta_c">
+							<p class="bg_deepgray pd_20 mg_b10">
+								※ JOB 매칭 정보 저장 시 ‘Do Job > 인재채용’ 메뉴에서<br/>
+								My e-portfolio와 JOB 매칭 정보가 노출되며 채용 기업이 조회할 수 있습니다.
+							</p>
+							<p class="check_row">
+								<input type="checkbox" name="check2" id="check2_1" class="hidden">
+								<label for="check2_1">동의합니다.</label>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="pop_footer">
+				<button type="button" class="btn_round btn_lg btn_default">저장</button>
+			</div>
+		</div>
+	</body>
+</html>

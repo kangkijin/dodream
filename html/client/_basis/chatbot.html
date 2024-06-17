@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi, shrink-to-fit=no">
+		<meta name="format-detection" content="telephone=no, address=no">
+		<meta name="title" content="DoDream">
+		<meta name="keywords" content="Block Chain, Study Abroad, platform, Korea, vietnam">
+		<meta name="description" content="유학플랫폼 두드림(DoDream)외국인 유학생을 위한 한국 유학 매칭 플랫폼">
+		<meta name="author" content="DainLeaders">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="DoDream">
+		<meta property="og:description" content="유학플랫폼 두드림(DoDream)외국인 유학생을 위한 한국 유학 매칭 플랫폼">
+		<meta property="og:image" content="../../../images/common/img_metacover.jpg">
+		<meta property="og:url" content="http://www.dodream.io">
+		<meta name="naver-site-verification" content="dd744254d55fa0f146a5daeaf1e02ae2dd86c1f9"/> 
+		<meta name="google-site-verification" content="mive32tDbnLeee8bzzUfCA31XmDNgL4Lgj4dQoxn8DM"/>
+		<title>DoDream</title>
+
+		<!-- [pp] 웹앱매니페스트 - chrome, opera -->
+		<link rel="manifest" href="../manifest.json">
+		<!-- [pp] //웹앱매니페스트 - chrome, opera -->
+
+		<!-- [pp] ios safari screen -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="white">
+		<meta name="apple-mobile-web-app-title" content="DoDream">
+		<!-- [pp] //ios safari screen -->
+
+		<!-- [pp] 파비콘 -->
+		<link rel="apple-touch-icon" sizes="64x64" href="../../../images/common/favicon.png">
+		<link rel="shortcut icon" type="image/x-icon" href="../../../images/common/favicon.ico">
+		<!-- [pp] //파비콘 -->
+
+		<!-- [pp] css -->
+		<link rel="stylesheet" href="../../../css/client/src/swiper.min.css">
+		<link rel="stylesheet" href="../../../css/dl_global.css">
+		<link rel="stylesheet" href="../../../css/client/normalize.css">
+		<link rel="stylesheet" href="../../../css/client/grid.css">
+		<link rel="stylesheet" href="../../../css/client/table.css">
+		<link rel="stylesheet" href="../../../css/client/formstyle.css">
+		<link rel="stylesheet" href="../../../css/client/common.css">
+		<link rel="stylesheet" href="../../../css/client/ui.css">
+		<link rel="stylesheet" href="../../../css/client/popup.css">
+		<!-- [pp] //css -->
+
+		<!-- [pp] js -->
+		<script type="text/javascript" src="../../../js/client/src/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/swiper.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/pp_common.js"></script>
+
+		<!-- [pp] //js -->
+	
+		<!--[if lt IE 9]>
+		<script type="text/javascript" src="../../../js/client/src/jquery-1.12.3.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/html5shiv.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/IE9.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<!--[pp] ie 하위버젼 접속시 알림 -->
+		<!--[if lt IE 10]>
+			<div id="browser">
+			This site is supported Explorer 10 or higher, Chrome, Firefox, Opera, Safari.<br/>If you are using it now, Please <a href="https://browsehappy.com/?locale=en" target="_blank">upgrade your browser</a> to improve your experience and security.
+			<button type="button" class="pp_upgradeinfo_close">close</button>
+			</div>
+		<![endif]-->
+		<!--[pp] // ie 하위버젼 접속시 알림 -->
+		
+		<!-- [pp] 로딩중 화면 -->
+		<div id="loading" style="display: none;">
+			<p id="loading_image">
+				<img src="../../../images/pageloading.gif" alt="Loading...">
+				<span>Loading</span>
+			</p>
+		</div>
+		<!-- [pp] //로딩중 화면 -->
+		
+		<!-- [pp] 1024 해상도 부터 나오는 챗봇 html 입니다 -->
+		<!-- [pp] 챗봇 : responsive 클래스 추가 -->
+		<div class="chat_area responsive">
+			<div class="chat_header">
+				<a href="javascript:void(0);" class="chat_logo">챗봇</a>
+				<div class="chat_buttonarea">
+					<button type="button" class="chat_help">도움말</button>
+					<div class="select_lang">
+						<p><span class="lang_kr"></span></p>
+						<ul>
+							<li><span class="lang_kr"></span></li>
+							<li><span class="lang_us"></span></li>
+							<li><span class="lang_cn"></span></li>
+							<li><span class="lang_vn"></span></li>
+						</ul>
+					</div>
+					<button type="button" class="chat_close">닫기</button>
+				</div>
+			</div>
+			<div class="chat_cnt">
+				<strong class="date_label">2022년 7월 14일 목요일</strong>
+				<ul>
+					<li class="dudu">
+						<strong>두두</strong>
+						<div class="detail">
+							안녕하세요! <br/>
+							유학 두드림에 대해 궁금한 사항을 <br/>
+							바로 답변해드리는 챗봇 두두입니다! <br/><br/>
+							아래 카테고리에 대해 24시간 답변 가능하니, <br/>
+							궁금한 사항은 버튼을 눌러 확인해 보세요 :)
+							<ul class="category_1depth tab_switch_js">
+								<li>
+									<a href="javascript:void(0);" class="intro">두드림 소개</a>
+								</li>
+								<li>
+									<!-- [pp] 클릭시 상태 on 추가-->
+									<a href="javascript:void(0);" class="info on">대학 정보</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" class="abroad">한국유학</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" class="korean">한국어</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" class="use">두드림 사이트 이용</a>
+								</li>
+							</ul>
+						</div>
+						<span class="time">오후 3:26</span>
+					</li>
+					<li class="mytalk">
+						<div class="detail">
+							대학 정보
+						</div>
+						<span class="time">오후 3:27</span>
+					</li>
+					<li class="dudu">
+						<strong>두두</strong>
+						<div class="detail">
+							대학 정보에 대해 궁금한 내용을 <br/>
+							클릭하면 자세한 내용을 볼 수 있어요! 
+						</div>
+						<ul class="category_2depth tab_switch_js">
+							<li>
+								<a href="javascript:void(0);">기숙사</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">대학 검색</a>
+							</li>
+							<li>
+								<!-- [pp] 클릭시 상태 on 추가-->
+								<a href="javascript:void(0);" class="on">어학연수</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">입학조건</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">장학금</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">지원자격</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">학과</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">학위</a>
+							</li>
+						</ul>
+						<span class="time">오후 3:28</span>
+					</li>
+					<li class="mytalk">
+						<div class="detail">
+							어학연수
+						</div>
+						<span class="time">오후 3:29</span>
+					</li>
+					<li class="dudu">
+						<strong>두두</strong>
+						<div class="detail">
+							어학연수에 대한 답변입니다!
+						</div>
+						<div class="swiper-container chat_slider">
+							<ul class="swiper-wrapper tab_switch_js">
+								<li class="swiper-slide">
+									<a href="javascript:void(0);">어학연수 학습기간은 보통 얼마나 되나요?</a>
+								</li>
+								<li class="swiper-slide">
+									<a href="javascript:void(0);">어학연수과정은 1년에 모집 기간은 어떻게 되나요? 저는 내년 상반기에 입학하고 싶은데 언제 신청하면 될까요?</a>
+								</li>
+								<li class="swiper-slide">
+									<a href="javascript:void(0);">학위과정은 1년 보통 몇 번 모집합니까? 그라고 모집 기간은 어떻게 되나요?</a>
+								</li>
+								<li class="swiper-slide">
+									<a href="javascript:void(0);">요즘 코로나 때문에 학교에 어학연수 모집일정이 변동이 있으신가요?</a>
+								</li>
+								<li class="swiper-slide">
+									<a href="javascript:void(0);">요즘 코로나 때문에 학교에 학위과정 모집일정이 변동이 있으신가요?</a>
+								</li>
+							</ul>
+							<div class="swiper-pagination"></div>
+						</div>	
+						<span class="time">오후 3:30</span>
+					</li>
+					<li class="mytalk">
+						<div class="detail">
+							어학연수 학습기간은 보통 얼마나 되나요??
+						</div>
+						<span class="time">오후 3:32</span>
+					</li>
+					<li class="dudu">
+						<strong>두두</strong>
+						<div class="detail">
+							어학연수 학습기간은 보통 얼마나 되나요??<br/>
+							에 대한 답변입니다!
+							<br/><br/>
+							6개월부터 2년까지입니다.
+							<div class="btn_area">
+								<button type="button" class="font_blue">다른 문의하기</button>
+								<button type="button" class="font_red">채팅 종료</button>
+							</div>
+						</div>
+						<span class="time">오후 3:33</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- [pp] //챗봇 -->
+
+		<!-- [pp] 도움말 클릭시 나오는 영역 : help_chat 추가-->
+		<!--
+		<div class="chat_area responsive help_chat">
+			<div class="chat_header">
+				<a href="javascript:void(0);" class="chat_logo">챗봇</a>
+				<p class="help_detail logo">처음 화면으로 돌아가기</p>
+				<div class="chat_buttonarea">
+					<button type="button" class="chat_help">도움말</button>
+					<p class="help_detail help">도움말</p>
+					<div class="select_lang">
+						<p><span class="lang_kr"></span></p>
+						<ul>
+							<li><span class="lang_kr"></span></li>
+							<li><span class="lang_us"></span></li>
+							<li><span class="lang_cn"></span></li>
+							<li><span class="lang_vn"></span></li>
+						</ul>
+					</div>
+					<p class="help_detail lang">언어선택</p>
+					<button type="button" class="chat_close">닫기</button>
+					<p class="help_detail close">닫기</p>
+				</div>
+			</div>
+			<div class="chat_cnt">
+				<strong class="date_label">2022년 7월 14일 목요일</strong>
+				<ul>
+					<li class="dudu">
+						<strong>두두</strong>
+						<div class="detail">
+							안녕하세요! <br/>
+							유학 두드림에 대해 궁금한 사항을 <br/>
+							바로 답변해드리는 챗봇 두두입니다! <br/><br/>
+							아래 카테고리에 대해 24시간 답변 가능하니, <br/>
+							궁금한 사항은 버튼을 눌러 확인해 보세요 :)
+							<ul class="category_1depth">
+								<li>
+									<a href="javascript:void(0);" class="intro on">두드림 소개</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" class="info">대학 정보</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" class="abroad">한국유학</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" class="korean">한국어</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" class="use">두드림 사이트 이용</a>
+								</li>
+								<li class="static">
+									<p class="help_detail category">궁금한 내용 클릭 시 해당 내용을 자세히 볼 수 있습니다.</p>
+								</li>
+							</ul>
+						</div>
+						<span class="time">오후 3:26</span>
+					</li>
+					<li class="mytalk">
+						<div class="detail">
+							두드림 소개
+						</div>
+						<span class="time">오후 3:27</span>
+					</li>
+					<li class="dudu">
+						<strong>두두</strong>
+						<div class="detail">
+							두드림 소개에 대해 궁금한 내용을 <br/>
+							클릭하면 자세한 내용을 볼 수 있어요! 
+						</div>
+						<ul class="category_2depth tab_switch_js">
+							<li>
+								<a href="javascript:void(0);" class="on">두드림 소개</a>
+							</li>
+						</ul>
+						<span class="time">오후 3:28</span>
+					</li>
+					<li class="mytalk">
+						<div class="detail">
+							두드림 소개
+						</div>
+						<span class="time">오후 3:29</span>
+					</li>
+				</ul>
+			</div>
+			<button type="button" class="btn_round btn_lg help_close">닫기</button>
+		</div>
+		-->
+		<!-- [pp] //도움말 클릭시 나오는 영역-->
+	</body>
+</html>

@@ -1,0 +1,2690 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi, shrink-to-fit=no">
+		<meta name="format-detection" content="telephone=no, address=no">
+		<meta name="title" content="DoDream">
+		<meta name="keywords" content="Block Chain, Study Abroad, platform, Korea, vietnam">
+		<meta name="description" content="유학플랫폼 두드림(DoDream)외국인 유학생을 위한 한국 유학 매칭 플랫폼">
+		<meta name="author" content="DainLeaders">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="DoDream">
+		<meta property="og:description" content="유학플랫폼 두드림(DoDream)외국인 유학생을 위한 한국 유학 매칭 플랫폼">
+		<meta property="og:image" content="../../../images/common/img_metacover.jpg">
+		<meta property="og:url" content="http://www.dodream.io">
+		<meta name="naver-site-verification" content="dd744254d55fa0f146a5daeaf1e02ae2dd86c1f9"/> 
+		<meta name="google-site-verification" content="mive32tDbnLeee8bzzUfCA31XmDNgL4Lgj4dQoxn8DM"/>
+		<title>DoDream</title>
+
+		<!-- [pp] 웹앱매니페스트 - chrome, opera -->
+		<link rel="manifest" href="../manifest.json">
+		<!-- [pp] //웹앱매니페스트 - chrome, opera -->
+
+		<!-- [pp] ios safari screen -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="white">
+		<meta name="apple-mobile-web-app-title" content="DoDream">
+		<!-- [pp] //ios safari screen -->
+
+		<!-- [pp] 파비콘 -->
+		<link rel="apple-touch-icon" sizes="64x64" href="../../../images/common/favicon.png">
+		<link rel="shortcut icon" type="image/x-icon" href="../../../images/common/favicon.ico">
+		<!-- [pp] //파비콘 -->
+
+		<!-- [pp] css -->
+		<link rel="stylesheet" href="../../../css/client/src/swiper.min.css">
+		<link rel="stylesheet" href="../../../css/client/src/jquery.mCustomScrollbar.css">
+		<link rel="stylesheet" href="../../../css/client/src/select2.css">
+		<link rel="stylesheet" href="../../../css/client/src/magnific-popup.css">
+		<link rel="stylesheet" href="../../../css/dl_global.css">
+		<link rel="stylesheet" href="../../../css/client/normalize.css">
+		<link rel="stylesheet" href="../../../css/client/grid.css">
+		<link rel="stylesheet" href="../../../css/client/table.css">
+		<link rel="stylesheet" href="../../../css/client/formstyle.css">
+		<link rel="stylesheet" href="../../../css/client/common.css">
+		<link rel="stylesheet" href="../../../css/client/ui.css">
+		<link rel="stylesheet" href="../../../css/client/popup.css">
+		<!-- [pp] //css -->
+
+		<!-- [pp] js -->
+		<script type="text/javascript" src="../../../js/client/src/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/swiper.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/jquery.mCustomScrollbar.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/select2.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/jquery.magnific-popup.js"></script>
+		<script type="text/javascript" src="../../../js/client/pp_common.js"></script>
+
+		<!-- [pp] 사용 금지 -->
+<!--		<script type="text/javascript" src="../../../js/client/src/jquery-1.12.3.min.js"></script>-->
+		<script type="text/javascript" src="../../../js/client/pp_include.js"></script>
+		<!-- [pp] //사용 금지 -->
+
+		<!-- [pp] //js -->
+
+		<!--[if lt IE 9]>
+		<script type="text/javascript" src="../../../js/client/src/jquery-1.12.3.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/html5shiv.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/IE9.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/respond.min.js"></script>
+		<![endif]-->
+
+	</head>
+	<body>
+		<!--[pp] ie 하위버젼 접속시 알림 -->
+		<!--[if lt IE 10]>
+			<div id="browser">
+			This site is supported Explorer 10 or higher, Chrome, Firefox, Opera, Safari.<br/>If you are using it now, Please <a href="https://browsehappy.com/?locale=en" target="_blank">upgrade your browser</a> to improve your experience and security.
+			<button type="button" class="pp_upgradeinfo_close">close</button>
+			</div>
+		<![endif]-->
+		<!--[pp] // ie 하위버젼 접속시 알림 -->
+		
+		<!-- [pp] 로딩중 화면 -->
+		<div id="loading" style="display:none;">
+			<p id="loading_image">
+				<img src="../../../images/pageloading.gif" alt="Loading..."><br>
+				<span>Loading</span>
+			</p>
+		</div>
+		<!-- [pp] //로딩중 화면 -->
+		
+		<!-- [pp] 푸터를 제외한 전체페이지 -->
+		<div class="page_wrap">
+			<!-- [pp] nav -->
+			<div class="nav_wrap">
+				<!-- [pp] header -->
+				<header id="header" class="header_wrap">
+					<div class="header_grid">
+						<h1 class="header_logo">
+							<a href="javascript:void(0);">
+								<img src="../../../images/client/common/header_logo.svg" alt="유학플랫폼 두드림입니다">
+							</a>
+						</h1>
+						<nav id="gnb_skip" class="gnb_wrap" tabindex="0">
+							<ul class="gnb_1depth">
+								<li>
+									<a href="javascript:void(0);">Dream Guide</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">Do TOPIK</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">Do Play</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">Do Talking</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">Do Job<span class="new_cnt">NEW</span></a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">Notice</a>
+								</li>
+							</ul>
+						</nav>
+						<div class="function_area">
+							<a href="javascript:void(0);" class="btn_log btn_login">LOGIN</a>
+							<!-- [pp] 로그인/로그아웃/마이페이지 :
+							<a href="javascript:void(0);" class="btn_log btn_login">LOGIN</a>
+							<a href="javascript:void(0);" class="btn_log btn_login">LOGOUT</a>
+							<a href="javascript:void(0);" class="btn_log btn_login">My Page</a>
+							-->
+							<div class="select_lang">
+								<p>KR</p>
+								<ul>
+									<li><span class="lang_kr"></span>KR</li>
+									<li><span class="lang_us"></span>EN</li>
+									<li><span class="lang_cn"></span>CN</li>
+									<li><span class="lang_vn"></span>VN</li>
+								</ul>
+							</div>
+						</div>
+						<button type="button" class="btn_menu">
+							메뉴보기
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
+					</div>
+					<div class="gnb_submenu">
+						<div class="grid_content">
+							<div class="gnb_list">
+								<a href="javascript:void(0);" class="gnb_tit">Dream Guide</a>
+								<ul class="gnb_2depth">
+									<li><a href="javascript:void(0);">대학 검색</a></li>
+									<li><a href="javascript:void(0);">유학 서비스</a></li>
+									<li><a href="javascript:void(0);">유학 정보</a></li>
+									<li><a href="javascript:void(0);">유학 후기</a></li>
+								</ul>
+							</div>
+							<div class="gnb_list">
+								<a href="javascript:void(0);" class="gnb_tit">Do TOPIK</a>
+								<ul class="gnb_2depth">
+									<li><a href="javascript:void(0);">What is TOPIK</a></li>
+									<li><a href="javascript:void(0);">유형별 문제</a></li>
+									<li><a href="javascript:void(0);">모의고사</a></li>
+								</ul>
+							</div>
+							<div class="gnb_list">
+								<a href="javascript:void(0);" class="gnb_tit">Do Play</a>
+								<ul class="gnb_2depth">
+									<li><a href="javascript:void(0);">K-Story</a></li>
+									<li><a href="javascript:void(0);">Magazine</a></li>
+								</ul>
+							</div>
+							<div class="gnb_list">
+								<a href="javascript:void(0);" class="gnb_tit">Do Talking</a>
+								<ul class="gnb_2depth">
+									<li><a href="javascript:void(0);">Community</a></li>
+									<li><a href="javascript:void(0);">정보마당</a></li>
+								</ul>
+							</div>
+							<div class="gnb_list">
+								<a href="javascript:void(0);" class="gnb_tit">Do Job<span class="new_cnt">NEW</span></a>
+								<ul class="gnb_2depth">
+									<li><a href="javascript:void(0);">채용정보<span class="new_cnt">NEW</span></a></li>
+								</ul>
+							</div>
+							<div class="gnb_list">
+								<a href="javascript:void(0);" class="gnb_tit">Notice</a>
+								<ul class="gnb_2depth">
+									<li><a href="javascript:void(0);">Notice</a></li>
+									<li><a href="javascript:void(0);">EVENT</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</header>
+				<!-- [pp] //nav -->
+			</div>
+			<!-- [pp] //header -->
+
+			<!-- [pp] 챗봇 -->
+			<div class="chat_wrap">
+				<div class="chatbot">
+					<a href="javascript:void(0);"></a>
+				</div>
+				<!--[pp] 클릭시 나오는 박스-->
+				<div class="chat_area">
+					<div class="chat_header">
+						<a href="javascript:void(0);" class="chat_logo">챗봇</a>
+						<div class="chat_buttonarea">
+							<button type="button" class="chat_help">도움말</button>
+							<div class="select_lang">
+								<p><span class="lang_kr"></span></p>
+								<ul>
+									<li><span class="lang_kr"></span></li>
+									<li><span class="lang_us"></span></li>
+									<li><span class="lang_cn"></span></li>
+									<li><span class="lang_vn"></span></li>
+								</ul>
+							</div>
+							<button type="button" class="chat_close">닫기</button>
+						</div>
+					</div>
+					<div class="chat_cnt">
+						<strong class="date_label">2022년 7월 14일 목요일</strong>
+						<ul>
+							<li class="dudu">
+								<strong>두두</strong>
+								<div class="detail">
+									안녕하세요! <br/>
+									유학 두드림에 대해 궁금한 사항을 <br/>
+									바로 답변해드리는 챗봇 두두입니다! <br/><br/>
+									아래 카테고리에 대해 24시간 답변 가능하니, <br/>
+									궁금한 사항은 버튼을 눌러 확인해 보세요 :)
+									<ul class="category_1depth tab_switch_js">
+										<li>
+											<a href="javascript:void(0);" class="intro">두드림 소개</a>
+										</li>
+										<li>
+											<!-- [pp] 클릭시 상태 on 추가-->
+											<a href="javascript:void(0);" class="info on">대학 정보</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" class="abroad">한국유학</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" class="korean">한국어</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" class="use">두드림 사이트 이용</a>
+										</li>
+									</ul>
+								</div>
+								<span class="time">오후 3:26</span>
+							</li>
+							<li class="mytalk">
+								<div class="detail">
+									대학 정보
+								</div>
+								<span class="time">오후 3:27</span>
+							</li>
+							<li class="dudu">
+								<strong>두두</strong>
+								<div class="detail">
+									대학 정보에 대해 궁금한 내용을 <br/>
+									클릭하면 자세한 내용을 볼 수 있어요! 
+								</div>
+								<ul class="category_2depth tab_switch_js">
+									<li>
+										<a href="javascript:void(0);">기숙사</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);">대학 검색</a>
+									</li>
+									<li>
+										<!-- [pp] 클릭시 상태 on 추가-->
+										<a href="javascript:void(0);" class="on">어학연수</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);">입학조건</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);">장학금</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);">지원자격</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);">학과</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);">학위</a>
+									</li>
+								</ul>
+								<span class="time">오후 3:28</span>
+							</li>
+							<li class="mytalk">
+								<div class="detail">
+									어학연수
+								</div>
+								<span class="time">오후 3:29</span>
+							</li>
+							<li class="dudu">
+								<strong>두두</strong>
+								<div class="detail">
+									어학연수에 대한 답변입니다!
+								</div>
+								<div class="swiper-container chat_slider">
+									<ul class="swiper-wrapper">
+										<li class="swiper-slide">
+											<a href="javascript:void(0);">어학연수 학습기간은 보통 얼마나 되나요?</a>
+										</li>
+										<li class="swiper-slide">
+											<a href="javascript:void(0);">어학연수과정은 1년에 모집 기간은 어떻게 되나요? 저는 내년 상반기에 입학하고 싶은데 언제 신청하면 될까요?</a>
+										</li>
+										<li class="swiper-slide">
+											<a href="javascript:void(0);">학위과정은 1년 보통 몇 번 모집합니까? 그라고 모집 기간은 어떻게 되나요?</a>
+										</li>
+										<li class="swiper-slide">
+											<a href="javascript:void(0);">요즘 코로나 때문에 학교에 어학연수 모집일정이 변동이 있으신가요?</a>
+										</li>
+										<li class="swiper-slide">
+											<a href="javascript:void(0);">요즘 코로나 때문에 학교에 학위과정 모집일정이 변동이 있으신가요?</a>
+										</li>
+									</ul>
+									<div class="swiper-pagination"></div>
+								</div>	
+								<span class="time">오후 3:30</span>
+							</li>
+							<li class="mytalk">
+								<div class="detail">
+									어학연수 학습기간은 보통 얼마나 되나요??
+								</div>
+								<span class="time">오후 3:32</span>
+							</li>
+							<li class="dudu">
+								<strong>두두</strong>
+								<div class="detail">
+									어학연수 학습기간은 보통 얼마나 되나요??<br/>
+									에 대한 답변입니다!
+									<br/><br/>
+									6개월부터 2년까지입니다.
+									<div class="btn_area">
+										<button type="button" class="font_blue">다른 문의하기</button>
+										<button type="button" class="font_red">채팅 종료</button>
+									</div>
+								</div>
+								<span class="time">오후 3:33</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- [pp] 도움말 클릭시 나오는 영역 : help_chat 추가-->
+				<!--
+				<div class="chat_area help_chat">
+					<div class="chat_header">
+						<a href="javascript:void(0);" class="chat_logo">챗봇</a>
+						<p class="help_detail logo">처음 화면으로 돌아가기</p>
+						<div class="chat_buttonarea">
+							<button type="button" class="chat_help">도움말</button>
+							<p class="help_detail help">도움말</p>
+							<div class="select_lang">
+								<p><span class="lang_kr"></span></p>
+								<ul>
+									<li><span class="lang_kr"></span></li>
+									<li><span class="lang_us"></span></li>
+									<li><span class="lang_cn"></span></li>
+									<li><span class="lang_vn"></span></li>
+								</ul>
+							</div>
+							<p class="help_detail lang">언어선택</p>
+							<button type="button" class="chat_close">닫기</button>
+							<p class="help_detail close">닫기</p>
+						</div>
+					</div>
+					<div class="chat_cnt">
+						<strong class="date_label">2022년 7월 14일 목요일</strong>
+						<ul>
+							<li class="dudu">
+								<strong>두두</strong>
+								<div class="detail">
+									안녕하세요! <br/>
+									유학 두드림에 대해 궁금한 사항을 <br/>
+									바로 답변해드리는 챗봇 두두입니다! <br/><br/>
+									아래 카테고리에 대해 24시간 답변 가능하니, <br/>
+									궁금한 사항은 버튼을 눌러 확인해 보세요 :)
+									<ul class="category_1depth">
+										<li>
+											<a href="javascript:void(0);" class="intro on">두드림 소개</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" class="info">대학 정보</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" class="abroad">한국유학</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" class="korean">한국어</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" class="use">두드림 사이트 이용</a>
+										</li>
+										<li class="static">
+											<p class="help_detail category">궁금한 내용 클릭 시 해당 내용을 자세히 볼 수 있습니다.</p>
+										</li>
+									</ul>
+								</div>
+								<span class="time">오후 3:26</span>
+							</li>
+							<li class="mytalk">
+								<div class="detail">
+									두드림 소개
+								</div>
+								<span class="time">오후 3:27</span>
+							</li>
+							<li class="dudu">
+								<strong>두두</strong>
+								<div class="detail">
+									두드림 소개에 대해 궁금한 내용을 <br/>
+									클릭하면 자세한 내용을 볼 수 있어요! 
+								</div>
+								<ul class="category_2depth tab_switch_js">
+									<li>
+										<a href="javascript:void(0);" class="on">두드림 소개</a>
+									</li>
+								</ul>
+								<span class="time">오후 3:28</span>
+							</li>
+							<li class="mytalk">
+								<div class="detail">
+									두드림 소개
+								</div>
+								<span class="time">오후 3:29</span>
+							</li>
+						</ul>
+					</div>
+					<button type="button" class="btn_round btn_lg help_close">닫기</button>
+				</div>
+				-->
+				<!-- [pp] //도움말 클릭시 나오는 영역-->
+			</div>
+			<!-- [pp] //챗봇 -->
+			<!-- [pp] //header -->
+			<div class="gnb_bg"></div>
+			<!-- [pp] //header -->
+			<!-- [pp] visual -->
+			<figure class="sub_visual visual_mypage">
+				<div class="grid_content">
+					<div class="visual_txt">
+						<h2>My Page</h2>
+					</div>
+					<nav class="page_navi">
+						<ul>
+							<li><a href="javascript:void(0);">Home</a></li>
+							<li><a href="javascript:void(0);">My Page</a></li>
+						</ul>
+					</nav>
+				</div>
+			</figure>
+			<!-- [pp] //visual -->
+			<!-- [pp] container -->
+			<div class="subpage_wrap grid_content">
+				<div class="mypage_wrap tab_js">
+					<div class="btn_outarea">
+						<a href="javascript:void(0);" class="btn_logout">로그아웃</a>
+					</div>
+					<ul class="tab_list tab_list_js">
+						<li><a href="#tab1_1" class="on">회원정보</a></li>
+						<li><a href="#tab1_2">결제 내역</a></li>
+						<li><a href="#tab1_3">입학지원내역</a></li>
+						<li><a href="#tab1_4">보유 DRP</a></li>
+						<li><a href="#tab1_5">보유 DRM</a></li>
+						<li><a href="#tab1_6">활동 내역</a></li>
+						<li><a href="#tab1_7">결제 내역</a></li>
+						<!--<li><a href="#tab1_8">모의입학결과내역</a></li>-->
+						<li><a href="#tab1_9">1:1 문의</a></li>
+						<li><a href="#tab1_10">리더보드</a></li>
+					</ul>
+					<div class="tab_cnt_js">
+						<div id="tab1_1">
+							<section class="section_area">
+								<h3 class="section_tit_lg">회원정보</h3>
+								<ul class="list_wrap">
+									<li>
+										<h5 class="list_tit">이메일</h5>
+										<div class="list_cnt">
+											<input class="form_style autoinput wd_300" value="thisisfake@gmail.com">
+										</div>
+									</li>
+									<li>
+										<h5 class="list_tit">휴대폰 번호</h5>
+										<div class="list_cnt">
+											<input class="form_style autoinput wd_210 mg_r5" value="010-1234-5678">
+											<button type="button" class="btn_round btn_md btn_blue">변경</button>
+										</div>
+									</li>
+									<li>
+										<h5 class="list_tit">비밀번호 변경</h5>
+										<div class="list_cnt">
+											<div class="acd_cnt_js">
+												<div class="naming_input naming_md_input mg_b5 wd_300">
+													<label>현재 비밀번호</label>
+													<input>
+												</div>
+												<div class="naming_input naming_md_input mg_b5 wd_300">
+													<label>새 비밀번호</label>
+													<input>
+												</div>
+												<div class="dp_inline naming_input naming_md_input mg_r5 mg_b5 wd_300">
+													<label>새 비밀번호 확인</label>
+													<input>
+												</div>
+												<button type="button" class="btn_round btn_md btn_blue va_t">변경</button>
+											</div>
+										</div>
+										<!--<div class="list_cnt accordion_js">
+											<button type="button" class="btn_round btn_md btn_blue  mg_b5 acd_list_js">변경</button>
+											<div class="acd_cnt_js">
+												<div class="naming_input naming_lg_input mg_b5 wd_300">
+													<label>현재 비밀번호</label>
+													<input>
+												</div>
+												<div class="naming_input naming_lg_input mg_b5 wd_300">
+													<label>새로운 비밀번호</label>
+													<input>
+												</div>
+												<div class="naming_input naming_lg_input mg_b5 wd_300">
+													<label>새로운 비밀번호 확인</label>
+													<input>
+												</div>
+												<button type="button" class="btn_round btn_md btn_blue">변경</button>
+											</div>
+										</div>-->
+									</li>
+									<li>
+										<h5 class="list_tit">닉네임</h5>
+										<div class="list_cnt">
+											<input class="form_style autoinput wd_300 mg_r5" value="dodreamer">
+											<button type="button" class="btn_round btn_md btn_blue va_t">변경</button>
+										</div>
+									</li>
+									<li>
+										<h5 class="list_tit">국가/도시</h5>
+										<div class="list_cnt">
+											<div class="select_form wd_140 mg_r10">
+												<label for="nation">국가</label>
+												<select id="nation">
+													<option>한국</option>
+													<option>베트남</option>
+												</select>
+											</div>
+											<div class="select_form wd_140">
+												<label for="city">도시</label>
+												<select id="city">
+													<option>서울</option>
+													<option>경기</option>
+												</select>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</section>
+							<section class="extrainfo_wrap accordion_js">
+								<div class="extrainfo_tit acd_list_js">
+									<h3>My e-portfolio</h3>
+									<span class="btn_accordion">내용보기</span>
+								</div>
+								<div class="extrainfo_cnt acd_cnt_js">
+									<p class="mg_b10 font_red">※ 공정한 포인트 지급을 위해 정확한 정보를 기입해주세요</p>
+									<div class="cf">
+										<div class="extrainfo_left">
+											<div class="img_box">
+												<!-- [pp] 증명사진 사이지 : 100px x 140px -->
+												<img src="../../../images/client/sub/img_profile.jpg" alt="증명사진">
+											</div>
+											<div class="btn_attachment">
+												<input type="file" class="hidden" id="attachment">	
+												<label for="attachment" class="btn_round btn_md btn_default">사진 올리기</label>
+											</div>
+										</div>
+										<div class="extrainfo_right">
+											<ul class="list_wrap">
+												<li>
+													<h5 class="list_tit">이름</h5>
+													<div class="list_cnt">
+														<input class="form_style" placeholder="이름을 입력해주세요">
+													</div>
+												</li>
+												<li>
+													<h5 class="list_tit">생년월일</h5>
+													<div class="list_cnt">
+														<div class="select_form dp_inline mg_r5 wd_90">
+															<label for="year">연도</label>
+															<select id="year">
+																<option>2000</option>
+																<option>1999</option>
+																<option>1998</option>
+															</select>
+														</div>
+														<div class="select_form dp_inline mg_r5 wd_70">
+															<label for="month">월</label>
+															<select id="month">
+																<option>3월</option>
+																<option>2월</option>
+																<option>1월</option>
+															</select>
+														</div>
+														<div class="select_form dp_inline wd_70">
+															<label for="day">일</label>
+															<select id="day">
+																<option>3</option>
+																<option>2</option>
+																<option>1</option>
+															</select>
+														</div>
+													</div>
+												</li>
+												<li>
+													<h5 class="list_tit">성별</h5>
+													<div class="list_cnt">
+														<p class="radio_row">
+															<input type="radio" name="gender" id="female" class="hidden">
+															<label for="female">여성</label>
+														</p>
+														<p class="radio_row">
+															<input type="radio" name="gender" id="male" class="hidden">
+															<label for="male">남성</label>
+														</p>
+													</div>
+												</li>
+											</ul>
+											<ul class="list_wrap">
+												<li>
+													<h5 class="list_tit">최종 학력</h5>
+													<div class="list_cnt">
+														<div class="select_form dp_inline wd_90 mg_r5">
+															<label for="education">학력</label>
+															<select id="education">
+																<option>대학교</option>
+																<option>고등학교</option>
+															</select>
+														</div>
+														<input class="form_style wd_160 va_t" placeholder="최종 졸업 학교 이름">
+													</div>
+												</li>
+												<li>
+													<h5 class="list_tit">은행 잔고</h5>
+													<div class="list_cnt">
+														<p class="currency_input wd_p100">
+															<input class="form_style" placeholder="부모 또는 본인 소유 잔고를 입력해주세요">
+															<label>USD</label>
+														</p>
+													</div>
+												</li>
+												<li>
+													<h5 class="list_tit">숙소 변경</h5>
+													<div class="list_cnt">
+														<div class="select_form dp_inline wd_90 mg_r5">
+															<label for="education">거주형태</label>
+															<select id="education">
+																<option>기숙사</option>
+																<option>전세</option>
+																<option>월세</option>
+																<option>자가</option>
+															</select>
+														</div>
+														<div class="currency_input wd_160">
+															<input class="form_style" placeholder="예상 금액">
+															<label>USD</label>
+														</div>
+													</div>
+												</li>
+											</ul>
+											<ul class="list_wrap">
+												<li>
+													<h5 class="list_tit">증명서 등록</h5>
+													<div class="list_cnt wdfull_1">
+														<div class="select_form dp_inline wd_p100 mg_r5">
+															<label for="certificate">증명서 선택</label>
+															<select id="certificate">
+																<option>최종학력 증명서</option>
+																<option>성적증명서</option>
+																<option>은행잔고사본</option>
+																<option>여권 사본</option>
+															</select>
+														</div>
+														<p class="font_red mg_t5">
+															※ 파일은 PDF만 등록 가능합니다
+														</p>
+														<div class="btn_attachment">
+															<input type="file" class="hidden" id="attachment">	
+															<label for="attachment" class="btn_round btn_md btn_blue">첨부파일</label>
+														</div>
+													</div>
+													<ul class="attachment_list">
+														<li>
+															<strong>최종학력 증명서</strong>
+															<p><a href="javascript:void(0);" class="link">홍길동 최종학력 증명서.pdf</a></p>
+															<button type="button" class="btn_close">닫기</button>
+														</li>
+														<li>
+															<strong>은행잔고사본</strong>
+															<p><a href="javascript:void(0);" class="link">홍길동 은행장고 사본.pdf</a></p>
+															<button type="button" class="btn_close">닫기</button>
+														</li>
+														<li>
+															<strong>성적증명서</strong>
+															<p><a href="javascript:void(0);" class="link">홍길동 은행장고 사본.pdf</a></p>
+															<button type="button" class="btn_close">닫기</button>
+														</li>
+														<li>
+															<strong>여권사본</strong>
+															<p><a href="javascript:void(0);" class="link">홍길동 은행장고 사본.pdf</a></p>
+															<button type="button" class="btn_close">닫기</button>
+														</li>
+													</ul>
+												</li>
+												<li>
+													<h5 class="list_tit">연락처</h5>
+													<div class="list_cnt">
+														<div class="select_form dp_inline wd_70">
+															<label for="phone">010</label>
+															<select id="phone">
+																<option>010</option>
+																<option>011</option>
+															</select>
+														</div>
+														<input class="form_style wd_160 va_t" placeholder="- 없이 입력해주세요">
+													</div>
+												</li>
+												<li>
+													<h5 class="list_tit">이메일</h5>
+													<div class="list_cnt">
+														<input class="form_style wd_100 va_t" placeholder="">
+														@
+														<div class="select_form dp_inline wd_120">
+															<label for="email">naver.com</label>
+															<select id="email">
+																<option>naver.com</option>
+																<option>daum.net</option>
+																<option>직접입력</option>
+															</select>
+														</div>
+														<input class="form_style wd_140 va_t" placeholder="직접입력 하기">
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="btn_area ta_c pd_l0 mg_t20">
+										<button type="button" class="btn_round btn_lg btn_default">저장</button>
+									</div>
+									<div class="tab_js pd_l0 mg_t30">
+										<ul class="tab_list2 tab_list_js">
+											<li>
+												<a href="#tab_portfolio" class="on">e-portfolio</a>
+											</li>
+											<li>
+												<a href="#tab_job">JOB 매칭 정보</a>
+											</li>
+										</ul>
+										<div class="tab_cnt_js">
+											<div id="tab_portfolio">
+												<h3 class="section_tit_lg">e-portfolio</h3>
+												<div class="section_fr tablet ta_r">
+													<button type="button" class="btn_round btn_md btn_blue">e-portfolio 관리</button>
+													<button type="button" class="btn_round btn_md btn_default">수정</button>
+													<button type="button" class="btn_round btn_md btn_gray">삭제</button>
+												</div>
+												<div class="resume_container">
+													<h4 class="result_tit">
+														<strong>상단의 리스트에서 클릭하여 펼쳐진 이력서 입니다.</strong>
+														<span class="result_date">등록일: 2019.02.10</span>
+													</h4>
+													<div class="studentinfo_box bg_white">
+														<p class="resumeimg">
+															<img src="../../../images/client/sub/img_model_wide_light.png" alt="학생 증명사진">
+														</p>
+														<dl class="cf">
+															<dt>
+																홍길동<span>Hong gil dong</span>
+															</dt>
+															<dd>
+																<strong>생년월일</strong>1995.08.03
+															</dd>
+															<dd>
+																<strong>연락처</strong>010-0000-0000
+															</dd>
+															<dd>
+																<strong>이메일</strong>hong3423@naver.com
+															</dd>
+															<dd>
+																<strong>국가</strong>Seoul
+															</dd>
+															<dd>
+																<strong>주소</strong>서울특별시 강남구 강남대로 000
+															</dd>
+														</dl>
+													</div>
+													<h5 class="section_tit_sm">학력정보</h5>
+													<div class="tbl tbl_col scrollx_tbl_md mg_b20">
+														<table>
+															<caption>학력정보 목록</caption>
+															<colgroup>
+																<col style="width: 30%">
+																<col style="width: 24%">
+																<col style="width: auto">
+																<col style="width: 24%">
+															</colgroup>
+															<tbody>
+																<tr>
+																	<td>2014.03.02 ~ 2018.02.27<span class="font_deepblue mg_l10 bold va_t">재학</span></td>
+																	<td>아주대학교</td>
+																	<td>뮤지컬 학과</td>
+																	<td><span class="class_point">학점</span>3.5점</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+													<h5 class="section_tit_sm">희망 근무조건</h5>
+													<div class="tbl tbl_col scrollx_tbl_md mg_b20">
+														<table>
+															<caption>희망근무조건 목록</caption>
+															<colgroup>
+																<col style="width: 30%">
+																<col style="width: 24%">
+																<col style="width: auto">
+																<col style="width: 24%">
+															</colgroup>
+															<thead>
+																<tr>
+																	<th scope="col">고용형태</th>
+																	<th scope="col">희망근무지</th>
+																	<th scope="col">희망연봉</th>
+																	<th scope="col">희망직무</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td>정규직, 파견직</td>
+																	<td>서울,경기,인천</td>
+																	<td>5,000만원</td>
+																	<td>한국어 교사, 바리스타</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+													<h5 class="section_tit_sm">경력사항</h5>
+													<div class="tbl tbl_col mg_b20 scrollx_tbl_sm">
+														<table>
+															<caption>경력사항 목록</caption>
+															<colgroup>
+																<col style="width: 30%">
+																<col style="width: 24%">
+																<col style="width: auto">
+																<col style="width: 24%">
+															</colgroup>
+															<tbody>
+																<tr>
+																	<td scope="row">2019.06 ~ 2018.09</td>
+																	<td>문화재단</td>
+																	<td>사원</td>
+																	<td>한국문화컨텐츠 기획자</td>
+																</tr>
+																<tr>
+																	<td scope="row">2018.01 ~ 2018.06</td>
+																	<td>홈랜드</td>
+																	<td>사원</td>
+																	<td>홈랜드 총괄 디자이너</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+													<h5 class="section_tit_sm">대외활동</h5>
+													<div class="tbl tbl_col mg_b20 scrollx_tbl_sm">
+														<table>
+															<caption>대외활동 목록</caption>
+															<colgroup>
+																<col style="width: 30%">
+																<col style="width: 24%">
+																<col style="width: auto">
+																<col style="width: 24%">
+															</colgroup>
+															<tbody>
+																<tr>
+																	<td scope="row">2019.04 ~ 2018.02</td>
+																	<td>교육부 생활 인턴</td>
+																	<td colspan="2">신한은행 대학 기자</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+													<h5 class="section_tit_sm">봉사활동</h5>
+													<div class="tbl tbl_col mg_b20 scrollx_tbl_sm">
+														<table>
+															<caption>봉사활동 목록</caption>
+															<colgroup>
+																<col style="width: 30%">
+																<col style="width: 24%">
+																<col style="width: auto">
+																<col style="width: 24%">
+															</colgroup>
+															<tbody>
+																<tr>
+																	<td scope="row">2017.09 ~ 2018.02</td>
+																	<td>초록우산재당</td>
+																	<td colspan="2">해외봉사</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+													<h5 class="section_tit_sm">자격정보</h5>
+													<div class="tbl tbl_col mg_b20 scrollx_tbl_sm">
+														<table>
+															<caption>자격정보 목록</caption>
+															<colgroup>
+																<col style="width: 30%">
+																<col style="width: 24%">
+																<col style="width: auto">
+																<col style="width: 24%">
+															</colgroup>
+															<tbody>
+																<tr>
+																	<td scope="row">2017.09 ~ 2018.02</td>
+																	<td>컴퓨터그래픽스운용기능사</td>
+																	<td colspan="2">한국생산성본부</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+													<h5 class="section_tit_sm">어학</h5>
+													<div class="tbl tbl_col mg_b20 scrollx_tbl_sm">
+														<table>
+															<caption>어학 목록</caption>
+															<colgroup>
+																<col style="width: 30%">
+																<col style="width: 24%">
+																<col style="width: auto">
+																<col style="width: 24%">
+															</colgroup>
+															<tbody>
+																<tr>
+																	<td scope="row">2017.09 ~ 2018.02</td>
+																	<td>토악</td>
+																	<td>805점</td>
+																	<td>한국생산성본부</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+													<h5 class="section_tit_sm">병역사항</h5>
+													<div class="tbl tbl_col mg_b20 scrollx_tbl_sm">
+														<table>
+															<caption>병역사항 목록</caption>
+															<colgroup>
+																<col style="width: 30%">
+																<col style="width: 24%">
+																<col style="width: auto">
+																<col style="width: 24%">
+															</colgroup>
+															<tbody>
+																<tr>
+																	<td scope="row">2017.09 ~ 2018.02</td>
+																	<td>만기제대</td>
+																	<td colspan="2">포병</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+													<h5 class="section_tit_sm">해외경험</h5>
+													<div class="tbl tbl_col mg_b20 scrollx_tbl_sm">
+														<table>
+															<caption>병역사항 목록</caption>
+															<colgroup>
+																<col style="width: 30%">
+																<col style="width: 24%">
+																<col style="width: auto">
+																<col style="width: 24%">
+															</colgroup>
+															<tbody>
+																<tr>
+																	<td scope="row">2017.09 ~ 2018.02</td>
+																	<td>캐나다</td>
+																	<td colspan="2">어학연수</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+													<h5 class="section_tit_sm">대학생활 설계</h5>
+													<div class="tbl tbl_col mg_b20 scrollx_tbl_sm">
+														<table>
+															<caption>대학생활 설계</caption>
+															<colgroup>
+																<col style="width: 30%">
+																<col style="width: 24%">
+																<col style="width: auto">
+																<col style="width: 24%">
+															</colgroup>
+															<tbody>
+																<tr>
+																	<td scope="row">1학년</td>
+																	<td>1학기</td>
+																	<td>20일 유럽여행</td>
+																	<td>
+																	<!-- [pp] 달성시 미달성시 
+																		<span class="icon_achieve">달성</span>
+																		<span class="icon_achieve fail">미달성</span>-->
+																		<span class="icon_achieve">달성</span>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												</div>
+											</div>
+											<div id="tab_job">
+												<h3 class="section_tit_lg">JOB 매칭 정보</h3>
+												<div class="section_fr tablet ta_r">
+													<button type="button" class="btn_round btn_md btn_navy">JOB 매칭 정보입력</button>
+												</div>
+												<ul class="career_list">
+													<li>
+														<strong class="category career">경력</strong>
+														<ul>
+															<li>
+																<span>회사명</span>다인리더스
+															</li>
+															<li>
+																<span>희망직무</span>서비스 / 미디어,디자인 / 교육
+															</li>
+														</ul>
+														<div class="btn_area pd_0">
+															<button type="button" class="btn_round btn_sm btn_default">수정</button>
+															<button type="button" class="btn_round btn_sm btn_gray">삭제</button>
+														</div>
+													</li>
+													<li>
+														<strong class="category new">신입</strong>
+														<ul>
+															<li>
+																<span>제목</span>자기소개서 제목이 보여집니다.
+															</li>
+															<li>
+																<span>희망직무</span>서비스 / 미디어,디자인 / 교육
+															</li>
+														</ul>
+														<div class="btn_area pd_0">
+															<button type="button" class="btn_round btn_sm btn_default">수정</button>
+															<button type="button" class="btn_round btn_sm btn_gray">삭제</button>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+							<div class="ta_r mg_t50">
+								<button type="button" class="btn_round btn_sm btn_gray">회원탈퇴</button>
+							</div>
+						</div>
+						<div id="tab1_2">
+							<section class="section_area">
+								<div class="tbl tbl_colcol tbl_md_responsive">
+									<h3 class="section_tit_lg">결제 내역</h3>
+									<table>
+										<thead>
+											<tr>
+												<th>일자</th>
+												<th>구분</th>
+												<th>서비스명</th>
+												<th>수량</th>
+												<th>결제금액</th>
+												<th>결제방식</th>
+												<th>결제</th>
+												<th>서비스 이용</th>
+												<th>확인</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td data-th="일자">2020-08-30</td>
+												<td data-th="구분">유학서비스</td>
+												<td data-th="서비스명">학업계획서 컨설팅</td>
+												<td data-th="수량">2</td>
+												<td data-th="결제금액">100,000<a href="javascript:void(0);" class="magne_img"></a></td>
+												<td data-th="결제방식">신용카드</td>
+												<td data-th="결제">완료</td>
+												<td data-th="서비스 이용">진행중</td>
+												<td data-th="확인"><button class="btn_sm btn_round btn_default">보기</button></td>
+											</tr>
+											<tr>
+												<td data-th="일자">2020-07-30</td>
+												<td data-th="구분">Do TOPIK</td>
+												<td data-th="서비스명">TOPIK Ⅱ 모의고사</td>
+												<td data-th="수량">1</td>
+												<td data-th="결제금액">5,000 <a href="javascript:void(0);" class="magne_img"></a></td>
+												<td data-th="결제방식">계좌입금</td>
+												<td data-th="결제">대기</td>
+												<td data-th="서비스 이용">-</td>
+												<td data-th="확인"><button class="btn_sm btn_round btn_default">보기</button></td>
+											</tr>
+											<tr>
+												<td data-th="일자">2020-06-30</td>
+												<td data-th="구분">유학서비스</td>
+												<td data-th="서비스명">한국어 교육 - 1&#58;1</td>
+												<td data-th="수량">1</td>
+												<td data-th="결제금액">300,000 <a href="javascript:void(0);" class="magne_img"></a></td>
+												<td data-th="결제방식">계좌입금</td>
+												<td data-th="결제">완료</td>
+												<td data-th="서비스 이용">완료</td>
+												<td data-th="확인">-</td>
+											</tr>
+											<tr>
+												<td data-th="일자">2020-05-30</td>
+												<td data-th="구분">유학서비스</td>
+												<td data-th="서비스명">한국어 교육 - Class</td>
+												<td data-th="수량">1</td>
+												<td data-th="결제금액">100,000 <a href="javascript:void(0);" class="magne_img"></a></td>
+												<td data-th="결제방식">휴대폰 결제</td>
+												<td data-th="결제">완료</td>
+												<td data-th="서비스 이용">완료</td>
+												<td data-th="확인">-</td>
+											</tr>
+											<tr>
+												<td data-th="일자">2020-04-30</td>
+												<td data-th="구분">유학서비스</td>
+												<td data-th="서비스명">유학 매칭</td>
+												<td data-th="수량">1</td>
+												<td data-th="결제금액">200,000 <a href="javascript:void(0);" class="magne_img"></a></td>
+												<td data-th="결제방식">신용카드</td>
+												<td data-th="결제">완료</td>
+												<td data-th="서비스 이용">완료</td>
+												<td data-th="확인">-</td>
+											</tr>
+											<tr>
+												<td data-th="일자">2020-03-30</td>
+												<td data-th="구분">유학서비스</td>
+												<td data-th="서비스명">TOPIK Ⅱ 모의고사</td>
+												<td data-th="수량">1</td>
+												<td data-th="결제금액">100,000 <a href="javascript:void(0);" class="magne_img"></a></td>
+												<td data-th="결제방식">신용카드</td>
+												<td data-th="결제">완료</td>
+												<td data-th="서비스 이용">완료</td>
+												<td data-th="확인">-</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</section>
+						</div>
+						<div id="tab1_3">
+						  <h3 class="section_tit_lg">입학지원내역</h3>
+						   <div>
+							  <div class="add_detailbox">
+								   <div class="dp_inline">
+									   <span>구분</span>
+									   <div class="select_form detail_division">
+											<label for="add_detail">전체</label>
+											<select id="add_detail">
+												<option>전체</option>
+												<option>지원완료</option>
+												<option>작성중</option>
+												<option>결제대기</option>
+												<option>합격</option>
+												<option>불합격</option>
+											</select>
+										</div>
+								   </div>
+								   <div class="dp_inline">
+									   <span>작성일</span>
+										<div class="naming_input dp_inline detail_cal">
+											<input type="text" placeholder="시작일">
+											<button type="button" class="btn_cal">달력보기</button>
+										</div>
+										<span class="wave">~</span>
+										<div class="naming_input dp_inline detail_cal">
+											<input type="text" placeholder="종료일">
+											<button type="button" class="btn_cal">달력보기</button>
+										</div>
+									</div>
+									<div class="dp_inline">
+										<span>대학명</span>
+										<div class="naming_input dp_inline detail_univer">
+											<input type="text">
+										</div>
+										<button type="button" class="btn btn_md btn_default btn_search va_t">검색</button>
+									</div>
+								</div>
+							</div>
+							<ul class="univercity_list">
+							   <!-- [pp] 로딩박스 : 
+								<div class="boxloading">
+									<img src="../../../images/pageloading.gif" alt="로딩중입니다.">
+								</div>
+								-->
+								 <!-- [pp] 검색결과 없을 때 
+								<div class="nocnt_box mg_b10">
+									<p>
+										검색결과가 없습니다
+									</p>
+								</div>-->
+								<li class="cf">
+									<div class="img_box">
+										<img src="../../../images/client/sub/seoul_emblem.png" alt="입학지원내역 엠뷸럼 이미지">
+									</div>
+									<!-- [pp] 작성중은 기본 status_label -->
+									<h3><span class="status_label va_t">작성중</span>한양대학교</h3>
+									<ul class="univer_ul cf">
+										<li>
+											<ul class="univer_inner_ul">
+												<li>
+													<p><i>지원과정 &#58;</i> <span>학사과정</span></p>
+												</li>
+												<li>
+													<p><i>전형 &#58;</i> <span>외국인 특별전형1</span></p>
+												</li>
+												<li>
+													<p><i>학과 &#58;</i> <span>미디어학과</span></p>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<div class="univer_date">
+												<i>작성일 &#58; <span>20-07-24</span></i>
+											</div>
+										</li>
+									</ul>
+									<!-- [pp] pc에서만 가능 -->
+									<!-- [pp] 버튼이 작성중일때 writing pc일때만 보여짐 -->
+									<div class="univer_btbox writing">
+										<button class="btn_md btn_round btn_default">작성</button>
+									</div>
+								</li>
+								<li class="cf">
+									<div class="img_box">
+										<img src="../../../images/client/sub/seoul_emblem.png" alt="입학지원내역 엠뷸럼 이미지">
+									</div>
+									 <!-- [pp] 결제대기는 purple 추가 -->
+									<h3><span class="status_label purple va_t">결제대기</span>서울대학교</h3>
+									<ul class="univer_ul">
+										<li>
+											<ul class="univer_inner_ul">
+												<li>
+													<p><i>지원과정 &#58;</i> <span>학사과정</span></p>
+												</li>
+												<li>
+													<p><i>전형 &#58;</i> <span>외국인 특별전형1</span></p>
+												</li>
+												<li>
+													<p><i>학과 &#58;</i> <span>미디어학과</span></p>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<div class="univer_date">
+												<i>작성일 &#58; <span>20-07-24</span></i>
+											</div>
+											<div class="univer_date">
+												<i>수정일 &#58; <span>20-07-25</span></i>
+											</div>
+										</li>
+									</ul>
+										<!-- [pp] pc에서만 가능 -->
+										<!-- [pp] 버튼이 3개 보여질때 bt_fix -->
+										<!-- [pp] 버튼에 bt_fix > fix 클래스는 pc에서만 보여짐 -->
+									<div class="univer_btbox bt_fix">
+										<button class="btn_md btn_round btn_gray">상세</button>
+										<button class="btn_md btn_round btn_blue fix">수정</button>
+										<button class="btn_md btn_round btn_navy">결제</button>
+									</div>
+								</li>
+								<li class="cf">
+									<div class="img_box">
+										<img src="../../../images/client/sub/seoul_emblem.png" alt="입학지원내역 엠뷸럼 이미지">
+									</div>
+									<!-- [pp] 지원완료는 green 추가 -->
+									<h3><span class="status_label green va_t">지원완료</span>가천대학교</h3>
+									<ul class="univer_ul">
+										<li>
+											<ul class="univer_inner_ul">
+												<li>
+													<p><i>지원과정 &#58;</i> <span>학사과정</span></p>
+												</li>
+												<li>
+													<p><i>전형 &#58;</i> <span>외국인 특별전형1</span></p>
+												</li>
+												<li>
+													<p><i>학과 &#58;</i> <span>미디어학과</span></p>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<div class="univer_date">
+												<i>작성일 &#58; <span>20-07-24</span></i>
+											</div>
+											<div class="univer_date">
+												<i>수정일 &#58; <span>20-07-25</span></i>
+											</div>
+										</li>
+									</ul>
+								<!-- [pp] li 하단 출력 button 생성 -->
+								<!-- [pp] 버튼이 2개 보여질때 complete -->
+									 <div class="univer_btbox complete">
+										<button class="btn_md btn_round btn_gray">상세</button>
+										<button class="btn_md btn_round btn_brown">지원취소</button>
+									</div>
+									<div class="univer_print_box">
+										<span>출력</span>
+										<button class="btn_sm btn_round btn_white btn_bo_lightblue">수험표</button>
+										<button class="btn_sm btn_round btn_white btn_bo_lightblue">학력조회 동의 / 의뢰서</button>
+										<button class="btn_sm btn_round btn_white btn_bo_lightblue">우편 접수용 봉투</button>
+										<button class="btn_sm btn_round btn_white btn_bo_lightblue">자기소개서</button>
+										<button class="btn_sm btn_round btn_white btn_bo_lightblue">학업계획서</button>
+									</div>
+								</li>
+								<li class="cf">
+									<div class="img_box">
+										<img src="../../../images/client/sub/seoul_emblem.png" alt="입학지원내역 엠뷸럼 이미지">
+									</div>
+									<!-- [pp] 합격은 blue 추가 -->
+									<h3><span class="status_label blue va_t">합격</span>서경대학교</h3>
+									<ul class="univer_ul">
+										<li>
+											<ul class="univer_inner_ul">
+												<li>
+													<p><i>지원과정 &#58;</i> <span>학사과정</span></p>
+												</li>
+												<li>
+													<p><i>전형 &#58;</i> <span>외국인 특별전형1</span></p>
+												</li>
+												<li>
+													<p><i>학과 &#58;</i> <span>미디어학과</span></p>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<div class="univer_date">
+												<i>작성일 &#58; <span>20-07-24</span></i>
+											</div>
+											<div class="univer_date">
+												<i>수정일 &#58; <span>20-07-25</span></i>
+											</div>
+										</li>
+									</ul>
+							   <!-- [pp] li 하단 출력 button 생성 -->
+							   <!-- [pp] 버튼이 1개 보여질때 success -->
+									 <div class="univer_btbox success">
+										<button class="btn_md btn_round btn_gray">상세</button>
+									</div>
+									<div class="univer_print_box">
+										<span>출력</span>
+										<button class="btn_sm btn_round btn_white btn_bo_lightblue">수험표</button>
+										<button class="btn_sm btn_round btn_white btn_bo_lightblue">학력조회 동의 / 의뢰서</button>
+										<button class="btn_sm btn_round btn_white btn_bo_lightblue">우편 접수용 봉투</button>
+										<button class="btn_sm btn_round btn_white btn_bo_lightblue">자기소개서</button>
+										<button class="btn_sm btn_round btn_white btn_bo_lightblue">학업계획서</button>
+									</div>
+								</li>
+								<li class="cf">
+									<div class="img_box">
+										<img src="../../../images/client/sub/seoul_emblem.png" alt="입학지원내역 엠뷸럼 이미지">
+									</div>
+									<!-- [pp] 불합격은 red 추가 -->
+									<h3><span class="status_label red va_t">불합격</span>서경대학교</h3>
+									<ul class="univer_ul">
+										<li>
+											<ul class="univer_inner_ul">
+												<li>
+													<p><i>지원과정 &#58;</i> <span>학사과정</span></p>
+												</li>
+												<li>
+													<p><i>전형 &#58;</i> <span>외국인 특별전형1</span></p>
+												</li>
+												<li>
+													<p><i>학과 &#58;</i> <span>미디어학과</span></p>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<div class="univer_date">
+												<i>작성일 &#58; <span>20-07-24</span></i>
+											</div>
+											<div class="univer_date">
+												<i>수정일 &#58; <span>20-07-25</span></i>
+											</div>
+										</li>
+									</ul>
+							   <!-- [pp] li 하단 출력 button 생성 -->
+							   <!-- [pp] 버튼이 1개 보여질때 success -->
+									 <div class="univer_btbox success">
+										<button class="btn_md btn_round btn_gray">상세</button>
+									</div>
+									<div class="univer_print_box">
+										<span>출력</span>
+										<button class="btn_sm btn_round btn_white btn_bo_lightblue">수험표</button>
+										<button class="btn_sm btn_round btn_white btn_bo_lightblue">학력조회 동의 / 의뢰서</button>
+										<button class="btn_sm btn_round btn_white btn_bo_lightblue">우편 접수용 봉투</button>
+										<button class="btn_sm btn_round btn_white btn_bo_lightblue">자기소개서</button>
+										<button class="btn_sm btn_round btn_white btn_bo_lightblue">학업계획서</button>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div id="tab1_4">
+							<section class="mypoint_wrap section_area">
+								<h3 class="section_tit_lg">보유 DRP</h3>
+								<div class="cf">
+									<div class="mypoint_status">
+										<p class="mypoint">
+											현재 회원님이 보유하신 <span class="bold">DRP</span>는<strong>1,500 DRP</strong>입니다
+										</p>
+										<a href="javascript:void(0);" class="point_tit">DRP &#40;Dream Point&#41; 란?</a>
+									</div>
+									<div class="mywallet_status">
+										<h5>나의 개인 지갑</h5>
+										<p>개인 지갑 주소 〉</p>
+										<a href="javascript:void(0);" class="btn_circle btn_xs btn_bo_gray">주소보기</a>
+										<a href="javascript:void(0);" class="btn_circle btn_xs btn_bo_gray">주소복사</a>
+									</div>
+									<!-- [pp] 지갑 생성 전 : 
+									<div class="mywallet_yet">
+										<div>
+											<p>
+												<span>아직 개인 지갑을 생성하지 않았습니다</span>
+											</p>
+											<a href="javascript:void(0);" class="btn_round btn_md btn_blue">개인지갑 생성</a>
+										</div>
+									</div>
+									-->
+								</div>
+							</section>
+							<section class="exchange_wrap section_area">
+								<h3 class="section_tit_lg dp_inline mg_r10">DRM 전환</h3>
+								<a href="javascript:void(0);" class="point_tit">DRM &#40;Dream Money&#41; 란?</a>
+								<div>
+									<div class="dp_inline">
+										<input class="form_style" placeholder="100단위로 입력해주세요"> DRP
+									</div>
+									<span class="exchange_arrow"></span>
+									<div class="dp_inline">
+										<input class="form_style"  value="변환 DRM : 1DRM"> DRM
+										<button type="button" class="btn_round btn_md btn_blue va_t">전환</button>
+									</div>
+								</div>
+							</section>
+							<section class="breakdown_wrap">
+								<h3 class="section_tit_lg dp_inline mg_r10">DRP 사용내역</h3>
+								<div class="search_box">
+									<div class="naming_input dp_inline">
+										<input type="text" placeholder="시작일">
+										<button type="button" class="btn_cal">달력보기</button>
+									</div>
+									<span class="wave">~</span>
+									<div class="naming_input dp_inline">
+										<input type="text" placeholder="종료일">
+										<button type="button" class="btn_cal">달력보기</button>
+									</div>
+									<button type="button" class="btn btn_md btn_default btn_search">검색</button>
+								</div>
+								<div class="tbl tbl_col tbl_md_responsive">
+									<table>
+										<thead>
+											<tr>
+												<th>내역</th>
+												<th>상태</th>
+												<th>이용 DRP</th>
+												<th>보유 DRP</th>
+												<th>날짜</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+
+												<td data-th="내역">Do Talking : Tok-Talk 작성</td>
+												<td data-th="상태">
+													<span class="font_blue">지급</span>
+													<!-- [pp] 상태값 : 
+													<span class="font_blue">지급</span>
+													<span class="font_red">차감</span>
+													-->
+												</td>
+												<td data-th="이용 DRP">+ 10 DRP</td>
+												<td data-th="보유 DRP">1500 DRP</td>
+												<td data-th="날짜">2020.03.14 12:15:00</td>
+											</tr>
+											<tr>
+												<td data-th="내역">Do Talking : Tok-Talk 작성</td>
+												<td data-th="상태">
+													<span class="font_red">차감</span>
+												</td>
+												<td data-th="이용 DRP">- 10 DRP</td>
+												<td data-th="보유 DRP">1500 DRP</td>
+												<td data-th="날짜">2020.03.14 12:15:00</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<!--[pp] paging -->
+								<div class="paging_wrap">
+									<a href="javascript:void(0);" title="처음페이지" class="page_con first_page">처음페이지</a>
+									<a href="javascript:void(0);" title="이전페이지" class="page_con pre_page">이전페이지</a>
+									<a href="javascript:void(0);" class="active">1</a>
+									<a href="javascript:void(0);">2</a>
+									<a href="javascript:void(0);">3</a>
+									<a href="javascript:void(0);">4</a>
+									<a href="javascript:void(0);">5</a>
+									<a href="javascript:void(0);" title="다음페이지" class="page_con next_page">다음페이지</a>
+									<a href="javascript:void(0);" title="마지막페이지" class="page_con last_page">마지막페이지</a>
+								</div>
+								<!--[pp] //paging -->
+							</section>
+						</div>
+						<div id="tab1_5">
+							<section class="mypoint_wrap section_area">
+								<h3 class="section_tit_lg">보유 DRM</h3>
+								<div class="cf">
+									<div class="mypoint_status mydrm_status">
+										<p class="mypoint">
+											현재 회원님이 보유하신 <span class="bold">DRM</span>는<strong>1,500 DRM</strong>입니다
+										</p>
+										<a href="javascript:void(0);" class="point_tit">DRM &#40;Dream Money&#41; 란?</a>
+									</div>
+									<div class="mywallet_status">
+										<h5>나의 개인 지갑</h5>
+										<p>개인 지갑 주소 〉</p>
+										<a href="javascript:void(0);" class="btn_circle btn_xs btn_bo_gray">주소보기</a>
+										<a href="javascript:void(0);" class="btn_circle btn_xs btn_bo_gray">주소복사</a>
+									</div>
+									<!-- [pp] 지갑 생성 전 : 
+									<div class="mywallet_yet">
+										<div>
+											<p>
+												<span>아직 개인 지갑을 생성하지 않았습니다</span>
+											</p>
+											<a href="javascript:void(0);" class="btn_round btn_md btn_blue">개인지갑 생성</a>
+										</div>
+									</div>
+									-->
+								</div>
+
+								<!-- [pp] 메타마스크 추가 -->
+								<div class="meta_container">
+									<button class="meta_button" id="connectButton">
+										<img src="../../../images/client/sub/metamask.png" alt="metamask logo" /> Connect wallet
+							  
+									  <span id="meta_loading"
+										><span>&bull;</span><span>&bull;</span><span>&bull;</span></span
+									  >
+									</button>
+							  
+									<div id="walletID">Your wallet is not connected yet.</div>
+							  
+									<!-- [pp] 줄 늘어날시 p 태그 추가 : 
+									<p></p>
+									-->
+
+									<div id="mobileDeviceWarning">
+									  If you are on a mobile phone, please use MetaMask application's browser
+									  to connect.
+									</div>
+								</div>
+							  
+								<script type="text/javascript" src="../../../js/client/metamask.js"></script>
+								<!-- [pp] //메타마스크 추가 -->
+
+							</section>
+							<section class="exchange_wrap section_area">
+								<h3 class="section_tit_lg dp_inline mg_r10">DRP 전환</h3>
+								<a href="javascript:void(0);" class="point_tit">DRP &#40;Dream Point&#41; 란?</a>
+								<div>
+									<div class="dp_inline">
+										<input class="form_style" placeholder="100단위로 입력해주세요"> DRM
+									</div>
+									<span class="exchange_arrow"></span>
+									<div class="dp_inline">
+										<input class="form_style"  value="변환 DRP : 1DRP"> DRP
+										<button type="button" class="btn_round btn_md btn_blue va_t">전환</button>
+									</div>
+								</div>
+							</section>
+							<section class="exchange_wrap section_area">
+								<h3 class="section_tit_lg dp_inline mg_r10">DRM 이동</h3>
+								<div>
+									<div class="dp_inline">
+										<input class="form_style" placeholder="100단위로 입력해주세요"> DRM
+									</div>
+									<span class="exchange_arrow"></span>
+									<div class="dp_inline drmexchange_box">
+										<input class="form_style"  value="이동할 지갑 주소">
+										<button type="button" class="btn_round btn_md btn_blue va_t">이동</button>
+									</div>
+								</div>
+								<p class="font_red mg_t5">※ DRM 이동은 매일 1시간 단위로 진행됩니다.</p>
+							</section>
+							<section class="breakdown_wrap">
+								<h3 class="section_tit_lg dp_inline mg_r10">DRM 사용내역</h3>
+								<div class="search_box">
+									<div class="naming_input dp_inline">
+										<input type="text" placeholder="시작일">
+										<button type="button" class="btn_cal">달력보기</button>
+									</div>
+									<span class="wave">~</span>
+									<div class="naming_input dp_inline">
+										<input type="text" placeholder="종료일">
+										<button type="button" class="btn_cal">달력보기</button>
+									</div>
+									<button type="button" class="btn btn_md btn_default btn_search">검색</button>
+								</div>
+								<div class="tbl tbl_col tbl_md_responsive">
+									<table>
+										<thead>
+											<tr>
+												<th>내역</th>
+												<th>상태</th>
+												<th>이용 DRM</th>
+												<th>보유 DRM</th>
+												<th>날짜</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td data-th="내역">Do Talking : Tok-Talk 작성</td>
+												<td data-th="상태">
+													<span class="font_blue">지급</span>
+													<!-- [pp] 상태값 : 
+													<span class="font_blue">지급</span>
+													<span class="font_red">차감</span>
+													-->
+												</td>
+												<td data-th="이용 DRM">+ 10 DRM</td>
+												<td data-th="보유 DRM">1500 DRM</td>
+												<td data-th="날짜">2020.03.14 12:15:00</td>
+											</tr>
+											<tr>
+												<td data-th="내역">Do Talking : Tok-Talk 작성</td>
+												<td data-th="상태">
+													<span class="font_red">차감</span>
+												</td>
+												<td data-th="이용 DRM">- 10 DRM</td>
+												<td data-th="보유 DRM">1500 DRM</td>
+												<td data-th="날짜">2020.03.14 12:15:00</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<!--[pp] paging -->
+								<div class="paging_wrap">
+									<a href="javascript:void(0);" title="처음페이지" class="page_con first_page">처음페이지</a>
+									<a href="javascript:void(0);" title="이전페이지" class="page_con pre_page">이전페이지</a>
+									<a href="javascript:void(0);" class="active">1</a>
+									<a href="javascript:void(0);">2</a>
+									<a href="javascript:void(0);">3</a>
+									<a href="javascript:void(0);">4</a>
+									<a href="javascript:void(0);">5</a>
+									<a href="javascript:void(0);" title="다음페이지" class="page_con next_page">다음페이지</a>
+									<a href="javascript:void(0);" title="마지막페이지" class="page_con last_page">마지막페이지</a>
+								</div>
+								<!--[pp] //paging -->
+							</section>
+						</div>
+						<div id="tab1_6">
+							<section class="favoritereview_wrap section_area">
+								<h3 class="section_tit_lg">작성 유학 후기</h3>
+								<button type="button" class="btn_round btn_md btn_brown btn_checkdelete btn_fr">선택 항목 삭제</button>
+								<ul class="studyreview_list">
+									<!-- [pp] 유학후기 최대 3개 출력 -->
+									<li class="box_checkdelete">
+										<div class="img_box">
+											<img src="../../../images/client/sub/img_studyabroad_review1.jpg" alt="유학후기 대표이미지">
+										</div>
+										<h5><a href="javascript:void(0);" title="상세보기">동국대 기숙생활 후기 #1 동국대 기숙생활 후기 #1 동국대 기숙생활 후기 #1</a></h5>
+										<p>
+											안녕하세요~ 저는 2019년 8월부터 유학생을 시작한 000입니다 제가 소개할 학교는 동국대인데요. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다.
+										</p>
+										<ul class="hashtag_list">
+											<li>&#35;동국대라이프</li>
+											<li>&#35;유학의꿈</li>
+											<li>&#35;기숙사</li>
+											<li>&#35;동국대라이프</li>
+											<li>&#35;유학의꿈</li>
+											<li>&#35;기숙사</li>
+										</ul>
+										<div class="count_wrap">
+											<p class="view_count"><span class="count_tit">조회수</span><span>12</span></p>
+											<p class="comment_count"><span class="count_tit">댓글수</span><span>12</span></p>
+											<p class="like_count"><span class="count_tit">좋아요</span><span>12</span></p>
+										</div>
+										<span class="date">2020.03.02 18:05:54</span>
+										<span class="id">myaa123</span>
+										<p class="check_only">
+											<input type="checkbox" name="comment" id="abroad_1" class="hidden">
+											<label for="abroad_1">선택</label>
+										</p>
+									</li>
+									<li class="box_checkdelete">
+										<div class="img_box">
+											<img src="../../../images/client/sub/img_studyabroad_review2.jpg" alt="유학후기 대표이미지">
+										</div>
+										<h5><a href="javascript:void(0);" title="상세보기">동국대 기숙생활 후기 #1</a></h5>
+										<p>
+											안녕하세요~ 저는 2019년 8월부터 유학생을 시작한 000입니다 제가 소개할 학교는 동국대인데요. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다.
+										</p>
+										<ul class="hashtag_list">
+											<li>&#35;동국대라이프</li>
+											<li>&#35;유학의꿈</li>
+											<li>&#35;기숙사</li>
+											<li>&#35;동국대라이프</li>
+											<li>&#35;유학의꿈</li>
+											<li>&#35;기숙사</li>
+										</ul>
+										<div class="count_wrap">
+											<p class="view_count"><span class="count_tit">조회수</span><span>12</span></p>
+											<p class="comment_count"><span class="count_tit">댓글수</span><span>12</span></p>
+											<p class="like_count"><span class="count_tit">좋아요</span><span>12</span></p>
+										</div>
+										<span class="date">2020.03.02 18:05:54</span>
+										<span class="id">myaa123</span>
+										<p class="check_only">
+											<input type="checkbox" name="comment" id="abroad_2" class="hidden">
+											<label for="abroad_2">선택</label>
+										</p>
+									</li>
+									<li class="box_checkdelete">
+										<div class="img_box">
+											<img src="../../../images/client/sub/img_studyabroad_review3.jpg" alt="유학후기 대표이미지">
+										</div>
+										<h5><a href="javascript:void(0);" title="상세보기">동국대 기숙생활 후기 #1</a></h5>
+										<p>
+											안녕하세요~ 저는 2019년 8월부터 유학생을 시작한 000입니다 제가 소개할 학교는 동국대인데요. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다.
+										</p>
+										<ul class="hashtag_list">
+											<li>&#35;동국대라이프</li>
+											<li>&#35;유학의꿈</li>
+											<li>&#35;기숙사</li>
+											<li>&#35;동국대라이프</li>
+											<li>&#35;유학의꿈</li>
+											<li>&#35;기숙사</li>
+										</ul>
+										<div class="count_wrap">
+											<p class="view_count"><span class="count_tit">조회수</span><span>12</span></p>
+											<p class="comment_count"><span class="count_tit">댓글수</span><span>12</span></p>
+											<p class="like_count"><span class="count_tit">좋아요</span><span>12</span></p>
+										</div>
+										<span class="date">2020.03.02 18:05:54</span>
+										<span class="id">myaa123</span>
+										<p class="check_only">
+											<input type="checkbox" name="comment" id="abroad_3" class="hidden">
+											<label for="abroad_3">선택</label>
+										</p>
+									</li>
+								</ul>
+								<!--[pp] paging -->
+								<div class="paging_wrap">
+									<a href="javascript:void(0);" title="처음페이지" class="page_con first_page">처음페이지</a>
+									<a href="javascript:void(0);" title="이전페이지" class="page_con pre_page">이전페이지</a>
+									<a href="javascript:void(0);" class="active">1</a>
+									<a href="javascript:void(0);">2</a>
+									<a href="javascript:void(0);">3</a>
+									<a href="javascript:void(0);">4</a>
+									<a href="javascript:void(0);">5</a>
+									<a href="javascript:void(0);" title="다음페이지" class="page_con next_page">다음페이지</a>
+									<a href="javascript:void(0);" title="마지막페이지" class="page_con last_page">마지막페이지</a>
+								</div>
+								<!--[pp] //paging -->
+							</section>
+							<section class="section_area">
+								<h3 class="section_tit_lg">작성 Ask me</h3>
+								<button type="button" class="btn_round btn_md btn_brown btn_checkdelete btn_fr">선택 항목 삭제</button>
+								<ul class="tiptalk_list breakdown_list">
+									<!-- [pp] 내역 3개 출력 -->
+									<li class="box_checkdelete">
+										<div class="tit">
+											<h5><span class="bg_violet">200DRP</span>질문입니다 질문입니다 질문입니다 질문입니다 질문입니다 질문입니다 질문입니다 질문입니다 질문입니다 질문입니다 질문입니다 질문입니다 질문입니다 질문입니다 질문입니다 질문입니다 질문입니다</h5> 
+											<p class="ellipsis">답변입니다 답변입니다 답변입니다 답변입니다 답변입니다 답변입니다 답변입니다 답변입니다 답변입니다 답변입니다 답변입니다 답변입니다 답변입니다 답변입니다 답변입니다</p>
+										</div>
+										<strong class="type font_blue">채택 완료</strong>
+										<!-- [pp] 채택 상태 : 
+										<strong class="type font_blue">채택 완료</strong>
+										<strong class="type font_orange">채택 대기중</strong>
+										-->
+										<div class="count">
+											<p class="comment_count"><span class="count_tit">댓글수</span><span>12</span></p>
+										</div>
+										<p class="date"><span>2020.03.02</span></p>
+										<p class="check_only">
+											<input type="checkbox" name="comment" id="ask_1" class="hidden">
+											<label for="ask_1">선택</label>
+										</p>
+									</li>
+									<li class="box_checkdelete">
+										<div class="tit">
+											<h5><span class="bg_violet">200DRP</span>질문입니다</h5> 
+											<p class="ellipsis">답변입니다</p>
+										</div>
+										<strong class="type font_orange">채택 대기중</strong>
+										<div class="count">
+											<p class="comment_count"><span class="count_tit">댓글수</span><span>12</span></p>
+										</div>
+										<p class="date"><span>2020.03.02</span></p>
+										<p class="check_only">
+											<input type="checkbox" name="comment" id="ask_2" class="hidden">
+											<label for="ask_2">선택</label>
+										</p>
+									</li>
+									<li class="box_checkdelete">
+										<div class="tit">
+											<h5><span class="bg_violet">200DRP</span>질문입니다</h5> 
+											<p class="ellipsis">답변입니다</p>
+										</div>
+										<strong class="type font_orange">채택 대기중</strong>
+										<div class="count">
+											<p class="comment_count"><span class="count_tit">댓글수</span><span>12</span></p>
+										</div>
+										<p class="date"><span>2020.03.02</span></p>
+										<p class="check_only">
+											<input type="checkbox" name="comment" id="ask_3" class="hidden">
+											<label for="ask_3">선택</label>
+										</p>
+									</li>
+								</ul>
+								<!--[pp] paging -->
+								<div class="paging_wrap">
+									<a href="javascript:void(0);" title="처음페이지" class="page_con first_page">처음페이지</a>
+									<a href="javascript:void(0);" title="이전페이지" class="page_con pre_page">이전페이지</a>
+									<a href="javascript:void(0);" class="active">1</a>
+									<a href="javascript:void(0);">2</a>
+									<a href="javascript:void(0);">3</a>
+									<a href="javascript:void(0);">4</a>
+									<a href="javascript:void(0);">5</a>
+									<a href="javascript:void(0);" title="다음페이지" class="page_con next_page">다음페이지</a>
+									<a href="javascript:void(0);" title="마지막페이지" class="page_con last_page">마지막페이지</a>
+								</div>
+								<!--[pp] //paging -->
+							</section>
+							<section class="section_area">
+								<h3 class="section_tit_lg">작성 Community</h3>
+								<div class="btn_fr">
+									<button type="button" class="btn_round btn_md btn_brown btn_checkdelete">선택 항목 삭제</button>
+									<button type="button" class="btn_round btn_md btn_blue btn_checkedit">선택 항목 수정</button>
+								</div>
+								<ul class="breakdown_list">
+									<!-- [pp] 내역 3개 출력 -->
+									<li class="box_checkdelete">
+										<div class="tit">
+											<h5>질문입니다 질문입니다 질문입니다 질문입니다 질문입니다 질문입니다 질문입니다 질문입니다 질문입니다 질문입니다 질문입니다 질문입니다 질문입니다 질문입니다 질문입니다</h5> 
+											<p class="ellipsis">답변입니다 답변입니다 답변입니다 답변입니다 답변입니다 답변입니다 답변입니다 답변입니다 답변입니다 답변입니다 답변입니다 답변입니다 답변입니다 답변입니다</p>
+										</div>
+										<div class="count">
+											<p class="comment_count"><span class="count_tit">댓글수</span><span>12</span></p>
+										</div>
+										<div class="count">
+											<p class="like_count"><span class="count_tit">좋아요</span><span>12</span></p>
+										</div>
+										<p class="date"><span>2020.03.02</span></p>
+										<p class="check_only">
+											<input type="checkbox" name="toktalk" id="toktalk1" class="hidden">
+											<label for="toktalk1">선택</label>
+										</p>
+									</li>
+									<li class="box_checkdelete">
+										<div class="tit">
+											<h5>질문입니다</h5> 
+											<p class="ellipsis">답변입니다</p>
+										</div>
+										<div class="count">
+											<p class="comment_count"><span class="count_tit">댓글수</span><span>12</span></p>
+										</div>
+										<div class="count">
+											<p class="like_count"><span class="count_tit">좋아요</span><span>12</span></p>
+										</div>
+										<p class="date"><span>2020.03.02</span></p>
+										<p class="check_only">
+											<input type="checkbox" name="toktalk" id="toktalk2" class="hidden">
+											<label for="toktalk2">선택</label>
+										</p>
+									</li>
+								</ul>
+								<!--[pp] paging -->
+								<div class="paging_wrap">
+									<a href="javascript:void(0);" title="처음페이지" class="page_con first_page">처음페이지</a>
+									<a href="javascript:void(0);" title="이전페이지" class="page_con pre_page">이전페이지</a>
+									<a href="javascript:void(0);" class="active">1</a>
+									<a href="javascript:void(0);">2</a>
+									<a href="javascript:void(0);">3</a>
+									<a href="javascript:void(0);">4</a>
+									<a href="javascript:void(0);">5</a>
+									<a href="javascript:void(0);" title="다음페이지" class="page_con next_page">다음페이지</a>
+									<a href="javascript:void(0);" title="마지막페이지" class="page_con last_page">마지막페이지</a>
+								</div>
+								<!--[pp] //paging -->
+							</section>
+							<section class="section_area">
+								<h3 class="section_tit_lg">작성 댓글</h3>
+								<button type="button" class="btn_round btn_md btn_brown btn_fr btn_checkdelete">선택 항목 삭제</button>
+								<ul class="breakdown_list">
+									<!-- [pp] 내역 3개 출력 -->
+									<li class="box_checkdelete">
+										<div class="tit">
+											<h5>작성 댓글 목록입니다</h5> 
+											<ul class="hashtag_list ellipsis">
+												<li>&#35;동국대라이프</li>
+												<li>&#35;유학의꿈</li>
+												<li>&#35;기숙사</li>
+												<li>&#35;동국대라이프</li>
+												<li>&#35;유학의꿈</li>
+												<li>&#35;기숙사</li>
+												<li>&#35;동국대라이프</li>
+												<li>&#35;유학의꿈</li>
+												<li>&#35;기숙사</li>
+												<li>&#35;동국대라이프</li>
+												<li>&#35;유학의꿈</li>
+												<li>&#35;기숙사</li>
+											</ul>
+										</div>
+										<div class="count">
+											<p class="comment_count"><span class="count_tit">댓글수</span><span>12</span></p>
+										</div>
+										<div class="count">
+											<p class="like_count"><span class="count_tit">좋아요</span><span>12</span></p>
+										</div>
+										<p class="date"><span>2020.03.02</span></p>
+										<p class="check_only">
+											<input type="checkbox" name="comment" id="comment1" class="hidden">
+											<label for="comment1">선택</label>
+										</p>
+									</li>
+									<li class="box_checkdelete">
+										<div class="tit">
+											<h5>작성 댓글 목록입니다</h5> 
+											<ul class="hashtag_list ellipsis">
+												<li>&#35;동국대라이프</li>
+												<li>&#35;유학의꿈</li>
+												<li>&#35;기숙사</li>
+											</ul>
+										</div>
+										<div class="count">
+											<p class="comment_count"><span class="count_tit">댓글수</span><span>12</span></p>
+										</div>
+										<div class="count">
+											<p class="like_count"><span class="count_tit">좋아요</span><span>12</span></p>
+										</div>
+										<p class="date"><span>2020.03.02</span></p>
+										<p class="check_only">
+											<input type="checkbox" name="comment" id="comment2" class="hidden">
+											<label for="comment2">선택</label>
+										</p>
+									</li>
+								</ul>
+								<!--[pp] paging -->
+								<div class="paging_wrap">
+									<a href="javascript:void(0);" title="처음페이지" class="page_con first_page">처음페이지</a>
+									<a href="javascript:void(0);" title="이전페이지" class="page_con pre_page">이전페이지</a>
+									<a href="javascript:void(0);" class="active">1</a>
+									<a href="javascript:void(0);">2</a>
+									<a href="javascript:void(0);">3</a>
+									<a href="javascript:void(0);">4</a>
+									<a href="javascript:void(0);">5</a>
+									<a href="javascript:void(0);" title="다음페이지" class="page_con next_page">다음페이지</a>
+									<a href="javascript:void(0);" title="마지막페이지" class="page_con last_page">마지막페이지</a>
+								</div>
+								<!--[pp] //paging -->
+							</section>
+							<section>
+								<h3 class="section_tit_lg">유학원 상담</h3>
+								<button type="button" class="btn_round btn_md btn_brown btn_fr btn_checkdelete">선택 항목 삭제</button>
+								<ul class="counsel_wrap accordion_js">
+									<li class="box_checkdelete">
+										<div class="counsel_tit acd_list_js">
+											<h5><span>Q</span>제목입니다</h5>
+											<strong class="type font_blue">답변 완료</strong>
+											<!-- [pp] 답변 상태 : 
+											<strong class="type font_blue">답변 완료</strong>
+											<strong class="type font_orange">대기 중</strong>
+											-->
+											<p class="name">종로유학원</p>
+											<p class="date"><span>2020.03.02</span></p>
+										</div>
+										<div class="counsel_cnt acd_cnt_js">
+											<p class="prewrap"><span>A</span>답변입니다.
+
+스페이스와 엔터 값 인식 가능합니다.
+인식 불가능하게 만들고 싶으시다면 'prewrap' 클래스를 지우시면 됩니다.</p>
+											<p class="check_only">
+												<input type="checkbox" name="comment" id="counsel1" class="hidden">
+												<label for="counsel1">선택</label>
+											</p>
+										</div>
+									</li>
+									<li class="box_checkdelete">
+										<div class="counsel_tit acd_list_js">
+											<h5><span>Q</span>제목입니다</h5>
+											<strong class="type font_orange">대기 중</strong>
+											<p class="name">유학원 이름</p>
+											<p class="date"><span>2020.03.02</span></p>
+										</div>
+										<div class="counsel_cnt acd_cnt_js">
+											<p class="prewrap"><span>A</span>답변입니다.</p>
+											<p class="check_only">
+												<input type="checkbox" name="comment" id="counsel2" class="hidden">
+												<label for="counsel2">선택</label>
+											</p>
+										</div>
+									</li>
+								</ul>
+								<!--[pp] paging -->
+								<div class="paging_wrap">
+									<a href="javascript:void(0);" title="처음페이지" class="page_con first_page">처음페이지</a>
+									<a href="javascript:void(0);" title="이전페이지" class="page_con pre_page">이전페이지</a>
+									<a href="javascript:void(0);" class="active">1</a>
+									<a href="javascript:void(0);">2</a>
+									<a href="javascript:void(0);">3</a>
+									<a href="javascript:void(0);">4</a>
+									<a href="javascript:void(0);">5</a>
+									<a href="javascript:void(0);" title="다음페이지" class="page_con next_page">다음페이지</a>
+									<a href="javascript:void(0);" title="마지막페이지" class="page_con last_page">마지막페이지</a>
+								</div>
+								<!--[pp] //paging -->
+							</section>
+							<section class="favorite_wrap section_toparea">
+								<h3 class="section_tit_lg">관심 대학</h3>
+								<button type="button" class="btn_round btn_md btn_brown btn_fr btn_checkdelete">선택 항목 삭제</button>
+								<div class="grid_row">
+									<!-- [pp] 대학 갯수 최대 6개 출력 -->
+									<div class="box_checkdelete grid_col col_xl_2 col_md_2 col_xs_1">
+										<div class="favorite_list">
+											<a href="javascript:void(0);" class="img_box" title="상세보기">
+												<img src="../../../images/client/sub/img_universitylogo1.jpg" alt="포항공과대학교 대표 이미지">
+											</a>
+											<p class="favorite_count">78</p>
+											<p class="check_row">
+												<input type="checkbox" name="favorite_university" id="university1" class="hidden">
+												<label for="university1">포항공과대학교</label>
+											</p>
+										</div>
+									</div>
+									<div class="box_checkdelete grid_col col_xl_2 col_md_2 col_xs_1">
+										<div class="favorite_list">
+											<a href="javascript:void(0);" class="img_box" title="상세보기">
+												<img src="../../../images/client/sub/img_universitylogo2.jpg" alt="서울대학교 대표 이미지">
+											</a>
+											<p class="favorite_count">78</p>
+											<p class="check_row">
+												<input type="checkbox" name="favorite_university" id="university2" class="hidden">
+												<label for="university2">서울대학교</label>
+											</p>
+										</div>
+									</div>
+									<div class="box_checkdelete grid_col col_xl_2 col_md_2 col_xs_1">
+										<div class="favorite_list">
+											<a href="javascript:void(0);" class="img_box" title="상세보기">
+												<img src="../../../images/client/sub/img_universitylogo3.jpg" alt="경남과학기술대학교 대표 이미지">
+											</a>
+											<p class="favorite_count">78</p>
+											<p class="check_row">
+												<input type="checkbox" name="favorite_university" id="university3" class="hidden">
+												<label for="university3">경남과학기술대학교</label>
+											</p>
+										</div>
+									</div>
+									<div class="box_checkdelete grid_col col_xl_2 col_md_2 col_xs_1">
+										<div class="favorite_list">
+											<a href="javascript:void(0);" class="img_box" title="상세보기">
+												<img src="../../../images/client/sub/img_universitylogo4.jpg" alt="광주대학교 대표 이미지">
+											</a>
+											<p class="favorite_count">78</p>
+											<p class="check_row">
+												<input type="checkbox" name="favorite_university" id="university4" class="hidden">
+												<label for="university4">광주대학교</label>
+											</p>
+										</div>
+									</div>
+									<div class="box_checkdelete grid_col col_xl_2 col_md_2 col_xs_1">
+										<div class="favorite_list">
+											<a href="javascript:void(0);" class="img_box" title="상세보기">
+												<img src="../../../images/client/sub/img_universitylogo4.jpg" alt="광주대학교 대표 이미지">
+											</a>
+											<p class="favorite_count">78</p>
+											<p class="check_row">
+												<input type="checkbox" name="favorite_university" id="university5" class="hidden">
+												<label for="university5">광주대학교</label>
+											</p>
+										</div>
+									</div>
+									<div class="box_checkdelete grid_col col_xl_2 col_md_2 col_xs_1">
+										<div class="favorite_list">
+											<a href="javascript:void(0);" class="img_box" title="상세보기">
+												<img src="../../../images/client/sub/img_universitylogo4.jpg" alt="광주대학교 대표 이미지">
+											</a>
+											<p class="favorite_count">78</p>
+											<p class="check_row">
+												<input type="checkbox" name="favorite_university" id="university6" class="hidden">
+												<label for="university6">광주대학교</label>
+											</p>
+										</div>
+									</div>
+								</div>
+								<!--[pp] paging -->
+								<div class="paging_wrap">
+									<a href="javascript:void(0);" title="처음페이지" class="page_con first_page">처음페이지</a>
+									<a href="javascript:void(0);" title="이전페이지" class="page_con pre_page">이전페이지</a>
+									<a href="javascript:void(0);" class="active">1</a>
+									<a href="javascript:void(0);">2</a>
+									<a href="javascript:void(0);">3</a>
+									<a href="javascript:void(0);">4</a>
+									<a href="javascript:void(0);">5</a>
+									<a href="javascript:void(0);" title="다음페이지" class="page_con next_page">다음페이지</a>
+									<a href="javascript:void(0);" title="마지막페이지" class="page_con last_page">마지막페이지</a>
+								</div>
+								<!--[pp] //paging -->
+							</section>
+							<section class="favorite_wrap section_area">
+								<h3 class="section_tit_lg">관심 유학원</h3>
+								<button type="button" class="btn_round btn_md btn_brown btn_fr btn_checkdelete">선택 항목 삭제</button>
+								<div class="grid_row">
+									<!-- [pp] 유학원 갯수 최대 6개 출력 -->
+									<div class="box_checkdelete grid_col col_xl_2 col_md_2 col_xs_1">
+										<div class="favorite_list">
+											<a href="javascript:void(0);" class="img_box" title="상세보기">
+												<img src="../../../images/client/sub/img_institution_logo01.jpg" alt="종로 유학원 대표 이미지">
+											</a>
+											<p class="favorite_count">78</p>
+											<p class="check_row">
+												<input type="checkbox" name="favorite_institution" id="institution1" class="hidden">
+												<label for="institution1">종로유학원</label>
+											</p>
+										</div>
+									</div>
+									<div class="box_checkdelete grid_col col_xl_2 col_md_2 col_xs_1">
+										<div class="favorite_list">
+											<a href="javascript:void(0);" class="img_box" title="상세보기">
+												<img src="../../../images/client/sub/img_institution_logo02.jpg" alt="HE유학원 대표 이미지">
+											</a>
+											<p class="favorite_count">78</p>
+											<p class="check_row">
+												<input type="checkbox" name="favorite_institution" id="institution2" class="hidden">
+												<label for="institution2">HE유학원</label>
+											</p>
+										</div>
+									</div>
+									<div class="box_checkdelete grid_col col_xl_2 col_md_2 col_xs_1">
+										<div class="favorite_list">
+											<a href="javascript:void(0);" class="img_box" title="상세보기">
+												<img src="../../../images/client/sub/img_institution_logo02.jpg" alt="HE유학원 대표 이미지">
+											</a>
+											<p class="favorite_count">78</p>
+											<p class="check_row">
+												<input type="checkbox" name="favorite_institution" id="institution3" class="hidden">
+												<label for="institution3">HE유학원</label>
+											</p>
+										</div>
+									</div>
+									<div class="box_checkdelete grid_col col_xl_2 col_md_2 col_xs_1">
+										<div class="favorite_list">
+											<a href="javascript:void(0);" class="img_box" title="상세보기">
+												<img src="../../../images/client/sub/img_institution_logo02.jpg" alt="HE유학원 대표 이미지">
+											</a>
+											<p class="favorite_count">78</p>
+											<p class="check_row">
+												<input type="checkbox" name="favorite_institution" id="institution4" class="hidden">
+												<label for="institution4">HE유학원</label>
+											</p>
+										</div>
+									</div>
+									<div class="box_checkdelete grid_col col_xl_2 col_md_2 col_xs_1">
+										<div class="favorite_list">
+											<a href="javascript:void(0);" class="img_box" title="상세보기">
+												<img src="../../../images/client/sub/img_institution_logo02.jpg" alt="HE유학원 대표 이미지">
+											</a>
+											<p class="favorite_count">78</p>
+											<p class="check_row">
+												<input type="checkbox" name="favorite_institution" id="institution5" class="hidden">
+												<label for="institution5">HE유학원</label>
+											</p>
+										</div>
+									</div>
+									<div class="box_checkdelete grid_col col_xl_2 col_md_2 col_xs_1">
+										<div class="favorite_list">
+											<a href="javascript:void(0);" class="img_box" title="상세보기">
+												<img src="../../../images/client/sub/img_institution_logo02.jpg" alt="HE유학원 대표 이미지">
+											</a>
+											<p class="favorite_count">78</p>
+											<p class="check_row">
+												<input type="checkbox" name="favorite_institution" id="institution6" class="hidden">
+												<label for="institution6">HE유학원</label>
+											</p>
+										</div>
+									</div>
+								</div>
+								<!--[pp] paging -->
+								<div class="paging_wrap">
+									<a href="javascript:void(0);" title="처음페이지" class="page_con first_page">처음페이지</a>
+									<a href="javascript:void(0);" title="이전페이지" class="page_con pre_page">이전페이지</a>
+									<a href="javascript:void(0);" class="active">1</a>
+									<a href="javascript:void(0);">2</a>
+									<a href="javascript:void(0);">3</a>
+									<a href="javascript:void(0);">4</a>
+									<a href="javascript:void(0);">5</a>
+									<a href="javascript:void(0);" title="다음페이지" class="page_con next_page">다음페이지</a>
+									<a href="javascript:void(0);" title="마지막페이지" class="page_con last_page">마지막페이지</a>
+								</div>
+								<!--[pp] //paging -->
+							</section>
+							<section class="favoritereview_wrap">
+								<h3 class="section_tit_lg">관심 유학 후기</h3>
+								<button type="button" class="btn_round btn_md btn_brown btn_fr btn_checkdelete">선택 항목 삭제</button>
+								<ul class="studyreview_list">
+									<!-- [pp] 유학후기 최대 5개 출력 -->
+									<li class="box_checkdelete">
+										<div class="img_box">
+											<img src="../../../images/client/sub/img_studyabroad_review1.jpg" alt="유학후기 대표이미지">
+										</div>
+										<h5><a href="javascript:void(0);" title="상세보기">동국대 기숙생활 후기 #1 동국대 기숙생활 후기 #1 동국대 기숙생활 후기 #1</a></h5>
+										<p>
+											안녕하세요~ 저는 2019년 8월부터 유학생을 시작한 000입니다 제가 소개할 학교는 동국대인데요. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다.
+										</p>
+										<ul class="hashtag_list">
+											<li>&#35;동국대라이프</li>
+											<li>&#35;유학의꿈</li>
+											<li>&#35;기숙사</li>
+											<li>&#35;동국대라이프</li>
+											<li>&#35;유학의꿈</li>
+											<li>&#35;기숙사</li>
+										</ul>
+										<div class="count_wrap">
+											<p class="view_count"><span class="count_tit">조회수</span><span>12</span></p>
+											<p class="comment_count"><span class="count_tit">댓글수</span><span>12</span></p>
+											<p class="like_count"><span class="count_tit">좋아요</span><span>12</span></p>
+										</div>
+										<span class="date">2020.03.02 18:05:54</span>
+										<span class="id">myaa123</span>
+										<p class="check_only">
+											<input type="checkbox" name="comment" id="abroad_w1" class="hidden">
+											<label for="abroad_w1">선택</label>
+										</p>
+									</li>
+									<li class="box_checkdelete">
+										<div class="img_box">
+											<img src="../../../images/client/sub/img_studyabroad_review2.jpg" alt="유학후기 대표이미지">
+										</div>
+										<h5><a href="javascript:void(0);" title="상세보기">동국대 기숙생활 후기 #1</a></h5>
+										<p>
+											안녕하세요~ 저는 2019년 8월부터 유학생을 시작한 000입니다 제가 소개할 학교는 동국대인데요. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다.
+										</p>
+										<ul class="hashtag_list">
+											<li>&#35;동국대라이프</li>
+											<li>&#35;유학의꿈</li>
+											<li>&#35;기숙사</li>
+											<li>&#35;동국대라이프</li>
+											<li>&#35;유학의꿈</li>
+											<li>&#35;기숙사</li>
+										</ul>
+										<div class="count_wrap">
+											<p class="view_count"><span class="count_tit">조회수</span><span>12</span></p>
+											<p class="comment_count"><span class="count_tit">댓글수</span><span>12</span></p>
+											<p class="like_count"><span class="count_tit">좋아요</span><span>12</span></p>
+										</div>
+										<span class="date">2020.03.02 18:05:54</span>
+										<span class="id">myaa123</span>
+										<p class="check_only">
+											<input type="checkbox" name="comment" id="abroad_w2" class="hidden">
+											<label for="abroad_w2">선택</label>
+										</p>
+									</li>
+									<li class="box_checkdelete">
+										<div class="img_box">
+											<img src="../../../images/client/sub/img_studyabroad_review3.jpg" alt="유학후기 대표이미지">
+										</div>
+										<h5><a href="javascript:void(0);" title="상세보기">동국대 기숙생활 후기 #1</a></h5>
+										<p>
+											안녕하세요~ 저는 2019년 8월부터 유학생을 시작한 000입니다 제가 소개할 학교는 동국대인데요. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다.
+										</p>
+										<ul class="hashtag_list">
+											<li>&#35;동국대라이프</li>
+											<li>&#35;유학의꿈</li>
+											<li>&#35;기숙사</li>
+											<li>&#35;동국대라이프</li>
+											<li>&#35;유학의꿈</li>
+											<li>&#35;기숙사</li>
+										</ul>
+										<div class="count_wrap">
+											<p class="view_count"><span class="count_tit">조회수</span><span>12</span></p>
+											<p class="comment_count"><span class="count_tit">댓글수</span><span>12</span></p>
+											<p class="like_count"><span class="count_tit">좋아요</span><span>12</span></p>
+										</div>
+										<span class="date">2020.03.02 18:05:54</span>
+										<span class="id">myaa123</span>
+										<p class="check_only">
+											<input type="checkbox" name="comment" id="abroad_w3" class="hidden">
+											<label for="abroad_w3">선택</label>
+										</p>
+									</li>
+									<li class="box_checkdelete">
+										<div class="img_box">
+											<img src="../../../images/client/sub/img_studyabroad_review4.jpg" alt="유학후기 대표이미지">
+										</div>
+										<h5><a href="javascript:void(0);" title="상세보기">동국대 기숙생활 후기 #1</a></h5>
+										<p>
+											안녕하세요~ 저는 2019년 8월부터 유학생을 시작한 000입니다 제가 소개할 학교는 동국대인데요. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다.
+										</p>
+										<ul class="hashtag_list">
+											<li>&#35;동국대라이프</li>
+											<li>&#35;유학의꿈</li>
+											<li>&#35;기숙사</li>
+											<li>&#35;동국대라이프</li>
+											<li>&#35;유학의꿈</li>
+											<li>&#35;기숙사</li>
+										</ul>
+										<div class="count_wrap">
+											<p class="view_count"><span class="count_tit">조회수</span><span>12</span></p>
+											<p class="comment_count"><span class="count_tit">댓글수</span><span>12</span></p>
+											<p class="like_count"><span class="count_tit">좋아요</span><span>12</span></p>
+										</div>
+										<span class="date">2020.03.02 18:05:54</span>
+										<span class="id">myaa123</span>
+										<p class="check_only">
+											<input type="checkbox" name="comment" id="abroad_w4" class="hidden">
+											<label for="abroad_w4">선택</label>
+										</p>
+									</li>
+									<li class="box_checkdelete">
+										<div class="img_box">
+											<img src="../../../images/client/sub/img_studyabroad_review1.jpg" alt="유학후기 대표이미지">
+										</div>
+										<h5><a href="javascript:void(0);" title="상세보기">동국대 기숙생활 후기 #1</a></h5>
+										<p>
+											안녕하세요~ 저는 2019년 8월부터 유학생을 시작한 000입니다 제가 소개할 학교는 동국대인데요. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다.
+										</p>
+										<ul class="hashtag_list">
+											<li>&#35;동국대라이프</li>
+											<li>&#35;유학의꿈</li>
+											<li>&#35;기숙사</li>
+											<li>&#35;동국대라이프</li>
+											<li>&#35;유학의꿈</li>
+											<li>&#35;기숙사</li>
+										</ul>
+										<div class="count_wrap">
+											<p class="view_count"><span class="count_tit">조회수</span><span>12</span></p>
+											<p class="comment_count"><span class="count_tit">댓글수</span><span>12</span></p>
+											<p class="like_count"><span class="count_tit">좋아요</span><span>12</span></p>
+										</div>
+										<span class="date">2020.03.02 18:05:54</span>
+										<span class="id">myaa123</span>
+										<p class="check_only">
+											<input type="checkbox" name="comment" id="abroad_w5" class="hidden">
+											<label for="abroad_w5">선택</label>
+										</p>
+									</li>
+								</ul>
+								<!--[pp] paging -->
+								<div class="paging_wrap">
+									<a href="javascript:void(0);" title="처음페이지" class="page_con first_page">처음페이지</a>
+									<a href="javascript:void(0);" title="이전페이지" class="page_con pre_page">이전페이지</a>
+									<a href="javascript:void(0);" class="active">1</a>
+									<a href="javascript:void(0);">2</a>
+									<a href="javascript:void(0);">3</a>
+									<a href="javascript:void(0);">4</a>
+									<a href="javascript:void(0);">5</a>
+									<a href="javascript:void(0);" title="다음페이지" class="page_con next_page">다음페이지</a>
+									<a href="javascript:void(0);" title="마지막페이지" class="page_con last_page">마지막페이지</a>
+								</div>
+								<!--[pp] //paging -->
+							</section>
+						</div>
+						<div id="tab1_7">
+							<section class="breakdown_wrap">
+								<h3 class="section_tit_lg dp_inline mg_r10">결제 내역</h3>
+								<div class="search_box">
+									<div class="naming_input dp_inline">
+										<input type="text" placeholder="시작일">
+										<button type="button" class="btn_cal">달력보기</button>
+									</div>
+									<span class="wave">~</span>
+									<div class="naming_input dp_inline">
+										<input type="text" placeholder="종료일">
+										<button type="button" class="btn_cal">달력보기</button>
+									</div>
+									<button type="button" class="btn btn_md btn_default btn_search">검색</button>
+								</div>
+								<div class="tbl tbl_col tbl_md_responsive">
+									<table>
+										<thead>
+											<tr>
+												<th>결제일시</th>
+												<th>내용</th>
+												<th>결제방식</th>
+												<th>사용 DRP</th>
+												<th>결제금액</th>
+												<th>상태</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td data-th="결제일시">2020.03.14 12:15:53</td>
+												<td data-th="내용">TOPIK 결제</td>
+												<td data-th="결제방식">신용카드</td>
+												<td data-th="사용 DRP">100</td>
+												<td data-th="결제금액">0</td>
+												<td data-th="상태">
+													<span class="font_blue">결제완료</span>
+													<!-- [pp] 상태값 : 
+													<span class="font_blue">결제완료</span>
+													<span class="font_orange">입금대기</span>
+													-->
+												</td>
+											</tr>
+											<tr>
+												<td data-th="결제일시">2020.03.14 12:15:53</td>
+												<td data-th="내용">TOPIK 결제</td>
+												<td data-th="결제방식">신용카드</td>
+												<td data-th="사용 DRP">80,000</td>
+												<td data-th="결제금액">80 USD</td>
+												<td data-th="상태">
+													<span class="font_orange">입금대기</span>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="ta_r">
+									<p class="font_red">※ 결제 일시는 한국 시간 기준입니다.</p>
+								</div>
+								<!--[pp] paging -->
+								<div class="paging_wrap">
+									<a href="javascript:void(0);" title="처음페이지" class="page_con first_page">처음페이지</a>
+									<a href="javascript:void(0);" title="이전페이지" class="page_con pre_page">이전페이지</a>
+									<a href="javascript:void(0);" class="active">1</a>
+									<a href="javascript:void(0);">2</a>
+									<a href="javascript:void(0);">3</a>
+									<a href="javascript:void(0);">4</a>
+									<a href="javascript:void(0);">5</a>
+									<a href="javascript:void(0);" title="다음페이지" class="page_con next_page">다음페이지</a>
+									<a href="javascript:void(0);" title="마지막페이지" class="page_con last_page">마지막페이지</a>
+								</div>
+								<!--[pp] //paging -->
+							</section>
+						</div>
+						<div id="tab1_8">
+							<section>
+								<h3 class="section_tit_lg">모의 입학 결과</h3>
+								<div class="tbl tbl_col tbl_md_responsive">
+									<table>
+										<thead>
+											<tr>
+												<th scope="col">대학명</th>
+												<th scope="col">일시</th>
+												<th scope="col">모의 입학 결과</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td data-th="대학명">동국대학교</td>
+												<td data-th="일시">2020.03.14 12:15:53</td>
+												<td data-th="모의 입학 결과">
+													<p class="possibility_result possibility_high">합격 가능성 높음<span></span></p>
+													<!-- [pp] 상태값 : 
+													<p class="possibility_result possibility_high">합격 가능성 높음<span></span></p>
+													<p class="possibility_result possibility_low">합격 가능성 낮음<span></span></p>
+													-->
+												</td>
+											</tr>
+											<tr>
+												<td data-th="대학명">건국대학교</td>
+												<td data-th="일시">2020.03.14 12:15:53</td>
+												<td data-th="모의 입학 결과">
+													<p class="possibility_result possibility_low">합격 가능성 낮음<span></span></p>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<!--[pp] paging -->
+								<div class="paging_wrap">
+									<a href="javascript:void(0);" title="처음페이지" class="page_con first_page">처음페이지</a>
+									<a href="javascript:void(0);" title="이전페이지" class="page_con pre_page">이전페이지</a>
+									<a href="javascript:void(0);" class="active">1</a>
+									<a href="javascript:void(0);">2</a>
+									<a href="javascript:void(0);">3</a>
+									<a href="javascript:void(0);">4</a>
+									<a href="javascript:void(0);">5</a>
+									<a href="javascript:void(0);" title="다음페이지" class="page_con next_page">다음페이지</a>
+									<a href="javascript:void(0);" title="마지막페이지" class="page_con last_page">마지막페이지</a>
+								</div>
+								<!--[pp] //paging -->
+							</section>
+						</div>
+						<div id="tab1_9">
+							<section>
+								<div>
+									<h3 class="section_tit_lg">나의 1:1 문의 내역</h3>
+									<button type="button" class="btn_round btn_md btn_blue btn_fr">문의</button>
+									<ul class="faq_wrap accordion_js">
+										<li>
+											<div class="faq_tit acd_list_js">
+												<h5><span>Q</span>질문 제목입니다</h5>
+												<strong class="type font_blue">답변완료</strong>
+												<!-- [pp] 답변 상태 : 
+												<strong class="type font_blue">답변완료</strong>
+												<strong class="type font_orange">답변대기</strong>
+												-->
+											</div>
+											<div class="faq_cnt acd_cnt_js">
+												<p class="cnt_detail">질문입니다. 답변해주세요.</p>
+												<p class="faq_anw"><span class="label">A</span>질문에 대한 답변입니다.
+													스페이스와 엔터 값 인식 가능합니다.</p>
+											</div>
+										</li>
+										<li>
+											<div class="faq_tit acd_list_js">
+												<h5><span>Q</span>질문 제목입니다</h5>
+												<strong class="type font_blue">답변완료</strong>
+											</div>
+											<div class="faq_cnt acd_cnt_js">
+												<p class="cnt_detail">질문입니다. 답변해주세요.</p>
+												<p class="faq_anw"><span class="label">A</span>질문에 대한 답변입니다.
+													스페이스와 엔터 값 인식 가능합니다.</p>
+											</div>
+										</li>
+									</ul>
+									<!--[pp] paging -->
+									<div class="paging_wrap">
+										<a href="javascript:void(0);" title="처음페이지" class="page_con first_page">처음페이지</a>
+										<a href="javascript:void(0);" title="이전페이지" class="page_con pre_page">이전페이지</a>
+										<a href="javascript:void(0);" class="active">1</a>
+										<a href="javascript:void(0);">2</a>
+										<a href="javascript:void(0);">3</a>
+										<a href="javascript:void(0);">4</a>
+										<a href="javascript:void(0);">5</a>
+										<a href="javascript:void(0);" title="다음페이지" class="page_con next_page">다음페이지</a>
+										<a href="javascript:void(0);" title="마지막페이지" class="page_con last_page">마지막페이지</a>
+									</div>
+									<!--[pp] //paging -->
+								</div>
+							</section>
+						</div>
+						<div id="tab1_10">
+							<section class="bookmark_js">
+								<h3 class="section_tit_lg">리더보드</h3>
+								<a href="#myscore" class="btn_round btn_md btn_blue btn_fr">나의 점수 보기</a>
+								<div class="leader_wrapper">
+									<ul class="top_list">
+										<!-- [pp] 자기 등수가 3등안에 들때 li 에 myscore 클래스 추가 -->
+										<!-- [pp] 1등 -->
+										<li>
+											<div class="img_wrap">
+												<img src="../../../images/client/sub/img_profile.jpg" alt="">
+											</div>
+											<p class="id">아이디 영역</p>
+											<span class="score">9000</span>
+										</li>
+										<!-- [pp] 2등 -->
+										<li class="myscore">
+											<div class="img_wrap">
+												<!-- [pp] 여기에 이미지 -->
+												<img src="../../../images/client/sub/img_basic_dudu.png" alt="기본 이미지">
+												<!-- [pp] //여기에 이미지 -->
+											</div>
+											<p class="id">아이디 영역</p>
+											<span class="score">8800</span>
+										</li>
+										<!-- [pp] 3등 -->
+										<li>
+											<div class="img_wrap">
+												<!-- [pp] 여기에 이미지 -->
+												<img src="../../../images/client/sub/img_basic_dudu.png" alt="기본 이미지">
+												<!-- [pp] //여기에 이미지 -->
+											</div>
+											<p class="id">아이디 영역</p>
+											<span class="score">8500</span>
+										</li>
+									</ul>
+									<ul class="remain_list">
+										<!-- [pp] 자기 등수가 4~7등안에 들때 li 에 myscore 클래스 추가 -->
+										<!-- [pp] 4등 -->
+										<li>
+											<strong class="ranking">4</strong>
+											<div class="img_wrap">
+												<!-- [pp] 여기에 이미지 -->
+												<img src="../../../images/client/sub/img_basic_dudu.png" alt="기본 이미지">
+												<!-- [pp] //여기에 이미지 -->
+											</div>
+											<div class="info">
+												<p class="id">아이디 영역</p>
+												<span class="score">8000</span>
+											</div>
+										</li>
+										<!-- [pp] 5등 -->
+										<li class="myscore">
+											<strong class="ranking">5</strong>
+											<div class="img_wrap">
+												<!-- [pp] 여기에 이미지 -->
+												<img src="../../../images/client/sub/img_basic_dudu.png" alt="기본 이미지">
+												<!-- [pp] //여기에 이미지 -->
+											</div>
+											<div class="info">
+												<p class="id">아이디 영역</p>
+												<span class="score">1300</span>
+											</div>
+										</li>
+										<!-- [pp] 6등 -->
+										<li>
+											<strong class="ranking">6</strong>
+											<div class="img_wrap">
+												<!-- [pp] 여기에 이미지 -->
+												<img src="../../../images/client/sub/img_basic_dudu.png" alt="기본 이미지">
+												<!-- [pp] //여기에 이미지 -->
+											</div>
+											<div class="info">
+												<p class="id">아이디 영역</p>
+												<span class="score">1800</span>
+											</div>
+										</li>
+										<!-- [pp] 7등 -->
+										<li>
+											<strong class="ranking">7</strong>
+											<div class="img_wrap">
+												<!-- [pp] 여기에 이미지 -->
+												<img src="../../../images/client/sub/img_basic_dudu.png" alt="기본 이미지">
+												<!-- [pp] //여기에 이미지 -->
+											</div>
+											<div class="info">
+												<p class="id">아이디 영역</p>
+												<span class="score">1600</span>
+											</div>
+										</li>
+									</ul>
+									<!-- [pp] 자기 등수 -->
+									<div class="myscore_area" id="myscore">
+										<strong class="ranking">685</strong>
+										<div class="img_wrap">
+											<!-- [pp] 여기에 이미지 -->
+											<img src="../../../images/client/sub/img_basic_dudu.png" alt="기본 이미지">
+											<!-- [pp] //여기에 이미지 -->
+										</div>
+										<p class="id">내 아이디</p>
+										<span class="score">1000</span>
+									</div>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- [pp] //container -->
+		</div>
+		<!-- [pp] //푸터를 제외한 전체페이지 -->
+		<!-- [pp] footer -->
+		<footer class="footer_wrap">
+			<div class="grid_content">
+				<div class="footer_top">
+					<ul class="footer_infolink cf">
+						<li><a href="javascript:void(0);">개인정보취급방침</a></li>
+						<li><a href="javascript:void(0);">이용약관</a></li>
+						<li><a href="javascript:void(0);">FAQ</a></li>
+						<li><a href="javascript:void(0);">&#40;주&#41;다인리더스</a></li>
+					</ul>
+				</div>
+				<div class="footer_bottom">
+					<div>
+						<strong>&#40;주&#41;다인리더스</strong>
+						<ul>
+							<li>(한국본사) 서울시 강남구 강남대로 126길 63, 302-303호</li>
+							<li>(베트남법인) 하노이시 탄수언군 주이떤 12, 젠타워 1107호</li>
+						</ul>
+					</div>
+					<ul>
+						<li>대표자명 : 임무호</li>
+						<li>사업자등록번호 : 105-87-32905</li>
+						<li>고객센터 : <a href="tel:+82 02-514-3060">+82 02-514-3060</a></li>
+						<li>운영시간 : 09:00 ~ 18:00</li>
+						<li>이메일 : <a href="mailto:support@dodream.io">support@dodream.io</a></li>
+					</ul>
+					<ul class="footer_sns">
+						<li><a href="javascript:void(0);" class="sns_facebook">페이스북</a></li>
+						<li><a href="javascript:void(0);" class="sns_insta">인스타</a></li>
+						<li><a href="javascript:void(0);" class="sns_twitter">트위터</a></li>
+						<li><a href="javascript:void(0);" class="sns_youtube">유튜브</a></li>
+						<li><a href="javascript:void(0);" class="sns_eroom">이룸라이브</a></li>
+					</ul>
+					<p class="copyright">&copy; DAIN LEADERS ALL RIGHTS RESERVED</p>
+				</div>
+			</div>
+		</footer>
+		<!-- [pp] //footer -->
+	</body>
+</html>

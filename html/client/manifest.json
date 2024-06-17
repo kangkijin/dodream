@@ -1,0 +1,33 @@
+{
+	"start_url": "http://www.dodream.io",
+	"manifest_version": 1.0,
+	"name": "DoDream",
+	"short_name": "DoDream",
+	"description": "유학플랫폼 두드림(DoDream)외국인 유학생을 위한 한국 유학 매칭 플랫폼",
+	"version": "1.0",
+	"icons": [{
+		"src": "../../images/common/favicon.ico",
+		"sizes": "64x64",
+		"type": "image/webp"
+      }, {
+		"src": "../../images/common/icon-128x128.png",
+		"type": "image/png",
+		"sizes": "128x128"
+  }, {
+		"src": "../../images/common/apple-touch-icon.png",
+		"type": "image/png",
+		"sizes": "152x152"
+  }, {
+		"src": "../../images/common/ms-touch-icon-144x144-precomposed.png",
+		"type": "image/png",
+		"sizes": "144x144"
+  }, {
+		"src": "../../images/common/chrome-touch-icon-192x192.png",
+		"type": "image/png",
+		"sizes": "192x192",
+		"density": 2
+      }],
+	"theme_color": "#027dcb",
+	"background_color": "#027dcb",
+	"display": "standalone"
+}

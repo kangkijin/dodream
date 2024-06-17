@@ -1,0 +1,257 @@
+@charset "utf-8";
+.style_cn .tbl_row tbody tr td {
+    -ms-word-break: break-all;
+    word-break: break-all;
+}
+/* ================ 공통 ================ */
+
+/* footer */
+.style_cn .footer_sns {
+	bottom: 20px;
+}
+
+/* ================ //공통 ================ */
+/* ================ 메인페이지 ================ */
+
+.style_cn .banner_dreampoint, .style_cn .banner_dreampoint p {
+	font-family: 'ZhanKuWenYiTi', sans-serif;
+	-webkit-transform: rotate(-0.03deg);
+	-moz-transform: rotate(-0.03deg);
+	-o-transform: rotate(-0.03deg);
+	transform: rotate(-0.03deg);
+}
+
+/* ================ //메인페이지 ================ */
+/* ================ 서브페이지 ================ */
+
+/* Dream Guide - 유학정보 - 유학매칭 */
+.style_cn .matching_link1 a {
+	background-image: url(../../images/client/sub/bg_matching_link1_cn.png);
+}
+
+/* Dream Guide - 유학서비스 banner */
+.style_cn .abroad_service_box.blue {
+    background-image:url(../../images/client/sub/img_abroad_blue_cn.jpg);
+}
+.style_cn .abroad_service_box.pink {
+	background-image:url(../../images/client/sub/img_abroad_pink_cn.jpg);
+}
+.style_cn .abroad_service_box.green {
+	background-image:url(../../images/client/sub/img_abroad_green_cn.jpg);
+}
+.style_cn .abroad_service_box.purple {
+	background-image:url(../../images/client/sub/img_abroad_purple_cn.jpg);
+}
+.style_cn .abroad_service_box.grass {
+	background-image:url(../../images/client/sub/img_abroad_light_green_cn.jpg);
+}
+.style_cn .abroad_service_box.deepsky {
+	background-image:url(../../images/client/sub/img_abroad_deep_cn.jpg);
+}
+.style_cn .abroad_service_box.orange {
+	background-image:url(../../images/client/sub/img_abroad_orange_cn.jpg);
+}
+
+/* Dream Guide - 유학서비스 - 결제완료 */
+.style_cn .accountdata_box.vietnam ul li {
+	padding-left: 75px;	
+}
+.style_cn .accountdata_box.vietnam ul li span {
+	margin-left: -75px;
+	width: 65px;
+}
+
+/* 마이페이지 */
+.style_cn .mypage_wrap .tab_list li {
+  	min-width: 135px;
+	width: auto;
+}
+.style_cn .mypage_wrap .tab_list li a {
+	padding: 0 10px;
+}
+.style_cn .univer_inner_ul i {
+	width: auto;
+}
+/* Do Job */
+.style_cn .search_refresh .wdfull_2_1 {
+	padding-right: 305px;
+}
+.style_cn .search_refresh .btn_search {
+	right: 165px;
+	padding-left: 50px; padding-right: 25px;
+}
+.style_cn .search_box .grid_row .col_xl_12 {
+	padding-right: 305px;
+}
+.style_cn .search_box .grid_row .btn_search {
+	right: 185px;
+}
+
+.style_cn .pre_cal.saramin, .style_cn .pre_cal.worknet {
+	width: 225px;
+}
+.style_cn .pre_cal.jobkorea {
+	width: 235px;
+}
+/* ================ //서브페이지 ================ */
+
+@media screen and (max-width:1279px){
+
+	/* ================ 공통 1279 ================ */
+
+	/* footer 1279 */
+	.style_cn .footer_sns {
+		bottom: 20px;
+	}
+
+
+	/* ================ //공통 1279 ================ */
+	/* ================ 메인페이지 1279 ================ */
+
+
+	/* ================ //메인페이지 1279 ================ */
+	/* ================ 서브페이지 1279 ================ */
+
+
+
+	/* ================ //서브페이지 1279 ================ */
+
+}
+@media screen and (max-width:1079px){
+
+	/* ================ 공통 1079 ================ */
+
+
+
+	/* ================ //공통 1079 ================ */
+	/* ================ 메인페이지 1079 ================ */
+
+
+
+	/* ================ //메인페이지 1079 ================ */
+	/* ================ 서브페이지 1079 ================ */
+
+
+
+	/* ================ //서브페이지 1079 ================ */
+
+}
+@media screen and (max-width:1024px){
+
+	/* ================ 공통 1024 ================ */
+
+
+
+	/* ================ //공통 1024 ================ */
+	/* ================ 메인페이지 1024 ================ */
+
+
+	/* ================ //메인페이지 1024 ================ */
+	/* ================ 서브페이지 1024 ================ */
+
+	
+
+	/* ================ //서브페이지 1024 ================ */
+
+}
+@media screen and (max-width:768px){
+
+	/* ================ 공통 768 ================ */
+
+
+
+	/* ================ //공통 768 ================ */
+	/* ================ 메인페이지 768 ================ */
+
+
+	/* ================ //메인페이지 768 ================ */
+	/* ================ 서브페이지 768 ================ */
+
+	/* Dream Guide - 유학서비스 - 결제완료 768 */
+	.style_cn .accountdata_box.vietnam ul li {
+		padding-left: 0;
+	}
+	.style_cn .accountdata_box.vietnam ul li span {
+		float: none;
+		margin-left: 0; margin-right: 0; margin-bottom: 3px;
+		width: 100%;
+		color: #666; font-size: 1.6rem; font-weight: 600;
+	}
+	.style_cn .accountdata_box.vietnam ul li span::after {
+		display: none;
+	}
+
+	
+	/* Do Job 768 */
+	.style_cn .search_refresh .wdfull_2_1 {
+		padding-right: 90px; padding-left: 115px;
+	}
+	.style_cn .search_refresh .btn_search {
+		right: 45px;
+		padding: 0;
+	}
+	.style_cn .search_refresh .wdfull_2_1 .select_form {
+		width: 105px;
+	}
+	.style_cn .search_box .grid_row .col_xl_12 {
+		padding-right: 0;
+	}
+	.style_cn .search_box .grid_row .btn_search {
+		right: 50px;
+	}
+	.style_cn .pre_cal.saramin, .style_cn .pre_cal.jobkorea, .style_cn .pre_cal.worknet {
+		width: 215px;
+	}
+	/* ================ //서브페이지 768 ================ */
+
+}
+@media screen and (max-width:480px){
+
+	/* ================ 공통 480 ================ */
+
+	/* Tab 480 */
+	.style_cn .tab_wide li a span {
+		font-size: 1.5rem;
+	}
+
+
+	/* ================ //공통 480 ================ */
+	/* ================ 메인페이지 480 ================ */
+
+	/* ================ //메인페이지 480 ================ */
+	/* ================ 서브페이지 480 ================ */
+
+	/* Do Job 480 */
+	.style_cn .search_refresh .wdfull_2_1 {
+		padding: 0;
+	}
+	.style_cn .search_refresh .wdfull_2_1 .btn_search {
+		right: 40px;
+	}
+	.style_cn .search_refresh .wdfull_2_1 .select_form {
+		width: 100%;
+	}
+
+
+	/* ================ //서브페이지 480 ================ */
+
+}
+@media screen and (max-width:320px){
+
+	/* ================ 공통 320 ================ */
+
+
+
+	/* ================ //공통 320 ================ */
+	/* ================ 메인페이지 320 ================ */
+
+
+
+	/* ================ //메인페이지 320 ================ */
+	/* ================ 서브페이지 320 ================ */
+
+
+
+	/* ================ //서브페이지 320 ================ */
+
+}

@@ -1,0 +1,9 @@
+.re_view { margin-top: 18px; }
+.re_view p.re_vtit { padding: 0px 0 10px 14px; font-weight: bold; background: url("../images/btn/re_view_bot.gif") no-repeat 2px 5px; border-bottom: 1px solid #EBEBEB; cursor: pointer; }
+.re_view p.on { background: url("../images/btn/re_view_top.gif") no-repeat 2px 5px; }
+.re_list ul li { padding: 12px 0 12px 14px; border-bottom: 1px solid #EBEBEB; }
+.re_list ul li span.re_date { margin: 0 8px 0 15px; font-size: 11px; }
+.re_list ul li span.re_hour { font-size: 11px; }
+.re_list ul li a { margin-right: 12px; float: right; }
+.re_list .re_top { position: relative; }
+.re_list .re_del { position: absolute; top: 0; right: 0; }

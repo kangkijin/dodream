@@ -1,0 +1,68 @@
+{
+	"header": {
+		"txt1": "Study Abroad Information",
+		"txt2": "Studying Abroad Matching",
+		"txt3": "Type-specific issues",
+		"txt4": "Practice test",
+		"txt5": "Study abroad review"
+	},
+	"footer": {
+		"txt1": "Dainleaders.Co.,Ltd"
+		,"txt2": "Service Guide"
+		,"txt3": "Terms and Conditions"
+		,"txt4": "Privacy Policy"
+		,"txt5": "Email Unauthorized Collection Denied"
+		,"txt6": "Study Abroad Platform DoDream Customer Service Center"
+		,"txt7": "Korean : 070-7729-7328"
+		,"txt8": "Vietnamese : 070-7729-8023"
+		,"txt9": "Dainleaders.Co.,Ltd"
+		,"txt10": "Korea Headquarters : 2006, 5 Seongsuil-ro 8-gil, Seongdong-gu, Seoul, Republic of Korea"
+		,"txt11": "Vietnamese Corporation : R.1107, Floor 11, Zen Tower Building, 12 Khuat Duy Tien rd, Thanh Xuan district, Hanoi"
+		,"txt12": "Point Guide"
+		,"txt13": "Service center : (+82)1800-6337"
+	},
+	"signUp" : {
+		"headerTxt1" : "Sign Up"
+		, "headerTxt2" : "If you register as a member of DoDream, you can use various information and services for studying in Korea"
+		, "headerTxt3" : "<span>01</span>Terms and identity"
+		, "headerTxt4" : "<span>02</span>Enter Information"
+		, "headerTxt5" : "<span>03</span>Member registration complete"
+	},
+	"signUp_1" : {
+		"txt1" : "Terms and Privacy Agreement"
+		, "txt2" : "<span class='font_red'>&#40;Required&#41;</span> Terms of Use"
+		, "txt3" : "<span class='font_red'>&#40;Required&#41;</span> Consent to collection and use of personal information"
+		, "txt4" : "Identity verification"
+		, "txt5" : "Cell phone number authentication"
+		, "txt6" : "Country code"
+		, "txt7" : "Enter authentication code"
+		, "txt8" : "<button type='button' class='btn_round btn_md btn_default' onclick='goSignUpInfo();'>Go to the next step</button>"
+		, "txt9" : "CHOICE"
+	},
+	"signUp_2" : {
+		"txt1" : "Enter member information"
+		, "txt2" : "ID<span class='font_red'>*</span>"
+		, "txt3" : "Password<span class='font_red'>*</span>"
+		, "txt4" : "Confirm Password<span class='font_red'>*</span>"
+		, "txt5" : "Nickname<span class='font_red'>*</span>"
+		, "txt6" : "Country<span class='font_red'>*</span>"
+		, "txt7" : "Refer Friends E-Mail"
+		, "txt8" : "Country"
+		, "txt9" : "The password format is incorrect"
+		, "txt10" : "Required information"
+		, "txt11" : "The password you entered does not match."
+		, "txt12" : "E-MAIL<span class='font_red'>*</span>"
+	},
+	"signUp_3" : {
+		"txt1" : "As a member of 'Do Dream', we'll welcome you!"
+		, "txt2" : "After logging in, all services are available."
+		, "txt3" : "Move to Main"
+	},
+	"signUp_4" : {
+		"txt1" : "Cell phone number authentication"
+		, "txt2" : "Identity verification"
+		, "txt3" : "Country code"
+		, "txt4" : "Enter authentication code"
+		, "txt5" : "<button type='button' class='btn_round btn_md btn_default' onclick='compltLogin();'>Login complete</button>"
+	}
+}

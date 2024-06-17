@@ -1,0 +1,1304 @@
+@charset "utf-8";
+
+/* magnific popup */
+.image-source-link {
+	color: #98C3D1; 
+}
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+	opacity: 0;
+	-webkit-backface-visibility: hidden;
+	/* ideally, transition speed should match zoom duration */
+	-webkit-transition: all 0.3s ease-out; 
+	-moz-transition: all 0.3s ease-out; 
+	-o-transition: all 0.3s ease-out; 
+	transition: all 0.3s ease-out;
+}
+.mfp-with-zoom.mfp-ready .mfp-container {
+	opacity: 1;
+}
+.mfp-with-zoom.mfp-ready.mfp-bg {
+	opacity: 0.8;
+}
+.mfp-with-zoom.mfp-removing .mfp-container, 
+.mfp-with-zoom.mfp-removing.mfp-bg {
+	opacity: 0;
+}
+button.mfp-close {
+	width: 24px; height: 24px;
+	text-indent: -9999px;
+	position: absolute; right: 20px; top: 20px;
+	background: transparent url(../../images/client/popup/btn_close_gray.png) no-repeat;
+}
+.mfp-image-holder .mfp-content {
+	max-width: 100%;
+}
+.mfp-figure {
+	background-color: transparent;
+}
+.mfp-figure figure {
+	padding: 0; 
+	overflow: auto;
+}
+img.mfp-img {
+	width: auto; max-width: auto;
+	padding: 0;
+}
+.mfp-figure::after {
+	background-color: transparent;
+	box-shadow: none;
+}
+
+/* 토스트 팝업 */
+#toast {
+	position: fixed; bottom: 0; left: 50%;
+	display: inline-block;
+	padding: 8px 10px;
+	width: auto; max-width: 98%;
+	color:white; text-align: center;
+	background-color: black;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+
+	-webkit-transition: opacity 0.5s ease-out;
+	-moz-transition: opacity 0.5s ease-out;
+	-ms-transition: opacity 0.5s ease-out;
+	-o-transition: opacity 0.5s ease-out;
+	transition: opacity 0.5s ease-out;
+
+	opacity: .9;
+}
+
+/* 팝업 공통 */
+.pop_wrapper {
+	background: #fff;
+	border: 4px solid #00aeef;
+	-webkit-box-shadow: 1px 2px 10px rgba(0,0,0,0.5);
+	-moz-box-shadow: 1px 2px 10px rgba(0,0,0,0.5);
+	box-shadow: 1px 2px 10px rgba(0,0,0,0.5);
+	overflow: hidden;
+}
+.pop_lg_wrapper {
+	width: 940px;
+	margin: 0 auto;
+}
+.pop_md_wrapper {
+	width: 750px;
+	margin: 0 auto;
+}
+.pop_sm_wrapper {
+	width: 600px;
+	margin: 0 auto;
+}
+.pop_xs_wrapper {
+	width: 520px;
+	margin: 0 auto;
+}
+.pop_xxs_wrapper {
+	width: 420px;
+	margin: 0 auto;
+}
+.pop_xxxs_wrapper {
+	width: 350px;
+	margin: 0 auto;
+}
+.pop_xxxss_wrapper {
+	width: 300px;
+	margin: 0 auto;
+}
+.pop_content{
+	padding: 15px;
+	min-height: 100px;
+}
+.pop_xl_content{
+	min-height: 450px; max-height: 650px;
+	overflow-y: auto;
+}
+.pop_lg_content{
+	min-height: 450px; max-height: 650px;
+	overflow-y: auto;
+}
+.pop_md_content{
+	min-height: 350px; max-height: 500px;
+	overflow-y: auto;
+}
+.pop_sm_content{
+	min-height: 250px; max-height: 400px;
+	overflow-y: auto;
+}
+.pop_xs_content{
+	min-height: 150px; max-height: 300px;
+	overflow-y: auto;
+}
+
+.pop_header {
+	position: relative;
+	padding: 0 50px 0 20px;
+	border-bottom: 2px solid #d8e0e8;
+}
+.pop_header h2 {
+	padding: 20px 0;
+	color: #3b3f6f; font-size: 2.1rem; font-weight: 700; 
+}
+.pop_header .uni_emblem + h2{
+    display: inline-block;
+}
+.pop_close {
+	position: absolute; top: 25px; right: 20px;
+	display: inline-block;
+	width: 20px; height: 20px;
+	text-indent: -9999px;
+	background: url(../../images/client/popup/btn_close_gray.png) no-repeat center;
+}
+.pop_footer {
+	padding: 20px;
+	text-align: center;
+	border-top: 1px solid #d8e0e8;
+}
+/* alert 팝업 창 */
+.alert_wrapper {
+	background: #fff;
+	-webkit-box-shadow: 1px 2px 10px rgba(0,0,0,0.5);
+	-moz-box-shadow: 1px 2px 10px rgba(0,0,0,0.5);
+	box-shadow: 1px 2px 10px rgba(0,0,0,0.5);
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	overflow: hidden;
+	padding: 30px 20px;
+}
+.alert_box {
+	background: #e3edf3;
+	padding: 30px 20px;
+}
+.alert_box p {
+	font-weight: 600;
+}
+.alert_box p:nth-child(1) {
+	margin-bottom: 10px;
+}
+.alert_box p:nth-child(2) {
+	font-size: 2.3rem;
+}
+.alert_box p span {
+	margin-left: 20px;
+	display: inline-block;
+}
+/* 로그인 */
+.login_box {
+	position: relative;
+	margin: 0 auto;
+	width: 470px;
+	background: #fff;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+.login_inner {
+	position: relative;
+	padding: 60px 90px 40px;
+	text-align: center;
+}
+.login_inner .logo {
+	margin: 0 auto 40px;
+	width: 220px; height: 47px;
+}
+.login_inner .logo img {
+	width: 100%;
+}
+.login_inner .id_box, .login_inner .pw_box  {
+	display: block;
+	padding: 15px 10px 15px 55px;
+	width: 100%;
+	font-size: 1.7rem; color: #3b3f6f; font-weight: 700;
+	background-repeat: no-repeat; background-position: 20px center; 
+	border: 1px solid #e1e1e1;
+}
+.login_inner .id_box:focus, .login_inner .pw_box:focus {
+	border-top: 1px solid #acadb3;
+	border-bottom: 1px solid #acadb3;
+	border-right: 1px solid #acadb3;
+	border-left: 5px solid #3b3f6f;
+}
+.login_inner .id_box,
+.login_inner .id_box:-webkit-autofill,
+.login_inner .id_box:-webkit-autofill:hover,
+.login_inner .id_box:-webkit-autofill:focus,
+.login_inner .id_box:-webkit-autofill:active {
+	background-image: url(../../images/client/popup/icon_idbox.png);
+	background-size: 20px;
+}
+.login_inner .pw_box,
+.login_inner .pw_box:-webkit-autofill,
+.login_inner .pw_box:-webkit-autofill:hover,
+.login_inner .pw_box:-webkit-autofill:focus,
+.login_inner .pw_box:-webkit-autofill:active {
+	margin-top: 5px;
+	background-image: url(../../images/client/popup/icon_pwbox.png);
+	background-size: 18px;
+}
+.login_inner .forgotid {
+	display: inline-block;
+    position: relative;
+	margin-top: 10px; margin-right: 20px; padding: 0px 20px 0px 20px; 
+	color: #9881b5; font-size: 1.7rem;
+}
+.login_inner .forgotid::after{
+    content:'|'; color: #9881b5;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    width: 1px; height: 14px;
+}
+.login_inner .forgotpw {
+	display: inline-block;
+	margin-top: 10px; padding: 20px 0 0px 0px; 
+	color: #9881b5; font-size: 1.7rem;
+}
+.login_inner .login_submit {
+	display: block;
+	margin-top: 30px; margin-bottom: 10px;
+	width: 100%; height: 50px;
+	color: #fff; font-size: 2.1rem; font-weight: 700; line-height: 50px;	
+	background: #3b3f6f; 
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.login_inner .login_fb {
+	display: block;
+	width: 100%; height: 50px;
+	color: #3c5a9a; font-size: 2.1rem; font-weight: 700; line-height: 50px; text-align: center;
+	border: 1px solid #3c5a9a;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.login_inner .login_fb span {
+	display: inline-block;
+	margin-right: 6px;
+	width: 24px; height: 24px; 
+	background: url(../../images/client/popup/icon_facebook.png) no-repeat center;
+}
+.login_box .join_membership {
+	display: block;
+	height: 80px;
+	color: #3b3f6f; font-size: 1.9rem; line-height: 80px; text-align: center;
+	background: #edf0f3;
+}
+.login_box .join_membership span:nth-child(1){
+	display: inline-block;
+	margin-right: 6px;
+	width: 23px; height: 26px;
+	background: url(../../images/client/popup/icon_joinmembership.png) no-repeat center; background-size: 23px;
+}
+.login_box .join_membership span:nth-child(2){
+	display: inline-block;
+	margin: 0 0 5px 5px;
+	width: 31px; height: 8px;
+	background: url(../../images/client/popup/icon_arrow_joinmembership.png) no-repeat center;
+}
+.btn_close {
+	position: absolute; top: 20px; right: 20px;
+	display: inline-block;
+	width: 20px; height: 20px;
+	text-indent: -9999px;
+	background: url(../../images/client/popup/btn_close_gray.png) no-repeat center;
+}
+
+/* 이용약관 */
+.terms_guide {
+	padding: 20px 25px;
+	background: #d7eaf1;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.terms_guide ul {
+	display: inline-block;
+	width: 49.5%;
+	vertical-align: top;
+}
+.terms_guide ul li {
+	margin-bottom: 10px; padding-left: 80px;
+}
+.terms_guide ul li:last-child {
+	margin-bottom: 0;
+}
+.terms_guide ul li span {
+	display: inline-block;
+	margin-left: -80px;
+	width: 80px;
+	color: #027dc0; font-weight: 700;
+}
+.terms_list li {
+	line-height: 1.7em;
+}
+.terms_list > ul > li {
+	margin-top: 20px;
+}
+.terms_list > ul > li > strong {
+	display: block;
+	margin-bottom: 5px;
+	color: #027dc0; font-weight: 700;
+}
+.terms_list > ul > li > strong span {
+	color: #464646; font-weight: 400; vertical-align: top;
+}
+.terms_list > ul > li > p {
+	line-height: 1.7em;	
+}
+.terms_sublist {
+	padding: 10px 12px;
+	background: #efefef;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.terms_sublist li span {
+	font-weight: 700;
+    vertical-align: 0px;
+} 
+
+/* 개인정보처리방침 */
+.privacy_guide ul li {
+	padding-left: 30px;
+}
+.privacy_guide ul li span {
+	margin-left: -30px;
+	width: 30px;
+}
+
+/* 이메일무단수집거부 */
+.emaildeny_txt {
+	width: 85%; min-height: 220px;
+	margin: 0 auto; padding: 70px 0 70px 260px; 
+	word-break: keep-all; font-size: 1.8rem; line-height: 1.8em;
+	background: url(../../images/client/popup/img_emaildeny.jpg) no-repeat left center;
+}
+.emaildeny_txt span {
+	display: block;
+	margin-top: 1em;
+}
+
+/* 마이페이지 - 휴대폰 번호 변경 */
+.pop_reset_number .list_wrap li h5 {
+	width: 100%;
+}
+.pop_reset_number .list_wrap li div {
+	width: 100%;
+}
+
+/* 마이페이지 - 문의하기 */
+.pop_inquiry .list_wrap li h5 {
+	width: 15%;
+}
+.pop_inquiry .list_wrap li > div {
+	width: 84%;
+}
+
+/* 마이페이지 - DRP & DRM 소개 */
+.exchangebg_wrap {
+	margin-top: 20px; margin-bottom: 20px;
+	font-size: 0;
+}
+.exchangebg_wrap li {
+	display: inline-block;
+	vertical-align: top;
+}
+.exchangebg_wrap li:nth-child(1) {
+	margin-right: 1%;
+	width: 64%;
+}
+.exchangebg_wrap li:nth-child(2) {
+	width: 35%;
+}
+.exchangebg_wrap h4 {
+	margin-bottom: 10px; padding: 5px 0;
+	color: #fff; font-size: 1.8rem; font-weight: 700; text-align: center;
+	-webkit-border-radius: 15px 15px 0 0;
+	-moz-border-radius: 15px 15px 0 0;
+	border-radius: 15px 15px 0 0;
+}
+.exchangebg_wrap li:nth-child(1) h4 {
+	background: #3d378a; 
+}
+.exchangebg_wrap li:nth-child(2) h4 {
+	background: #30a5d5; 
+}
+.exchangebg_wrap div {
+	height: 320px;
+}
+.exchangebg_wrap li:nth-child(1) div {
+	border-color: #c1bee6;
+}
+.exchangebg_wrap li:nth-child(2) div {
+	border-color: #bfd0d7;
+}
+
+.exchangeinfo_wrap {
+	margin-top: -300px; padding-right: 6%;
+	font-size: 0;
+}
+.exchangeinfo_wrap li {
+	display: inline-block;
+	text-align: center; vertical-align: top;
+}
+.exchangeinfo_list {
+	width: 26.666%;
+}
+.exchangeinfo_list h4 {
+	display: none;
+}
+.exchangeinfo_list .icon {
+	display: inline-block;
+	margin-bottom: 10px;
+	width: 150px; height: 150px;
+	text-indent: -9999px;
+	background-color: #ccd7ed; background-repeat: no-repeat; background-position: center; background-size: contain;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.exchangeinfo_list1 .icon {
+	background-image: url(../../images/client/popup/icon_exchangeinfo1.png);
+}
+.exchangeinfo_list2 .icon {
+	background-image: url(../../images/client/popup/icon_exchangeinfo2.png);
+}
+.exchangeinfo_list3 .icon {
+	background-image: url(../../images/client/popup/icon_exchangeinfo3.png);
+}
+.exchangeinfo_list h5 {
+	display: inline-block;
+	margin-bottom: 5px; padding: 4px 0;
+	width: 150px;
+	color: #080c15; font-size: 1.7rem; text-align: center;
+	background: #f2f2f2;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+.exchangeinfo_list ul {
+	display: inline-block;
+	margin-left: 10px;
+	width: 160px;
+	color: #5e5e5e; text-align: left;
+}
+.exchangeinfo_list ul li:before {
+	background: #5e5e5e;
+}
+.exchangeinfo_list ul li {
+	text-align: left;
+}
+.exchangeinfo_wrap .bridge {
+	width: 10%;
+}
+.exchangeinfo_wrap .bridge span {
+	display: block;
+	padding-top: 40px; padding-bottom: 15px;
+	font-size: 1.9rem; font-weight: 700;
+	background-repeat: no-repeat; background-position: center bottom; background-size: contain;
+}
+.exchangeinfo_wrap .bridge1 span {
+	color: #3d378a;
+	background-image: url(../../images/client/popup/icon_bridge_purple.png);
+}
+.exchangeinfo_wrap .bridge2 span {
+	color: #30a5d5;
+	background-image: url(../../images/client/popup/icon_bridge_skyblue.png);
+}
+
+/* 마이페이지 - 개인지갑주소 */
+.address_box {
+	margin: 20px auto; padding: 30px;
+	width: 90%;
+	font-weight: 700; word-break: break-all;
+	border: 1px solid #c2cad2;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+/* 마이페이지 - 입학 지원 내역 팝업 */
+.support_his_box table span{
+    display: block;
+}
+.support_his_box table .font_red {
+    display: inline-block;
+}
+.support_his_picture img{
+    width: 100%;
+}
+/* Dream Guide - 입학/입국 절차 */
+.procedure_list li {
+	position: relative;
+	height: 80px;
+	background-color: #fff; background-repeat: no-repeat; background-position: 20px center;
+	border-left: 1px solid #c2c2c2;
+	border-right: 1px solid #c2c2c2;
+	border-bottom: 1px solid #c2c2c2;
+}
+.procedure_list li:nth-child(1) {
+	background-image: url(../../images/client/sub/bg_no1.jpg);
+	border-top: 1px solid #c2c2c2;
+}
+.procedure_list li:nth-child(2) {
+	background-image: url(../../images/client/sub/bg_no2.jpg);
+}
+.procedure_list li:nth-child(3) {
+	background-image: url(../../images/client/sub/bg_no3.jpg);
+}
+.procedure_list li:nth-child(4) {
+	background-image: url(../../images/client/sub/bg_no4.jpg);
+}
+.procedure_list li:last-child {
+	background: none;
+	border: none;
+}
+.procedure_list li:last-child p {
+	color: #080c15; font-weight: 700;
+}
+.procedure_list li::after {
+	position: absolute; bottom: -13px; left: 50%; z-index: 1;
+	content: "";
+	display: inline-block;
+	margin-left: -12px;
+	width: 24px; height: 13px;
+	background: url(../../images/client/popup/bg_arrowdown.png); background-position: bottom center;
+}
+.procedure_list li:last-child::after {
+	display: none;
+}
+.procedure_list li p {
+	position: absolute; top: 50%; 
+	width: 100%;
+	text-align: center;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+/* Dream Guide - 유학 비자 정보 */
+.pop_visainfo > div {
+	margin-bottom: 15px;
+}
+.pop_visainfo > div:last-child {
+	margin-bottom: 0;
+}
+.pop_visainfo .acd_list2_wrap {
+	margin-bottom: 10px;
+}
+.pop_visainfo .acd_list2_wrap:last-child {
+	margin-bottom: 0;
+}
+.pop_visainfo .img_wrap {
+	font-size: 0;
+}
+.pop_visainfo .img_wrap img {
+	width: 49%;
+}
+.pop_visainfo .img_wrap img:nth-child(1) {
+	margin-right: 2%;
+}
+
+/* Dream Guide - 유학원 정보 상세보기 */
+.agencyinfo_top {
+	padding-left: 230px;
+}
+.info_list a {
+	word-break: break-all;
+}
+.agencyinfo_top .img_box {
+	position: relative;
+	float: left;
+	margin-right: 20px; margin-left: -230px;
+	width: 210px; height: 100px;
+	border: 1px solid #e1e1e1;
+}
+.agencyinfo_top .img_box img {
+	position: absolute; top: 50%; left: 50%;
+	max-width: 100%;
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+}
+.loca_box {
+	margin-top: 5px; padding: 10px;
+	border: 1px solid #576da8;
+}
+.loca_box .info_list li {
+	padding-left: 70px;
+}
+.loca_box .info_list .tit {
+	margin-right: 10px; margin-left: -70px;
+	width: 60px;
+}
+
+/* Dream Guide - 모의 입학 신청결과 */
+.enterance_result_box {
+	position: relative;
+	margin-top: 10px;
+	height: 180px;
+	background-repeat: no-repeat; background-position: left center; background-size: contain;
+}
+.enterance_high {
+	color: #6da7cc;
+	background-color: #eef0f6;
+	background-image: url(../../images/client/popup/bg_enterance_high.png);
+}
+.enterance_low {
+	color: #f35f5f;
+	background-color: #fbeeef;
+	background-image: url(../../images/client/popup/bg_enterance_low.png);
+}
+.enterance_result_box p {
+	position: absolute; left: 53%; top: 50%;
+	font-size: 2.1rem;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.enterance_result_box p span {
+	display: inline-block;
+	margin-left: 8px;
+	width: 16px; height: 16px;
+	text-indent: -9999px;
+	background-repeat: no-repeat; background-position: left center;
+}
+.enterance_high p span {
+	background-image: url(../../images/client/popup/icon_arrowfull_up_lightblue.png);
+}
+.enterance_low p span {
+	background-image: url(../../images/client/popup/icon_arrowfull_down_red.png);
+}
+
+/* Dream Guide - 지원서류 및 비용 */
+.wdfull_1_1 .select_form + .btn_search {
+	position: static;
+	margin-top: 15px; padding-left: 40px; padding-right: 15px;
+	width: auto;
+	text-indent: unset;
+	background-position: 15px center;
+}
+/* Dream Guide - 입학지원서 - 지원학과 팝업  */
+.department_pop {
+    padding: 20px;
+}
+.department_content {
+    margin-bottom: 20px;
+}
+/* Dream Guide - 입학지원서 - 과정선택 팝업  */
+.course_box p{
+    text-align: center; font-size: 2.1rem; font-weight: bold;
+}
+/* Do TOPIK - sample TOPIK 모의고사 */
+.pop_sampletest {
+	position: relative;
+}
+.pop_content .testintro_box {
+	padding: 20px;
+}
+.pop_content .testintro_box .icon {
+	position: relative;
+}
+.pop_content .testintro_box ul {
+	margin-left: -62px; padding: 30px 30px 30px 80px; 
+	border: 1px solid #c2c2c2;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+.sampletest_timer {
+	margin-bottom: 20px; padding: 5px 10px;
+	text-align: center;
+	background: #eef2f4;
+}
+.sampletest_timer span {
+	vertical-align: top;
+}
+.pop_sampletest .test_box {
+	padding: 0 6px;
+	border: none;
+}
+/* [pp] timer 뒤에 오는 테스트 박스 높이 지정. */
+.pop_sampletest .sampletest_timer + .test_box {
+	height: 450px;
+	overflow-y: auto;
+}
+
+/* Do TOPIK - 유형별 문제 */
+.pop_header .txt_define .tit, .pop_header .txt_define .cnt {
+	line-height: inherit;
+}
+
+/* Do TOPIK - 모의고사 결과 */
+.marking_sheet {
+	font-size: 0;
+	border-left: 1px solid #c2cad2;
+}
+.marking_sheet li {
+	position: relative;
+	display: inline-block;
+	padding-left: 30px;
+	width: 20%;
+	font-size: 1.7rem; line-height: 30px; text-align: center;
+	border-right: 1px solid #c2cad2;
+	border-bottom: 1px solid #c2cad2;
+}
+.marking_sheet li:nth-child(1), .marking_sheet li:nth-child(2), .marking_sheet li:nth-child(3), .marking_sheet li:nth-child(4), .marking_sheet li:nth-child(5) {
+	border-top: 1px solid #c2cad2;
+}
+.marking_sheet li span:first-child {
+	position: absolute; left: 0; top: 0;
+	width: 30px; height: 100%;
+	line-height: 30px; 
+	background: #f2f2f2;
+}
+
+/* Do Talking - Community 등록 */
+.pop_commupost .tag_input_wrap {
+	margin-top: 15px;
+}
+.pop_commupost .thumbnail_wrap {
+	margin-top: 7px;
+}
+
+/* Do Talking - ask me 등록 */
+.askme_tit {
+	position: relative;
+}
+.askme_tit .q_label {
+	position: absolute; top: 45%; left: 10px;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.askme_tit input.form_style {
+	padding-left: 36px;
+}
+.pop_askmepost .tag_input_wrap, .pop_askmepost .wdfull_2 {
+	margin-top: 15px;
+}
+.pop_askmepost .wdfull_2 {
+	padding-right: 0;
+}
+.pop_askmepost .wdfull_2 .tit {
+	position: absolute; top: 6px; left: 0;
+}
+
+/* 공지사항 팝업 */
+.pushpop_wrap {
+	position: relative;
+	width: 700px;
+}
+.pusupop_footer {
+	position: relative;
+	height: 40px;
+	background-color: #363636;
+	color: #fff;
+	z-index: 2;
+}
+.pusupop_footer p {
+	position: absolute; top: 50%; right: 60px;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.pusupop_footer p input {
+	display: none;
+}
+.pusupop_footer p label {
+	position: relative;
+	display: block;
+	padding-right: 25px;
+	background: url(../../images/client/popup/push_check.png) no-repeat right center;
+	-webkit-transform: rotate(-0.03deg);
+	-moz-transform: rotate(-0.03deg);
+	-o-transform: rotate(-0.03deg);
+	transform: rotate(-0.03deg);
+}
+.pusupop_footer p label::before {
+	position: absolute; bottom: 0; left: 0;
+	content: "";
+	display: block;
+	width: 0; height: 0;
+	background: #fff;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+}
+.pusupop_footer p input:checked + label {
+	background-image: url(../../images/client/popup/push_check_on.png);
+}
+.pusupop_footer p input:checked + label::before {
+	width: calc( 100% - 24px ); height: 1px;
+}
+.pusupop_footer p label:hover {
+	cursor: pointer;
+}
+.pusupop_footer .push_close {
+	position: absolute; top: 0; right: 0;
+	display: inline-block;
+	width: 40px; height: 40px;
+	background: url(../../images/client/popup/btn_notice_close.png) no-repeat center;
+	font-size: 0; line-height: 0;
+	border-left : 1px solid #b7b7b7;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+}
+.pusupop_footer .push_close:hover {
+	background-color: #202020;
+}
+
+/* 링크 팝업 */
+.map_wrap {
+	height: 700px;
+}
+
+@media screen and (max-width:1279px){}
+@media screen and (max-width:1080px){}
+/*================================ hover(pc) ================================ */
+@media screen and (min-width:1025px){
+
+	
+}
+/*================================ //hover(pc) ================================ */
+@media screen and (max-width:1024px){
+	
+	/* 팝업 공통 1024 */
+	.pop_lg_wrapper {
+		width: 94%;
+		margin: 0 auto;
+	}
+	
+	/* 이용약관 1024 */
+	.terms_guide ul {
+		width: 100%;
+	}
+	.terms_guide ul li:last-child {
+		margin-bottom: 10px;
+	}
+	.terms_guide ul:last-child li:last-child {
+		margin-bottom: 0;
+	}
+	
+	/* 마이페이지 - DRP & DRM 소개 1024 */
+	.exchangebg_wrap div {
+		height: 280px;
+	}
+	.exchangeinfo_wrap {
+		margin-top: -270px;
+	}
+	.exchangeinfo_list .icon {
+		width: 120px; height: 120px;
+	}
+	
+	
+	
+}
+@media screen and (max-width:768px){
+	
+	/* 팝업 공통 768 */
+	.pop_wrapper {
+		border-width: 2px;
+	}
+	.pop_md_wrapper {
+		width: 90%;
+		margin: 0 auto;
+	}
+	.pop_sm_wrapper {
+		width: 80%;
+		margin: 0 auto;
+	}
+	.pop_xs_wrapper {
+		width: 80%;
+		margin: 0 auto;
+	}
+    .pop_xxs_wrapper {
+		width: 80%;
+		margin: 0 auto;
+	}
+    .pop_xxxs_wrapper {
+		width: 80%;
+		margin: 0 auto;
+	}
+    .pop_xxxss_wrapper {
+		width: 300px;
+		margin: 0 auto;
+	}
+	.pop_content{
+		padding: 10px;
+	}
+	.pop_content{
+		max-height: 400px;
+		overflow-y: auto;
+	}
+    .pop_xl_content{
+		max-height: 400px;
+	}
+	.pop_lg_content{
+		max-height: 400px;
+	}
+	.pop_md_content{
+		max-height: 400px;
+	}
+	.pop_sm_content{
+		max-height: 400px;
+	}
+	.pop_header {
+		padding: 0 40px 0 15px;
+	}
+	.pop_header h2 {
+		padding: 15px 0;
+		font-size: 2.0rem; 
+	}
+	.pop_close {
+		top: 17px; right: 15px;
+	}
+	.pop_footer {
+		padding: 10px;
+	}
+	
+	/* 로그인 */
+	.login_box {
+		width: 90%;
+	}
+	.login_inner {
+		padding: 30px 20px;
+	}
+	.login_inner .logo {
+		margin: 15px auto 40px;
+		width: 180px;
+	}
+	.login_inner .id_box, .login_inner .pw_box {
+		padding: 15px 15px 15px 44px;
+		background-position: 12px center; 
+	}
+	.login_inner .pw_box {
+		margin-top: 5px;
+	}
+	.login_inner .login_submit, .login_inner .login_fb {
+		height: 50px;
+		font-size: 2.3rem; line-height: 50px;
+	}
+	.login_inner .login_submit {
+		margin-top: 30px; margin-bottom: 5px;
+	}
+	.login_inner .forgotpw {
+		margin-top: 15px;
+	}
+	.login_box .join_membership {
+		height: 60px;
+		line-height: 60px;
+	}
+	.login_box .join_membership span:nth-child(1) {
+		width: 20px;
+		background-size: 20px;
+	}
+	
+	/* 이용약관 768 */
+	.terms_guide {
+		padding: 10px 15px;
+	}
+	.terms_guide ul li {
+		padding-left: 60px;
+	}
+	.terms_guide ul li span {
+		margin-left: -60px;
+		width: 60px;
+	}
+	
+	/* 개인정보처리방침 768 */
+	.privacy_guide ul li {
+		padding-left: 20px;
+	}
+	.privacy_guide ul li span {
+		margin-left: -20px;
+		width: 20px;
+	}
+	
+	/* 이메일무단수집거부 768 */
+	.emaildeny_txt {
+		width: 90%; min-height: auto;
+		margin: 15px auto; padding: 165px 0 0 0; 
+		line-height: 1.6em; text-align: center;
+		background-size: 150px; background-position: center top;
+	}
+	/* Dream Guide - 입학지원서 - 지원학과 팝업  768*/
+    .department_pop {
+        padding: 20px;
+        position: relative;
+    }
+    .department_pop p {
+        display: block;
+    }
+    .department_content {
+        margin-bottom: 50px;
+    }
+    .department_pop .select_search{
+        display: block; width: 100%;
+    }
+    .department_pop button {
+        position: absolute; right: 20px;
+        margin-top: 10px;
+    }
+	/* 마이페이지 - DRP & DRM 소개 768 */
+	.exchangebg_wrap {
+		display: none;
+	}
+	.exchangeinfo_wrap {
+		margin-top: 10px; padding: 0;
+	}
+	.exchangeinfo_wrap li, .exchangeinfo_wrap .bridge {
+		width: 100%;
+	}
+	.exchangeinfo_list > div {
+		margin: 10px; padding: 15px;
+		background: #f2f2f2;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		border-radius: 10px;
+	}
+	.exchangeinfo_list1 {
+		position: relative;
+		margin-top: 30px;
+		border-left: 1px dashed #3d378a;
+		border-right: 1px dashed #3d378a;
+	}
+	.exchangeinfo_list2 {
+		border-left: 1px dashed #3d378a;
+		border-right: 1px dashed #3d378a;
+		border-bottom: 1px dashed #3d378a;
+		-webkit-border-radius: 0 0 10px 10px;
+		-moz-border-radius: 0 0 10px 10px;
+		border-radius: 0 0 10px 10px;
+	}
+	.exchangeinfo_list3 {
+		position: relative;
+		margin-top: 30px; padding: 10px;
+		border-left: 1px dashed #30a5d5;
+		border-right: 1px dashed #30a5d5;
+		border-bottom: 1px dashed #30a5d5;
+		-webkit-border-radius: 0 0 10px 10px;
+		-moz-border-radius: 0 0 10px 10px;
+		border-radius: 0 0 10px 10px;
+	}
+	.exchangeinfo_list h4 {
+		position: absolute; top: -30px; left: -1px;
+		display: block;
+		padding: 5px 0; 
+		width: 100.5%;
+		color: #fff; font-size: 1.7rem; line-height: 1.5em; text-align: center;
+		-webkit-border-radius: 10px 10px 0 0;
+		-moz-border-radius: 10px 10px 0 0;
+		border-radius: 10px 10px 0 0;
+	}
+	.exchangeinfo_list1 h4 {
+		font-size: 1.8rem;
+		background: #3d378a;
+	}
+	.exchangeinfo_list3 h4 {
+		font-size: 1.8rem;
+		background: #30a5d5;
+	}
+	.exchangeinfo_list .icon {
+		margin-bottom: 5px;
+		width: 80px; height: 80px;
+	}
+	.exchangeinfo_list h5 {
+		display: block;
+		margin: 0 auto; padding: 0;
+		width: 90%;
+		font-weight: 700;
+		background: none;
+	}
+	.exchangeinfo_list ul {
+		display: block;
+		margin: 5px auto 0;
+	}
+	.exchangeinfo_list ul li {
+		margin-left: 10px;
+	}
+	.exchangeinfo_wrap .bridge1 {
+		margin: 2px 0;
+		border-left: 1px dashed #3d378a;
+		border-right: 1px dashed #3d378a;
+	}
+	.exchangeinfo_wrap .bridge1 span {
+		display: inline-block;
+		padding-top: 0; padding-right: 25px;
+		width: auto; height: 25px;
+		font-size: 1.9rem; line-height: 25px;
+		background: url(../../images/client/popup/icon_shortbridge_purple.png) no-repeat right center;
+	}
+	.exchangeinfo_wrap .bridge2 span {
+		display: inline-block;
+		margin: 10px 0; padding-top: 0; padding-right: 25px;
+		width: auto; height: 25px;
+		font-size: 1.9rem; line-height: 25px;
+		background: url(../../images/client/popup/icon_shortbridge_skyblue.png) no-repeat right center;
+	}
+	
+	/* 마이페이지 - 개인지갑주소 768 */
+	.address_box {
+		padding: 20px;
+	}
+   
+    
+	/* Dream Guide - 입학/입국 절차 768 */
+	.procedure_list li {
+		min-height: 60px; height: auto;
+		background-size: auto 25px;
+	}
+	.procedure_list li::after {
+		bottom: -8px;
+		width: 14px; height: 8px;
+	}
+	
+	/* Dream Guide - 유학 비자 정보 768 */
+	.pop_visainfo .img_wrap img {
+		width: 100%;
+	}
+	.pop_visainfo .img_wrap img:nth-child(1) {
+		margin-right: 0; margin-bottom: 10px;
+	}
+	
+	/* Dream Guide - 유학원 정보 상세보기 768 */
+	.agencyinfo_top {
+		padding-left: 0;
+	}
+	.agencyinfo_top .img_box {
+		float: none;
+		margin-left: 0; margin-right: 0;
+		width: 100%;
+	}
+	.agencyinfo_top .info_list {
+		margin-top: 5px; margin-left: 5px;
+	}
+	.pop_content .tab_list li a {
+		min-width: 80px
+	}
+	
+	/* Dream Guide - 지원서류 및 비용 768 */
+	.wdfull_1_1 .select_form + .btn_search {
+		margin-top: 8px; 
+	}
+	/* Do TOPIK - sample TOPIK 모의고사 768 */
+	.pop_content .testintro_box ul {
+		margin-left: 0; padding: 18px 20px;
+		width: 100%;
+	}
+	.pop_sampletest .sampletest_timer + .test_box {
+		height: 320px;
+	}
+	
+	
+	
+	
+}
+@media screen and (max-width:690px){
+	
+	/* Dream Guide - 모의 입학 신청결과 690 */
+	.enterance_result_box {
+		height: 150px;
+	}
+	
+	
+	
+	
+	
+}
+@media screen and (max-width:480px){
+	/* alert 팝업 480 */
+	.alert_box {
+		padding: 20px 10px;
+	}
+	.alert_box p {
+		text-align: center;
+	}
+	.alert_box p:nth-child(2) {
+		font-size: 1.9rem;
+	}
+	.alert_box p span {
+		display: block; text-align: center;
+		margin-top: 20px;
+	}
+	/* 로그인 480 */
+	.login_box {
+		width: 95%;
+	}
+	
+	/* 이메일무단수집거부 480 */
+	.emaildeny_txt {
+		padding-top: 162px;
+		font-size: 1.7rem;
+	}
+	
+	/* Dream Guide - 입학/입국 절차 480 */
+	.procedure_list li:nth-child(1), .procedure_list li:nth-child(2), .procedure_list li:nth-child(3), .procedure_list li:nth-child(4) {
+		background-image: none;
+	}
+	
+	/* Dream Guide - 모의 입학 신청결과 480 */
+	.enterance_result_box {
+		padding: 150px 10px 20px 10px;
+		height: auto;
+		background-size: auto 130px; background-position: center 10px;
+	}
+	.enterance_result_box p {
+		position: static;
+		text-align: center;
+		transform: translateY(0);
+	}
+	/* Dream Guide - 입학지원서 - 지원학과 팝업  480*/
+    .department_content {
+        margin-bottom: 50px;
+    }
+    .department_pop .select_search{
+        display: block; width: 100%;
+    }
+    .department_pop button {
+       margin-top: 10px;
+    }
+	/* Do TOPIK - sample TOPIK 모의고사 480 */
+	.pop_content .testintro_box {
+		padding: 10px;
+	}
+	.pop_content .testintro_box ul {
+		padding: 15px 13px;
+	}
+	
+	/* Do TOPIK - 모의고사 결과 480 */
+	.marking_sheet li {
+		padding-left: 24px;
+	}
+	.marking_sheet li span:first-child {
+		width: 24px;
+	}
+	
+	/* Do Talking - ask me 등록 */
+	.pop_askmepost .wdfull_2 .tit {
+		position: static;
+		margin-bottom: 2px;
+	}
+	
+	
+}
+
+

@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi, shrink-to-fit=no">
+		<meta name="format-detection" content="telephone=no, address=no">
+		<meta name="title" content="DoDream">
+		<meta name="keywords" content="Block Chain, Study Abroad, platform, Korea, vietnam">
+		<meta name="description" content="유학플랫폼 두드림(DoDream)외국인 유학생을 위한 한국 유학 매칭 플랫폼">
+		<meta name="author" content="DainLeaders">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="DoDream">
+		<meta property="og:description" content="유학플랫폼 두드림(DoDream)외국인 유학생을 위한 한국 유학 매칭 플랫폼">
+		<meta property="og:image" content="../../../images/common/img_metacover.jpg">
+		<meta property="og:url" content="http://www.dodream.io">
+		<meta name="naver-site-verification" content="dd744254d55fa0f146a5daeaf1e02ae2dd86c1f9"/> 
+		<meta name="google-site-verification" content="mive32tDbnLeee8bzzUfCA31XmDNgL4Lgj4dQoxn8DM"/>
+		<title>DoDream</title>
+
+		<!-- [pp] 웹앱매니페스트 - chrome, opera -->
+		<link rel="manifest" href="../manifest.json">
+		<!-- [pp] //웹앱매니페스트 - chrome, opera -->
+
+		<!-- [pp] ios safari screen -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="white">
+		<meta name="apple-mobile-web-app-title" content="DoDream">
+		<!-- [pp] //ios safari screen -->
+
+		<!-- [pp] 파비콘 -->
+		<link rel="apple-touch-icon" sizes="64x64" href="../../../images/common/favicon.png">
+		<link rel="shortcut icon" type="image/x-icon" href="../../../images/common/favicon.ico">
+		<!-- [pp] //파비콘 -->
+
+		<!-- [pp] css -->
+		<link rel="stylesheet" href="../../../css/client/src/swiper.min.css">
+		<link rel="stylesheet" href="../../../css/client/src/jquery.mCustomScrollbar.css">
+		<link rel="stylesheet" href="../../../css/client/src/select2.css">
+		<link rel="stylesheet" href="../../../css/client/src/magnific-popup.css">
+		<link rel="stylesheet" href="../../../css/dl_global.css">
+		<link rel="stylesheet" href="../../../css/client/normalize.css">
+		<link rel="stylesheet" href="../../../css/client/grid.css">
+		<link rel="stylesheet" href="../../../css/client/table.css">
+		<link rel="stylesheet" href="../../../css/client/formstyle.css">
+		<link rel="stylesheet" href="../../../css/client/common.css">
+		<link rel="stylesheet" href="../../../css/client/ui.css">
+		<link rel="stylesheet" href="../../../css/client/popup.css">
+		<!-- [pp] //css -->
+
+		<!-- [pp] js -->
+		<script type="text/javascript" src="../../../js/client/src/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/swiper.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/jquery.mCustomScrollbar.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/select2.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/jquery.magnific-popup.js"></script>
+		<script type="text/javascript" src="../../../js/client/pp_common.js"></script>
+
+		<!-- [pp] 사용 금지 -->
+		<script type="text/javascript" src="../../../js/client/src/jquery-1.12.3.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/pp_include.js"></script>
+		<!-- [pp] //사용 금지 -->
+
+		<!-- [pp] //js -->
+
+		<!--[if lt IE 9]>
+		<script type="text/javascript" src="../../../js/client/src/jquery-1.12.3.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/html5shiv.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/IE9.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/respond.min.js"></script>
+		<![endif]-->
+
+	</head>
+	<body>
+		<!--[pp] ie 하위버젼 접속시 알림 -->
+		<!--[if lt IE 10]>
+		<div id="browser">
+		This site is supported Explorer 10 or higher, Chrome, Firefox, Opera, Safari.<br/>If you are using it now, Please <a href="https://browsehappy.com/?locale=en" target="_blank">upgrade your browser</a> to improve your experience and security.
+		<button type="button" class="pp_upgradeinfo_close">close</button>
+		</div>
+		<![endif]-->
+		<!--[pp] // ie 하위버젼 접속시 알림 -->
+
+		<!-- [pp] 로딩중 화면 -->
+		<div id="loading" style="display:none;">
+			<p id="loading_image">
+				<img src="../../images/pageloading.gif" alt="Loading..."><br>
+				<span>Loading</span>
+			</p>
+		</div>
+		<!-- [pp] //로딩중 화면 -->
+		<div class="pop_wrapper pop_md_wrapper">
+			<div class="pop_header">
+				<h2>제 3 회 모의고사 결과</h2>
+				<a href="javascript:void(0);" class="pop_close" title="팝업창 닫기">팝업창 닫기</a>
+			</div>
+			<div class="pop_testresult pop_content pop_md_content">
+				<p class="mg_t5 mg_b20 ta_c">
+					총 점수 : <span class="font_blue">115</span> / <span>200</span> 점
+				</p>
+				<div class="tbl_col_shaped">
+					<ol class="tbl_col_thead">
+						<li class="wd_p25">영역</li>
+						<li class="wd_p25">정답수 / 문항수</li>
+						<li class="wd_p25">내 점수 / 총점</li>
+						<li class="wd_p25">채점결과</li>
+					</ol>
+					<ol class="tbl_col_tbody acdbtn_js">
+						<div class="tit acd_list_js">
+							<li class="wd_p25">듣기</li>
+							<li class="wd_p25"><span class="va_t">41</span> / 50</li>
+							<li class="wd_p25"><span class="va_t">60</span> / 100</li>
+							<li class="wd_p25 td_input">
+								<!-- [pp] 클래스 'on' 추가시 페이지 진입시 컨텐츠 펼쳐놓기 가능 -->
+								<button type="button" class="btn_accordion">내용보기</button>
+							</li>
+						</div>
+						<div class="cnt acd_cnt_js">
+							<h4 class="section_tit_md">채점 결과</h4>
+							<ul class="section_sarea marking_sheet">
+								<li>
+									<span>1</span>
+									<span class="font_blue">②</span>
+									<!-- [pp] 오답 구분 : 
+									<span class="font_blue">②</span>
+									<span class="font_red">②</span>
+									-->
+								</li>
+								<li>
+									<span>2</span>
+									<span class="font_red">②</span>
+								</li>
+								<li>
+									<span>3</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>4</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>5</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>6</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>7</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>8</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>9</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>10</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>11</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>12</span>
+									<span class="font_red">②</span>
+								</li>
+								<li>
+									<span>13</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>14</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>15</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>16</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>17</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>18</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>19</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>20</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>21</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>22</span>
+									<span class="font_red">②</span>
+								</li>
+								<li>
+									<span>23</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>24</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>25</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>26</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>27</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>28</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>29</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>30</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>31</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>32</span>
+									<span class="font_red">②</span>
+								</li>
+								<li>
+									<span>33</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>34</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>35</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>36</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>37</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>38</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>39</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>40</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>41</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>42</span>
+									<span class="font_red">②</span>
+								</li>
+								<li>
+									<span>43</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>44</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>45</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>46</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>47</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>48</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>49</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>50</span>
+									<span class="font_blue">②</span>
+								</li>
+							</ul>
+							<h4 class="section_tit_md">답안</h4>
+							<ul class="section_sarea marking_sheet">
+								<li>
+									<span>1</span>
+									<span>②</span>
+								</li>
+								<li>
+									<span>2</span>
+									<span>②</span>
+								</li>
+							</ul>
+						</div>
+						<div class="tit acd_list_js">
+							<li class="wd_p25">읽기</li>
+							<li class="wd_p25"><span class="va_t">41</span> / 50</li>
+							<li class="wd_p25"><span class="va_t">60</span> / 100</li>
+							<li class="wd_p25 td_input">
+								<button type="button" class="btn_accordion">내용보기</button>
+							</li>
+						</div>
+						<div class="cnt acd_cnt_js">
+							<h4 class="section_tit_md">채점 결과</h4>
+							<ul class="section_sarea marking_sheet">
+								<li>
+									<span>1</span>
+									<span class="font_blue">②</span>
+									<!-- [pp] 오답 구분 : 
+<span class="font_blue">②</span>
+<span class="font_red">②</span>
+-->
+								</li>
+								<li>
+									<span>2</span>
+									<span class="font_red">②</span>
+								</li>
+								<li>
+									<span>3</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>4</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>5</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>6</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>7</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>8</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>9</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>10</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>11</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>12</span>
+									<span class="font_red">②</span>
+								</li>
+								<li>
+									<span>13</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>14</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>15</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>16</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>17</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>18</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>19</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>20</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>21</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>22</span>
+									<span class="font_red">②</span>
+								</li>
+								<li>
+									<span>23</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>24</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>25</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>26</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>27</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>28</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>29</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>30</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>31</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>32</span>
+									<span class="font_red">②</span>
+								</li>
+								<li>
+									<span>33</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>34</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>35</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>36</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>37</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>38</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>39</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>40</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>41</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>42</span>
+									<span class="font_red">②</span>
+								</li>
+								<li>
+									<span>43</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>44</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>45</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>46</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>47</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>48</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>49</span>
+									<span class="font_blue">②</span>
+								</li>
+								<li>
+									<span>50</span>
+									<span class="font_blue">②</span>
+								</li>
+							</ul>
+							<h4 class="section_tit_md">답안</h4>
+							<ul class="section_sarea marking_sheet">
+								<li>
+									<span>1</span>
+									<span>②</span>
+								</li>
+								<li>
+									<span>2</span>
+									<span>②</span>
+								</li>
+							</ul>
+						</div>
+						<div class="tit acd_list_js">
+							<li class="wd_p25">쓰기</li>
+							<li class="wd_p50"><span class="va_t">41</span> / 50</li>
+							<li class="wd_p25 td_input">
+								<button type="button" class="btn_accordion">내용보기</button>
+							</li>
+							<!-- [pp] 결과 없을 시 : 
+							<li class="wd_p75">채점 중입니다. &#40;2~3일 소요&#41;</li>
+							-->
+						</div>
+						<div class="cnt acd_cnt_js">
+							<div class="tbl tbl_row tbl_sm_responsive">
+								<table>
+									<caption>모의고사 쓰기 결과</caption>
+									<colgroup>
+										<col style="width:5%">
+										<col style="width:40%">
+										<col style="width:15%">
+										<col style="width:30%">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">No</th>
+											<th scope="col">작성 답안</th>
+											<th scope="col">점수</th>
+											<th scope="col">평가</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td data-th="No" class="ta_c">1</td>
+											<td data-th="작성 답안" class="td_input">
+												<textarea class="form_style" rows="2"></textarea>
+											</td>
+											<td data-th="점수" class="nowrap ta_c">
+												<span class="va_t">41</span> / 50
+											</td>
+											<td data-th="평가">
+												전혀 한국어를 모르시군요! 많은 부분에서 틀렸어요.
+											</td>
+										</tr>
+										<tr>
+											<td data-th="No" class="ta_c">2</td>
+											<td data-th="작성 답안">
+												교원 1인당 학생수는 초등학교, 
+												중학교, 고등학교 별로 시대에 
+												따라 변화되어 왔다. 학생 수는 
+												점점 감소하고 있고, 그에 따라 학교 수도 감수하고 있다.
+											</td>
+											<td data-th="점수" class="nowrap ta_c">
+												<span class="va_t">41</span> / 50
+											</td>
+											<td data-th="평가">
+												전혀 한국어를 모르시군요! 많은 부분에서 틀렸어요.
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</ol>
+				</div>
+			</div>
+			<div class="pop_footer">
+				<button type="button" class="btn_round btn_lg btn_blue">닫기</button>
+			</div>
+		</div>
+	</body>
+</html>

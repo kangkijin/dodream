@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi, shrink-to-fit=no">
+		<meta name="format-detection" content="telephone=no, address=no">
+		<meta name="title" content="DoDream">
+		<meta name="keywords" content="Block Chain, Study Abroad, platform, Korea, vietnam">
+		<meta name="description" content="유학플랫폼 두드림(DoDream)외국인 유학생을 위한 한국 유학 매칭 플랫폼">
+		<meta name="author" content="DainLeaders">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="DoDream">
+		<meta property="og:description" content="유학플랫폼 두드림(DoDream)외국인 유학생을 위한 한국 유학 매칭 플랫폼">
+		<meta property="og:image" content="../../../images/common/img_metacover.jpg">
+		<meta property="og:url" content="http://www.dodream.io">
+		<meta name="naver-site-verification" content="dd744254d55fa0f146a5daeaf1e02ae2dd86c1f9"/> 
+		<meta name="google-site-verification" content="mive32tDbnLeee8bzzUfCA31XmDNgL4Lgj4dQoxn8DM"/>
+		<title>DoDream</title>
+
+		<!-- [pp] 웹앱매니페스트 - chrome, opera -->
+		<link rel="manifest" href="../manifest.json">
+		<!-- [pp] //웹앱매니페스트 - chrome, opera -->
+
+		<!-- [pp] ios safari screen -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="white">
+		<meta name="apple-mobile-web-app-title" content="DoDream">
+		<!-- [pp] //ios safari screen -->
+
+		<!-- [pp] 파비콘 -->
+		<link rel="apple-touch-icon" sizes="64x64" href="../../../images/common/favicon.png">
+		<link rel="shortcut icon" type="image/x-icon" href="../../../images/common/favicon.ico">
+		<!-- [pp] //파비콘 -->
+
+		<!-- [pp] css -->
+		<link rel="stylesheet" href="../../../css/client/src/swiper.min.css">
+		<link rel="stylesheet" href="../../../css/client/src/jquery.mCustomScrollbar.css">
+		<link rel="stylesheet" href="../../../css/client/src/select2.css">
+		<link rel="stylesheet" href="../../../css/client/src/magnific-popup.css">
+		<link rel="stylesheet" href="../../../css/dl_global.css">
+		<link rel="stylesheet" href="../../../css/client/normalize.css">
+		<link rel="stylesheet" href="../../../css/client/grid.css">
+		<link rel="stylesheet" href="../../../css/client/table.css">
+		<link rel="stylesheet" href="../../../css/client/formstyle.css">
+		<link rel="stylesheet" href="../../../css/client/common.css">
+		<link rel="stylesheet" href="../../../css/client/ui.css">
+		<link rel="stylesheet" href="../../../css/client/popup.css">
+		<!-- [pp] //css -->
+
+		<!-- [pp] js -->
+		<script type="text/javascript" src="../../../js/client/src/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/swiper.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/jquery.mCustomScrollbar.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/select2.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/jquery.magnific-popup.js"></script>
+		<script type="text/javascript" src="../../../js/client/pp_common.js"></script>
+
+		<!-- [pp] 사용 금지 -->
+<!--		<script type="text/javascript" src="../../../js/client/src/jquery-1.12.3.min.js"></script>-->
+		<script type="text/javascript" src="../../../js/client/pp_include.js"></script>
+		<!-- [pp] //사용 금지 -->
+
+		<!-- [pp] //js -->
+
+		<!--[if lt IE 9]>
+		<script type="text/javascript" src="../../../js/client/src/jquery-1.12.3.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/html5shiv.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/IE9.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/respond.min.js"></script>
+		<![endif]-->
+
+	</head>
+	<body>
+		<!--[pp] ie 하위버젼 접속시 알림 -->
+		<!--[if lt IE 10]>
+		<div id="browser">
+		This site is supported Explorer 10 or higher, Chrome, Firefox, Opera, Safari.<br/>If you are using it now, Please <a href="https://browsehappy.com/?locale=en" target="_blank">upgrade your browser</a> to improve your experience and security.
+		<button type="button" class="pp_upgradeinfo_close">close</button>
+		</div>
+		<![endif]-->
+		<!--[pp] // ie 하위버젼 접속시 알림 -->
+
+		<!-- [pp] 로딩중 화면 -->
+		<div id="loading" style="display:none;">
+			<p id="loading_image">
+				<img src="../../../images/pageloading.gif" alt="Loading..."><br>
+				<span>Loading</span>
+			</p>
+		</div>
+		<!-- [pp] //로딩중 화면 -->
+
+		<!-- [pp] 푸터를 제외한 전체페이지 -->
+		<div class="page_wrap">
+			<!-- [pp] header -->
+			<div data-include="../include/header.html">header 영역</div>
+			<!-- [pp] //header -->
+			<!-- [pp] visual -->
+			<figure class="sub_visual visual1">
+				<div class="grid_content">
+					<div class="visual_txt">
+						<h2>Dream Guide</h2>
+						<p>대학 모집 일정</p>
+					</div>
+					<nav class="page_navi">
+						<ul>
+							<li><a href="javascript:void(0);">Home</a></li>
+							<li><a href="javascript:void(0);">Dream Guide</a></li>
+							<li><a href="javascript:void(0);">유학 매칭</a></li>
+							<li><a href="javascript:void(0);">대학 모집 일정</a></li>
+						</ul>
+					</nav>
+				</div>
+			</figure>
+			<!-- [pp] //visual -->
+			<!-- [pp] container -->
+			<div class="subpage_wrap">
+				<div class="tab_wide_wrap">
+					<ul class="grid_content tab_wide tab_switch_js">
+						<li><a href="javascript:void(0);" class="on"><span>어학연수</span></a></li>
+						<li><a href="javascript:void(0);"><span>학사과정</span></a></li>
+						<li><a href="javascript:void(0);"><span>석사과정</span></a></li>
+						<li><a href="javascript:void(0);"><span>박사과정</span></a></li>
+					</ul>
+				</div>
+				<div class="grid_content">
+					<div>
+						<div class="universitycnt_top">
+							<span class="uni_emblem"><img src="../../../images/client/sub/img_university_emblem1.png"></span>
+							<h5>서울대학교</h5>
+							<!-- [pp] PC 에서만 지원 -->
+							<button class="btn_md btn_default btn_round va_m mg_l40">입학 지원</button>
+							 <!-- [pp] 비활성화 버튼 :  
+							    <button class="btn_md btn_default btn_round va_m" disabled>입학 지원</button>-->
+							 <!-- [pp] 모바일 화면에서는 입학신청 버튼 숨기고 메시지 출력 toast -->
+							 <!-- <span class="font_red">※ 입학지원은 PC에서만 제공</span>-->
+							<p class="favorite_count cursor on_js"><span class="count_tit">관심 등록 수</span><span>1,789</span></p>
+						</div>
+						<div class="universitycnt_bottom section_area">
+							<div class="img_box">
+								<ul class="unicerti_label">
+									<li><img src="../../../images/client/sub/img_label_ieqas.png"></li>
+									<li><img src="../../../images/client/sub/img_label_aacsb.png"></li><li><img src="../../../images/client/sub/img_label_abeek.png"></li>
+								</ul>
+								<img src="../../../images/client/sub/img_university1.jpg" alt="서울대학교 대표 이미지">
+							</div>
+							<ul class="list_wrap">
+								<li>
+									<h5 class="list_tit">주소</h5>
+									<div class="list_cnt">
+										<p class="dp_inline">
+											서울시 강남구 논현동 
+											<a href="javascript:void(0);" class="btn_location">위치보기</a>
+										</p>
+									</div>
+								</li>
+								<li>
+									<h5 class="list_tit">국적비율</h5>
+									<div class="cf">
+										<div class="img_wrap">
+											<img src="../../../images/client/sub/img_graph1.jpg" alt="두드림 지도 예제 이미지">
+										</div>
+										<div class="tbl tbl_row tbl_fixed">
+											<table>
+												<caption>국적비율 그래프</caption>
+												<colgroup>
+													<col style="width:21.5%">
+													<col style="width:21.5%">
+													<col style="width:21.5%">
+													<col style="width:21.5%">
+													<col style="width:13%">
+												</colgroup>
+												<thead>
+													<tr>
+														<th scope="col">Kazakhstan</th>
+														<th scope="col">Philippines</th>
+														<th scope="col">Uzbekistan</th>
+														<th scope="col">USA</th>
+														<th scope="col">etc</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="ta_c">23%</td>
+														<td class="ta_c">11%</td>
+														<td class="ta_c">6%</td>
+														<td class="ta_c">4%</td>
+														<td class="ta_c">52%</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5 class="list_tit">비자</h5>
+									<div class="list_cnt">
+										<p>어학연수 : D-4-1, 학위과정 : D-2</p>
+									</div>
+								</li>
+								<li>
+									<h5 class="list_tit">사이트</h5>
+									<div class="list_cnt">
+										<p>
+											<a href="https://interlang.dongguk.edu" class="link">https://interlang.dongguk.edu</a>
+										</p>
+									</div>
+								</li>
+								<li>
+									<h5 class="list_tit">특성화</h5>
+									<!--<div class="list_cnt charuni_label">
+										<p>English Track</p>
+										<p>K-Media</p>
+										<p>K-Beauty</p>
+										<p>K-Food</p>
+									</div>-->
+									<div class="list_cnt">
+										<p>-</p>
+									</div>
+								</li>
+							</ul>	
+							<!--<div class="btn_area">
+								<button type="button" class="btn_round btn_md btn_default">관심 등록</button>
+								<button type="button" class="btn_round btn_md btn_navy">모의 입학 신청</button>
+							</div>-->
+						</div>
+						<div class="tab_js">
+							<ul class="tab_list tab_list_js">
+								<li><a href="#tab1_1" class="on">모집정보</a></li>
+								<li><a href="#tab1_2">등록금</a></li>
+								<li><a href="#tab1_3">장학금</a></li>
+								<li><a href="#tab1_4">기숙사 및 편의시설</a></li>
+								<li><a href="#tab1_5">지원방법</a></li>
+								<li><a href="#tab1_6">과정정보</a></li>
+							</ul>
+							<div class="tab_cnt_js">
+								<div id="tab1_1" class="section_area tbl tbl_rowcol scrollx_tbl_md">
+									<table>
+										<thead>
+											<tr>
+												<th scope="col" rowspan="2">상태</th>
+												<th scope="col" rowspan="2">학기</th>
+												<th scope="col" colspan="2">신청 마감</th>
+												<th scope="col" rowspan="2">분반 시험일</th>
+												<th scope="col" rowspan="2">수업 기간</th>
+											</tr>
+											<tr>
+												<th scope="col">해외거주 신청자</th>
+												<th scope="col">한국 내 거주 신청자</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th scope="row">2020년</th>
+												<td>봄 학기</td>
+												<td>2020.01.18</td>
+												<td>2020.02.28</td>
+												<td>2020.03.20</td>
+												<td>2020.03.25 ~ 2020.06.04</td>
+											</tr>
+											<tr>
+												<th scope="row" rowspan="4">2019년</th>
+												<td>봄 학기</td>
+												<td>2019.01.18</td>
+												<td>2019.02.28</td>
+												<td>2019.03.20</td>
+												<td>2019.03.25 ~ 2019.06.04</td>
+											</tr>
+											<tr>
+												<td>여름 학기</td>
+												<td>2019.01.18</td>
+												<td>2019.02.28</td>
+												<td>2019.03.20</td>
+												<td>2019.03.25 ~ 2019.06.04</td>
+											</tr>
+											<tr>
+												<td>가을 학기</td>
+												<td>2019.01.18</td>
+												<td>2019.02.28</td>
+												<td>2019.03.20</td>
+												<td>2019.03.25 ~ 2019.06.04</td>
+											</tr>
+											<tr>
+												<td>겨울 학기</td>
+												<td>2019.01.18</td>
+												<td>2019.02.28</td>
+												<td>2019.03.20</td>
+												<td>2019.03.25 ~ 2019.06.04</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>	
+								<div id="#tab1_2"></div>
+								<div id="#tab1_3"></div>
+								<div id="#tab1_4"></div>
+								<div id="#tab1_5"></div>
+								<div id="#tab1_6"></div>
+							</div>
+						</div>
+					</div>
+					<section class="section_area">
+						<h3 class="section_tit_lg dp_inline">유학후기</h3>
+						<div class="studyreview_card grid_row">
+							<div class="grid_col col_xl_3 col_md_3 col_xs_2">
+								<p class="img_box">
+									<a href="javascript:void(0);">
+										<img src="../../../images/client/sub/img_studyabroad_review1.jpg" alt="유학후기 예제 이미지">
+									</a>
+								</p>
+								<ul class="count_wrap">
+									<li>
+										<p class="view_count">1234</p>
+									</li>
+									<li class="ta_c">
+										<p class="comment_count">12</p>
+									</li>
+									<li class="ta_r">
+										<p class="like_count">123</p>
+									</li>
+								</ul>
+								<h4 class="ellipsis">제목입니다 제목입니다 제목입니다 제목입니다 제목입니다 제목입니다</h4>
+								<ul class="hashtag_list ellipsis">
+									<li>&#35;동국대라이프</li>
+									<li>&#35;유학의꿈</li>
+									<li>&#35;기숙사</li>
+									<li>&#35;동국대라이프</li>
+									<li>&#35;유학의꿈</li>
+									<li>&#35;기숙사</li>
+								</ul>
+							</div>
+							<div class="grid_col col_xl_3 col_md_3 col_xs_2">
+								<p class="img_box">
+									<a href="javascript:void(0);">
+										<img src="../../../images/client/sub/img_studyabroad_review2.jpg" alt="유학후기 예제 이미지">
+									</a>
+								</p>
+								<ul class="count_wrap">
+									<li>
+										<p class="view_count">34</p>
+									</li>
+									<li class="ta_c">
+										<p class="comment_count">12</p>
+									</li>
+									<li class="ta_r">
+										<p class="like_count">123</p>
+									</li>
+								</ul>
+								<h4 class="ellipsis">제목입니다</h4>
+								<ul class="hashtag_list ellipsis">
+									<li>&#35;동국대라이프</li>
+									<li>&#35;유학의꿈</li>
+								</ul>
+							</div>
+							<div class="grid_col col_xl_3 col_md_3 col_xs_2">
+								<p class="img_box">
+									<a href="javascript:void(0);">
+										<img src="../../../images/client/sub/img_studyabroad_review3.jpg" alt="유학후기 예제 이미지">
+									</a>
+								</p>
+								<ul class="count_wrap">
+									<li>
+										<p class="view_count">34</p>
+									</li>
+									<li class="ta_c">
+										<p class="comment_count">12</p>
+									</li>
+									<li class="ta_r">
+										<p class="like_count">123</p>
+									</li>
+								</ul>
+								<h4 class="ellipsis">제목입니다</h4>
+								<ul class="hashtag_list ellipsis">
+									<li>&#35;동국대라이프</li>
+									<li>&#35;유학의꿈</li>
+								</ul>
+							</div>
+							<div class="grid_col col_xl_3 col_md_3 col_xs_2">
+								<p class="img_box">
+									<a href="javascript:void(0);">
+										<img src="../../../images/client/sub/img_studyabroad_review4.jpg" alt="유학후기 예제 이미지">
+									</a>
+								</p>
+								<ul class="count_wrap">
+									<li>
+										<p class="view_count">34</p>
+									</li>
+									<li class="ta_c">
+										<p class="comment_count">12</p>
+									</li>
+									<li class="ta_r">
+										<p class="like_count">123</p>
+									</li>
+								</ul>
+								<h4 class="ellipsis">제목입니다</h4>
+								<ul class="hashtag_list ellipsis">
+									<li>&#35;동국대라이프</li>
+									<li>&#35;유학의꿈</li>
+								</ul>
+							</div>
+						</div>
+						<!--[pp] paging -->
+						<div class="paging_wrap">
+							<a href="javascript:void(0);" title="처음페이지" class="page_con first_page">처음페이지</a>
+							<a href="javascript:void(0);" title="이전페이지" class="page_con pre_page">이전페이지</a>
+							<a href="javascript:void(0);" class="active">1</a>
+							<a href="javascript:void(0);">2</a>
+							<a href="javascript:void(0);">3</a>
+							<a href="javascript:void(0);">4</a>
+							<a href="javascript:void(0);">5</a>
+							<a href="javascript:void(0);" title="다음페이지" class="page_con next_page">다음페이지</a>
+							<a href="javascript:void(0);" title="마지막페이지" class="page_con last_page">마지막페이지</a>
+						</div>
+						<!--[pp] //paging -->
+					</section>
+					<section>
+						<h3 class="section_tit_lg dp_inline">관련 유학원</h3>
+						<div class="grid_row">
+							<!-- [pp] 유학원 갯수 최대 6개 출력 -->
+							<div class="grid_col col_xl_2 col_md_2 col_xs_1">
+								<div class="favorite_list">
+									<a href="javascript:void(0);" class="img_box" title="상세보기">
+										<img src="../../../images/client/sub/img_institution_logo01.jpg" alt="종로 유학원 대표 이미지">
+									</a>
+									<p class="favorite_count">78</p>
+									<p class="favorite_tit">종로유학원</p>
+								</div>
+							</div>
+							<div class="grid_col col_xl_2 col_md_2 col_xs_1">
+								<div class="favorite_list">
+									<a href="javascript:void(0);" class="img_box" title="상세보기">
+										<img src="../../../images/client/sub/img_institution_logo02.jpg" alt="HE유학원 대표 이미지">
+									</a>
+									<p class="favorite_count">78</p>
+									<p class="favorite_tit">HE유학원</p>
+								</div>
+							</div>
+							<div class="grid_col col_xl_2 col_md_2 col_xs_1">
+								<div class="favorite_list">
+									<a href="javascript:void(0);" class="img_box" title="상세보기">
+										<img src="../../../images/client/sub/img_institution_logo02.jpg" alt="HE유학원 대표 이미지">
+									</a>
+									<p class="favorite_count">78</p>
+									<p class="favorite_tit">HE유학원</p>
+								</div>
+							</div>
+							<div class="grid_col col_xl_2 col_md_2 col_xs_1">
+								<div class="favorite_list">
+									<a href="javascript:void(0);" class="img_box" title="상세보기">
+										<img src="../../../images/client/sub/img_institution_logo02.jpg" alt="HE유학원 대표 이미지">
+									</a>
+									<p class="favorite_count">78</p>
+									<p class="favorite_tit">HE유학원</p>
+								</div>
+							</div>
+							<div class="grid_col col_xl_2 col_md_2 col_xs_1">
+								<div class="favorite_list">
+									<a href="javascript:void(0);" class="img_box" title="상세보기">
+										<img src="../../../images/client/sub/img_institution_logo02.jpg" alt="HE유학원 대표 이미지">
+									</a>
+									<p class="favorite_count">78</p>
+									<p class="favorite_tit">HE유학원</p>
+								</div>
+							</div>
+							<div class="grid_col col_xl_2 col_md_2 col_xs_1">
+								<div class="favorite_list">
+									<a href="javascript:void(0);" class="img_box" title="상세보기">
+										<img src="../../../images/client/sub/img_institution_logo02.jpg" alt="HE유학원 대표 이미지">
+									</a>
+									<p class="favorite_count">78</p>
+									<p class="favorite_tit">HE유학원</p>
+								</div>
+							</div>
+						</div>
+						<!--[pp] paging -->
+						<div class="paging_wrap">
+							<a href="javascript:void(0);" title="처음페이지" class="page_con first_page">처음페이지</a>
+							<a href="javascript:void(0);" title="이전페이지" class="page_con pre_page">이전페이지</a>
+							<a href="javascript:void(0);" class="active">1</a>
+							<a href="javascript:void(0);">2</a>
+							<a href="javascript:void(0);">3</a>
+							<a href="javascript:void(0);">4</a>
+							<a href="javascript:void(0);">5</a>
+							<a href="javascript:void(0);" title="다음페이지" class="page_con next_page">다음페이지</a>
+							<a href="javascript:void(0);" title="마지막페이지" class="page_con last_page">마지막페이지</a>
+						</div>
+						<!--[pp] //paging -->
+					</section>
+				</div>
+			</div>
+			<!-- [pp] //container -->
+		</div>
+		<!-- [pp] //푸터를 제외한 전체페이지 -->
+		<!-- [pp] footer -->
+		<div data-include="../include/footer.html">footer 영역</div>
+		<!-- [pp] //footer -->
+	</body>
+</html>

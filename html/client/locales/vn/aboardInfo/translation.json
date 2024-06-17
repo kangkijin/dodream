@@ -1,0 +1,108 @@
+{
+	"header": {
+		"txt1": "Thông tin du học",
+		"txt2": "Kết nối du học",
+		"txt3": "Bài tập theo kỹ năng",
+		"txt4": "Thi thử",
+		"txt5": "Cảm nghĩ du học"
+	},
+	"footer": {
+		"txt1": "Dain Leaders"
+		,"txt2": "Hướng dẫn sử dụng dịch vụ"
+		,"txt3": "Điều khoản sử dụng"
+		,"txt4": "Chính sách xử lý thông tin cá nhân"
+		,"txt5": "Từ chối việc thu thập địa chỉ email khi không được cho phép"
+		,"txt6": "Trung tâm hỗ trợ khách hàng Nền tảng kết nối du học DoDream"
+		,"txt7": "Tiếng Hàn : 070-7729-7328"
+		,"txt8": "Tiếng Việt : 070-7729-8023"
+		,"txt9": "Dainleaders.Co.,Ltd"
+		,"txt10": "Trụ sở Hàn Quốc: 2006, 5 Seongsuil-ro 8-gil, Seongdong-gu, Seoul, Republic of Korea"
+		,"txt11": "Văn phòng Việt Nam : Tầng 11 - Phòng 1107, Tòa nhà Zen Tower, 12 Khuất Duy Tiến, quận Thanh Xuân, Tp. Hà Nội, Việt Nam"
+		,"txt12": "Hướng dẫn điểm tích"
+		,"txt13": "Trung tâm hỗ trợ khách hàng : (+82)1800-6337"
+	},
+	"dreamGuide_1": {
+		"txt1": "Thông tin du học"
+		,"txt2": "Tìm trường học phù hợp với bản thân"
+		,"txt3": "Tìm trường<br>theo khu vực mà bạn muốn đến"
+		,"txt4": "Trường đại học theo khu vực"
+		,"txt5": "Làn sóng Hàn Quốc HOT!<br>Tìm trường theo chuyên ngành mà bạn muốn học"
+		,"txt6": "Trường đại học theo đặc trưng"
+		,"txt7": "Bạn muốn tìm trường học phù<br>hợp với điều kiện của bản thân?"
+		,"txt8": "Thiết kế du học phù hợp"
+		,"txt9": "Thu thập thông tin du học"
+		,"txt10": "Chương trình du học đa dạng!<br>Xác nhận tư cách đăng kí theo từng khóa học"
+		,"txt11": "Tư cách đăng kí"
+		,"txt12": "Tiếng Hàn là bắt buộc!<br>TOPIK"
+		,"txt13": "What is TOPIK"
+		,"txt14": "Cảm nhận du học sinh<br>động của du học sinh"
+		,"txt15": "Cảm nhận du học"
+		,"txt16": "Tiếp nhận hồ sơ"
+		,"txt17": "Từ nhập học đến nhập cảnh!<br>Nếu bạn có thắc mắc về thủ tục? "
+		,"txt18": "Thủ tục nhập học / Nhập cảnh"
+		,"txt19": "Chi phí và hồ sơ nhập học<br>cần thiết theo từng chương trình học"
+		,"txt20": "Thông tin hỗ trợ"
+		,"txt21": "Thủ tục quá phức tạp<br>và bạn mong muốn nhận được sự hỗ trợ?"
+		,"txt22": "Tìm kiếm trung tâm du học"
+		,"txt23": "Chuẩn bị nhập học"
+		,"txt24": "Bước quan trọng nhất<br>trước khi du học"
+		,"txt25": "Thông tin visa du học"
+		,"txt26": "Gắn thẻ"
+		,"txt27": "Đại học"
+		,"txt28": "Tiêu đề + Nội dung"
+		,"txt29": "Tìm kiếm"
+		,"txt30": "Bài đăng mới nhất"
+		,"txt31": "Bài đăng nổi bật nhất"
+		,"txt32": "số lượt truy cập"
+		,"txt33": "Số bình luận"
+		,"txt34": "Thích"
+		,"txt35": "Chỉnh sửa"
+		,"txt36": "Chia sẻ"
+		,"txt37": "Twitter"
+		,"txt38": "Facebook"
+		,"txt39": "Sao chép địa chỉ liên kết"
+		,"txt40": "Đăng kí"
+		,"txt41": "Viết cảm nhận du học"
+		,"txt42": "trường đại học liên quan"
+		,"txt43": "Gắn thẻ"
+		,"txt44": "Hình thu nhỏ"
+		,"txt45": "Tiêu đề "
+		,"txt46": "Đăng kí"
+		,"txt47": "hủy bỏ"
+		,"txt48": "Cảm nghĩ du học Chỉnh sửa"
+		,"txt49": "Chỉnh sửa"
+		,"txt50": "Tài liệu đính kèm"
+		,"txt51": "Xóa"
+	},
+	"step1_1":{
+		"txt1": "유학 매칭"
+		,"txt2": "지역별 대학"
+		,"txt3": "지역별 대학"
+		,"txt4": "서울"
+		,"txt5": "경기/인천"
+		,"txt6": "강원"
+		,"txt7": "대전/충청"
+		,"txt8": "부산/대구/울산/경상"
+		,"txt9": "광주/전라"
+		,"txt10": "제주"
+		,"txt11": "추천대학"
+	},
+	"step1_2":{
+		"txt1": "유학 매칭"
+		,"txt2": "K 특성화 대학"
+	},
+	"step1_3":{
+		"txt1": "유학 매칭"
+		,"txt2": "맞춤 유학 설계"
+		,"txt3": "희망하는 과정을 선택해주세요"
+		,"txt4": "학위과정"
+		,"txt5": "어학연수"
+	},
+	"step2_3":{
+		"txt1": "유학 매칭"
+		,"txt2": "맞춤 유학 설계"
+		,"txt3": "희망하는 과정을 선택해주세요"
+		,"txt4": "학위과정"
+		,"txt5": "어학연수"
+	}
+}

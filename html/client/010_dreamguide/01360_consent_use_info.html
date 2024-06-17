@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi, shrink-to-fit=no">
+		<meta name="format-detection" content="telephone=no, address=no">
+		<meta name="title" content="DoDream">
+		<meta name="keywords" content="Block Chain, Study Abroad, platform, Korea, vietnam">
+		<meta name="description" content="유학플랫폼 두드림(DoDream)외국인 유학생을 위한 한국 유학 매칭 플랫폼">
+		<meta name="author" content="DainLeaders">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="DoDream">
+		<meta property="og:description" content="유학플랫폼 두드림(DoDream)외국인 유학생을 위한 한국 유학 매칭 플랫폼">
+		<meta property="og:image" content="../../../images/common/img_metacover.jpg">
+		<meta property="og:url" content="http://www.dodream.io">
+		<meta name="naver-site-verification" content="dd744254d55fa0f146a5daeaf1e02ae2dd86c1f9"/> 
+		<meta name="google-site-verification" content="mive32tDbnLeee8bzzUfCA31XmDNgL4Lgj4dQoxn8DM"/>
+		<title>DoDream</title>
+
+		<!-- [pp] 웹앱매니페스트 - chrome, opera -->
+		<link rel="manifest" href="../manifest.json">
+		<!-- [pp] //웹앱매니페스트 - chrome, opera -->
+
+		<!-- [pp] ios safari screen -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="white">
+		<meta name="apple-mobile-web-app-title" content="DoDream">
+		<!-- [pp] //ios safari screen -->
+
+		<!-- [pp] 파비콘 -->
+		<link rel="apple-touch-icon" sizes="64x64" href="../../../images/common/favicon.png">
+		<link rel="shortcut icon" type="image/x-icon" href="../../../images/common/favicon.ico">
+		<!-- [pp] //파비콘 -->
+
+		<!-- [pp] css -->
+		<link rel="stylesheet" href="../../../css/client/src/swiper.min.css">
+		<link rel="stylesheet" href="../../../css/client/src/jquery.mCustomScrollbar.css">
+		<link rel="stylesheet" href="../../../css/client/src/select2.css">
+		<link rel="stylesheet" href="../../../css/client/src/magnific-popup.css">
+		<link rel="stylesheet" href="../../../css/dl_global.css">
+		<link rel="stylesheet" href="../../../css/client/normalize.css">
+		<link rel="stylesheet" href="../../../css/client/grid.css">
+		<link rel="stylesheet" href="../../../css/client/table.css">
+		<link rel="stylesheet" href="../../../css/client/formstyle.css">
+		<link rel="stylesheet" href="../../../css/client/common.css">
+		<link rel="stylesheet" href="../../../css/client/ui.css">
+		<link rel="stylesheet" href="../../../css/client/popup.css">
+		<!-- [pp] //css -->
+
+		<!-- [pp] js -->
+		<script type="text/javascript" src="../../../js/client/src/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/swiper.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/jquery.mCustomScrollbar.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/select2.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/jquery.magnific-popup.js"></script>
+		<script type="text/javascript" src="../../../js/client/pp_common.js"></script>
+
+		<!-- [pp] 사용 금지 -->
+<!--		<script type="text/javascript" src="../../../js/client/src/jquery-1.12.3.min.js"></script>-->
+		<script type="text/javascript" src="../../../js/client/pp_include.js"></script>
+		<!-- [pp] //사용 금지 -->
+
+		<!-- [pp] //js -->
+
+		<!--[if lt IE 9]>
+		<script type="text/javascript" src="../../../js/client/src/jquery-1.12.3.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/html5shiv.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/IE9.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/respond.min.js"></script>
+		<![endif]-->
+
+	</head>
+	<body>
+		<!--[pp] ie 하위버젼 접속시 알림 -->
+		<!--[if lt IE 10]>
+		<div id="browser">
+		This site is supported Explorer 10 or higher, Chrome, Firefox, Opera, Safari.<br/>If you are using it now, Please <a href="https://browsehappy.com/?locale=en" target="_blank">upgrade your browser</a> to improve your experience and security.
+		<button type="button" class="pp_upgradeinfo_close">close</button>
+		</div>
+		<![endif]-->
+		<!--[pp] // ie 하위버젼 접속시 알림 -->
+
+		<!-- [pp] 로딩중 화면 -->
+		<div id="loading" style="display:none;">
+			<p id="loading_image">
+				<img src="../../../images/pageloading.gif" alt="Loading..."><br>
+				<span>Loading</span>
+			</p>
+		</div>
+		<!-- [pp] //로딩중 화면 -->
+
+		<!-- [pp] 푸터를 제외한 전체페이지 -->
+		<div class="page_wrap">
+			<!-- [pp] header -->
+			<div data-include="../include/header.html">header 영역</div>
+			<!-- [pp] //header -->
+			<!-- [pp] visual -->
+			<figure class="sub_visual visual1">
+				<div class="grid_content">
+					<div class="visual_txt">
+						<h2>Dream Guide</h2>
+						<p>원서 접수 정보 이용 동의</p>
+					</div>
+					<nav class="page_navi">
+						<ul>
+							<li><a href="javascript:void(0);">Home</a></li>
+							<li><a href="javascript:void(0);">Dream Guide</a></li>
+							<li><a href="javascript:void(0);">유학 매칭</a></li>
+							<li><a href="javascript:void(0);">원서 접수 정보 이용 동의</a></li>
+						</ul>
+					</nav>
+				</div>
+			</figure>
+			<!-- [pp] //visual -->
+			<!-- [pp] container -->
+			<div class="subpage_wrap grid_content">
+			    <h3 class="section_tit_lg">원서 접수 정보 이용 동의</h3>
+				<div class="accordion_js">
+                    <div class="acd_list acd_list_js consent_acd">
+                        <h3 class="section_tit_md">개인정보 수집 및 이용에 대한 동의     <span>&#40;Personal Information Policy&#41;</span>
+                            <span class="status_label check_agree_ori">동의 상태</span>
+                        </h3>
+                        <span class="btn_accordion">내용보기</span>
+                    </div>
+                    <div class="acd_cnt acd_cnt_js consent_content">
+                        <div class="consent_box">
+                           <p class="ta_c">
+                               <strong>한국어 안내</strong>
+                           </p>
+                           <div class="consent_text">
+                               <p>&#60;개인정보 수집 및 이용에 대한 동의&#62;<br>
+                               수집된 개인정보는 입학 전형 이외의 다른 목적으로는 절대 사용되지 않습니다. &#40;단, 합격 시 학사행정정보로 활용&#41;
+                               </p>
+                               <ul class="list_no mg_t20">
+                                   <li>
+                                      <span class="va_t">1.</span><i class="va_t">수집하는 개인정보</i>
+                                      <ul class="list_line">
+                                           <li>지원자 정보 &#40;이름, 주민등록번호 또는 외국인 등록번호, 국적, 주소, 전화번호, 휴대전화번호, 이메일 등&#41;, 부모 정보, 학교 정보 등</li>
+                                      </ul>
+                                   </li>
+                                   <li><span class="va_t">2.</span><i class="va_t">개인정보의 수집&middot;이용 목적 &#58; 입학전형 &#40;단, 합격 시 학사행정정보로 활용&#41;</i></li>
+                               </ul>
+                           </div>
+                        </div>
+                        <div class="consent_box">
+                           <p class="ta_c">
+                               <strong>English Version</strong>
+                           </p>
+                           <div class="consent_text">
+                               <p>&#60;Agreement for Collection and Utilization of Personal Information&#62;<br>
+                               Seoul National University will use the collected personal information solely in connection with the admissions process and not for any purpose other than as authorized by this agreement. &#40;It will however be recorded and used as academic administration data, if admitted.&#41;
+                               </p>
+                               <ul class="list_no mg_t20">
+                                   <li>
+                                      <span class="va_t">1.</span><i class="va_t">Requested Personal Information</i>
+                                      <ul class="list_line">
+                                           <li>Applicant's information <br>&#40;name, resident registration number or foreign registration number, nationality, address, telephone number, mobile phone number, email address, etc.&#41;, Parent's information, School information, etc.</li>
+                                      </ul>
+                                   </li>
+                                   <li><span class="va_t">2.</span><i class="va_t">Purpose of collection &#58; admissions process only &#40;It will however be recorded and used as academic administration data, if admitted.&#41;</i></li>
+                               </ul>
+                           </div>
+                        </div>
+                        <div class="consent_box">
+                           <p class="ta_c">
+                               <strong>동의 여부 &#40;Consent&#41;</strong>
+                           </p>
+                           <div class="consent_text border">
+                               <p>개인정보의 수집 및 이용에 동의하십니까?<br>
+                               Do you agree with the terms and conditions for collection and utilization of personal information?
+                               </p>
+                               <div class="ta_c mg_t20">
+                                    <p class="check_col agree_point">
+                                        <input type="checkbox" name="agreement1" id="agree1_1" class="hidden">
+                                        <label for="agree1_1">동의함 Agree</label>
+                                    </p>
+                                </div>
+                                <p class="mg_t20">※ 개인정보의 수집 및 이용에 대해 거부할 권리가 있으며, 이를 거부할 경우 대입 원서를 접수할 수 없습니다<br>An applicant has his/her right not to agree with the terms and conditions above. <br>However, in case of disagreement, he/she cannot proceed application for admissions.</p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion_js">
+                    <div class="acd_list acd_list_js consent_acd">
+                        <h3 class="section_tit_md">고유식별정보 수집 및 이용에 대한 동의
+                            <span>&#40;Unique identification Information Policy&#41;</span>
+                            <span class="status_label check_agree_ori">동의 상태</span>
+                        </h3>
+                        <span class="btn_accordion">내용보기</span>
+                    </div>
+                    <div class="acd_cnt acd_cnt_js consent_content">
+                        <div class="consent_box">
+                           <p class="ta_c">
+                               <strong>한국어 안내</strong>
+                           </p>
+                           <div class="consent_text">
+                               <p>&#60;개인정보 수집 및 이용에 대한 동의&#62;<br>
+                               수집된 개인정보는 입학 전형 이외의 다른 목적으로는 절대 사용되지 않습니다. &#40;단, 합격 시 학사행정정보로 활용&#41;
+                               </p>
+                               <ul class="list_no mg_t20">
+                                   <li>
+                                      <span class="va_t">1.</span><i class="va_t">수집하는 개인정보</i>
+                                      <ul class="list_line">
+                                           <li>지원자 정보 &#40;이름, 주민등록번호 또는 외국인 등록번호, 국적, 주소, 전화번호, 휴대전화번호, 이메일 등&#41;, 부모 정보, 학교 정보 등</li>
+                                      </ul>
+                                   </li>
+                                   <li><span class="va_t">2.</span><i class="va_t">개인정보의 수집&middot;이용 목적 &#58; 입학전형 &#40;단, 합격 시 학사행정정보로 활용&#41;</i></li>
+                               </ul>
+                           </div>
+                        </div>
+                        <div class="consent_box">
+                           <p class="ta_c">
+                               <strong>English Version</strong>
+                           </p>
+                           <div class="consent_text">
+                               <p>&#60;Agreement for Collection and Utilization of Personal Information&#62;<br>
+                               Seoul National University will use the collected personal information solely in connection with the admissions process and not for any purpose other than as authorized by this agreement. &#40;It will however be recorded and used as academic administration data, if admitted.&#41;
+                               </p>
+                               <ul class="list_no mg_t20">
+                                   <li>
+                                      <span class="va_t">1.</span><i class="va_t">Requested Personal Information</i>
+                                      <ul class="list_line">
+                                           <li>Applicant's information <br>&#40;name, resident registration number or foreign registration number, nationality, address, telephone number, mobile phone number, email address, etc.&#41;, Parent's information, School information, etc.</li>
+                                      </ul>
+                                   </li>
+                                   <li><span class="va_t">2.</span><i class="va_t">Purpose of collection &#58; admissions process only &#40;It will however be recorded and used as academic administration data, if admitted.&#41;</i></li>
+                               </ul>
+                           </div>
+                        </div>
+                        <div class="consent_box">
+                           <p class="ta_c">
+                               <strong>동의 여부 &#40;Consent&#41;</strong>
+                           </p>
+                           <div class="consent_text">
+                               <p>개인정보의 수집 및 이용에 동의하십니까?<br>
+                               Do you agree with the terms and conditions for collection and utilization of personal information?
+                               </p>
+                               <div class="ta_c mg_t20">
+                                    <p class="check_col agree_point">
+                                        <input type="checkbox" name="agreement2" id="agree1_2" class="hidden">
+                                        <label for="agree1_2">동의함 Agree</label>
+                                    </p>
+                                </div>
+                                <p class="mg_t20">※ 개인정보의 수집 및 이용에 대해 거부할 권리가 있으며, 이를 거부할 경우 대입 원서를 접수할 수 없습니다<br>An applicant has his/her right not to agree with the terms and conditions above. <br>However, in case of disagreement, he/she cannot proceed application for admissions.</p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion_js">
+                    <div class="acd_list acd_list_js consent_acd">
+                        <h3 class="section_tit_md">모집안내 동의 
+                            <span>&#40;Recruitment Guide Policy&#41;</span>
+                            <span class="status_label check_agree_ori">동의 상태</span>
+                        </h3>
+                        <span class="btn_accordion">내용보기</span>
+                    </div>
+                    <div class="acd_cnt acd_cnt_js consent_content">
+                        <div class="consent_box">
+                           <p class="ta_c">
+                               <strong>한국어 안내</strong>
+                           </p>
+                           <div class="consent_text">
+                               <p>&#60;개인정보 수집 및 이용에 대한 동의&#62;<br>
+                               수집된 개인정보는 입학 전형 이외의 다른 목적으로는 절대 사용되지 않습니다. &#40;단, 합격 시 학사행정정보로 활용&#41;
+                               </p>
+                               <ul class="list_no mg_t20">
+                                   <li>
+                                      <span class="va_t">1.</span><i class="va_t">수집하는 개인정보</i>
+                                      <ul class="list_line">
+                                           <li>지원자 정보 &#40;이름, 주민등록번호 또는 외국인 등록번호, 국적, 주소, 전화번호, 휴대전화번호, 이메일 등&#41;, 부모 정보, 학교 정보 등</li>
+                                      </ul>
+                                   </li>
+                                   <li><span class="va_t">2.</span><i class="va_t">개인정보의 수집&middot;이용 목적 &#58; 입학전형 &#40;단, 합격 시 학사행정정보로 활용&#41;</i></li>
+                               </ul>
+                           </div>
+                        </div>
+                        <div class="consent_box">
+                           <p class="ta_c">
+                               <strong>English Version</strong>
+                           </p>
+                           <div class="consent_text">
+                               <p>&#60;Agreement for Collection and Utilization of Personal Information&#62;<br>
+                               Seoul National University will use the collected personal information solely in connection with the admissions process and not for any purpose other than as authorized by this agreement. &#40;It will however be recorded and used as academic administration data, if admitted.&#41;
+                               </p>
+                               <ul class="list_no mg_t20">
+                                   <li>
+                                      <span class="va_t">1.</span><i class="va_t">Requested Personal Information</i>
+                                      <ul class="list_line">
+                                           <li>Applicant's information <br>&#40;name, resident registration number or foreign registration number, nationality, address, telephone number, mobile phone number, email address, etc.&#41;, Parent's information, School information, etc.</li>
+                                      </ul>
+                                   </li>
+                                   <li><span class="va_t">2.</span><i class="va_t">Purpose of collection &#58; admissions process only &#40;It will however be recorded and used as academic administration data, if admitted.&#41;</i></li>
+                               </ul>
+                           </div>
+                        </div>
+                        <div class="consent_box">
+                           <p class="ta_c">
+                               <strong>동의 여부 &#40;Consent&#41;</strong>
+                           </p>
+                           <div class="consent_text">
+                               <p>개인정보의 수집 및 이용에 동의하십니까?<br>
+                               Do you agree with the terms and conditions for collection and utilization of personal information?
+                               </p>
+                               <div class="ta_c mg_t20">
+                                    <p class="check_col agree_point">
+                                        <input type="checkbox" name="agreement3" id="agree1_3" class="hidden">
+                                        <label for="agree1_3">동의함 Agree</label>
+                                    </p>
+                                </div>
+                                <p class="mg_t20">※ 개인정보의 수집 및 이용에 대해 거부할 권리가 있으며, 이를 거부할 경우 대입 원서를 접수할 수 없습니다<br>An applicant has his/her right not to agree with the terms and conditions above. <br>However, in case of disagreement, he/she cannot proceed application for admissions.</p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion_js">
+                    <div class="acd_list acd_list_js consent_acd">
+                        <h3 class="section_tit_md">개인정보 처리 위탁에 대한 안내 
+                            <span>&#40;Personal Information Processing Guide&#41;</span>
+                            <span class="status_label check_agree_ori">동의 상태</span>
+                        </h3>
+                        <span class="btn_accordion">내용보기</span>
+                    </div>
+                    <div class="acd_cnt acd_cnt_js consent_content">
+                        <div class="consent_box">
+                           <p class="ta_c">
+                               <strong>한국어 안내</strong>
+                           </p>
+                           <div class="consent_text">
+                               <p>&#60;개인정보 수집 및 이용에 대한 동의&#62;<br>
+                               수집된 개인정보는 입학 전형 이외의 다른 목적으로는 절대 사용되지 않습니다. &#40;단, 합격 시 학사행정정보로 활용&#41;
+                               </p>
+                               <ul class="list_no mg_t20">
+                                   <li>
+                                      <span class="va_t">1.</span><i class="va_t">수집하는 개인정보</i>
+                                      <ul class="list_line">
+                                           <li>지원자 정보 &#40;이름, 주민등록번호 또는 외국인 등록번호, 국적, 주소, 전화번호, 휴대전화번호, 이메일 등&#41;, 부모 정보, 학교 정보 등</li>
+                                      </ul>
+                                   </li>
+                                   <li><span class="va_t">2.</span><i class="va_t">개인정보의 수집&middot;이용 목적 &#58; 입학전형 &#40;단, 합격 시 학사행정정보로 활용&#41;</i></li>
+                               </ul>
+                           </div>
+                        </div>
+                        <div class="consent_box">
+                           <p class="ta_c">
+                               <strong>English Version</strong>
+                           </p>
+                           <div class="consent_text">
+                               <p>&#60;Agreement for Collection and Utilization of Personal Information&#62;<br>
+                               Seoul National University will use the collected personal information solely in connection with the admissions process and not for any purpose other than as authorized by this agreement. &#40;It will however be recorded and used as academic administration data, if admitted.&#41;
+                               </p>
+                               <ul class="list_no mg_t20">
+                                   <li>
+                                      <span class="va_t">1.</span><i class="va_t">Requested Personal Information</i>
+                                      <ul class="list_line">
+                                           <li>Applicant's information <br>&#40;name, resident registration number or foreign registration number, nationality, address, telephone number, mobile phone number, email address, etc.&#41;, Parent's information, School information, etc.</li>
+                                      </ul>
+                                   </li>
+                                   <li><span class="va_t">2.</span><i class="va_t">Purpose of collection &#58; admissions process only &#40;It will however be recorded and used as academic administration data, if admitted.&#41;</i></li>
+                               </ul>
+                           </div>
+                        </div>
+                        <div class="consent_box">
+                           <p class="ta_c">
+                               <strong>동의 여부 &#40;Consent&#41;</strong>
+                           </p>
+                           <div class="consent_text">
+                               <p>개인정보의 수집 및 이용에 동의하십니까?<br>
+                               Do you agree with the terms and conditions for collection and utilization of personal information?
+                               </p>
+                               <div class="ta_c mg_t20">
+                                    <p class="check_col agree_point">
+                                        <input type="checkbox" name="agreement4" id="agree1_4" class="hidden">
+                                        <label for="agree1_4">동의함 Agree</label>
+                                    </p>
+                                </div>
+                                <p class="mg_t20">※ 개인정보의 수집 및 이용에 대해 거부할 권리가 있으며, 이를 거부할 경우 대입 원서를 접수할 수 없습니다<br>An applicant has his/her right not to agree with the terms and conditions above. <br>However, in case of disagreement, he/she cannot proceed application for admissions.</p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion_js">
+                    <div class="acd_list acd_list_js consent_acd">
+                        <h3 class="section_tit_md">허위 지원 금지 
+                            <span>&#40;No False Support&#41;</span>
+                            <span class="status_label check_agree_ori">동의 상태</span>
+                        </h3>
+                        <span class="btn_accordion">내용보기</span>
+                    </div>
+                    <div class="acd_cnt acd_cnt_js consent_content">
+                        <div class="consent_box">
+                           <p class="ta_c">
+                               <strong>한국어 안내</strong>
+                           </p>
+                           <div class="consent_text">
+                               <p>&#60;개인정보 수집 및 이용에 대한 동의&#62;<br>
+                               수집된 개인정보는 입학 전형 이외의 다른 목적으로는 절대 사용되지 않습니다. &#40;단, 합격 시 학사행정정보로 활용&#41;
+                               </p>
+                               <ul class="list_no mg_t20">
+                                   <li>
+                                      <span class="va_t">1.</span><i class="va_t">수집하는 개인정보</i>
+                                      <ul class="list_line">
+                                           <li>지원자 정보 &#40;이름, 주민등록번호 또는 외국인 등록번호, 국적, 주소, 전화번호, 휴대전화번호, 이메일 등&#41;, 부모 정보, 학교 정보 등</li>
+                                      </ul>
+                                   </li>
+                                   <li><span class="va_t">2.</span><i class="va_t">개인정보의 수집&middot;이용 목적 &#58; 입학전형 &#40;단, 합격 시 학사행정정보로 활용&#41;</i></li>
+                               </ul>
+                           </div>
+                        </div>
+                        <div class="consent_box">
+                           <p class="ta_c">
+                               <strong>English Version</strong>
+                           </p>
+                           <div class="consent_text">
+                               <p>&#60;Agreement for Collection and Utilization of Personal Information&#62;<br>
+                               Seoul National University will use the collected personal information solely in connection with the admissions process and not for any purpose other than as authorized by this agreement. &#40;It will however be recorded and used as academic administration data, if admitted.&#41;
+                               </p>
+                               <ul class="list_no mg_t20">
+                                   <li>
+                                      <span class="va_t">1.</span><i class="va_t">Requested Personal Information</i>
+                                      <ul class="list_line">
+                                           <li>Applicant's information <br>&#40;name, resident registration number or foreign registration number, nationality, address, telephone number, mobile phone number, email address, etc.&#41;, Parent's information, School information, etc.</li>
+                                      </ul>
+                                   </li>
+                                   <li><span class="va_t">2.</span><i class="va_t">Purpose of collection &#58; admissions process only &#40;It will however be recorded and used as academic administration data, if admitted.&#41;</i></li>
+                               </ul>
+                           </div>
+                        </div>
+                        <div class="consent_box">
+                           <p class="ta_c">
+                               <strong>동의 여부 &#40;Consent&#41;</strong>
+                           </p>
+                           <div class="consent_text">
+                               <p>개인정보의 수집 및 이용에 동의하십니까?<br>
+                               Do you agree with the terms and conditions for collection and utilization of personal information?
+                               </p>
+                               <div class="ta_c mg_t20">
+                                    <p class="check_col agree_point">
+                                        <input type="checkbox" name="agreement5" id="agree1_5" class="hidden">
+                                        <label for="agree1_5">동의함 Agree</label>
+                                    </p>
+                                </div>
+                                <p class="mg_t20">※ 개인정보의 수집 및 이용에 대해 거부할 권리가 있으며, 이를 거부할 경우 대입 원서를 접수할 수 없습니다<br>An applicant has his/her right not to agree with the terms and conditions above. <br>However, in case of disagreement, he/she cannot proceed application for admissions.</p>
+                           </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="ta_c mg_t40">
+                    <button type="button" class="btn_round btn_lg btn_default">원서접수</button>
+                </div>  
+            </div>
+			<!-- [pp] //container -->
+		</div>
+		<!-- [pp] //푸터를 제외한 전체페이지 -->
+		<!-- [pp] footer -->
+		<div data-include="../include/footer.html">footer 영역</div>
+		<!-- [pp] //footer -->
+	</body>
+</html>

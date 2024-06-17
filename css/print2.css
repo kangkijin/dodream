@@ -1,0 +1,155 @@
+* { margin: 0; padding: 0; font-family: "Dotum","돋움"; vertical-align: baseline; }
+h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: normal; }
+img { border: 0; }
+ul, ol { list-style: none; }
+table { border-collapse: collapse; }
+em { font-style: normal; }
+input[type="checkbox"],
+input[type="radio"] { width: 13px; height: 13px; }
+body { font-size: 12px; text-align: center; }
+
+.print_page { margin: 0 auto; width: 595px; text-align: left; overflow: hidden;  page-break-after: always; position: relative; }
+.print_page h1,
+.print_page .seal { margin: 10px 0; font-size: 25px;  font-weight: bold; text-align: center; position: relative; overflow: hidden; }
+.print_page .seal { letter-spacing: 0.5em; }
+.print_page .seal span { font-size: 12px; position: absolute; top: 10px; right: 0; }
+
+.next { page-break-after: always; }
+.txt_under { border-bottom: 1px solid #000; }
+
+
+/* 테이블 */
+.print_page .table_form { line-height: 1.4; }
+.print_page .table_form table { margin-bottom: 10px; width: 100%; table-layout: fixed; }
+.print_page .table_form table * { vertical-align: middle; }
+.print_page .table_form table tr th,
+.print_page .table_form table tr td { border: 1px solid #000; }
+.print_page .table_form table tr td.bg_cor { background: #ECEBEB; }
+
+.print_page .table_form table tr th,
+.print_page .table_form table tfoot td { padding: 5px; height: 15px; font-weight: normal; text-align: center; background: #ECEBEB; }
+.print_page .table_form table tr .right { text-align: right; }
+.print_page .table_form table tr .tal { text-align: left; }
+.print_page .table_form table tr .tac { text-align: center; }
+.print_page .table_form table tr td { padding: 5px; height: 15px; }
+.print_page .table_form table tr td .div { float: left; }
+
+.print_page .table_form table tr.no_bg th { background: none; }
+.print_page .table_form table tr .bg_none { background: none; }
+.print_page .table_form table tr .bg { background: #ECEBEB !important; }
+
+.print_page .table_form table .left_no { border-left: 0; }
+.print_page .table_form table .right_no { border-right: 0; }
+.print_page .table_form table .top_no { border-top: 0; }
+.print_page .table_form table .bot_no{ border-bottom: 0; }
+
+
+/* 귀중, 귀하 */
+.tit_box { padding: 5px; border: 3px double #000; }
+.date { font-size: 16px; margin:20px 0; } /*하단 날짜*/
+.sign { font-size: 14px; } /*하단 서명*/
+.app_nam { display: inline-block; margin-right:5px; min-width:100px; } /* 신청자 이름쓰는 란 */
+.big_txt { font-size: 20px; font-weight: bold; text-align:center; } /* 하단부분 큰 글자 */
+.blank { display: inline-block; min-width:30px; text-align:center; } /* 입력 공백 */
+.blank_sm { display: inline-block; min-width:15px; text-align:center; } /* 입력 공백 */
+.blank_02 { display: inline-block; min-width:80px; text-align:center; }
+.blank_04 { display: inline-block; min-width:130px; text-align:center; }
+.blank_03 { display: inline-block; min-width:150px; text-align:center; }
+.blank_05 { display: inline-block; min-width:70px; text-align:center; }
+.blank_06 { display: inline-block; min-width:480px; text-align:center; }
+.blank_07 { display: inline-block; min-width:180px; text-align:center; }
+.date_area { margin-top: 70px; text-align: center; } /* 하단 부분 */
+
+
+/* 공통 */
+.height_50 { min-height: 50px; }
+.height_100 { min-height: 100px; }
+.height_130 { min-height: 130px; }
+.height_150 { min-height: 150px; }
+.height_170 { min-height: 170px; }
+.height_200 { min-height: 200px; }
+
+.mt_5 { margin-top:5px; }
+.mt_10 { margin-top:10px; }
+.mt_20 { margin-top:20px; }
+.mt_30 { margin-top:30px; }
+
+.mt_50 { margin-top:50px; }
+.mt_100 { margin-top:100px; }
+
+.mb_20 { margin-bottom:20px; }
+.mb_30 { margin-bottom:30px; }
+
+.ml_10 { margin-left:10px; }
+.ml_20 { margin-left:20px; }
+.ml_50 { margin-left:50px; }
+.ml_60 { margin-left:60px; }
+
+
+.f_size_14 { font-size: 14px; }
+.f_size_20 { font-size:20px; }
+.f_size_30 { font-size:30px; }
+
+.center { text-align: center; }
+.right { text-align: right; }
+.left { text-align: left; }
+
+.border_b { border-bottom:1px solid #000; }
+
+.table_form tr td.va_top { vertical-align:top; }
+.table_form table tr th.bg_none { background: none; }
+
+/* 리스트 */
+.list_type01 li { margin-left: 15px; }
+.list_type01 li .head { margin: 0 3px 0 -15px; }
+.list_type02 { overflow: hidden; }
+.list_type02 li { float: left; min-width: 33.3%; }
+.list_type03 { margin-top: 50px; }
+.list_type03 li { margin-bottom: 15px; }
+
+/* 폰트 */
+.fs_11 { font-size: 11px; letter-spacing: -0.05em;  }
+.fc_red { color: #ff0000; }
+
+/* 정렬 */
+.tal { text-align: left; }
+.tar { text-align: right; }
+.tac { text-align: center; }
+
+
+/* 출석부 */
+.print_page.page_01 h1 { margin: 30px 0 28px; }
+.print_page.page_01 .table_form table tr th,
+.print_page.page_01 .table_form table tr td { padding: 3px 5px; }
+.print_page.page_01 .table_form table.tbl_attendance td { text-align: center; }
+.print_page.page_01 .table_form table:first-child tr th,
+.print_page.page_01 .table_form table:first-child tr td { height: 28px; }
+
+/* 평가표 */
+.print_page.page_02 h1 { margin: 30px 0; }
+.print_page.page_02 .table_form table tr th,
+.print_page.page_02 .table_form table tr td { height: 32px; text-align: center; }
+.print_page.page_02 .table_form table tr td.cont_txt { height: 65px }
+
+/* 실습보고서 */
+.print_page.page_03 h1 { margin: 30px 0; }
+.print_page.page_03 .table_form table tr th,
+.print_page.page_03 .table_form table tr td { height: 30px; text-align: center; }
+
+/* 설문지 */
+.logo { font-size: 10px; overflow: hidden; }
+.logo img { width: 90px; height: auto; float: left; }
+.logo span { text-align: right; float: right; position: relative; top: 5px; }
+.txt_box { padding: 4px 50px; line-height: 1.3; border: 1px solid #000; text-align: center; }
+.pos_re { padding-left: 18px; position: relative; }
+.txt_number { position: absolute; left: 0; top: 0; }
+
+.print_page.page_04 h1 { margin: 10px 0; }
+.print_page.page_04 .table_form table tr th,
+.print_page.page_04 .table_form table tr td { padding: 3px 5px; }
+.print_page.page_04 .table_form table { margin-bottom: 5px; }
+
+.print_page.page_05 h1 { margin: 10px 0; }
+.print_page.page_05 .table_form table tr th,
+.print_page.page_05 .table_form table tr td { padding: 1px 5px; line-height: 1.3; }
+.print_page.page_05 .table_form table { margin-bottom: 5px; }
